@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --negro:          #1A1A1A;
+  --negro-suave:    #2D2D2D;
+  --dorado:         #C5A028;
+  --dorado-claro:   #E8C84A;
+  --crema:          #F7F5F0;
+  --crema-oscura:   #EDE9E0;
+  --gris-medio:     #6B6B6B;
+  --gris-claro:     #E5E3DE;
+  --blanco:         #FFFFFF;
+
+  --font-display:   'Playfair Display', Georgia, serif;
+  --font-body:      'Outfit', system-ui, sans-serif;
+
+  --section-y:      5rem;
+  --max-width:      1200px;
+
+  --radius-base:    2px;
+  --radius-card:    4px;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--negro);
+    background-color: var(--blanco);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2 {
+    font-family: var(--font-display);
+  }
+
+  h3, h4, h5, h6 {
+    font-family: var(--font-body);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+}
