@@ -47,7 +47,7 @@ export default function ProgramTemplate({
       {/* Hero */}
       <div
         className="relative flex items-end pb-10 pt-24"
-        style={{ background: '#1A1A1A', minHeight: '280px' }}
+        style={{ background: '#1d1e20', minHeight: '280px' }}
       >
         <div className="relative z-10 max-w-ceie mx-auto px-4 md:px-6 lg:px-8 w-full">
           {/* Breadcrumb */}
@@ -74,7 +74,7 @@ export default function ProgramTemplate({
               <span
                 key={n}
                 className="text-xs font-medium px-3 py-1 uppercase tracking-wide"
-                style={{ background: '#C5A028', color: '#1A1A1A', borderRadius: '2px' }}
+                style={{ background: '#6493b5', color: '#1d1e20', borderRadius: '2px' }}
               >
                 {n}
               </span>
@@ -109,7 +109,7 @@ export default function ProgramTemplate({
               <div className="overflow-x-auto">
                 <table className="w-full text-sm" style={{ borderCollapse: 'collapse' }}>
                   <thead>
-                    <tr style={{ background: '#1A1A1A' }}>
+                    <tr style={{ background: '#1d1e20' }}>
                       <Th>Turno / Shift</Th>
                       <Th>Días / Days</Th>
                       <Th>Hora / Time</Th>
@@ -117,7 +117,7 @@ export default function ProgramTemplate({
                   </thead>
                   <tbody>
                     {data.horarios.map((h, i) => (
-                      <tr key={i} style={{ background: i % 2 === 0 ? '#F7F5F0' : '#FFFFFF' }}>
+                      <tr key={i} style={{ background: i % 2 === 0 ? '#C7C2ba' : '#FFFFFF' }}>
                         <Td>{h.turno}</Td>
                         <Td>{h.dias}</Td>
                         <Td>{h.hora}</Td>
@@ -140,7 +140,7 @@ export default function ProgramTemplate({
                   >
                     <summary
                       className="flex items-center justify-between px-4 py-3 cursor-pointer font-semibold text-sm"
-                      style={{ background: '#F7F5F0', color: '#1A1A1A' }}
+                      style={{ background: '#C7C2ba', color: '#1d1e20' }}
                     >
                       {t.nivel}
                       <ChevronRight size={16} className="transition-transform group-open:rotate-90" />
@@ -148,7 +148,7 @@ export default function ProgramTemplate({
                     <ul className="px-6 py-4 flex flex-col gap-2">
                       {t.contenidos.map((c, j) => (
                         <li key={j} className="flex items-start gap-2 text-sm" style={{ color: '#2D2D2D' }}>
-                          <CheckCircle size={14} className="mt-0.5 shrink-0" style={{ color: '#C5A028' }} />
+                          <CheckCircle size={14} className="mt-0.5 shrink-0" style={{ color: '#6493b5' }} />
                           {c}
                         </li>
                       ))}
@@ -164,7 +164,7 @@ export default function ProgramTemplate({
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {data.actividades.map((a, i) => (
                   <li key={i} className="flex items-start gap-3 text-sm" style={{ color: '#2D2D2D' }}>
-                    <CheckCircle size={16} className="mt-0.5 shrink-0" style={{ color: '#C5A028' }} />
+                    <CheckCircle size={16} className="mt-0.5 shrink-0" style={{ color: '#6493b5' }} />
                     {a}
                   </li>
                 ))}
@@ -189,10 +189,10 @@ export default function ProgramTemplate({
               <SectionTitle>{labels.certificate}</SectionTitle>
               <div
                 className="flex flex-col gap-3 p-5"
-                style={{ border: '2px solid #C5A028', borderRadius: '4px', background: '#F7F5F0' }}
+                style={{ border: '2px solid #6493b5', borderRadius: '4px', background: '#C7C2ba' }}
               >
                 <div className="flex items-center gap-3">
-                  <Award size={24} style={{ color: '#C5A028' }} />
+                  <Award size={24} style={{ color: '#6493b5' }} />
                   <div>
                     <p className="font-semibold text-negro">{data.certificado.tipo}</p>
                     <p className="text-sm" style={{ color: '#6B6B6B' }}>{data.certificado.emite}</p>
@@ -231,7 +231,7 @@ export default function ProgramTemplate({
               <Link
                 href={applyHref}
                 className="inline-flex items-center gap-2 px-8 py-4 font-semibold text-sm uppercase tracking-widest transition-colors duration-200"
-                style={{ background: '#C5A028', color: '#1A1A1A', borderRadius: '2px' }}
+                style={{ background: '#6493b5', color: '#1d1e20', borderRadius: '2px' }}
               >
                 {applyLabel} <ChevronRight size={18} />
               </Link>
@@ -242,11 +242,11 @@ export default function ProgramTemplate({
           <aside className="lg:w-72 shrink-0">
             <div
               className="sticky top-20 flex flex-col gap-4 p-5"
-              style={{ border: '2px solid #C5A028', borderRadius: '4px', background: '#F7F5F0' }}
+              style={{ border: '2px solid #6493b5', borderRadius: '4px', background: '#C7C2ba' }}
             >
               <h3
                 className="font-body text-sm font-semibold uppercase tracking-widest"
-                style={{ color: '#C5A028' }}
+                style={{ color: '#6493b5' }}
               >
                 {asideTitle}
               </h3>
@@ -263,7 +263,7 @@ export default function ProgramTemplate({
               <Link
                 href={applyHref}
                 className="mt-2 flex items-center justify-center gap-2 py-3 text-sm font-semibold uppercase tracking-widest transition-colors duration-200"
-                style={{ background: '#1A1A1A', color: '#FFFFFF', borderRadius: '2px' }}
+                style={{ background: '#1d1e20', color: '#FFFFFF', borderRadius: '2px' }}
               >
                 {asideApply}
               </Link>
@@ -279,7 +279,7 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
     <h2
       className="font-body text-xl font-semibold mb-4 pb-2"
-      style={{ borderBottom: '2px solid #C5A028', color: '#1A1A1A' }}
+      style={{ borderBottom: '2px solid #6493b5', color: '#1d1e20' }}
     >
       {children}
     </h2>
@@ -290,9 +290,9 @@ function StatBox({ icon, label, value }: { icon: React.ReactNode; label: string;
   return (
     <div
       className="flex flex-col gap-2 p-4"
-      style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#F7F5F0' }}
+      style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#C7C2ba' }}
     >
-      <div style={{ color: '#C5A028' }}>{icon}</div>
+      <div style={{ color: '#6493b5' }}>{icon}</div>
       <p className="text-xs uppercase tracking-widest" style={{ color: '#6B6B6B' }}>{label}</p>
       <p className="font-semibold text-negro">{value}</p>
     </div>
@@ -303,7 +303,7 @@ function Th({ children }: { children: React.ReactNode }) {
   return (
     <th
       className="text-left text-xs font-medium uppercase tracking-widest px-4 py-3"
-      style={{ color: '#C5A028' }}
+      style={{ color: '#6493b5' }}
     >
       {children}
     </th>
@@ -322,12 +322,12 @@ function PriceRow({ label, value, highlight }: { label: string; value: string; h
   return (
     <div
       className="flex items-center justify-between px-4 py-3"
-      style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#F7F5F0' }}
+      style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#C7C2ba' }}
     >
       <span className="text-sm" style={{ color: '#6B6B6B' }}>{label}</span>
       <span
         className="text-base font-bold"
-        style={{ color: highlight ? '#C5A028' : '#1A1A1A' }}
+        style={{ color: highlight ? '#6493b5' : '#1d1e20' }}
       >
         {value}
       </span>
@@ -341,7 +341,7 @@ function AsideStat({ label, value, highlight }: { label: string; value: string; 
       <p className="text-xs uppercase tracking-widest mb-1" style={{ color: '#6B6B6B' }}>{label}</p>
       <p
         className={`font-semibold ${highlight ? 'text-xl' : 'text-sm'}`}
-        style={{ color: highlight ? '#C5A028' : '#1A1A1A' }}
+        style={{ color: highlight ? '#6493b5' : '#1d1e20' }}
       >
         {value}
       </p>

@@ -24,7 +24,7 @@ export default function AdmisionPage() {
       {/* Hero */}
       <div
         className="flex items-end pb-10 pt-24"
-        style={{ background: '#1A1A1A', minHeight: '280px' }}
+        style={{ background: '#1d1e20', minHeight: '280px' }}
       >
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 w-full">
           <h1 className="font-display font-bold text-white text-4xl md:text-5xl mb-4">{d.hero.h1}</h1>
@@ -33,7 +33,7 @@ export default function AdmisionPage() {
       </div>
 
       {/* Steps */}
-      <section style={{ background: '#F7F5F0' }} className="py-16">
+      <section style={{ background: '#C7C2ba' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="font-display font-bold text-negro text-3xl mb-10 text-center">
             Proceso de admisión
@@ -49,12 +49,12 @@ export default function AdmisionPage() {
           <div className="overflow-x-auto">
             <table className="w-full text-sm" style={{ borderCollapse: 'collapse' }}>
               <thead>
-                <tr style={{ background: '#1A1A1A' }}>
+                <tr style={{ background: '#1d1e20' }}>
                   {d.requirements.table.headers.map((h) => (
                     <th
                       key={h}
                       className="text-left px-4 py-3 text-xs font-medium uppercase tracking-widest"
-                      style={{ color: '#C5A028' }}
+                      style={{ color: '#6493b5' }}
                     >
                       {h}
                     </th>
@@ -63,7 +63,7 @@ export default function AdmisionPage() {
               </thead>
               <tbody>
                 {d.requirements.table.rows.map((row, i) => (
-                  <tr key={i} style={{ background: i % 2 === 0 ? '#F7F5F0' : '#FFFFFF' }}>
+                  <tr key={i} style={{ background: i % 2 === 0 ? '#C7C2ba' : '#FFFFFF' }}>
                     {row.map((cell, j) => (
                       <td
                         key={j}
@@ -82,7 +82,7 @@ export default function AdmisionPage() {
       </section>
 
       {/* Form */}
-      <section style={{ background: '#F7F5F0' }} className="py-16">
+      <section style={{ background: '#C7C2ba' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto">
             <h2 className="font-display font-bold text-negro text-3xl mb-8">{d.form.title}</h2>
@@ -90,7 +90,7 @@ export default function AdmisionPage() {
             {submitted ? (
               <div
                 className="p-6 text-center"
-                style={{ background: '#FFFFFF', border: '2px solid #C5A028', borderRadius: '4px' }}
+                style={{ background: '#FFFFFF', border: '2px solid #6493b5', borderRadius: '4px' }}
               >
                 <p className="text-lg font-semibold text-negro mb-2">✓</p>
                 <p className="text-base" style={{ color: '#2D2D2D' }}>{d.form.fields.success}</p>
@@ -155,7 +155,7 @@ export default function AdmisionPage() {
                   <input type="checkbox" id="privacy" required className="mt-0.5" />
                   <label htmlFor="privacy" className="text-sm" style={{ color: '#6B6B6B' }}>
                     {d.form.fields.privacy}{' '}
-                    <Link href="/privacidad" className="underline hover:text-negro" style={{ color: '#C5A028' }}>
+                    <Link href="/privacidad" className="underline hover:text-negro" style={{ color: '#6493b5' }}>
                       (ver política)
                     </Link>
                   </label>
@@ -163,7 +163,7 @@ export default function AdmisionPage() {
                 <button
                   type="submit"
                   className="py-3 px-8 font-body font-semibold text-sm uppercase tracking-widest transition-colors duration-200"
-                  style={{ background: '#C5A028', color: '#1A1A1A', borderRadius: '2px' }}
+                  style={{ background: '#6493b5', color: '#1d1e20', borderRadius: '2px' }}
                 >
                   {d.form.fields.submit}
                 </button>

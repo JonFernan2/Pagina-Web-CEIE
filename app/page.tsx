@@ -15,10 +15,10 @@ export const metadata: Metadata = {
 }
 
 const iconMap: Record<string, React.ReactNode> = {
-  GraduationCap: <GraduationCap size={32} style={{ color: '#C5A028' }} />,
-  MapPin:        <MapPin size={32} style={{ color: '#C5A028' }} />,
-  Laptop:        <Laptop size={32} style={{ color: '#C5A028' }} />,
-  Globe:         <Globe size={32} style={{ color: '#C5A028' }} />,
+  GraduationCap: <GraduationCap size={32} style={{ color: '#6493b5' }} />,
+  MapPin:        <MapPin size={32} style={{ color: '#6493b5' }} />,
+  Laptop:        <Laptop size={32} style={{ color: '#6493b5' }} />,
+  Globe:         <Globe size={32} style={{ color: '#6493b5' }} />,
 }
 
 export default function HomePage() {
@@ -42,7 +42,7 @@ export default function HomePage() {
         <div className="relative z-10 max-w-3xl mx-auto px-4 md:px-8 py-20">
           <p
             className="font-body text-xs font-medium uppercase tracking-widest mb-6"
-            style={{ color: '#C5A028' }}
+            style={{ color: '#6493b5' }}
           >
             {d.hero.badge}
           </p>
@@ -58,7 +58,7 @@ export default function HomePage() {
             <Link
               href={d.hero.cta1.href}
               className="font-body font-semibold text-sm uppercase tracking-widest px-8 py-4 transition-colors duration-200"
-              style={{ background: '#C5A028', color: '#1A1A1A', borderRadius: '2px' }}
+              style={{ background: '#6493b5', color: '#1d1e20', borderRadius: '2px' }}
             >
               {d.hero.cta1.label} →
             </Link>
@@ -74,7 +74,7 @@ export default function HomePage() {
       </section>
 
       {/* ── VALUE PROPS ── */}
-      <section style={{ background: '#F7F5F0' }} className="py-20">
+      <section style={{ background: '#C7C2ba' }} className="py-20">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl text-center mb-12">
             {d.valueProps.title}
@@ -113,7 +113,7 @@ export default function HomePage() {
       </section>
 
       {/* ── PAYMENT CONDITIONS (D1) ── */}
-      <section style={{ background: '#1A1A1A' }} className="py-16">
+      <section style={{ background: '#1d1e20' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="font-display font-bold text-white text-3xl md:text-4xl text-center mb-12">
             {d.payment.title}
@@ -122,13 +122,13 @@ export default function HomePage() {
             <PaymentColumn title={d.payment.col1.title} items={d.payment.col1.items} />
             <PaymentColumn title={d.payment.col2.title} items={d.payment.col2.items} />
             <div>
-              <h3 className="font-body text-base font-semibold uppercase tracking-widest mb-4" style={{ color: '#C5A028' }}>
+              <h3 className="font-body text-base font-semibold uppercase tracking-widest mb-4" style={{ color: '#6493b5' }}>
                 {d.payment.col3.title}
               </h3>
               <ul className="flex flex-col gap-2">
                 {d.payment.col3.items.map((item) => (
                   <li key={item} className="flex items-start gap-2 text-sm text-white/70">
-                    <Check size={14} className="mt-0.5 shrink-0" style={{ color: '#C5A028' }} />
+                    <Check size={14} className="mt-0.5 shrink-0" style={{ color: '#6493b5' }} />
                     {item}
                   </li>
                 ))}
@@ -136,7 +136,7 @@ export default function HomePage() {
               <Link
                 href={d.payment.col3.link.href}
                 className="inline-block mt-4 text-sm underline transition-colors duration-200 hover:text-white"
-                style={{ color: '#C5A028' }}
+                style={{ color: '#6493b5' }}
               >
                 {d.payment.col3.link.label} →
               </Link>
@@ -149,7 +149,7 @@ export default function HomePage() {
       </section>
 
       {/* ── ACCREDITATION ── */}
-      <section style={{ background: '#F7F5F0' }} className="py-16">
+      <section style={{ background: '#C7C2ba' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -168,11 +168,11 @@ export default function HomePage() {
                 <div
                   key={badge}
                   className="flex items-center gap-4 p-4"
-                  style={{ border: '2px solid #C5A028', borderRadius: '4px', background: '#FFFFFF' }}
+                  style={{ border: '2px solid #6493b5', borderRadius: '4px', background: '#FFFFFF' }}
                 >
                   <div
                     className="w-10 h-10 shrink-0 flex items-center justify-center"
-                    style={{ background: '#C5A028', borderRadius: '2px' }}
+                    style={{ background: '#6493b5', borderRadius: '2px' }}
                   >
                     <span className="text-negro font-bold text-sm">✓</span>
                   </div>
@@ -208,7 +208,7 @@ export default function HomePage() {
             <Link
               href={d.testimonials.readMoreLink.href}
               className="inline-flex items-center gap-2 font-body font-medium text-sm uppercase tracking-widest transition-colors duration-200 hover:text-dorado"
-              style={{ color: '#1A1A1A' }}
+              style={{ color: '#1d1e20' }}
             >
               {d.testimonials.readMoreLink.label} →
             </Link>
@@ -217,7 +217,7 @@ export default function HomePage() {
       </section>
 
       {/* ── CONTACT/LOCATION ── */}
-      <section style={{ background: '#1A1A1A' }} className="py-16">
+      <section style={{ background: '#1d1e20' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="font-display font-bold text-white text-3xl md:text-4xl text-center mb-12">
             {d.contact.title}
@@ -231,7 +231,7 @@ export default function HomePage() {
               ))}
               <p>{d.contact.hours}</p>
             </div>
-            <div className="w-full aspect-video overflow-hidden" style={{ borderRadius: '4px', border: '2px solid #C5A028' }}>
+            <div className="w-full aspect-video overflow-hidden" style={{ borderRadius: '4px', border: '2px solid #6493b5' }}>
               <PlaceholderImage
                 label={d.contact.mapPlaceholder}
                 alt="Mapa de ubicación del Campus UAI Viña del Mar, Padre Hurtado 750"
@@ -250,13 +250,13 @@ export default function HomePage() {
 function PaymentColumn({ title, items }: { title: string; items: string[] }) {
   return (
     <div>
-      <h3 className="font-body text-base font-semibold uppercase tracking-widest mb-4" style={{ color: '#C5A028' }}>
+      <h3 className="font-body text-base font-semibold uppercase tracking-widest mb-4" style={{ color: '#6493b5' }}>
         {title}
       </h3>
       <ul className="flex flex-col gap-2">
         {items.map((item) => (
           <li key={item} className="flex items-start gap-2 text-sm text-white/70">
-            <Check size={14} className="mt-0.5 shrink-0" style={{ color: '#C5A028' }} />
+            <Check size={14} className="mt-0.5 shrink-0" style={{ color: '#6493b5' }} />
             {item}
           </li>
         ))}

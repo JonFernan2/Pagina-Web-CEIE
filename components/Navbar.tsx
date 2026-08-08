@@ -72,7 +72,7 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
   return (
     <nav
       className="sticky top-0 z-50 w-full"
-      style={{ background: '#1A1A1A' }}
+      style={{ background: '#1d1e20' }}
       aria-label="Navegación principal"
     >
       <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
@@ -109,8 +109,8 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
               href={nav.cta.href}
               className="font-body text-sm font-medium px-6 py-2 transition-colors duration-200"
               style={{
-                background: '#C5A028',
-                color: '#1A1A1A',
+                background: '#6493b5',
+                color: '#1d1e20',
                 borderRadius: '2px',
               }}
             >
@@ -152,7 +152,7 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
       {mobileOpen && (
         <div
           className="md:hidden w-full py-4 px-6 flex flex-col gap-4"
-          style={{ background: '#1A1A1A', borderTop: '1px solid #2D2D2D' }}
+          style={{ background: '#1d1e20', borderTop: '1px solid #2D2D2D' }}
         >
           {nav.links.map((link) => (
             <Link
@@ -167,7 +167,7 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
           <Link
             href={nav.cta.href}
             className="font-body text-sm font-medium px-6 py-2 text-center mt-2 transition-colors duration-200"
-            style={{ background: '#C5A028', color: '#1A1A1A', borderRadius: '2px' }}
+            style={{ background: '#6493b5', color: '#1d1e20', borderRadius: '2px' }}
             onClick={() => setMobileOpen(false)}
           >
             {nav.cta.label}

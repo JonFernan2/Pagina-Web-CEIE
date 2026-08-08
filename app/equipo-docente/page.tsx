@@ -18,7 +18,7 @@ export default function EquipoDocentePage() {
       {/* Hero */}
       <div
         className="flex items-end pb-10 pt-24"
-        style={{ background: '#1A1A1A', minHeight: '280px' }}
+        style={{ background: '#1d1e20', minHeight: '280px' }}
       >
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 w-full">
           <h1 className="font-display font-bold text-white text-4xl md:text-5xl mb-4">
@@ -31,7 +31,7 @@ export default function EquipoDocentePage() {
       </div>
 
       {/* Teachers grid */}
-      <section style={{ background: '#F7F5F0' }} className="py-16">
+      <section style={{ background: '#C7C2ba' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {TEACHERS.map((teacher) => (

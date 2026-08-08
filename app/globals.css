@@ -5,11 +5,11 @@
 @tailwind utilities;
 
 :root {
-  --negro:          #1A1A1A;
+  --negro:          #1d1e20;
   --negro-suave:    #2D2D2D;
-  --dorado:         #C5A028;
+  --dorado:         #6493b5;
   --dorado-claro:   #E8C84A;
-  --crema:          #F7F5F0;
+  --crema:          #C7C2ba;
   --crema-oscura:   #EDE9E0;
   --gris-medio:     #6B6B6B;
   --gris-claro:     #E5E3DE;

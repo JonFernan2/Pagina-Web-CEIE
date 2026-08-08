@@ -23,7 +23,7 @@ export default function ContactoPage() {
       {/* Hero */}
       <div
         className="flex items-end pb-10 pt-24"
-        style={{ background: '#1A1A1A', minHeight: '240px' }}
+        style={{ background: '#1d1e20', minHeight: '240px' }}
       >
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 w-full">
           <h1 className="font-display font-bold text-white text-4xl md:text-5xl">
@@ -33,7 +33,7 @@ export default function ContactoPage() {
       </div>
 
       {/* Content */}
-      <section style={{ background: '#F7F5F0' }} className="py-16">
+      <section style={{ background: '#C7C2ba' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
@@ -43,7 +43,7 @@ export default function ContactoPage() {
               {submitted ? (
                 <div
                   className="p-6"
-                  style={{ background: '#FFFFFF', border: '2px solid #C5A028', borderRadius: '4px' }}
+                  style={{ background: '#FFFFFF', border: '2px solid #6493b5', borderRadius: '4px' }}
                 >
                   <p className="font-semibold text-negro mb-1">✓</p>
                   <p style={{ color: '#2D2D2D' }}>{d.form.fields.success}</p>
@@ -92,7 +92,7 @@ export default function ContactoPage() {
                   <button
                     type="submit"
                     className="py-3 font-body font-semibold text-sm uppercase tracking-widest transition-colors"
-                    style={{ background: '#C5A028', color: '#1A1A1A', borderRadius: '2px' }}
+                    style={{ background: '#6493b5', color: '#1d1e20', borderRadius: '2px' }}
                   >
                     {d.form.fields.submit}
                   </button>
@@ -110,7 +110,7 @@ export default function ContactoPage() {
                 </div>
                 <p>{d.info.phone}</p>
                 {d.info.emails.map((em: string) => (
-                  <a key={em} href={`mailto:${em}`} className="hover:underline" style={{ color: '#C5A028' }}>{em}</a>
+                  <a key={em} href={`mailto:${em}`} className="hover:underline" style={{ color: '#6493b5' }}>{em}</a>
                 ))}
                 <p>{d.info.hours}</p>
                 {d.info.social.map((s) => (
@@ -118,7 +118,7 @@ export default function ContactoPage() {
                 ))}
               </div>
 
-              <div className="w-full aspect-video overflow-hidden" style={{ borderRadius: '4px', border: '2px solid #C5A028' }}>
+              <div className="w-full aspect-video overflow-hidden" style={{ borderRadius: '4px', border: '2px solid #6493b5' }}>
                 <PlaceholderImage
                   label="Mapa: Campus UAI Viña del Mar — Padre Hurtado 750"
                   alt="Mapa de ubicación del Campus UAI Viña del Mar, Padre Hurtado 750"

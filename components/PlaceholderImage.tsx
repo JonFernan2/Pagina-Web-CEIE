@@ -36,20 +36,20 @@ export default function PlaceholderImage({
         width={w - 8}
         height={h - 8}
         fill="none"
-        stroke="#C5A028"
+        stroke="#6493b5"
         strokeWidth="2"
         strokeDasharray="8 4"
       />
       {/* Camera icon */}
-      <rect x={w / 2 - 28} y={h / 2 - 50} width="56" height="44" rx="4" fill="none" stroke="#C5A028" strokeWidth="2" />
-      <circle cx={w / 2} cy={h / 2 - 28} r="12" fill="none" stroke="#C5A028" strokeWidth="2" />
-      <rect x={w / 2 - 8} y={h / 2 - 56} width="16" height="8" rx="2" fill="#C5A028" />
+      <rect x={w / 2 - 28} y={h / 2 - 50} width="56" height="44" rx="4" fill="none" stroke="#6493b5" strokeWidth="2" />
+      <circle cx={w / 2} cy={h / 2 - 28} r="12" fill="none" stroke="#6493b5" strokeWidth="2" />
+      <rect x={w / 2 - 8} y={h / 2 - 56} width="16" height="8" rx="2" fill="#6493b5" />
       {/* Label */}
       <text
         x={w / 2}
         y={h / 2 + 12}
         textAnchor="middle"
-        fill="#C5A028"
+        fill="#6493b5"
         fontSize={Math.min(14, w / 20)}
         fontFamily="'Outfit', system-ui, sans-serif"
         fontWeight="500"

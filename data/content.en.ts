@@ -1,9 +1,9 @@
 export const NAV_EN = {
   logo: { ceie: 'CEIE', uai: 'Universidad Adolfo Ibáñez' },
   links: [
-    { label: 'Programs & Courses',      href: '/en/programs-and-courses' },
-    { label: 'Teaching Team',           href: '/en/teaching-team' },
     { label: 'About Us',                href: '/en/about-us' },
+    { label: 'Teaching Team',           href: '/en/teaching-team' },
+    { label: 'Programs & Courses',      href: '/en/programs-and-courses' },
     { label: 'Voices of the Centre',    href: '/en/voices-of-the-centre' },
   ],
   cta: { label: 'Apply Now', href: '/en/admissions' },
@@ -17,9 +17,9 @@ export const FOOTER_EN = {
   col2: {
     title: 'Navigation',
     links: [
-      { label: 'Programs & Courses',     href: '/en/programs-and-courses' },
-      { label: 'Teaching Team',          href: '/en/teaching-team' },
       { label: 'About Us',               href: '/en/about-us' },
+      { label: 'Teaching Team',          href: '/en/teaching-team' },
+      { label: 'Programs & Courses',     href: '/en/programs-and-courses' },
       { label: 'Voices of the Centre',   href: '/en/voices-of-the-centre' },
       { label: 'Apply Now',              href: '/en/admissions' },
       { label: 'Contact',                href: '/en/contact' },

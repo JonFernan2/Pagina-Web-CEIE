@@ -20,9 +20,9 @@ function Initials({ nombre }: { nombre: string }) {
   return (
     <div
       className="relative w-full h-56 flex flex-col items-center justify-center"
-      style={{ background: '#1A1A1A', border: '2px dashed #C5A028', borderRadius: '4px 4px 0 0' }}
+      style={{ background: '#1d1e20', border: '2px dashed #6493b5', borderRadius: '4px 4px 0 0' }}
     >
-      <span className="font-display font-bold text-5xl mb-2" style={{ color: '#C5A028' }}>
+      <span className="font-display font-bold text-5xl mb-2" style={{ color: '#6493b5' }}>
         {initials}
       </span>
       <div
@@ -64,7 +64,7 @@ export default function TeacherCard({
       <div className="px-5 py-5 flex flex-col gap-3 flex-1">
         <div>
           <h3 className="font-body text-lg font-semibold text-negro leading-tight">{nombre}</h3>
-          <p className="text-xs font-medium uppercase tracking-widest mt-1" style={{ color: '#C5A028' }}>
+          <p className="text-xs font-medium uppercase tracking-widest mt-1" style={{ color: '#6493b5' }}>
             {rol}
           </p>
           <p className="text-xs mt-1" style={{ color: '#6B6B6B' }}>{titulo}</p>
@@ -81,7 +81,7 @@ export default function TeacherCard({
           <ul className="flex flex-col gap-1">
             {formacionLista.map((item, i) => (
               <li key={i} className="text-xs flex gap-2" style={{ color: '#6B6B6B' }}>
-                <span style={{ color: '#C5A028', flexShrink: 0 }}>·</span>
+                <span style={{ color: '#6493b5', flexShrink: 0 }}>·</span>
                 {item}
               </li>
             ))}
@@ -92,7 +92,7 @@ export default function TeacherCard({
         <a
           href={`mailto:${email}`}
           className="text-xs mt-auto hover:underline"
-          style={{ color: '#C5A028' }}
+          style={{ color: '#6493b5' }}
         >
           {email}
         </a>

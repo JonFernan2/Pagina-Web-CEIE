@@ -54,7 +54,7 @@ export default function CookieBanner({ lang = 'es' }: CookieBannerProps) {
   return (
     <div
       className="fixed bottom-0 left-0 right-0 z-50 p-4 font-body"
-      style={{ background: '#1A1A1A', borderTop: '2px solid #C5A028' }}
+      style={{ background: '#1d1e20', borderTop: '2px solid #6493b5' }}
       role="dialog"
       aria-label={lang === 'es' ? 'Aviso de cookies' : lang === 'pt' ? 'Aviso de cookies' : 'Cookie notice'}
     >
@@ -64,7 +64,7 @@ export default function CookieBanner({ lang = 'es' }: CookieBannerProps) {
           <a
             href={t.href}
             className="underline transition-colors duration-200 hover:text-dorado"
-            style={{ color: '#C5A028' }}
+            style={{ color: '#6493b5' }}
           >
             {t.learnMore}
           </a>
@@ -80,8 +80,8 @@ export default function CookieBanner({ lang = 'es' }: CookieBannerProps) {
             onClick={accept}
             className="text-sm font-semibold px-5 py-2 transition-colors duration-200"
             style={{
-              background: '#C5A028',
-              color: '#1A1A1A',
+              background: '#6493b5',
+              color: '#1d1e20',
               borderRadius: '2px',
             }}
           >

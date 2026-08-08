@@ -11,9 +11,9 @@ export default function Footer({ lang }: FooterProps) {
   const f = lang === 'es' ? FOOTER_ES : lang === 'pt' ? FOOTER_PT : FOOTER_EN
 
   return (
-    <footer style={{ background: '#1A1A1A' }} className="font-body">
+    <footer style={{ background: '#1d1e20' }} className="font-body">
       {/* Top separator */}
-      <div style={{ height: '1px', background: '#C5A028' }} />
+      <div style={{ height: '1px', background: '#6493b5' }} />
 
       <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -29,7 +29,7 @@ export default function Footer({ lang }: FooterProps) {
               </span>
               <div
                 className="w-12 mt-1"
-                style={{ height: '2px', background: '#C5A028' }}
+                style={{ height: '2px', background: '#6493b5' }}
               />
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-4">
@@ -41,8 +41,8 @@ export default function Footer({ lang }: FooterProps) {
                   key={badge}
                   className="inline-block text-xs px-3 py-1 font-medium"
                   style={{
-                    border: '1px solid #C5A028',
-                    color: '#C5A028',
+                    border: '1px solid #6493b5',
+                    color: '#6493b5',
                     borderRadius: '2px',
                   }}
                 >
@@ -56,7 +56,7 @@ export default function Footer({ lang }: FooterProps) {
           <div>
             <h3
               className="text-sm font-semibold uppercase tracking-widest mb-4"
-              style={{ color: '#C5A028' }}
+              style={{ color: '#6493b5' }}
             >
               {f.col2.title}
             </h3>
@@ -78,7 +78,7 @@ export default function Footer({ lang }: FooterProps) {
           <div>
             <h3
               className="text-sm font-semibold uppercase tracking-widest mb-4"
-              style={{ color: '#C5A028' }}
+              style={{ color: '#6493b5' }}
             >
               {f.col3.title}
             </h3>
@@ -100,7 +100,7 @@ export default function Footer({ lang }: FooterProps) {
           <div>
             <h3
               className="text-sm font-semibold uppercase tracking-widest mb-4"
-              style={{ color: '#C5A028' }}
+              style={{ color: '#6493b5' }}
             >
               {f.col4.title}
             </h3>

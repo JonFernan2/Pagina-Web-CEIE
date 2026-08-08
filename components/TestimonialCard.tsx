@@ -39,9 +39,9 @@ export default function TestimonialCard({
             width: 48,
             height: 48,
             borderRadius: '50%',
-            background: '#1A1A1A',
-            color: '#C5A028',
-            border: '2px solid #C5A028',
+            background: '#1d1e20',
+            color: '#6493b5',
+            border: '2px solid #6493b5',
           }}
         >
           {initials}
@@ -59,8 +59,8 @@ export default function TestimonialCard({
         <span
           className="text-xs px-2 py-0.5 font-medium"
           style={{
-            background: '#F7F5F0',
-            color: '#1A1A1A',
+            background: '#C7C2ba',
+            color: '#1d1e20',
             borderRadius: '2px',
             border: '1px solid #E5E3DE',
           }}
@@ -70,8 +70,8 @@ export default function TestimonialCard({
         <span
           className="text-xs px-2 py-0.5 font-medium"
           style={{
-            background: '#C5A028',
-            color: '#1A1A1A',
+            background: '#6493b5',
+            color: '#1d1e20',
             borderRadius: '2px',
           }}
         >

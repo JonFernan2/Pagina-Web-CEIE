@@ -25,9 +25,9 @@ export default function AdmissionSteps({ steps }: AdmissionStepsProps) {
             <div
               className="relative z-10 flex items-center justify-center w-16 h-16 rounded-full font-display font-bold text-xl mb-4"
               style={{
-                background: '#1A1A1A',
-                color: '#C5A028',
-                border: '3px solid #C5A028',
+                background: '#1d1e20',
+                color: '#6493b5',
+                border: '3px solid #6493b5',
               }}
             >
               {step.number}

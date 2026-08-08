@@ -23,7 +23,7 @@ export default function LegalPageTemplate({
       {/* Hero */}
       <div
         className="flex items-end pb-10 pt-24"
-        style={{ background: '#1A1A1A', minHeight: '200px' }}
+        style={{ background: '#1d1e20', minHeight: '200px' }}
       >
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 w-full">
           <h1 className="font-display font-bold text-white text-4xl md:text-5xl">
@@ -47,8 +47,8 @@ export default function LegalPageTemplate({
               <h2
                 className="font-body text-xl font-semibold mb-3 pb-2"
                 style={{
-                  color: '#1A1A1A',
-                  borderBottom: '2px solid #C5A028',
+                  color: '#1d1e20',
+                  borderBottom: '2px solid #6493b5',
                 }}
               >
                 {section.heading}

@@ -1,9 +1,9 @@
 export const NAV_ES = {
   logo: { ceie: 'CEIE', uai: 'Universidad Adolfo Ibáñez' },
   links: [
-    { label: 'Programas y Cursos',  href: '/programas-y-cursos' },
-    { label: 'Equipo Docente',      href: '/equipo-docente' },
     { label: 'Sobre Nosotros',      href: '/sobre-nosotros' },
+    { label: 'Equipo Docente',      href: '/equipo-docente' },
+    { label: 'Programas y Cursos',  href: '/programas-y-cursos' },
     { label: 'Voces del Centro',    href: '/voces-del-centro' },
   ],
   cta: { label: 'Admisión', href: '/admision' },
@@ -17,9 +17,9 @@ export const FOOTER_ES = {
   col2: {
     title: 'Navegación',
     links: [
-      { label: 'Programas y Cursos',    href: '/programas-y-cursos' },
-      { label: 'Equipo Docente',        href: '/equipo-docente' },
       { label: 'Sobre Nosotros',        href: '/sobre-nosotros' },
+      { label: 'Equipo Docente',        href: '/equipo-docente' },
+      { label: 'Programas y Cursos',    href: '/programas-y-cursos' },
       { label: 'Voces del Centro',      href: '/voces-del-centro' },
       { label: 'Admisión',              href: '/admision' },
       { label: 'Contacto',              href: '/contacto' },

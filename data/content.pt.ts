@@ -6,9 +6,9 @@ export const FOOTER_PT = {
   col2: {
     title: 'Navegação',
     links: [
-      { label: 'Programas e Cursos',    href: '/pt/programas-e-cursos' },
-      { label: 'Equipe Docente',        href: '/pt/equipe-docente' },
       { label: 'Sobre Nós',             href: '/pt/sobre-nos' },
+      { label: 'Equipe Docente',        href: '/pt/equipe-docente' },
+      { label: 'Programas e Cursos',    href: '/pt/programas-e-cursos' },
       { label: 'Vozes do Centro',       href: '/pt/vozes-do-centro' },
       { label: 'Admissão',              href: '/pt/admissao' },
       { label: 'Contato',               href: '/pt/contato' },

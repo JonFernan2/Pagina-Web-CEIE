@@ -28,7 +28,7 @@ export default function SobreNosotrosPage() {
       {/* Hero */}
       <div
         className="flex items-end pb-10 pt-24"
-        style={{ background: '#1A1A1A', minHeight: '280px' }}
+        style={{ background: '#1d1e20', minHeight: '280px' }}
       >
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 w-full">
           <h1 className="font-display font-bold text-white text-4xl md:text-5xl">
@@ -38,7 +38,7 @@ export default function SobreNosotrosPage() {
       </div>
 
       {/* Directorio */}
-      <section style={{ background: '#F7F5F0' }} className="py-16">
+      <section style={{ background: '#C7C2ba' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-10">
             Nuestro Equipo
@@ -48,7 +48,7 @@ export default function SobreNosotrosPage() {
               <div key={member.nombre} className="flex flex-col items-center text-center">
                 <div
                   className="w-36 h-36 overflow-hidden mb-4"
-                  style={{ borderRadius: '50%', border: '3px solid #C5A028' }}
+                  style={{ borderRadius: '50%', border: '3px solid #6493b5' }}
                 >
                   <img
                     src={member.foto}
@@ -75,8 +75,8 @@ export default function SobreNosotrosPage() {
             {d.sections.mision.title}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="p-6" style={{ border: '2px solid #C5A028', borderRadius: '4px', background: '#FFFFFF' }}>
-              <h3 className="font-body text-lg font-semibold mb-3" style={{ color: '#C5A028' }}>Misión</h3>
+            <div className="p-6" style={{ border: '2px solid #6493b5', borderRadius: '4px', background: '#FFFFFF' }}>
+              <h3 className="font-body text-lg font-semibold mb-3" style={{ color: '#6493b5' }}>Misión</h3>
               <p className="text-base leading-relaxed" style={{ color: '#2D2D2D' }}>{d.sections.mision.mision}</p>
             </div>
             <div className="p-6" style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#FFFFFF' }}>
@@ -88,7 +88,7 @@ export default function SobreNosotrosPage() {
       </section>
 
       {/* Contexto institucional */}
-      <section style={{ background: '#F7F5F0' }} className="py-16">
+      <section style={{ background: '#C7C2ba' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-8">
             {d.sections.contexto.title}
@@ -107,9 +107,9 @@ export default function SobreNosotrosPage() {
                 <div
                   key={kpi.label}
                   className="text-center p-5"
-                  style={{ background: '#1A1A1A', borderRadius: '4px' }}
+                  style={{ background: '#1d1e20', borderRadius: '4px' }}
                 >
-                  <p className="font-display font-bold text-3xl mb-1" style={{ color: '#C5A028' }}>
+                  <p className="font-display font-bold text-3xl mb-1" style={{ color: '#6493b5' }}>
                     {kpi.value}
                   </p>
                   <p className="text-sm text-white/70">{kpi.label}</p>
@@ -135,8 +135,8 @@ export default function SobreNosotrosPage() {
           <div
             className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium"
             style={{
-              background: '#C5A028',
-              color: '#1A1A1A',
+              background: '#6493b5',
+              color: '#1d1e20',
               borderRadius: '2px',
             }}
           >
@@ -146,7 +146,7 @@ export default function SobreNosotrosPage() {
       </section>
 
       {/* Espacios (V2) */}
-      <section style={{ background: '#F7F5F0' }} className="py-16">
+      <section style={{ background: '#C7C2ba' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-8">
             {d.sections.espacios.title}
