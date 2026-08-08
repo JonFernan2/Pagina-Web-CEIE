@@ -124,6 +124,9 @@ export default function HomePage() {
               />
             </div>
           </div>
+          <p className="text-xs text-center mt-3 font-body" style={{ color: 'rgba(255,255,255,0.45)' }}>
+            Créditos: Mathias Adolf Harboe Damian
+          </p>
         </div>
       </section>
 
