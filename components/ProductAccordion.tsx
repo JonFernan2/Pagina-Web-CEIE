@@ -6,10 +6,51 @@ import type { ProgramData } from '@/data/programs'
 
 interface ProductAccordionProps {
   programs: ProgramData[]
+  lang?: 'es' | 'en' | 'pt' | 'zh'
 }
 
-export default function ProductAccordion({ programs }: ProductAccordionProps) {
+function getPaths(lang?: string) {
+  switch (lang) {
+    case 'en': return { base: '/en/programs-and-courses', admision: '/en/admissions', contacto: '/en/contact' }
+    case 'pt': return { base: '/pt/programas-e-cursos', admision: '/pt/admissao', contacto: '/pt/contato' }
+    case 'zh': return { base: '/zh/programs', admision: '/zh/apply', contacto: '/zh/contact' }
+    default:   return { base: '/programas-y-cursos', admision: '/admision', contacto: '/contacto' }
+  }
+}
+
+function getLabels(lang?: string) {
+  switch (lang) {
+    case 'en': return {
+      verPrograma: 'View full program', solicitar: 'Apply now', consultar: 'Request proposal',
+      objetivo: 'Objective', cursos: 'Courses and fees', duracion: 'Duration',
+      sede: 'Location', publico: 'Target audience',
+      colCurso: 'Course', colHoras: 'Hrs.', colPrecio: 'Price USD', colModalidad: 'Modality / Duration',
+    }
+    case 'pt': return {
+      verPrograma: 'Ver programa completo', solicitar: 'Solicitar admissão', consultar: 'Solicitar proposta',
+      objetivo: 'Objetivo', cursos: 'Cursos e preços', duracion: 'Duração',
+      sede: 'Sede', publico: 'Público-alvo',
+      colCurso: 'Curso', colHoras: 'Hrs.', colPrecio: 'Preço USD', colModalidad: 'Modalidade / Duração',
+    }
+    case 'zh': return {
+      verPrograma: '查看完整课程', solicitar: '立即申请', consultar: '咨询方案',
+      objetivo: '课程目标', cursos: '课程与收费', duracion: '学习时长',
+      sede: '校区', publico: '目标学员',
+      colCurso: '课程', colHoras: '课时', colPrecio: '价格 USD', colModalidad: '授课方式 / 时长',
+    }
+    default: return {
+      verPrograma: 'Ver programa completo', solicitar: 'Solicitar admisión', consultar: 'Consultar propuesta',
+      objetivo: 'Objetivo', cursos: 'Cursos y tarifas', duracion: 'Duración',
+      sede: 'Sede', publico: 'Público objetivo',
+      colCurso: 'Curso', colHoras: 'N° Hrs.', colPrecio: 'Precio USD', colModalidad: 'Modalidad / Duración',
+    }
+  }
+}
+
+export default function ProductAccordion({ programs, lang }: ProductAccordionProps) {
   const [openId, setOpenId] = useState<string | null>(null)
+  const paths = getPaths(lang)
+  const lbl = getLabels(lang)
 
   return (
     <div className="flex flex-col gap-3">
@@ -62,7 +103,7 @@ export default function ProductAccordion({ programs }: ProductAccordionProps) {
                       className="text-xs font-semibold uppercase tracking-widest mb-2"
                       style={{ color: '#6493b5' }}
                     >
-                      Objetivo
+                      {lbl.objetivo}
                     </h4>
                     <p className="text-sm leading-relaxed" style={{ color: '#2D2D2D' }}>
                       {program.objetivo}
@@ -77,7 +118,7 @@ export default function ProductAccordion({ programs }: ProductAccordionProps) {
                       className="text-xs font-semibold uppercase tracking-widest mb-3"
                       style={{ color: '#6493b5' }}
                     >
-                      Cursos y tarifas
+                      {lbl.cursos}
                     </h4>
                     <div className="overflow-x-auto">
                       <table className="w-full text-sm" style={{ borderCollapse: 'collapse' }}>
@@ -87,26 +128,26 @@ export default function ProductAccordion({ programs }: ProductAccordionProps) {
                               className="text-left text-xs font-medium uppercase tracking-widest px-4 py-3"
                               style={{ color: '#6493b5' }}
                             >
-                              Curso
+                              {lbl.colCurso}
                             </th>
                             <th
                               className="text-left text-xs font-medium uppercase tracking-widest px-4 py-3 whitespace-nowrap"
                               style={{ color: '#6493b5' }}
                             >
-                              N° Hrs.
+                              {lbl.colHoras}
                             </th>
                             <th
                               className="text-left text-xs font-medium uppercase tracking-widest px-4 py-3 whitespace-nowrap"
                               style={{ color: '#6493b5' }}
                             >
-                              Precio USD
+                              {lbl.colPrecio}
                             </th>
                             {program.cursosTabla.some((c) => c.modalidad) && (
                               <th
                                 className="text-left text-xs font-medium uppercase tracking-widest px-4 py-3"
                                 style={{ color: '#6493b5' }}
                               >
-                                Modalidad / Duración
+                                {lbl.colModalidad}
                               </th>
                             )}
                           </tr>
@@ -165,7 +206,7 @@ export default function ProductAccordion({ programs }: ProductAccordionProps) {
                         className="text-xs uppercase tracking-widest mb-1"
                         style={{ color: '#6B6B6B' }}
                       >
-                        Duración
+                        {lbl.duracion}
                       </p>
                       <p className="text-sm font-semibold" style={{ color: '#1d1e20' }}>
                         {program.duracion}
@@ -181,7 +222,7 @@ export default function ProductAccordion({ programs }: ProductAccordionProps) {
                           className="text-xs uppercase tracking-widest mb-1"
                           style={{ color: '#6B6B6B' }}
                         >
-                          Sede
+                          {lbl.sede}
                         </p>
                         <p className="text-sm font-semibold" style={{ color: '#1d1e20' }}>
                           {program.sedes.join(' · ')}
@@ -198,7 +239,7 @@ export default function ProductAccordion({ programs }: ProductAccordionProps) {
                           className="text-xs uppercase tracking-widest mb-1"
                           style={{ color: '#6B6B6B' }}
                         >
-                          Público objetivo
+                          {lbl.publico}
                         </p>
                         <p className="text-sm" style={{ color: '#1d1e20' }}>
                           {program.publicoObjetivo}
@@ -210,17 +251,17 @@ export default function ProductAccordion({ programs }: ProductAccordionProps) {
 
                 {/* CTAs */}
                 <div className="flex flex-wrap items-center gap-3">
-                  {program.slug !== 'proyectos' ? (
+                  {!program.noSubPage ? (
                     <>
                       <Link
-                        href={`/programas-y-cursos/${program.slug}`}
+                        href={`${paths.base}/${program.slug}`}
                         className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold uppercase tracking-widest transition-colors"
                         style={{ background: '#1d1e20', color: '#FFFFFF', borderRadius: '2px' }}
                       >
-                        Ver programa completo <ChevronRight size={16} />
+                        {lbl.verPrograma} <ChevronRight size={16} />
                       </Link>
                       <Link
-                        href="/admision"
+                        href={paths.admision}
                         className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold uppercase tracking-widest transition-colors"
                         style={{
                           border: '1px solid #1d1e20',
@@ -229,16 +270,16 @@ export default function ProductAccordion({ programs }: ProductAccordionProps) {
                           background: 'transparent',
                         }}
                       >
-                        Solicitar admisión
+                        {lbl.solicitar}
                       </Link>
                     </>
                   ) : (
                     <Link
-                      href="/contacto"
+                      href={paths.contacto}
                       className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold uppercase tracking-widest transition-colors"
                       style={{ background: '#6493b5', color: '#1d1e20', borderRadius: '2px' }}
                     >
-                      Consultar propuesta <ChevronRight size={16} />
+                      {lbl.consultar} <ChevronRight size={16} />
                     </Link>
                   )}
                 </div>

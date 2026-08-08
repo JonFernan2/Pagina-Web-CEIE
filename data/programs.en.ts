@@ -3,11 +3,29 @@ import type { ProgramData } from './programs'
 export const PROGRAMS_DATA_EN: ProgramData[] = [
   {
     slug: 'semester',
-    nombre: 'Semester Program',
-    descripcionBreve: 'Structured progression through CEFR levels in 15 to 18 weeks.',
+    nombre: 'Spanish Semester Program',
+    descripcionBreve: 'Structured progression through CEFR levels over 4 months. Language courses, thematic courses, and International Core.',
     descripcionExtendida:
-      'The Semester Program is designed for students who wish to develop their Spanish systematically over an extended period. Classes follow the Instituto Cervantes Curricular Plan and are conducted in small groups of no more than 12 students, guaranteeing individualized attention and real communicative practice.',
+      'The Semester Program is designed for international students who wish to develop their Spanish systematically over an extended period. Classes follow the Instituto Cervantes Curricular Plan and are conducted in small groups of no more than 12 students, guaranteeing individualized attention and real communicative practice.',
+    objetivo:
+      'Progressively develop linguistic, academic, and cultural competencies in Spanish for international non-Spanish-speaking students, facilitating integration into the university experience.',
     niveles: ['A1', 'A2', 'B1', 'B2', 'C1'],
+    sedes: ['Viña del Mar'],
+    publicoObjetivo: 'International undergraduate students with no Spanish background.',
+    cursosTabla: [
+      { nombre: 'Basic Spanish Grammar', horas: 45, precioUSD: 950 },
+      { nombre: 'Basic Spanish Communication', horas: 45, precioUSD: 950 },
+      { nombre: 'Intermediate Spanish Grammar', horas: 45, precioUSD: 950 },
+      { nombre: 'Intermediate Spanish Communication', horas: 45, precioUSD: 950 },
+      { nombre: 'Advanced Spanish Grammar', horas: 45, precioUSD: 950 },
+      { nombre: 'Advanced Spanish Communication', horas: 45, precioUSD: 950 },
+      { nombre: 'Spanish Phonetics', horas: 45, precioUSD: 950 },
+      { nombre: 'Thematic: Professional Spanish for Business and Global Markets', horas: 45, precioUSD: 1188 },
+      { nombre: 'Thematic: Spanish for Healthcare and Medical Communication', horas: 45, precioUSD: 1188 },
+      { nombre: 'Thematic: Living to Tell the Tale — Latin American Literature', horas: 45, precioUSD: 1188 },
+      { nombre: 'Thematic: Cinematic Audacity — Chile through Documentary', horas: 45, precioUSD: 1188 },
+      { nombre: 'International Core Courses (Literature, Ethics, Science, Contemporary Civilisation, Writing and Arts)', horas: 45, precioUSD: 1188 },
+    ],
     horarios: [
       { turno: 'Morning',   dias: 'Monday, Wednesday and Friday', hora: '09:00 – 12:00' },
       { turno: 'Afternoon', dias: 'Monday, Wednesday and Friday', hora: '14:00 – 17:00' },
@@ -81,32 +99,50 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
         descripcion: 'Minimum 80% attendance required to receive the completion certificate.',
       },
       {
+        titulo: 'Course packages',
+        descripcion: '4-course package (3 language + 1 thematic): USD 4,038. 5-course package (3 language + 2 thematic): USD 5,226. Special price 5-course package: USD 4,750.',
+      },
+      {
         titulo: 'Cancellation',
         descripcion: '30+ days in advance: 80% refund. 15–29 days: 50%. Less than 15 days: no refund.',
       },
     ],
     grupoMaximo: 12,
-    duracion: '15 to 18 weeks (by level)',
+    duracion: '4 months',
     certificado: {
       tipo: 'Certificate of Studies CEIE-UAI',
       emite: 'Universidad Adolfo Ibáñez',
       reconocimiento: 'CEFR-aligned program. Academic equivalencies through UAI international agreements.',
     },
     precio: {
-      valor: '[PENDING — to be confirmed by UAI]',
-      moneda: 'USD',
-      notas: 'Includes teaching materials',
+      estandar: 'USD 950 / language course',
+      inSitu: 'USD 1,188 / thematic or Core course',
+      notas: 'Special 5-course package: USD 4,750',
     },
   },
   {
     slug: 'intensive',
-    nombre: 'Intensive Program',
-    descripcionBreve: 'Total immersion in 4 to 8 weeks. Rapid and structured progress.',
+    nombre: 'Intensive ELE Courses (Group)',
+    descripcionBreve: 'Intensive in-person or online group training. Basic, Intermediate, and Advanced modalities, plus conversational cycles.',
     descripcionExtendida:
-      'The Intensive Program provides accelerated immersion for students who need to reach a communicative level in a short time. Daily classes of 4 hours, combined with cultural activities, allow for significant progress across two CEFR levels in a single intensive period.',
+      'The Intensive Program provides accelerated immersion for students who need to reach a communicative level in a short time. Daily classes combined with cultural activities allow for significant progress in 2 to 3 weeks.',
+    objetivo:
+      'Strengthen communicative competencies in Spanish through intensive in-person or online training, aimed at students who need to advance their language proficiency in a short period.',
     niveles: ['A1', 'A2', 'B1', 'B2'],
+    sedes: ['Viña del Mar', 'Santiago'],
+    publicoObjetivo: 'International non-Spanish-speaking students. Professionals, researchers, executives, companies, and diplomatic officials.',
+    cursosTabla: [
+      { nombre: 'Basic Online', horas: 30, precioUSD: 300, modalidad: '3 weeks' },
+      { nombre: 'Intermediate Online', horas: 30, precioUSD: 300, modalidad: '3 weeks' },
+      { nombre: 'Advanced Online', horas: 30, precioUSD: 300, modalidad: '3 weeks' },
+      { nombre: 'Basic In-Person', horas: 40, precioUSD: 800, modalidad: '2 weeks' },
+      { nombre: 'Intermediate In-Person', horas: 40, precioUSD: 800, modalidad: '2 weeks' },
+      { nombre: 'Advanced In-Person', horas: 40, precioUSD: 800, modalidad: '2 weeks' },
+      { nombre: "Conversational Cycle: Take a Break / Let's Speak Spanish (Online)", horas: 8, precioUSD: 100, modalidad: '8 sessions, 2×/week' },
+    ],
     horarios: [
-      { turno: 'Morning', dias: 'Monday to Friday', hora: '09:00 – 13:00' },
+      { turno: 'Morning (in-person)', dias: 'Monday to Friday', hora: '09:00 – 13:00' },
+      { turno: 'Online', dias: 'Coordinated with the group', hora: 'Flexible' },
     ],
     temario: [
       {
@@ -149,24 +185,104 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
       },
     ],
     grupoMaximo: 10,
-    duracion: '4 to 8 weeks',
+    duracion: '2–3 weeks depending on modality',
     certificado: {
       tipo: 'Certificate of Participation CEIE-UAI',
       emite: 'Universidad Adolfo Ibáñez',
       reconocimiento: 'Equivalencies according to the student\'s home institution.',
     },
     precio: {
-      valor: '[PENDING — to be confirmed by UAI]',
-      moneda: 'USD',
+      estandar: 'USD 300 (online · 30 hrs)',
+      inSitu: 'USD 800 (in-person · 40 hrs)',
+      notas: 'Conversational cycle: USD 100 (8 sessions)',
     },
   },
   {
+    slug: 'individual',
+    nombre: 'Tailored ELE Course (Individual)',
+    descripcionBreve: 'Personalized one-on-one training, adapted to each participant\'s level, pace, and objectives. Available on campus or in-situ.',
+    descripcionExtendida:
+      'The Individual Program offers personalized one-on-one instruction with a CEIE specialist. Curriculum, materials, schedule, and pace are fully tailored to the student\'s profile. Available at UAI Viña del Mar campus or in in-situ modality at the student\'s professional location — embassies, corporate offices, or private address.',
+    objetivo:
+      'Develop communicative competencies in Spanish through personalized training, adapted to each participant\'s level, learning pace, and academic or professional objectives.',
+    niveles: ['All levels'],
+    sedes: ['Viña del Mar', 'Santiago'],
+    publicoObjetivo: 'International non-Spanish-speaking students. Professionals, researchers, executives, companies, and diplomatic officials.',
+    cursosTabla: [
+      { nombre: 'Basic', horas: 20, precioUSD: 1000 },
+      { nombre: 'Intermediate', horas: 30, precioUSD: 1500 },
+      { nombre: 'Advanced', horas: 40, precioUSD: 2000 },
+    ],
+    horarios: [
+      { turno: 'Flexible', dias: 'Agreed with the student', hora: 'Including evenings and weekends' },
+    ],
+    temario: [
+      {
+        nivel: 'Personalized curricular design',
+        contenidos: [
+          'Detailed initial diagnostic',
+          'Student-specific learning objectives',
+          'Materials adapted to the professional field',
+          'Measured and periodically reported progress',
+        ],
+      },
+    ],
+    actividades: [
+      'Fully personalized curricular design',
+      'Materials adapted to the student\'s professional field',
+      'Flexible scheduling — including evenings and weekends',
+      'Progress reports at agreed intervals',
+    ],
+    condiciones: [
+      {
+        titulo: 'No minimum hours',
+        descripcion: 'No minimum hour requirement. The program is fully flexible.',
+      },
+      {
+        titulo: 'Session cancellation',
+        descripcion: 'Cancellation with at least 24 hours\' notice. Sessions not cancelled within the deadline are invoiced.',
+      },
+      {
+        titulo: 'In-situ modality',
+        descripcion: 'The in-situ modality includes travel expenses for the teacher according to the agreed location.',
+      },
+    ],
+    grupoMaximo: 1,
+    duracion: 'Flexible',
+    certificado: {
+      tipo: 'Certificate of Studies CEIE-UAI',
+      emite: 'Universidad Adolfo Ibáñez',
+      reconocimiento: 'Certifies hours completed and CEFR level attained.',
+    },
+    precio: {
+      estandar: 'USD 1,000 (Basic · 20 hrs)',
+      inSitu: 'USD 1,500 (Intermediate · 30 hrs)',
+      largoplazo: 'USD 2,000 (Advanced · 40 hrs)',
+    },
+    modalidades: [
+      'In-person · Viña del Mar Campus',
+      'In-situ · Client premises',
+      'Videoconference [consult availability]',
+    ],
+    perfilIdeal: 'Professionals, executives, diplomats, researchers, and academics.',
+  },
+  {
     slug: 'specific-purposes',
-    nombre: 'Specific Purposes Programs',
-    descripcionBreve: 'Spanish designed for professional, diplomatic, and institutional contexts.',
+    nombre: 'Short Spanish for Specific Purposes Program',
+    descripcionBreve: 'Spanish designed for professional and disciplinary contexts: healthcare, business, astronomy, literary routes. Tailor-made program of 1 to 2 weeks.',
     descripcionExtendida:
       'Specific Purposes Programs (ESP) are designed for organizations — embassies, companies, regional governments, universities — that require structured language training tailored to their professional field. The curriculum is developed collaboratively with the client organization to ensure relevance to real communicative needs.',
+    objetivo:
+      'Develop communicative competencies in Spanish applied to specific professional and disciplinary contexts, through programs designed according to the needs of universities, companies, or specialized groups.',
     niveles: ['According to institutional requirements'],
+    sedes: ['Viña del Mar', 'Santiago'],
+    publicoObjetivo: 'LATAM students (undergraduate, postgraduate), executives, companies, international organizations, and professional groups.',
+    cursosTabla: [
+      { nombre: 'Healthcare', horas: '30–50', precioUSD: 'USD 900–1,500', modalidad: '1–2 weeks, tailored' },
+      { nombre: 'Business', horas: '30–50', precioUSD: 'USD 900–1,500', modalidad: 'Tailored' },
+      { nombre: 'Astronomy', horas: '30–50', precioUSD: 'USD 900–1,500', modalidad: 'Tailored' },
+      { nombre: 'Literary Routes', horas: '30–50', precioUSD: 'USD 900–1,500', modalidad: 'Tailored' },
+    ],
     horarios: [
       { turno: 'Variable', dias: 'Coordinated with client organization', hora: 'As per agreement' },
     ],
@@ -212,7 +328,7 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
       },
       {
         titulo: 'Minimum hours',
-        descripcion: 'The program has a minimum duration of 40 hours.',
+        descripcion: 'The program has a minimum duration of 30 hours.',
       },
       {
         titulo: 'Contracting',
@@ -220,14 +336,14 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
       },
     ],
     grupoMaximo: 'Variable according to institutional agreement',
-    duracion: 'Minimum 40 hours. Duration according to agreed plan.',
+    duracion: '1 to 2 weeks (tailored)',
     certificado: {
       tipo: 'Certificate of Specialized Training CEIE-UAI',
       emite: 'Universidad Adolfo Ibáñez',
       reconocimiento: 'Certifies hours completed and CEFR level attained in the area of specialization.',
     },
     precio: {
-      valor: 'Institutional quotation',
+      estandar: 'USD 900 – 1,500',
       notas: 'Request a formal proposal at programascortos@uai.cl',
     },
     submodalidades: [
@@ -239,63 +355,61 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
     nota: 'Designed for organizations: embassies, companies, partner universities, regional governments.',
   },
   {
-    slug: 'individual',
-    nombre: 'Individual Program — Spanish to Measure',
-    descripcionBreve: 'One-on-one classes adapted to your schedule, level, and professional objectives.',
+    slug: 'projects',
+    nombre: 'Projects and Tenders',
+    descripcionBreve: 'Tailored corporate programs for companies, international organizations, and professional groups, with curriculum design by sector and institutional objectives.',
     descripcionExtendida:
-      'The Individual Program offers personalized one-on-one instruction with a CEIE specialist. Curriculum, materials, schedule, and pace are fully tailored to the student\'s profile. Available at UAI Viña del Mar campus or in in-situ modality at the student\'s professional location — embassies, corporate offices, or private address.',
-    niveles: ['All levels'],
+      'Design and delivery of fully customized Spanish teaching programs for organizations participating in tendering processes, international projects, or requiring large-scale training. Curriculum, duration, price, and location are defined according to client requirements.',
+    objetivo:
+      'Develop communicative competencies in Spanish adapted to the specific requirements of each organization or professional group, with tailored curriculum design by sector, level, and institutional objectives.',
+    niveles: ['Variable'],
+    sedes: ['Viña del Mar', 'Santiago'],
+    publicoObjetivo: 'Companies, international organizations, and professional groups.',
+    cursosTabla: [
+      { nombre: 'Tailored program (by project)', horas: 'Variable', precioUSD: 'Variable', modalidad: 'Variable' },
+    ],
     horarios: [
-      { turno: 'Flexible', dias: 'Agreed with the student', hora: 'Including evenings and weekends' },
+      { turno: 'Variable', dias: 'Coordinated with the client', hora: 'By project' },
     ],
     temario: [
       {
-        nivel: 'Personalized curricular design',
+        nivel: 'Tailored design',
         contenidos: [
-          'Detailed initial diagnostic',
-          'Student-specific learning objectives',
-          'Materials adapted to the professional field',
-          'Measured and periodically reported progress',
+          'Institutional needs assessment',
+          'Curriculum design by sector and level',
+          'Delivery with specialized teaching team',
+          'Evaluation and progress reporting',
         ],
       },
     ],
     actividades: [
-      'Fully personalized curricular design',
-      'Materials adapted to the student\'s professional field',
-      'Flexible scheduling — including evenings and weekends',
-      'Progress reports at agreed intervals',
+      'Customized institutional curriculum design',
+      'Coordination with client HR or training department',
+      'Progress reports and impact assessment',
+      'In-person or remote delivery options',
     ],
     condiciones: [
       {
-        titulo: 'No minimum hours',
-        descripcion: 'No minimum hour requirement. The program is fully flexible.',
+        titulo: 'Process',
+        descripcion: 'Requires a formal proposal from CEIE, approved by the client organization. Specific contract by project.',
       },
       {
-        titulo: 'Session cancellation',
-        descripcion: 'Cancellation with at least 24 hours\' notice. Sessions not cancelled within the deadline are invoiced.',
-      },
-      {
-        titulo: 'In-situ modality',
-        descripcion: 'The in-situ modality includes travel expenses for the teacher according to the agreed location.',
+        titulo: 'Pricing',
+        descripcion: 'Quotation based on volume of hours, number of participants, and complexity of curriculum design.',
       },
     ],
-    grupoMaximo: 1,
-    duracion: 'Flexible. No minimum hour requirement established.',
+    grupoMaximo: 'Variable',
+    duracion: 'Variable',
     certificado: {
-      tipo: 'Certificate of Studies CEIE-UAI',
+      tipo: 'Institutional Certificate CEIE-UAI',
       emite: 'Universidad Adolfo Ibáñez',
-      reconocimiento: 'Certifies hours completed and CEFR level attained.',
+      reconocimiento: 'Certifies hours completed and level attained according to project objectives.',
     },
     precio: {
-      estandar: 'USD 50/hour (UAI campus)',
-      inSitu: 'USD 58/hour (in-situ: embassies, companies, professional premises)',
-      largoplazo: 'From USD 38/hour (long-term commitment, subject to agreement)',
+      valor: 'Tailored quotation',
+      notas: 'Contact programascortos@uai.cl to request a proposal.',
     },
-    modalidades: [
-      'In-person · Viña del Mar Campus',
-      'In-situ · Client premises',
-      'Videoconference [consult availability]',
-    ],
-    perfilIdeal: 'Professionals, executives, diplomats, researchers, and academics.',
+    nota: 'For corporate projects, public tenders, and large-scale training programs.',
+    noSubPage: true,
   },
 ]

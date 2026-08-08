@@ -2,8 +2,9 @@ import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
-import ProgramCard from '@/components/ProgramCard'
-import { PROGRAMS_PT, HOME_PT } from '@/data/content.pt'
+import ProductAccordion from '@/components/ProductAccordion'
+import { PROGRAMS_DATA_PT } from '@/data/programs.pt'
+import { PROGRAMS_PT } from '@/data/content.pt'
 
 export const metadata: Metadata = {
   title: PROGRAMS_PT.meta.title,
@@ -23,7 +24,7 @@ export default function ProgramasPTPage() {
       </div>
 
       <section style={{ background: '#C7C2ba' }} className="py-12">
-        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 max-w-3xl">
+        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <p className="text-base leading-relaxed mb-4" style={{ color: '#2D2D2D' }}>{PROGRAMS_PT.intro.p1}</p>
           <p className="text-base leading-relaxed" style={{ color: '#2D2D2D' }}>{PROGRAMS_PT.intro.p2}</p>
         </div>
@@ -31,11 +32,7 @@ export default function ProgramasPTPage() {
 
       <section style={{ background: '#FFFFFF' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {HOME_PT.programs.items.map((p) => (
-              <ProgramCard key={p.href} {...p} />
-            ))}
-          </div>
+          <ProductAccordion programs={PROGRAMS_DATA_PT} lang="pt" />
         </div>
       </section>
 

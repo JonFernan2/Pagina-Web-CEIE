@@ -46,6 +46,7 @@ export interface ProgramData {
   sedes?: string[]
   publicoObjetivo?: string
   cursosTabla?: ProductoCurso[]
+  noSubPage?: boolean
   horarios: HorarioEntry[]
   temario: TemarioItem[]
   actividades: string[]
@@ -470,5 +471,6 @@ export const PROGRAMS_DATA: ProgramData[] = [
       notas: 'Contactar a programascortos@uai.cl para solicitar propuesta.',
     },
     nota: 'Para proyectos corporativos, licitaciones públicas y programas de formación masiva.',
+    noSubPage: true,
   },
 ]
