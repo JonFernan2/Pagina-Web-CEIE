@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
 import { ABOUT_ES } from '@/data/content.es'
+import { DIRECTORIO } from '@/data/directorio'
 
 const SPACE_IMAGES = [
   '/images/espacio-aula-principal.jpg',
@@ -36,8 +37,39 @@ export default function SobreNosotrosPage() {
         </div>
       </div>
 
-      {/* Misión y Visión */}
+      {/* Directorio */}
       <section style={{ background: '#F7F5F0' }} className="py-16">
+        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
+          <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-10">
+            Nuestro Equipo
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {DIRECTORIO.map((member) => (
+              <div key={member.nombre} className="flex flex-col items-center text-center">
+                <div
+                  className="w-36 h-36 overflow-hidden mb-4"
+                  style={{ borderRadius: '50%', border: '3px solid #C5A028' }}
+                >
+                  <img
+                    src={member.foto}
+                    alt={member.alt.es}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <p className="font-body font-semibold text-negro text-base leading-tight mb-1">
+                  {member.nombre}
+                </p>
+                <p className="font-body text-sm leading-snug" style={{ color: '#6B6B6B' }}>
+                  {member.cargo.es}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Misión y Visión */}
+      <section style={{ background: '#FFFFFF' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-8">
             {d.sections.mision.title}
@@ -56,7 +88,7 @@ export default function SobreNosotrosPage() {
       </section>
 
       {/* Contexto institucional */}
-      <section style={{ background: '#FFFFFF' }} className="py-16">
+      <section style={{ background: '#F7F5F0' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-8">
             {d.sections.contexto.title}
@@ -89,7 +121,7 @@ export default function SobreNosotrosPage() {
       </section>
 
       {/* Acreditación SACIC */}
-      <section style={{ background: '#F7F5F0' }} className="py-16">
+      <section style={{ background: '#FFFFFF' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 max-w-3xl">
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-6">
             {d.sections.sacic.title}
@@ -114,7 +146,7 @@ export default function SobreNosotrosPage() {
       </section>
 
       {/* Espacios (V2) */}
-      <section style={{ background: '#FFFFFF' }} className="py-16">
+      <section style={{ background: '#F7F5F0' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-8">
             {d.sections.espacios.title}
@@ -144,7 +176,7 @@ export default function SobreNosotrosPage() {
       </section>
 
       {/* Galería del lanzamiento */}
-      <section style={{ background: '#F7F5F0' }} className="py-16">
+      <section style={{ background: '#FFFFFF' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-3">
             Galería del Lanzamiento
@@ -199,7 +231,7 @@ export default function SobreNosotrosPage() {
               <img
                 src="/images/galeria-ceie-equipo-admin.jpg"
                 alt="Equipo administrativo del CEIE UAI en el campus Viña del Mar"
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover object-center"
               />
             </div>
           </div>

@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
 import { ABOUT_EN } from '@/data/content.en'
+import { DIRECTORIO } from '@/data/directorio'
 
 const SPACE_IMAGES = [
   '/images/espacio-aula-principal.jpg',
@@ -30,8 +31,39 @@ export default function AboutENPage() {
         </div>
       </div>
 
-      {/* Mission & Vision */}
+      {/* Team Directory */}
       <section style={{ background: '#F7F5F0' }} className="py-16">
+        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
+          <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-10">
+            Our Team
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {DIRECTORIO.map((member) => (
+              <div key={member.nombre} className="flex flex-col items-center text-center">
+                <div
+                  className="w-36 h-36 overflow-hidden mb-4"
+                  style={{ borderRadius: '50%', border: '3px solid #C5A028' }}
+                >
+                  <img
+                    src={member.foto}
+                    alt={member.alt.en}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <p className="font-body font-semibold text-negro text-base leading-tight mb-1">
+                  {member.nombre}
+                </p>
+                <p className="font-body text-sm leading-snug" style={{ color: '#6B6B6B' }}>
+                  {member.cargo.en}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Mission & Vision */}
+      <section style={{ background: '#FFFFFF' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-8">{d.sections.mision.title}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -48,7 +80,7 @@ export default function AboutENPage() {
       </section>
 
       {/* Institutional context */}
-      <section style={{ background: '#FFFFFF' }} className="py-16">
+      <section style={{ background: '#F7F5F0' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-8">{d.sections.contexto.title}</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
@@ -69,7 +101,7 @@ export default function AboutENPage() {
       </section>
 
       {/* SACIC */}
-      <section style={{ background: '#F7F5F0' }} className="py-16">
+      <section style={{ background: '#FFFFFF' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 max-w-3xl">
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-6">{d.sections.sacic.title}</h2>
           <p className="text-base leading-relaxed mb-4" style={{ color: '#2D2D2D' }}>{d.sections.sacic.p1}</p>
@@ -84,7 +116,7 @@ export default function AboutENPage() {
       </section>
 
       {/* Facilities */}
-      <section style={{ background: '#FFFFFF' }} className="py-16">
+      <section style={{ background: '#F7F5F0' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-8">{d.sections.espacios.title}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -112,7 +144,7 @@ export default function AboutENPage() {
       </section>
 
       {/* Launch Gallery */}
-      <section style={{ background: '#F7F5F0' }} className="py-16">
+      <section style={{ background: '#FFFFFF' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-3">
             Launch Gallery
@@ -167,7 +199,7 @@ export default function AboutENPage() {
               <img
                 src="/images/galeria-ceie-equipo-admin.jpg"
                 alt="CEIE UAI administrative team at the Viña del Mar campus"
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover object-center"
               />
             </div>
           </div>
