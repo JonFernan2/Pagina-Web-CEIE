@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 
 interface CookieBannerProps {
-  lang?: 'es' | 'en' | 'pt'
+  lang?: 'es' | 'en' | 'pt' | 'zh'
 }
 
 const copy = {
@@ -27,6 +27,13 @@ const copy = {
     reject: 'Recusar não essenciais',
     learnMore: 'Política de cookies',
     href: '/pt/politica-de-cookies',
+  },
+  zh: {
+    text: '本网站使用Cookie以改善您的浏览体验。您可以接受所有Cookie或拒绝非必要Cookie。',
+    accept: '全部接受',
+    reject: '拒绝非必要',
+    learnMore: 'Cookie政策',
+    href: '/zh/cookie-policy',
   },
 }
 
@@ -56,7 +63,7 @@ export default function CookieBanner({ lang = 'es' }: CookieBannerProps) {
       className="fixed bottom-0 left-0 right-0 z-50 p-4 font-body"
       style={{ background: '#1d1e20', borderTop: '2px solid #6493b5' }}
       role="dialog"
-      aria-label={lang === 'es' ? 'Aviso de cookies' : lang === 'pt' ? 'Aviso de cookies' : 'Cookie notice'}
+      aria-label={lang === 'es' ? 'Aviso de cookies' : lang === 'pt' ? 'Aviso de cookies' : lang === 'zh' ? 'Cookie通知' : 'Cookie notice'}
     >
       <div className="max-w-ceie mx-auto flex flex-col sm:flex-row items-start sm:items-center gap-4">
         <p className="text-sm text-white/80 flex-1">

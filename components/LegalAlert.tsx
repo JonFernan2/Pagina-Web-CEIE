@@ -1,5 +1,5 @@
 interface LegalAlertProps {
-  lang?: 'es' | 'en' | 'pt'
+  lang?: 'es' | 'en' | 'pt' | 'zh'
 }
 
 const copy = {
@@ -14,6 +14,10 @@ const copy = {
   pt: {
     title: '⚠️ CONTEÚDO PENDENTE DE REVISÃO JURÍDICA',
     body: 'O conteúdo desta página está em processo de elaboração pela assessoria jurídica da UAI. Esta versão é um placeholder estrutural para o processo de acreditação SACIC.',
+  },
+  zh: {
+    title: '⚠️ 内容待法律顾问审核',
+    body: '本页面内容正由UAI法律顾问起草中。此版本为SACIC认证流程的结构性占位文本。',
   },
 }
 

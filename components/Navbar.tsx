@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 
 interface NavbarProps {
-  lang: 'es' | 'en' | 'pt'
+  lang: 'es' | 'en' | 'pt' | 'zh'
   currentPath: string
 }
 
@@ -38,31 +38,42 @@ const navData = {
     ],
     cta: { label: 'Inscrever-se', href: '/pt/admissao' },
   },
+  zh: {
+    links: [
+      { label: '关于我们',    href: '/zh/about-us' },
+      { label: '教学团队',    href: '/zh/teaching-team' },
+      { label: '课程项目',    href: '/zh/programs' },
+      { label: '学生心声',    href: '/zh/testimonials' },
+    ],
+    cta: { label: '申请入学', href: '/zh/apply' },
+  },
 }
 
-const routeTriple: Array<{ es: string; en: string; pt: string }> = [
-  { es: '/',                                        en: '/en',                                        pt: '/pt' },
-  { es: '/programas-y-cursos',                      en: '/en/programs-and-courses',                   pt: '/pt/programas-e-cursos' },
-  { es: '/programas-y-cursos/semestral',            en: '/en/programs-and-courses/semester',          pt: '/pt/programas-e-cursos/semestral' },
-  { es: '/programas-y-cursos/intensivo',            en: '/en/programs-and-courses/intensive',         pt: '/pt/programas-e-cursos/intensivo' },
-  { es: '/programas-y-cursos/fines-especificos',    en: '/en/programs-and-courses/specific-purposes', pt: '/pt/programas-e-cursos/fins-especificos' },
-  { es: '/programas-y-cursos/individual',           en: '/en/programs-and-courses/individual',        pt: '/pt/programas-e-cursos/individual' },
-  { es: '/equipo-docente',                          en: '/en/teaching-team',                          pt: '/pt/equipe-docente' },
-  { es: '/sobre-nosotros',                          en: '/en/about-us',                               pt: '/pt/sobre-nos' },
-  { es: '/admision',                                en: '/en/admissions',                             pt: '/pt/admissao' },
-  { es: '/voces-del-centro',                        en: '/en/voices-of-the-centre',                   pt: '/pt/vozes-do-centro' },
-  { es: '/contacto',                                en: '/en/contact',                                pt: '/pt/contato' },
-  { es: '/aviso-legal',                             en: '/en/legal-notice',                           pt: '/pt/aviso-legal' },
-  { es: '/privacidad',                              en: '/en/privacy-policy',                         pt: '/pt/privacidade' },
-  { es: '/cookies',                                 en: '/en/cookie-policy',                          pt: '/pt/politica-de-cookies' },
-  { es: '/condiciones-contratacion',                en: '/en/terms-and-conditions',                   pt: '/pt/condicoes-contratacao' },
-  { es: '/desistimiento',                           en: '/en/withdrawal-rights',                      pt: '/pt/direito-de-desistencia' },
+const routeQuad: Array<{ es: string; en: string; pt: string; zh: string }> = [
+  { es: '/',                                        en: '/en',                                        pt: '/pt',                                 zh: '/zh' },
+  { es: '/programas-y-cursos',                      en: '/en/programs-and-courses',                   pt: '/pt/programas-e-cursos',              zh: '/zh/programs' },
+  { es: '/programas-y-cursos/semestral',            en: '/en/programs-and-courses/semester',          pt: '/pt/programas-e-cursos/semestral',    zh: '/zh/programs/semester' },
+  { es: '/programas-y-cursos/intensivo',            en: '/en/programs-and-courses/intensive',         pt: '/pt/programas-e-cursos/intensivo',    zh: '/zh/programs/intensive' },
+  { es: '/programas-y-cursos/fines-especificos',    en: '/en/programs-and-courses/specific-purposes', pt: '/pt/programas-e-cursos/fins-especificos', zh: '/zh/programs/specific-purposes' },
+  { es: '/programas-y-cursos/individual',           en: '/en/programs-and-courses/individual',        pt: '/pt/programas-e-cursos/individual',   zh: '/zh/programs/individual' },
+  { es: '/equipo-docente',                          en: '/en/teaching-team',                          pt: '/pt/equipe-docente',                  zh: '/zh/teaching-team' },
+  { es: '/sobre-nosotros',                          en: '/en/about-us',                               pt: '/pt/sobre-nos',                       zh: '/zh/about-us' },
+  { es: '/admision',                                en: '/en/admissions',                             pt: '/pt/admissao',                        zh: '/zh/apply' },
+  { es: '/voces-del-centro',                        en: '/en/voices-of-the-centre',                   pt: '/pt/vozes-do-centro',                 zh: '/zh/testimonials' },
+  { es: '/contacto',                                en: '/en/contact',                                pt: '/pt/contato',                         zh: '/zh/contact' },
+  { es: '/aviso-legal',                             en: '/en/legal-notice',                           pt: '/pt/aviso-legal',                     zh: '/zh/legal-notice' },
+  { es: '/privacidad',                              en: '/en/privacy-policy',                         pt: '/pt/privacidade',                     zh: '/zh/privacy-policy' },
+  { es: '/cookies',                                 en: '/en/cookie-policy',                          pt: '/pt/politica-de-cookies',             zh: '/zh/cookie-policy' },
+  { es: '/condiciones-contratacion',                en: '/en/terms-and-conditions',                   pt: '/pt/condicoes-contratacao',           zh: '/zh/terms-and-conditions' },
+  { es: '/desistimiento',                           en: '/en/withdrawal-rights',                      pt: '/pt/direito-de-desistencia',          zh: '/zh/withdrawal-rights' },
 ]
 
-function getLangPath(currentPath: string, currentLang: 'es' | 'en' | 'pt', targetLang: 'es' | 'en' | 'pt'): string {
-  const defaults: Record<'es' | 'en' | 'pt', string> = { es: '/', en: '/en', pt: '/pt' }
-  const triple = routeTriple.find((r) => r[currentLang] === currentPath)
-  return triple ? triple[targetLang] : defaults[targetLang]
+type Lang = 'es' | 'en' | 'pt' | 'zh'
+
+function getLangPath(currentPath: string, currentLang: Lang, targetLang: Lang): string {
+  const defaults: Record<Lang, string> = { es: '/', en: '/en', pt: '/pt', zh: '/zh' }
+  const quad = routeQuad.find((r) => r[currentLang] === currentPath)
+  return quad ? quad[targetLang] : defaults[targetLang]
 }
 
 export default function Navbar({ lang, currentPath }: NavbarProps) {
@@ -78,7 +89,7 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
       <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href={lang === 'es' ? '/' : '/en'} className="flex items-center shrink-0">
+          <Link href={lang === 'es' ? '/' : lang === 'pt' ? '/pt' : lang === 'zh' ? '/zh' : '/en'} className="flex items-center shrink-0">
             <Image
               src="/images/logo-ceie.png"
               alt="CEIE — Centro de Enseñanza Integral del Español · Universidad Adolfo Ibáñez"
@@ -119,7 +130,7 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
 
             {/* Language toggle */}
             <div className="flex items-center gap-1 font-body text-sm font-medium">
-              {(['es', 'en', 'pt'] as const).map((l, i, arr) => (
+              {(['es', 'en', 'pt', 'zh'] as const).map((l, i, arr) => (
                 <>
                   <Link
                     key={l}
@@ -173,7 +184,7 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
             {nav.cta.label}
           </Link>
           <div className="flex items-center gap-2 font-body text-sm font-medium pt-2 border-t border-white/10">
-            {(['es', 'en', 'pt'] as const).map((l, i, arr) => (
+            {(['es', 'en', 'pt', 'zh'] as const).map((l, i, arr) => (
               <>
                 <Link
                   key={l}
