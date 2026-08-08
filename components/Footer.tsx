@@ -137,6 +137,9 @@ export default function Footer({ lang }: FooterProps) {
           <p className="text-xs text-white/30 text-center md:text-right">
             {f.legal.copyright}
           </p>
+          <p className="text-xs text-white/20 text-center md:text-right mt-1">
+            Diseñado y desarrollado por Jonathan Fernando Muñoz Alvarez
+          </p>
         </div>
       </div>
     </footer>
