@@ -6,7 +6,7 @@ interface LegalSection {
 }
 
 interface LegalPageTemplateProps {
-  lang?: 'es' | 'en'
+  lang?: 'es' | 'en' | 'pt'
   title: string
   sections: LegalSection[]
   lastUpdated?: string
@@ -31,7 +31,7 @@ export default function LegalPageTemplate({
           </h1>
           {lastUpdated && (
             <p className="mt-2 text-sm" style={{ color: '#6B6B6B' }}>
-              {lang === 'es' ? 'Última actualización:' : 'Last updated:'} {lastUpdated}
+              {lang === 'es' ? 'Última actualización:' : lang === 'pt' ? 'Última atualização:' : 'Last updated:'} {lastUpdated}
             </p>
           )}
         </div>

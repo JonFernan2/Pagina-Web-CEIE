@@ -1,5 +1,5 @@
 interface LegalAlertProps {
-  lang?: 'es' | 'en'
+  lang?: 'es' | 'en' | 'pt'
 }
 
 const copy = {
@@ -10,6 +10,10 @@ const copy = {
   en: {
     title: '⚠️ CONTENT PENDING LEGAL REVIEW',
     body: "The content of this page is being drafted by UAI's legal counsel. This is a structural placeholder for the SACIC accreditation process.",
+  },
+  pt: {
+    title: '⚠️ CONTEÚDO PENDENTE DE REVISÃO JURÍDICA',
+    body: 'O conteúdo desta página está em processo de elaboração pela assessoria jurídica da UAI. Esta versão é um placeholder estrutural para o processo de acreditação SACIC.',
   },
 }
 

@@ -3,7 +3,7 @@ import { ChevronRight, Users, Clock, Award, CheckCircle, BookOpen } from 'lucide
 import type { ProgramData } from '@/data/programs'
 
 interface ProgramTemplateProps {
-  lang: 'es' | 'en'
+  lang: 'es' | 'en' | 'pt'
   data: ProgramData
   breadcrumbBase: { label: string; href: string }
   breadcrumbParent: { label: string; href: string }

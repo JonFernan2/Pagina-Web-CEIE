@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 
 interface CookieBannerProps {
-  lang?: 'es' | 'en'
+  lang?: 'es' | 'en' | 'pt'
 }
 
 const copy = {
@@ -20,6 +20,13 @@ const copy = {
     reject: 'Reject non-essential',
     learnMore: 'Cookie policy',
     href: '/en/cookie-policy',
+  },
+  pt: {
+    text: 'Este site utiliza cookies para melhorar sua experiência de navegação. Você pode aceitar todos os cookies ou recusar os não essenciais.',
+    accept: 'Aceitar todos',
+    reject: 'Recusar não essenciais',
+    learnMore: 'Política de cookies',
+    href: '/pt/politica-de-cookies',
   },
 }
 
@@ -49,7 +56,7 @@ export default function CookieBanner({ lang = 'es' }: CookieBannerProps) {
       className="fixed bottom-0 left-0 right-0 z-50 p-4 font-body"
       style={{ background: '#1A1A1A', borderTop: '2px solid #C5A028' }}
       role="dialog"
-      aria-label={lang === 'es' ? 'Aviso de cookies' : 'Cookie notice'}
+      aria-label={lang === 'es' ? 'Aviso de cookies' : lang === 'pt' ? 'Aviso de cookies' : 'Cookie notice'}
     >
       <div className="max-w-ceie mx-auto flex flex-col sm:flex-row items-start sm:items-center gap-4">
         <p className="text-sm text-white/80 flex-1">

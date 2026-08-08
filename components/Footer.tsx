@@ -1,13 +1,14 @@
 import Link from 'next/link'
 import { FOOTER_ES } from '@/data/content.es'
 import { FOOTER_EN } from '@/data/content.en'
+import { FOOTER_PT } from '@/data/content.pt'
 
 interface FooterProps {
-  lang: 'es' | 'en'
+  lang: 'es' | 'en' | 'pt'
 }
 
 export default function Footer({ lang }: FooterProps) {
-  const f = lang === 'es' ? FOOTER_ES : FOOTER_EN
+  const f = lang === 'es' ? FOOTER_ES : lang === 'pt' ? FOOTER_PT : FOOTER_EN
 
   return (
     <footer style={{ background: '#1A1A1A' }} className="font-body">
