@@ -29,6 +29,31 @@ export default function VocesDelCentroPage() {
         </div>
       </div>
 
+      {/* Video — experiencia de estudiantes internacionales */}
+      <section style={{ background: '#FFFFFF' }} className="py-16">
+        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
+          <h2 className="font-display font-bold text-negro text-3xl md:text-4xl text-center mb-4">
+            La experiencia en primera persona
+          </h2>
+          <p className="text-center font-body mb-10 max-w-2xl mx-auto" style={{ color: '#6B6B6B' }}>
+            Estudiantes internacionales comparten cómo fue vivir y aprender español en la Universidad Adolfo Ibáñez, Viña del Mar.
+          </p>
+          <div
+            className="mx-auto overflow-hidden"
+            style={{ maxWidth: '800px', borderRadius: '4px', border: '1px solid #E5E3DE', aspectRatio: '16/9' }}
+          >
+            <iframe
+              src="https://www.youtube.com/embed/hGd8OBLONvc?rel=0&modestbranding=1"
+              title="Experiencia de estudiantes internacionales en la UAI — CEIE"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+              style={{ border: 'none', display: 'block' }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials */}
       <section style={{ background: '#F7F5F0' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
