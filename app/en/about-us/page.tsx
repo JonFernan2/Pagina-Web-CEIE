@@ -5,11 +5,11 @@ import CookieBanner from '@/components/CookieBanner'
 import { ABOUT_EN } from '@/data/content.en'
 
 const SPACE_IMAGES = [
-  '/images/galeria-ceie-lanzamiento-selfie.jpg',
+  '/images/espacio-aula-principal.jpg',
   '/images/galeria-ceie-spanish-corner.jpg',
-  '/images/galeria-ceie-biblioteca-ingles.jpg',
-  '/images/hero-campus-vina-del-mar.png',
-  '/images/galeria-ceie-lanzamiento-coctel.jpg',
+  '/images/espacio-seminario-1.jpg',
+  '/images/actividad-exterior-vina.jpg',
+  '/images/espacio-sala-conferencias.jpg',
 ]
 
 export const metadata: Metadata = {
@@ -154,6 +154,20 @@ export default function AboutENPage() {
                 src="/images/galeria-ceie-lanzamiento-kahoot-1.jpg"
                 alt="Kahoot integration activity during the CEIE UAI launch with international flags on stage"
                 className="w-full h-full object-cover object-center"
+              />
+            </div>
+            <div className="md:col-span-2 overflow-hidden" style={{ height: '220px', borderRadius: '4px' }}>
+              <img
+                src="/images/actividad-exterior-vina.jpg"
+                alt="International CEIE students in the UAI campus gardens with Viña del Mar skyline"
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+            <div className="overflow-hidden" style={{ height: '220px', borderRadius: '4px' }}>
+              <img
+                src="/images/galeria-ceie-equipo-admin.jpg"
+                alt="CEIE UAI administrative team at the Viña del Mar campus"
+                className="w-full h-full object-cover object-top"
               />
             </div>
           </div>

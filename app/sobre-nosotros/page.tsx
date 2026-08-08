@@ -5,11 +5,11 @@ import CookieBanner from '@/components/CookieBanner'
 import { ABOUT_ES } from '@/data/content.es'
 
 const SPACE_IMAGES = [
-  '/images/galeria-ceie-lanzamiento-selfie.jpg',
+  '/images/espacio-aula-principal.jpg',
   '/images/galeria-ceie-spanish-corner.jpg',
-  '/images/galeria-ceie-biblioteca-ingles.jpg',
-  '/images/hero-campus-vina-del-mar.png',
-  '/images/galeria-ceie-lanzamiento-coctel.jpg',
+  '/images/espacio-seminario-1.jpg',
+  '/images/actividad-exterior-vina.jpg',
+  '/images/espacio-sala-conferencias.jpg',
 ]
 
 export const metadata: Metadata = {
@@ -186,6 +186,20 @@ export default function SobreNosotrosPage() {
                 src="/images/galeria-ceie-lanzamiento-kahoot-1.jpg"
                 alt="Actividad de integración Kahoot durante el lanzamiento del CEIE UAI con banderas de países"
                 className="w-full h-full object-cover object-center"
+              />
+            </div>
+            <div className="md:col-span-2 overflow-hidden" style={{ height: '220px', borderRadius: '4px' }}>
+              <img
+                src="/images/actividad-exterior-vina.jpg"
+                alt="Estudiantes internacionales del CEIE en los jardines del campus UAI con vista a Viña del Mar"
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+            <div className="overflow-hidden" style={{ height: '220px', borderRadius: '4px' }}>
+              <img
+                src="/images/galeria-ceie-equipo-admin.jpg"
+                alt="Equipo administrativo del CEIE UAI en el campus Viña del Mar"
+                className="w-full h-full object-cover object-top"
               />
             </div>
           </div>
