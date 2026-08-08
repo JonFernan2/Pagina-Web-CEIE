@@ -33,18 +33,6 @@ export default function EquipoDocentePage() {
       {/* Teachers grid */}
       <section style={{ background: '#F7F5F0' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
-          <div
-            className="text-sm px-4 py-3 mb-8 font-body"
-            style={{
-              background: '#FEF9C3',
-              borderLeft: '4px solid #CA8A04',
-              borderRadius: '2px',
-              color: '#78350F',
-            }}
-          >
-            <span className="font-semibold">Nota:</span> Las fotografías y biografías de los docentes se actualizarán tras la sesión fotográfica y entrega de datos biográficos por parte de UAI.
-          </div>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {TEACHERS.map((teacher) => (
               <TeacherCard key={teacher.nombre} {...teacher} />
