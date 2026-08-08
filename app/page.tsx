@@ -106,18 +106,23 @@ export default function HomePage() {
               Descubre cómo es estudiar español en la Universidad Adolfo Ibáñez, Viña del Mar.
             </p>
           </div>
-          <div
-            className="mx-auto w-full max-w-3xl overflow-hidden"
-            style={{ borderRadius: '4px', border: '2px solid #6493b5', aspectRatio: '16/9' }}
-          >
-            <iframe
-              src="https://www.youtube.com/embed/PwjXWu6HtsQ"
-              title="Video promocional CEIE — Universidad Adolfo Ibáñez"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="w-full h-full"
-              style={{ border: 'none' }}
-            />
+          <div className="mx-auto w-full max-w-3xl" style={{ borderRadius: '4px', border: '2px solid #6493b5', overflow: 'hidden' }}>
+            <div style={{ position: 'relative', paddingTop: '56.25%' }}>
+              <iframe
+                src="https://www.youtube.com/embed/PwjXWu6HtsQ"
+                title="Video promocional CEIE — Universidad Adolfo Ibáñez"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: '100%',
+                  border: 'none',
+                }}
+              />
+            </div>
           </div>
         </div>
       </section>
