@@ -69,7 +69,9 @@ export default function ContactENPage() {
                   <p style={{ color: '#6B6B6B' }}>{d.info.address}</p>
                 </div>
                 <p>{d.info.phone}</p>
-                <a href={`mailto:${d.info.email}`} className="hover:underline" style={{ color: '#C5A028' }}>{d.info.email}</a>
+                {d.info.emails.map((em: string) => (
+                  <a key={em} href={`mailto:${em}`} className="hover:underline" style={{ color: '#C5A028' }}>{em}</a>
+                ))}
                 <p>{d.info.hours}</p>
                 {d.info.social.map((s) => <p key={s} style={{ color: '#6B6B6B' }}>{s}</p>)}
               </div>

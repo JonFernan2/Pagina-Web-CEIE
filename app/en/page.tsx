@@ -221,7 +221,9 @@ export default function HomeENPage() {
             <div className="flex flex-col gap-4 text-white/70 text-sm">
               <p className="text-base text-white font-medium">{d.contact.address}</p>
               <p>{d.contact.phone}</p>
-              <a href={`mailto:${d.contact.email}`} className="hover:text-white transition-colors">{d.contact.email}</a>
+              {d.contact.emails.map((em: string) => (
+                <a key={em} href={`mailto:${em}`} className="hover:text-white transition-colors">{em}</a>
+              ))}
               <p>{d.contact.hours}</p>
             </div>
             <div className="w-full aspect-video overflow-hidden" style={{ borderRadius: '4px', border: '2px solid #C5A028' }}>

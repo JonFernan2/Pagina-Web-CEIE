@@ -228,7 +228,7 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
     },
     precio: {
       valor: 'Institutional quotation',
-      notas: 'Request a formal proposal at ceie@uai.cl',
+      notas: 'Request a formal proposal at programascortos@uai.cl',
     },
     submodalidades: [
       'Business and Industry Spanish',

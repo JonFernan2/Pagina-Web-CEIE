@@ -13,7 +13,7 @@ export const LEGAL_ES = {
   privacidad: {
     title: 'Política de Privacidad',
     sections: [
-      { heading: 'Responsable del tratamiento', body: 'Universidad Adolfo Ibáñez · ceie@uai.cl · Padre Hurtado 750, Viña del Mar, Chile.' },
+      { heading: 'Responsable del tratamiento', body: 'Universidad Adolfo Ibáñez · caroline.cortes@uai.cl · Padre Hurtado 750, Viña del Mar, Chile.' },
       { heading: 'Datos personales recopilados', body: '[PENDIENTE — asesoría jurídica]' },
       { heading: 'Finalidad del tratamiento', body: '[PENDIENTE — asesoría jurídica]' },
       { heading: 'Base legal', body: '[PENDIENTE — asesoría jurídica]' },
@@ -51,7 +51,7 @@ export const LEGAL_ES = {
     sections: [
       { heading: 'Derecho de desistimiento', body: '[PENDIENTE — asesoría jurídica]' },
       { heading: 'Plazo (14 días naturales)', body: '[PENDIENTE — asesoría jurídica]' },
-      { heading: 'Procedimiento', body: 'Para ejercer el derecho de desistimiento, envíe comunicación escrita a ceie@uai.cl dentro del plazo estipulado.' },
+      { heading: 'Procedimiento', body: 'Para ejercer el derecho de desistimiento, envíe comunicación escrita a caroline.cortes@uai.cl dentro del plazo estipulado.' },
       { heading: 'Efectos del desistimiento', body: '[PENDIENTE — asesoría jurídica]' },
       { heading: 'Excepciones', body: '[PENDIENTE — asesoría jurídica]' },
       { heading: 'Formulario de desistimiento (template descargable)', body: '[PENDIENTE — asesoría jurídica proporcionará formulario PDF descargable]' },

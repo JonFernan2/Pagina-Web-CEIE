@@ -38,7 +38,7 @@ export const FOOTER_EN = {
     title: 'Contact',
     address: 'Viña del Mar Campus · Padre Hurtado 750, Viña del Mar, Chile',
     phone: '(56 32) 250 3500',
-    email: 'ceie@uai.cl',
+    emails: ['caroline.cortes@uai.cl', 'programascortos@uai.cl'],
     social: ['@uai.internacional', '@artesliberalesuai'],
   },
   legal: {
@@ -206,7 +206,7 @@ export const HOME_EN = {
     title: 'Location and contact',
     address: 'Viña del Mar Campus · Padre Hurtado 750, Viña del Mar, Chile',
     phone: '(56 32) 250 3500',
-    email: 'ceie@uai.cl',
+    emails: ['caroline.cortes@uai.cl', 'programascortos@uai.cl'],
     hours: 'Monday to Friday, 9:00 AM – 6:00 PM',
     mapPlaceholder: 'Map: UAI Viña del Mar Campus — Padre Hurtado 750',
   },
@@ -377,7 +377,7 @@ export const CONTACT_EN = {
     campus: 'Viña del Mar Campus',
     address: 'Padre Hurtado 750, Viña del Mar, Chile',
     phone: '(56 32) 250 3500',
-    email: 'ceie@uai.cl',
+    emails: ['caroline.cortes@uai.cl', 'programascortos@uai.cl'],
     hours: 'Monday to Friday · 9:00 AM – 6:00 PM',
     social: ['Instagram: @uai.internacional', 'Instagram: @artesliberalesuai'],
   },
@@ -402,7 +402,7 @@ export const LEGAL_EN = {
   privacyPolicy: {
     title: 'Privacy Policy',
     sections: [
-      { heading: 'Data controller', body: 'Universidad Adolfo Ibáñez · ceie@uai.cl · Padre Hurtado 750, Viña del Mar, Chile.' },
+      { heading: 'Data controller', body: 'Universidad Adolfo Ibáñez · caroline.cortes@uai.cl · Padre Hurtado 750, Viña del Mar, Chile.' },
       { heading: 'Personal data collected', body: '[PENDING — UAI legal counsel]' },
       { heading: 'Purpose of processing', body: '[PENDING — UAI legal counsel]' },
       { heading: 'Legal basis', body: '[PENDING — UAI legal counsel]' },
@@ -440,7 +440,7 @@ export const LEGAL_EN = {
     sections: [
       { heading: 'Right of withdrawal', body: '[PENDING — UAI legal counsel]' },
       { heading: 'Deadline (14 calendar days)', body: '[PENDING — UAI legal counsel]' },
-      { heading: 'Procedure', body: 'To exercise withdrawal rights, send written notice to ceie@uai.cl within the stipulated period.' },
+      { heading: 'Procedure', body: 'To exercise withdrawal rights, send written notice to caroline.cortes@uai.cl within the stipulated period.' },
       { heading: 'Effects of withdrawal', body: '[PENDING — UAI legal counsel]' },
       { heading: 'Exceptions', body: '[PENDING — UAI legal counsel]' },
       { heading: 'Withdrawal form (downloadable template)', body: '[PENDING — UAI legal counsel will provide a downloadable PDF form]' },

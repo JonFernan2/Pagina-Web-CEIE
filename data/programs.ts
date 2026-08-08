@@ -279,7 +279,7 @@ export const PROGRAMS_DATA: ProgramData[] = [
     },
     precio: {
       valor: 'Cotización institucional',
-      notas: 'Solicitar propuesta formal a ceie@uai.cl',
+      notas: 'Solicitar propuesta formal a programascortos@uai.cl',
     },
     submodalidades: [
       'Español para Negocios e Industria',

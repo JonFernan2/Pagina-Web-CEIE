@@ -106,12 +106,15 @@ export default function Footer({ lang }: FooterProps) {
             <div className="flex flex-col gap-2 text-sm text-white/60">
               <p>{f.col4.address}</p>
               <p>{f.col4.phone}</p>
-              <a
-                href={`mailto:${f.col4.email}`}
-                className="hover:text-white transition-colors duration-200"
-              >
-                {f.col4.email}
-              </a>
+              {f.col4.emails.map((em) => (
+                <a
+                  key={em}
+                  href={`mailto:${em}`}
+                  className="hover:text-white transition-colors duration-200"
+                >
+                  {em}
+                </a>
+              ))}
               {f.col4.social.map((s) => (
                 <p key={s}>{s}</p>
               ))}
