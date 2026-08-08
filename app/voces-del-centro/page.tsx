@@ -40,17 +40,21 @@ export default function VocesDelCentroPage() {
           </p>
           <div
             className="mx-auto overflow-hidden"
-            style={{ maxWidth: '800px', borderRadius: '4px', border: '1px solid #E5E3DE', aspectRatio: '16/9' }}
+            style={{ maxWidth: '800px', borderRadius: '4px', border: '1px solid #E5E3DE', position: 'relative' }}
           >
-            <iframe
-              src="https://www.youtube.com/embed/hGd8OBLONvc?rel=0&modestbranding=1"
-              title="Experiencia de estudiantes internacionales en la UAI — CEIE"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="w-full h-full"
-              style={{ border: 'none', display: 'block' }}
-            />
+            <div style={{ position: 'relative', paddingBottom: '49%', overflow: 'hidden' }}>
+              <iframe
+                src="https://www.youtube.com/embed/hGd8OBLONvc?rel=0&modestbranding=1"
+                title="Experiencia de estudiantes internacionales en la UAI — CEIE"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                style={{ position: 'absolute', top: '-15%', left: 0, width: '100%', height: '115%', border: 'none', display: 'block' }}
+              />
+            </div>
           </div>
+          <p className="text-xs text-center mt-3 font-body" style={{ color: '#6B6B6B' }}>
+            Créditos: Mathias Adolf Harboe Damian
+          </p>
         </div>
       </section>
 
