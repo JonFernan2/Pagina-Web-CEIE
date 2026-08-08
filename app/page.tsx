@@ -95,6 +95,33 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── VIDEO PROMOCIONAL ── */}
+      <section style={{ background: '#1d1e20' }} className="py-16">
+        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="font-display font-bold text-white text-3xl md:text-4xl mb-3">
+              Conoce el CEIE
+            </h2>
+            <p className="text-base" style={{ color: 'rgba(255,255,255,0.65)' }}>
+              Descubre cómo es estudiar español en la Universidad Adolfo Ibáñez, Viña del Mar.
+            </p>
+          </div>
+          <div
+            className="mx-auto w-full max-w-3xl overflow-hidden"
+            style={{ borderRadius: '4px', border: '2px solid #6493b5', aspectRatio: '16/9' }}
+          >
+            <iframe
+              src="https://www.youtube.com/embed/PwjXWu6HtsQ"
+              title="Video promocional CEIE — Universidad Adolfo Ibáñez"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+              style={{ border: 'none' }}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* ── PROGRAMS (D1) ── */}
       <section style={{ background: '#FFFFFF' }} className="py-20">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
