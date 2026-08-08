@@ -13,18 +13,18 @@ interface NavbarProps {
 const navData = {
   es: {
     links: [
-      { label: 'Programas y Cursos',  href: '/programas-y-cursos' },
-      { label: 'Equipo Docente',      href: '/equipo-docente' },
       { label: 'Sobre Nosotros',      href: '/sobre-nosotros' },
+      { label: 'Equipo Docente',      href: '/equipo-docente' },
+      { label: 'Programas y Cursos',  href: '/programas-y-cursos' },
       { label: 'Voces del Centro',    href: '/voces-del-centro' },
     ],
     cta: { label: 'Admisión', href: '/admision' },
   },
   en: {
     links: [
-      { label: 'Programs & Courses',    href: '/en/programs-and-courses' },
-      { label: 'Teaching Team',         href: '/en/teaching-team' },
       { label: 'About Us',              href: '/en/about-us' },
+      { label: 'Teaching Team',         href: '/en/teaching-team' },
+      { label: 'Programs & Courses',    href: '/en/programs-and-courses' },
       { label: 'Voices of the Centre',  href: '/en/voices-of-the-centre' },
     ],
     cta: { label: 'Apply Now', href: '/en/admissions' },
