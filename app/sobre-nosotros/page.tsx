@@ -2,8 +2,15 @@ import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
-import PlaceholderImage from '@/components/PlaceholderImage'
 import { ABOUT_ES } from '@/data/content.es'
+
+const SPACE_IMAGES = [
+  '/images/galeria-ceie-lanzamiento-selfie.jpg',
+  '/images/galeria-ceie-spanish-corner.jpg',
+  '/images/galeria-ceie-biblioteca-ingles.jpg',
+  '/images/hero-campus-vina-del-mar.png',
+  '/images/galeria-ceie-lanzamiento-coctel.jpg',
+]
 
 export const metadata: Metadata = {
   title: ABOUT_ES.meta.title,
@@ -119,11 +126,11 @@ export default function SobreNosotrosPage() {
                 className={`flex flex-col overflow-hidden ${i === 4 ? 'md:col-span-2' : ''}`}
                 style={{ border: '1px solid #E5E3DE', borderRadius: '4px' }}
               >
-                <div className="w-full" style={{ height: i === 4 ? '280px' : '220px' }}>
-                  <PlaceholderImage
-                    label={space.nombre}
+                <div className="w-full overflow-hidden" style={{ height: i === 4 ? '280px' : '220px' }}>
+                  <img
+                    src={SPACE_IMAGES[i]}
                     alt={space.alt}
-                    className="w-full h-full"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
                 <div className="p-5 flex-1">
@@ -132,6 +139,55 @@ export default function SobreNosotrosPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Galería del lanzamiento */}
+      <section style={{ background: '#F7F5F0' }} className="py-16">
+        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
+          <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-3">
+            Galería del Lanzamiento
+          </h2>
+          <p className="font-body text-sm mb-8" style={{ color: '#6B6B6B' }}>
+            Imágenes del acto oficial de inauguración del CEIE en la Universidad Adolfo Ibáñez, Viña del Mar.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+            <div className="md:col-span-2 overflow-hidden" style={{ height: '320px', borderRadius: '4px' }}>
+              <img
+                src="/images/galeria-ceie-lanzamiento-auditorio.jpg"
+                alt="Acto de inauguración del CEIE UAI — grupo completo en auditorio con letras UAI y banderas internacionales"
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+            <div className="overflow-hidden" style={{ height: '320px', borderRadius: '4px' }}>
+              <img
+                src="/images/galeria-ceie-equipo.jpg"
+                alt="Equipo CEIE UAI junto al panel del lanzamiento Del Desierto a la Patagonia"
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div className="overflow-hidden" style={{ height: '220px', borderRadius: '4px' }}>
+              <img
+                src="/images/galeria-ceie-lanzamiento-coctel.jpg"
+                alt="Cóctel de bienvenida del lanzamiento CEIE en el lobby de la UAI Viña del Mar"
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+            <div className="overflow-hidden" style={{ height: '220px', borderRadius: '4px' }}>
+              <img
+                src="/images/galeria-ceie-lanzamiento-grupo.jpg"
+                alt="Estudiantes internacionales y académicos en la ceremonia de lanzamiento del CEIE UAI"
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div className="overflow-hidden" style={{ height: '220px', borderRadius: '4px' }}>
+              <img
+                src="/images/galeria-ceie-lanzamiento-kahoot-1.jpg"
+                alt="Actividad de integración Kahoot durante el lanzamiento del CEIE UAI con banderas de países"
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
           </div>
         </div>
       </section>
