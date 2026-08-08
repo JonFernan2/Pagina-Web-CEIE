@@ -31,12 +31,12 @@ export default function HomePage() {
       {/* ── HERO ── */}
       <section className="relative flex items-center justify-center text-center" style={{ minHeight: '90vh' }}>
         <div className="absolute inset-0 overflow-hidden">
-          <PlaceholderImage
-            label="Hero: campus Viña del Mar frente al mar"
+          <img
+            src="/images/hero-campus-vina-del-mar.png"
             alt="Campus Universidad Adolfo Ibáñez en Viña del Mar, vista al Pacífico"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0" style={{ background: 'rgba(0,0,0,0.65)' }} />
+          <div className="absolute inset-0" style={{ background: 'rgba(0,0,0,0.55)' }} />
         </div>
 
         <div className="relative z-10 max-w-3xl mx-auto px-4 md:px-8 py-20">

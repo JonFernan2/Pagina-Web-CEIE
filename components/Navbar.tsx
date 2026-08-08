@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 
 interface NavbarProps {
@@ -77,24 +78,15 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
       <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href={lang === 'es' ? '/' : '/en'} className="flex items-center gap-3 shrink-0">
-            <span
-              className="font-display font-bold text-white text-xl tracking-tight"
-              style={{ letterSpacing: '0.05em' }}
-            >
-              CEIE
-            </span>
-            <span
-              className="hidden sm:block w-px h-6 self-center"
-              style={{ background: '#C5A028' }}
-              aria-hidden="true"
+          <Link href={lang === 'es' ? '/' : '/en'} className="flex items-center shrink-0">
+            <Image
+              src="/images/logo-ceie.png"
+              alt="CEIE — Centro de Enseñanza Integral del Español · Universidad Adolfo Ibáñez"
+              width={200}
+              height={45}
+              priority
+              style={{ height: '45px', width: 'auto' }}
             />
-            <span
-              className="hidden sm:block font-body text-xs text-white/70 leading-tight max-w-[140px]"
-              style={{ letterSpacing: '0.02em' }}
-            >
-              Universidad Adolfo Ibáñez
-            </span>
           </Link>
 
           {/* Desktop nav */}
