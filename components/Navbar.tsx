@@ -119,7 +119,7 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
       style={{ background: '#1d1e20' }}
       aria-label="Navegación principal"
     >
-      <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
+      <div className="w-full px-6 lg:px-10">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href={lang === 'es' ? '/' : lang === 'pt' ? '/pt' : lang === 'zh' ? '/zh' : '/en'} className="flex items-center shrink-0">
