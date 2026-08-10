@@ -1,9 +1,9 @@
 'use client'
 
-import { useState, Fragment } from 'react'
+import { useState, useRef, useEffect, Fragment } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, ChevronDown } from 'lucide-react'
 
 interface NavbarProps {
   lang: 'es' | 'en' | 'pt' | 'zh'
@@ -49,6 +49,13 @@ const navData = {
   },
 }
 
+const langMeta: Record<string, { flag: string; label: string }> = {
+  es: { flag: '🇪🇸', label: 'Español' },
+  en: { flag: '🇬🇧', label: 'English' },
+  pt: { flag: '🇧🇷', label: 'Português' },
+  zh: { flag: '🇨🇳', label: '中文' },
+}
+
 const routeQuad: Array<{ es: string; en: string; pt: string; zh: string }> = [
   { es: '/',                                        en: '/en',                                        pt: '/pt',                                 zh: '/zh' },
   { es: '/programas-y-cursos',                      en: '/en/programs-and-courses',                   pt: '/pt/programas-e-cursos',              zh: '/zh/programs' },
@@ -78,7 +85,19 @@ function getLangPath(currentPath: string, currentLang: Lang, targetLang: Lang): 
 
 export default function Navbar({ lang, currentPath }: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [langOpen, setLangOpen] = useState(false)
+  const langRef = useRef<HTMLDivElement>(null)
   const nav = navData[lang]
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+        setLangOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
 
   return (
     <nav
@@ -131,22 +150,45 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
               {nav.cta.label}
             </Link>
 
-            {/* Language toggle */}
-            <div className="flex items-center gap-1 font-body text-sm font-medium">
-              {(['es', 'en', 'pt', 'zh'] as const).map((l, i, arr) => (
-                <>
-                  <Link
-                    key={l}
-                    href={lang === l ? currentPath : getLangPath(currentPath, lang, l)}
-                    className={`px-2 py-1 transition-colors duration-200 ${
-                      lang === l ? 'text-dorado' : 'text-white/50 hover:text-white'
-                    }`}
-                  >
-                    {l.toUpperCase()}
-                  </Link>
-                  {i < arr.length - 1 && <span className="text-white/30">|</span>}
-                </>
-              ))}
+            {/* Language dropdown */}
+            <div className="relative" ref={langRef}>
+              <button
+                onClick={() => setLangOpen((v) => !v)}
+                className="flex items-center gap-2 font-body text-sm font-medium text-white/80 hover:text-white px-3 py-1.5 transition-colors duration-200"
+                style={{ borderRadius: '2px', border: '1px solid rgba(255,255,255,0.15)' }}
+                aria-haspopup="listbox"
+                aria-expanded={langOpen}
+              >
+                <span className="text-base leading-none">{langMeta[lang].flag}</span>
+                <span>{langMeta[lang].label}</span>
+                <ChevronDown
+                  size={13}
+                  style={{ transform: langOpen ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.2s' }}
+                />
+              </button>
+
+              {langOpen && (
+                <div
+                  className="absolute right-0 top-full mt-1 w-40 py-1 z-50"
+                  style={{ background: '#1d1e20', border: '1px solid #2D2D2D', borderRadius: '4px', boxShadow: '0 8px 24px rgba(0,0,0,0.4)' }}
+                  role="listbox"
+                >
+                  {(['es', 'en', 'pt', 'zh'] as const).map((l) => (
+                    <Link
+                      key={l}
+                      href={lang === l ? currentPath : getLangPath(currentPath, lang, l)}
+                      className="flex items-center gap-3 px-4 py-2.5 text-sm font-body transition-colors duration-150 hover:bg-white/10"
+                      style={{ color: lang === l ? '#6493b5' : 'rgba(255,255,255,0.75)' }}
+                      onClick={() => setLangOpen(false)}
+                      role="option"
+                      aria-selected={lang === l}
+                    >
+                      <span className="text-base leading-none">{langMeta[l].flag}</span>
+                      <span>{langMeta[l].label}</span>
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
 
@@ -186,19 +228,18 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
           >
             {nav.cta.label}
           </Link>
-          <div className="flex items-center gap-2 font-body text-sm font-medium pt-2 border-t border-white/10">
-            {(['es', 'en', 'pt', 'zh'] as const).map((l, i, arr) => (
-              <>
-                <Link
-                  key={l}
-                  href={lang === l ? currentPath : getLangPath(currentPath, lang, l)}
-                  className={lang === l ? 'text-dorado' : 'text-white/50'}
-                  onClick={() => setMobileOpen(false)}
-                >
-                  {l.toUpperCase()}
-                </Link>
-                {i < arr.length - 1 && <span className="text-white/30">|</span>}
-              </>
+          <div className="flex flex-col gap-1 pt-2 border-t border-white/10">
+            {(['es', 'en', 'pt', 'zh'] as const).map((l) => (
+              <Link
+                key={l}
+                href={lang === l ? currentPath : getLangPath(currentPath, lang, l)}
+                className="flex items-center gap-3 px-2 py-2 text-sm font-body rounded transition-colors hover:bg-white/10"
+                style={{ color: lang === l ? '#6493b5' : 'rgba(255,255,255,0.7)' }}
+                onClick={() => setMobileOpen(false)}
+              >
+                <span className="text-base">{langMeta[l].flag}</span>
+                <span>{langMeta[l].label}</span>
+              </Link>
             ))}
           </div>
         </div>
