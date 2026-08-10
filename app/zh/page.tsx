@@ -5,7 +5,6 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
 import ProgramCard from '@/components/ProgramCard'
-import TestimonialCard from '@/components/TestimonialCard'
 import { HOME_ZH } from '@/data/content.zh'
 
 export const metadata: Metadata = {
@@ -181,22 +180,22 @@ export default function HomeZHPage() {
       {/* ── TESTIMONIALS ── */}
       <section style={{ background: '#FFFFFF' }} className="py-20">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
-          <h2 className="font-display font-bold text-negro text-3xl md:text-4xl text-center mb-12">
+          <h2 className="font-display font-bold text-negro text-3xl md:text-4xl text-center mb-10">
             {d.testimonials.title}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {d.testimonials.items.map((t) => (
-              <TestimonialCard
-                key={t.initials}
-                initials={t.initials}
-                nombre={t.initials}
-                pais={t.country}
-                programa={t.program}
-                nivelAlcanzado={t.level}
-                texto={t.text}
-                compact
+          <div style={{ maxWidth: '720px', margin: '0 auto' }}>
+            <div style={{ position: 'relative', paddingBottom: '56.25%', borderRadius: '4px', border: '1px solid #E5E3DE', overflow: 'hidden' }}>
+              <iframe
+                src="https://www.youtube.com/embed/hGd8OBLONvc?rel=0&modestbranding=1"
+                title={d.testimonials.title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none', display: 'block' }}
               />
-            ))}
+            </div>
+            <p className="text-xs mt-2 font-body text-center" style={{ color: '#6B6B6B' }}>
+              鸣谢：Mathias Adolf Harboe Damian
+            </p>
           </div>
           <div className="text-center mt-8">
             <Link
