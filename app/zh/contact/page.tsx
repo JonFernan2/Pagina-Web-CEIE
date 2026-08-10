@@ -95,6 +95,13 @@ export default function ContactZHPage() {
                 <p>{d.info.hours}</p>
                 {d.info.social.map((s) => <p key={s} style={{ color: '#6B6B6B' }}>{s}</p>)}
               </div>
+              <div className="w-full aspect-video overflow-hidden" style={{ borderRadius: '4px', border: '2px solid #6493b5' }}>
+                <img
+                  src="/images/campus-vina-aerea.jpg"
+                  alt="UAI Viña del Mar 校区鸟瞰图 — Padre Hurtado 750"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>

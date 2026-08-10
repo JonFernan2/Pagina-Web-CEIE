@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, Fragment } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
@@ -101,16 +101,19 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
           </Link>
 
           {/* Desktop nav */}
-          <div className="hidden md:flex items-center gap-6">
-            {nav.links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="font-body text-sm font-medium text-white/80 uppercase tracking-widest transition-colors duration-200 hover:text-dorado"
-                style={{ letterSpacing: '0.08em' }}
-              >
-                {link.label}
-              </Link>
+          <div className="hidden md:flex flex-1 items-center justify-center">
+            {nav.links.map((link, i, arr) => (
+              <Fragment key={link.href}>
+                <Link
+                  href={link.href}
+                  className="font-body text-sm font-medium text-white/80 uppercase tracking-wider px-5 transition-colors duration-200 hover:text-dorado"
+                >
+                  {link.label}
+                </Link>
+                {i < arr.length - 1 && (
+                  <span className="text-white/20 select-none" aria-hidden="true">|</span>
+                )}
+              </Fragment>
             ))}
           </div>
 

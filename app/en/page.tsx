@@ -4,7 +4,6 @@ import { GraduationCap, MapPin, Laptop, Globe, Check } from 'lucide-react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
-import PlaceholderImage from '@/components/PlaceholderImage'
 import ProgramCard from '@/components/ProgramCard'
 import TestimonialCard from '@/components/TestimonialCard'
 import { HOME_EN } from '@/data/content.en'
@@ -227,9 +226,10 @@ export default function HomeENPage() {
               <p>{d.contact.hours}</p>
             </div>
             <div className="w-full aspect-video overflow-hidden" style={{ borderRadius: '4px', border: '2px solid #6493b5' }}>
-              <PlaceholderImage
-                label={d.contact.mapPlaceholder}
-                alt="Map of UAI Viña del Mar Campus location, Padre Hurtado 750"
+              <img
+                src="/images/campus-vina-aerea.jpg"
+                alt="Aerial view of UAI Viña del Mar Campus — Padre Hurtado 750"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>

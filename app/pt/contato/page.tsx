@@ -4,7 +4,6 @@ import { useState } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
-import PlaceholderImage from '@/components/PlaceholderImage'
 import { CONTACT_PT } from '@/data/content.pt'
 
 export default function ContatoPTPage() {
@@ -76,7 +75,11 @@ export default function ContatoPTPage() {
                 {d.info.social.map((s) => <p key={s} style={{ color: '#6B6B6B' }}>{s}</p>)}
               </div>
               <div className="w-full aspect-video overflow-hidden" style={{ borderRadius: '4px', border: '2px solid #6493b5' }}>
-                <PlaceholderImage label="Mapa: Campus UAI Viña del Mar — Padre Hurtado 750" alt="Mapa da localização do campus UAI Viña del Mar, Padre Hurtado 750" />
+                <img
+                  src="/images/campus-vina-aerea.jpg"
+                  alt="Vista aérea do Campus UAI Viña del Mar — Padre Hurtado 750"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
