@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef, useEffect, Fragment } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X, ChevronDown } from 'lucide-react'
@@ -100,8 +100,11 @@ function getLangPath(currentPath: string, currentLang: Lang, targetLang: Lang): 
 export default function Navbar({ lang, currentPath }: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
   const langRef = useRef<HTMLDivElement>(null)
   const nav = navData[lang]
+
+  const isActive = (href: string) => currentPath === href
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -113,10 +116,21 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 10)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
   return (
     <nav
       className="sticky top-0 z-50 w-full"
-      style={{ background: '#1d1e20' }}
+      style={{
+        background: '#1d1e20',
+        borderBottom: '1px solid #6493b5',
+        boxShadow: scrolled ? '0 4px 24px rgba(0,0,0,0.45)' : 'none',
+        transition: 'box-shadow 0.3s ease',
+      }}
       aria-label="Navegación principal"
     >
       <div className="w-full px-6 lg:px-10">
@@ -134,20 +148,25 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
           </Link>
 
           {/* Desktop nav */}
-          <div className="hidden md:flex flex-1 items-center justify-center">
-            {nav.links.map((link, i, arr) => (
-              <Fragment key={link.href}>
+          <div className="hidden md:flex flex-1 items-center justify-center gap-1">
+            {nav.links.map((link) => {
+              const active = isActive(link.href)
+              return (
                 <Link
+                  key={link.href}
                   href={link.href}
-                  className="font-body text-sm font-medium text-white/80 uppercase tracking-wider px-5 transition-colors duration-200 hover:text-dorado"
+                  className={`relative group font-body text-sm font-medium uppercase tracking-wider px-5 py-1 transition-colors duration-200 ${active ? 'text-dorado' : 'text-white/80 hover:text-dorado'}`}
                 >
                   {link.label}
+                  <span
+                    className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-dorado transition-all duration-300 ${
+                      active ? 'w-[calc(100%-40px)]' : 'w-0 group-hover:w-[calc(100%-40px)]'
+                    }`}
+                    aria-hidden="true"
+                  />
                 </Link>
-                {i < arr.length - 1 && (
-                  <span className="text-white/20 select-none" aria-hidden="true">|</span>
-                )}
-              </Fragment>
-            ))}
+              )
+            })}
           </div>
 
           {/* Right: CTA + lang toggle */}
