@@ -349,7 +349,7 @@ export const VOICES_ES = {
   },
   hero: {
     h1: 'Voces del Centro',
-    subtitle: 'Experiencias de estudiantes que han estudiado español en el CEIE, Universidad Adolfo Ibáñez.',
+    subtitle: 'Detrás de cada programa hay personas: docentes que enseñan español como una experiencia de vida y estudiantes que llegan desde distintos rincones del mundo para vivir la cultura chilena. Estas son sus voces.',
   },
 }
 
