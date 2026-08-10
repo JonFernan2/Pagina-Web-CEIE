@@ -49,11 +49,25 @@ const navData = {
   },
 }
 
-const langMeta: Record<string, { flag: string; label: string }> = {
-  es: { flag: '🇪🇸', label: 'Español' },
-  en: { flag: '🇬🇧', label: 'English' },
-  pt: { flag: '🇧🇷', label: 'Português' },
-  zh: { flag: '🇨🇳', label: '中文' },
+const langMeta: Record<string, { code: string; label: string }> = {
+  es: { code: 'es', label: 'Español' },
+  en: { code: 'gb', label: 'English' },
+  pt: { code: 'br', label: 'Português' },
+  zh: { code: 'cn', label: '中文' },
+}
+
+function FlagImg({ code, label }: { code: string; label: string }) {
+  return (
+    /* eslint-disable-next-line @next/next/no-img-element */
+    <img
+      src={`https://flagcdn.com/24x18/${code}.png`}
+      srcSet={`https://flagcdn.com/48x36/${code}.png 2x`}
+      width={24}
+      height={18}
+      alt={label}
+      style={{ display: 'inline-block', borderRadius: '2px', objectFit: 'cover' }}
+    />
+  )
 }
 
 const routeQuad: Array<{ es: string; en: string; pt: string; zh: string }> = [
@@ -159,7 +173,7 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
                 aria-haspopup="listbox"
                 aria-expanded={langOpen}
               >
-                <span className="text-base leading-none">{langMeta[lang].flag}</span>
+                <FlagImg code={langMeta[lang].code} label={langMeta[lang].label} />
                 <span>{langMeta[lang].label}</span>
                 <ChevronDown
                   size={13}
@@ -183,7 +197,7 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
                       role="option"
                       aria-selected={lang === l}
                     >
-                      <span className="text-base leading-none">{langMeta[l].flag}</span>
+                      <FlagImg code={langMeta[l].code} label={langMeta[l].label} />
                       <span>{langMeta[l].label}</span>
                     </Link>
                   ))}
@@ -237,7 +251,7 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
                 style={{ color: lang === l ? '#6493b5' : 'rgba(255,255,255,0.7)' }}
                 onClick={() => setMobileOpen(false)}
               >
-                <span className="text-base">{langMeta[l].flag}</span>
+                <FlagImg code={langMeta[l].code} label={langMeta[l].label} />
                 <span>{langMeta[l].label}</span>
               </Link>
             ))}
