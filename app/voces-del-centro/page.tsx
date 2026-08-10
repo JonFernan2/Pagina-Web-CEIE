@@ -2,9 +2,7 @@ import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
-import TestimonialCard from '@/components/TestimonialCard'
 import { VOICES_ES } from '@/data/content.es'
-import { TESTIMONIALS } from '@/data/testimonials'
 
 export const metadata: Metadata = {
   title: VOICES_ES.meta.title,
@@ -61,38 +59,6 @@ export default function VocesDelCentroPage() {
                 </div>
                 <p className="text-xs mt-2 font-body" style={{ color: '#6B6B6B' }}>{v.caption}</p>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section style={{ background: '#C7C2ba' }} className="py-16">
-        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
-          <div
-            className="text-sm px-4 py-3 mb-8 font-body"
-            style={{
-              background: '#FEF9C3',
-              borderLeft: '4px solid #CA8A04',
-              borderRadius: '2px',
-              color: '#78350F',
-            }}
-          >
-            <span className="font-semibold">Nota:</span> Los testimonios reales de estudiantes se incorporarán una vez que el CEIE autorice su publicación. Las fichas actuales son placeholders estructurales.
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {TESTIMONIALS.map((t) => (
-              <TestimonialCard
-                key={t.initials}
-                initials={t.initials}
-                nombre={t.nombre}
-                pais={t.pais}
-                bandera={t.bandera}
-                programa={t.programa}
-                nivelAlcanzado={t.nivelAlcanzado}
-                texto={t.texto}
-                fecha={t.fecha}
-              />
             ))}
           </div>
         </div>
