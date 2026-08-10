@@ -53,9 +53,18 @@ export default function AboutENPage() {
                 <p className="font-body font-semibold text-negro text-base leading-tight mb-1">
                   {member.nombre}
                 </p>
-                <p className="font-body text-sm leading-snug" style={{ color: '#6B6B6B' }}>
+                <p className="font-body text-sm leading-snug mb-2" style={{ color: '#6493b5' }}>
                   {member.cargo.en}
                 </p>
+                {member.credenciales && (
+                  <ul className="flex flex-col gap-0.5">
+                    {member.credenciales.en.map((c) => (
+                      <li key={c} className="font-body text-xs leading-snug" style={{ color: '#6B6B6B' }}>
+                        {c}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             ))}
           </div>
