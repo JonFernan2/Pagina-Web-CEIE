@@ -76,7 +76,7 @@ export default function ContactENPage() {
               </div>
               <div className="w-full aspect-video overflow-hidden" style={{ borderRadius: '4px', border: '2px solid #6493b5' }}>
                 <img
-                  src="/images/campus-vina-aerea.jpg"
+                  src="/images/hero-campus-vina-del-mar.png"
                   alt="Aerial view of UAI Viña del Mar Campus — Padre Hurtado 750"
                   className="w-full h-full object-cover"
                 />
