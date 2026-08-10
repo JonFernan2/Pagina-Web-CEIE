@@ -32,35 +32,30 @@ export default function VozesDocentroPTPage() {
           <p className="text-center font-body mb-10 max-w-2xl mx-auto" style={{ color: '#6B6B6B' }}>
             Estudantes internacionais compartilham como foi viver e aprender espanhol na Universidad Adolfo Ibáñez, Viña del Mar.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto" style={{ maxWidth: '1100px' }}>
-            <div>
-              <div className="overflow-hidden" style={{ borderRadius: '4px', border: '1px solid #E5E3DE', position: 'relative' }}>
-                <div style={{ position: 'relative', paddingBottom: '56.25%', overflow: 'hidden' }}>
-                  <iframe
-                    src="https://www.youtube.com/embed/hGd8OBLONvc?rel=0&modestbranding=1"
-                    title="Experiência de estudante internacional na UAI — CEIE"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none', display: 'block' }}
-                  />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { id: 'hGd8OBLONvc', title: 'Experiência de estudante internacional na UAI — CEIE', caption: 'Créditos: Mathias Adolf Harboe Damian' },
+              { id: '3YX9koYxJFw', title: 'Depoimento · CEIE UAI', caption: 'Depoimento · CEIE UAI' },
+              { id: 'HX0w8KHPNy4', title: 'Depoimento · CEIE UAI', caption: 'Depoimento · CEIE UAI' },
+              { id: 'deSIhGuke28', title: 'Depoimento · CEIE UAI', caption: 'Depoimento · CEIE UAI' },
+              { id: 'LdjXogITqU8', title: 'Depoimento · CEIE UAI', caption: 'Depoimento · CEIE UAI' },
+              { id: 'R9STi-TZqK0', title: 'Depoimento · CEIE UAI', caption: 'Depoimento · CEIE UAI' },
+            ].map((v) => (
+              <div key={v.id}>
+                <div className="overflow-hidden" style={{ borderRadius: '4px', border: '1px solid #E5E3DE' }}>
+                  <div style={{ position: 'relative', paddingBottom: '56.25%' }}>
+                    <iframe
+                      src={`https://www.youtube.com/embed/${v.id}?rel=0&modestbranding=1`}
+                      title={v.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none', display: 'block' }}
+                    />
+                  </div>
                 </div>
+                <p className="text-xs mt-2 font-body" style={{ color: '#6B6B6B' }}>{v.caption}</p>
               </div>
-              <p className="text-xs mt-2 font-body" style={{ color: '#6B6B6B' }}>Créditos: Mathias Adolf Harboe Damian</p>
-            </div>
-            <div>
-              <div className="overflow-hidden" style={{ borderRadius: '4px', border: '1px solid #E5E3DE', position: 'relative' }}>
-                <div style={{ position: 'relative', paddingBottom: '56.25%', overflow: 'hidden' }}>
-                  <iframe
-                    src="https://www.youtube.com/embed/3YX9koYxJFw?rel=0&modestbranding=1"
-                    title="Depoimento de estudante internacional — CEIE UAI"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none', display: 'block' }}
-                  />
-                </div>
-              </div>
-              <p className="text-xs mt-2 font-body" style={{ color: '#6B6B6B' }}>Depoimento · CEIE UAI</p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
