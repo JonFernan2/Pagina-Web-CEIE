@@ -38,7 +38,7 @@ export const LEGAL_ES = {
       { heading: 'Formalización del contrato', body: '[PENDIENTE — asesoría jurídica]' },
       { heading: 'Precios y formas de pago', body: '[PENDIENTE — asesoría jurídica]' },
       { heading: 'Modificación de fechas', body: '[PENDIENTE — asesoría jurídica]' },
-      { heading: 'Cancelación y reembolso', body: '[PENDIENTE — asesoría jurídica]' },
+      { heading: 'Cancelación y reembolso', body: 'Las cancelaciones deben enviarse por escrito a caroline.cortes@uai.cl con recepción conforme. Con 45 o más días de anticipación a la fecha de inicio: sin cargo. Entre 15 y 44 días de anticipación: cargo equivalente al 50% del costo total del programa. Con menos de 15 días: sin reembolso. Los casos de fuerza mayor serán evaluados individualmente. Se considera fecha de inicio el primer día de clases, el día de orientación o cualquier actividad previa al programa.' },
       { heading: 'Obligaciones del estudiante', body: '[PENDIENTE — asesoría jurídica]' },
       { heading: 'Obligaciones del CEIE', body: '[PENDIENTE — asesoría jurídica]' },
       { heading: 'Propiedad intelectual de materiales', body: '[PENDIENTE — asesoría jurídica]' },

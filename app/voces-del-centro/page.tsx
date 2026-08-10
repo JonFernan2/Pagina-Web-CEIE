@@ -38,23 +38,36 @@ export default function VocesDelCentroPage() {
           <p className="text-center font-body mb-10 max-w-2xl mx-auto" style={{ color: '#6B6B6B' }}>
             Estudiantes internacionales comparten cómo fue vivir y aprender español en la Universidad Adolfo Ibáñez, Viña del Mar.
           </p>
-          <div
-            className="mx-auto overflow-hidden"
-            style={{ maxWidth: '800px', borderRadius: '4px', border: '1px solid #E5E3DE', position: 'relative' }}
-          >
-            <div style={{ position: 'relative', paddingBottom: '49%', overflow: 'hidden' }}>
-              <iframe
-                src="https://www.youtube.com/embed/hGd8OBLONvc?rel=0&modestbranding=1"
-                title="Experiencia de estudiantes internacionales en la UAI — CEIE"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                style={{ position: 'absolute', top: '-15%', left: 0, width: '100%', height: '115%', border: 'none', display: 'block' }}
-              />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto" style={{ maxWidth: '1100px' }}>
+            <div>
+              <div className="overflow-hidden" style={{ borderRadius: '4px', border: '1px solid #E5E3DE', position: 'relative' }}>
+                <div style={{ position: 'relative', paddingBottom: '56.25%', overflow: 'hidden' }}>
+                  <iframe
+                    src="https://www.youtube.com/embed/hGd8OBLONvc?rel=0&modestbranding=1"
+                    title="Experiencia de estudiantes internacionales en la UAI — CEIE"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none', display: 'block' }}
+                  />
+                </div>
+              </div>
+              <p className="text-xs mt-2 font-body" style={{ color: '#6B6B6B' }}>Créditos: Mathias Adolf Harboe Damian</p>
+            </div>
+            <div>
+              <div className="overflow-hidden" style={{ borderRadius: '4px', border: '1px solid #E5E3DE', position: 'relative' }}>
+                <div style={{ position: 'relative', paddingBottom: '56.25%', overflow: 'hidden' }}>
+                  <iframe
+                    src="https://www.youtube.com/embed/3YX9koYxJFw?rel=0&modestbranding=1"
+                    title="Testimonio de estudiante internacional — CEIE UAI"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none', display: 'block' }}
+                  />
+                </div>
+              </div>
+              <p className="text-xs mt-2 font-body" style={{ color: '#6B6B6B' }}>Testimonio · CEIE UAI</p>
             </div>
           </div>
-          <p className="text-xs text-center mt-3 font-body" style={{ color: '#6B6B6B' }}>
-            Créditos: Mathias Adolf Harboe Damian
-          </p>
         </div>
       </section>
 

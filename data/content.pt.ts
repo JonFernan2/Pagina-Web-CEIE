@@ -146,12 +146,13 @@ export const HOME_PT = {
     col3: {
       title: 'Política de cancelamento',
       items: [
-        'Com 30+ dias de antecedência: reembolso de 80%',
-        'Com 15–29 dias: reembolso de 50%',
+        'Com 45+ dias de antecedência: sem encargos',
+        'Com 15–44 dias: encargo de 50% do custo total',
         'Com menos de 15 dias: sem reembolso',
+        'Força maior: avaliada individualmente',
       ],
       link: { label: 'Ver condições completas', href: '/pt/condicoes-contratacao' },
-      disclaimer: '[PENDENTE — Valores e condições sujeitos a revisão pela assessoria jurídica da UAI]',
+      disclaimer: 'Cancelamentos válidos apenas por escrito para caroline.cortes@uai.cl com confirmação de recebimento.',
     },
   },
   accreditation: {

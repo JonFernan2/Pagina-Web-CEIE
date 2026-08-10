@@ -157,12 +157,13 @@ export const HOME_EN = {
     col3: {
       title: 'Cancellation policy',
       items: [
-        '30+ days in advance: 80% refund',
-        '15–29 days in advance: 50% refund',
+        '45+ days in advance: no charge',
+        '15–44 days in advance: 50% charge',
         'Less than 15 days: no refund',
+        'Force majeure: evaluated individually',
       ],
       link: { label: 'Full terms & conditions', href: '/en/terms-and-conditions' },
-      disclaimer: '[PENDING — Amounts and conditions subject to review by UAI legal counsel]',
+      disclaimer: 'Cancellations valid only in writing to caroline.cortes@uai.cl with confirmed receipt.',
     },
   },
   accreditation: {
@@ -427,7 +428,7 @@ export const LEGAL_EN = {
       { heading: 'Contract formation', body: '[PENDING — UAI legal counsel]' },
       { heading: 'Prices and payment methods', body: '[PENDING — UAI legal counsel]' },
       { heading: 'Date modifications', body: '[PENDING — UAI legal counsel]' },
-      { heading: 'Cancellation and refund', body: '[PENDING — UAI legal counsel]' },
+      { heading: 'Cancellation and refund', body: 'All cancellations must be submitted in writing to caroline.cortes@uai.cl with confirmed receipt. 45 or more days before the program start date: no charge. Between 15 and 44 days before start: a charge equivalent to 50% of the total program cost. Less than 15 days before start: no refund. Force majeure cases will be evaluated individually. The program start date includes the first day of classes, the orientation day, or any prior programme activity.' },
       { heading: 'Student obligations', body: '[PENDING — UAI legal counsel]' },
       { heading: 'CEIE obligations', body: '[PENDING — UAI legal counsel]' },
       { heading: 'Intellectual property of materials', body: '[PENDING — UAI legal counsel]' },

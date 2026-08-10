@@ -104,7 +104,7 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
       },
       {
         titulo: 'Cancelamento',
-        descripcion: 'Com 30+ dias de antecedência: reembolso de 80%. 15–29 dias: 50%. Menos de 15 dias: sem reembolso.',
+        descripcion: 'Com 45+ dias de antecedência: sem encargos. 15–44 dias: encargo de 50%. Menos de 15 dias: sem reembolso. Força maior avaliada individualmente. Por escrito para caroline.cortes@uai.cl.',
       },
     ],
     grupoMaximo: 12,
@@ -181,7 +181,7 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
       },
       {
         titulo: 'Cancelamento',
-        descripcion: 'Com 30+ dias de antecedência: reembolso de 80%. 15–29 dias: 50%. Menos de 15 dias: sem reembolso.',
+        descripcion: 'Com 45+ dias de antecedência: sem encargos. 15–44 dias: encargo de 50%. Menos de 15 dias: sem reembolso. Força maior avaliada individualmente. Por escrito para caroline.cortes@uai.cl.',
       },
     ],
     grupoMaximo: 10,

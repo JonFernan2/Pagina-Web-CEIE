@@ -104,7 +104,7 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
       },
       {
         titulo: 'Cancellation',
-        descripcion: '30+ days in advance: 80% refund. 15–29 days: 50%. Less than 15 days: no refund.',
+        descripcion: '45+ days in advance: no charge. 15–44 days: 50% charge. Less than 15 days: no refund. Force majeure evaluated individually. Written cancellation to caroline.cortes@uai.cl.',
       },
     ],
     grupoMaximo: 12,
@@ -181,7 +181,7 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
       },
       {
         titulo: 'Cancellation',
-        descripcion: '30+ days in advance: 80% refund. 15–29 days: 50%. Less than 15 days: no refund.',
+        descripcion: '45+ days in advance: no charge. 15–44 days: 50% charge. Less than 15 days: no refund. Force majeure evaluated individually. Written cancellation to caroline.cortes@uai.cl.',
       },
     ],
     grupoMaximo: 10,
