@@ -267,7 +267,7 @@ export default function HomePage() {
             </div>
             <div className="w-full aspect-video overflow-hidden" style={{ borderRadius: '4px', border: '2px solid #6493b5' }}>
               <img
-                src="/images/hero-campus-vina-del-mar.png"
+                src="/images/campus-vina-aerea.jpg"
                 alt="Vista aérea del Campus UAI Viña del Mar — Padre Hurtado 750"
                 className="w-full h-full object-cover"
               />
