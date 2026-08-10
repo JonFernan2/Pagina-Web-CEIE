@@ -402,14 +402,13 @@ export const LEGAL_EN = {
   privacyPolicy: {
     title: 'Privacy Policy',
     sections: [
-      { heading: 'Data controller', body: 'Universidad Adolfo Ibáñez · caroline.cortes@uai.cl · Padre Hurtado 750, Viña del Mar, Chile.' },
-      { heading: 'Personal data collected', body: '[PENDING — UAI legal counsel]' },
-      { heading: 'Purpose of processing', body: '[PENDING — UAI legal counsel]' },
-      { heading: 'Legal basis', body: '[PENDING — UAI legal counsel]' },
-      { heading: 'Retention period', body: '[PENDING — UAI legal counsel]' },
-      { heading: 'Data subject rights', body: '[PENDING — UAI legal counsel]' },
-      { heading: 'DPO contact', body: '[PENDING — UAI legal counsel]' },
-      { heading: 'Applicable law: Chilean Law 19.628', body: 'Processing of personal data is governed by Chilean Law 19.628 on the Protection of Private Life.' },
+      { heading: 'Privacy Policy', body: 'By accessing the CEIE UAI website, the user accepts this Privacy Policy. Universidad Adolfo Ibáñez reserves the right to modify this policy at any time; it is the user\'s responsibility to read and comply with it on each visit.' },
+      { heading: 'Access to information', body: 'The contents of the CEIE UAI website are free of charge and publicly accessible.' },
+      { heading: 'User information', body: 'UAI collects visitor data to record browsing activity and audience metrics without requiring personal identification. Personal information is only requested voluntarily through contact forms, for the purpose of providing information about academic programmes of interest. Users may request unsubscription at any time. Collected information is not shared with third parties.' },
+      { heading: 'Disclosure to third parties', body: 'UAI does not communicate or transfer personal data to third parties without the express consent of the data subject, except where required by judicial or administrative authority under applicable Chilean law.' },
+      { heading: 'Use of information', body: 'All rights to the CEIE UAI website belong to Universidad Adolfo Ibáñez. Visitors may use its contents for personal, non-commercial purposes. UAI accepts no responsibility for the accuracy of external links. Reproduction of content is permitted with attribution to the source, except for the institutional brand and logo.' },
+      { heading: 'Cookies', body: 'Cookies are files that record pages visited and frequency of access, used solely for statistical analysis and deleted permanently afterwards. Users may delete or decline cookies through their browser settings; declining cookies may limit access to certain site services.' },
+      { heading: 'External services', body: 'This site uses the YouTube API to display audiovisual content. UAI accepts no responsibility for how YouTube or Google may use user data. Users are referred to the YouTube Terms of Service and Google Privacy Policy for further information.' },
     ],
   },
   cookiePolicy: {

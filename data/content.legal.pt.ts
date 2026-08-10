@@ -13,14 +13,13 @@ export const LEGAL_PT = {
   privacidade: {
     title: 'Política de Privacidade',
     sections: [
-      { heading: 'Responsável pelo tratamento', body: 'Universidad Adolfo Ibáñez · caroline.cortes@uai.cl · Padre Hurtado 750, Viña del Mar, Chile.' },
-      { heading: 'Dados pessoais recolhidos', body: '[PENDENTE — assessoria jurídica]' },
-      { heading: 'Finalidade do tratamento', body: '[PENDENTE — assessoria jurídica]' },
-      { heading: 'Base legal', body: '[PENDENTE — assessoria jurídica]' },
-      { heading: 'Prazo de conservação', body: '[PENDENTE — assessoria jurídica]' },
-      { heading: 'Direitos do titular', body: '[PENDENTE — assessoria jurídica]' },
-      { heading: 'Contato DPO', body: '[PENDENTE — assessoria jurídica]' },
-      { heading: 'Referência à Lei 19.628 (Chile)', body: 'O tratamento de dados pessoais é regido pela Lei 19.628 sobre Proteção da Vida Privada.' },
+      { heading: 'Política de Privacidade', body: 'Ao acessar o site do CEIE UAI, o usuário aceita esta Política de Privacidade. A Universidad Adolfo Ibáñez reserva-se o direito de modificar esta política a qualquer momento; é responsabilidade do usuário lê-la e cumpri-la a cada acesso ao site.' },
+      { heading: 'Acesso à informação', body: 'Os conteúdos do site do CEIE UAI são gratuitos e de acesso público.' },
+      { heading: 'Informação dos usuários', body: 'A UAI coleta dados de visitantes para registrar a atividade de navegação e audiência, sem exigir identificação pessoal. Somente solicita informações pessoais voluntariamente por meio de formulários de contato, com o objetivo de informar sobre programas acadêmicos de interesse. O usuário pode solicitar o cancelamento da inscrição a qualquer momento. As informações coletadas não são repassadas a terceiros.' },
+      { heading: 'Informação a terceiros', body: 'A UAI não comunica nem transfere dados pessoais a terceiros sem o consentimento expresso do titular, exceto nos casos exigidos por autoridade judicial ou administrativa, conforme a legislação chilena vigente.' },
+      { heading: 'Uso da informação', body: 'Todos os direitos do site do CEIE UAI pertencem à Universidad Adolfo Ibáñez. Os visitantes podem utilizar os conteúdos para fins pessoais não comerciais. A UAI não se responsabiliza pela veracidade de links externos. É autorizada a reprodução de conteúdos com atribuição da fonte, exceto a marca e o logotipo institucionais.' },
+      { heading: 'Cookies', body: 'Os cookies são arquivos que registram as páginas visitadas e a frequência de acesso, utilizados exclusivamente para análise estatística e excluídos permanentemente após o uso. Os usuários podem eliminar ou recusar os cookies nas configurações do navegador; recusá-los pode limitar o acesso a alguns serviços do site.' },
+      { heading: 'Serviços externos', body: 'Este site utiliza a API do YouTube para exibir conteúdos audiovisuais. A UAI não se responsabiliza pelo uso que o YouTube ou o Google possam fazer dos dados do usuário. Para mais informações, consulte os Termos de Serviço do YouTube e a Política de Privacidade do Google.' },
     ],
   },
   cookies: {

@@ -13,14 +13,13 @@ export const LEGAL_ZH = {
   privacidad: {
     title: '隐私政策',
     sections: [
-      { heading: '数据处理负责方', body: 'Universidad Adolfo Ibáñez · caroline.cortes@uai.cl · Padre Hurtado 750, Viña del Mar, 智利。' },
-      { heading: '收集的个人数据', body: '[待定 — 法律顾问确认]' },
-      { heading: '处理目的', body: '[待定 — 法律顾问确认]' },
-      { heading: '法律依据', body: '[待定 — 法律顾问确认]' },
-      { heading: '保存期限', body: '[待定 — 法律顾问确认]' },
-      { heading: '当事人权利', body: '[待定 — 法律顾问确认]' },
-      { heading: '数据保护联系人', body: '[待定 — 法律顾问确认]' },
-      { heading: '适用智利第19.628号法律', body: '个人数据处理受智利《个人隐私保护法》第19.628号法律约束。' },
+      { heading: '隐私政策', body: '访问CEIE UAI网站即表示用户接受本隐私政策。阿道夫·伊瓦涅斯大学保留随时修改本政策的权利，用户有责任在每次访问时阅读并遵守该政策。' },
+      { heading: '信息获取', body: 'CEIE UAI网站内容免费开放，任何人均可访问。' },
+      { heading: '用户信息', body: 'UAI收集访客数据以记录浏览活动和受众情况，无需用户进行个人身份验证。仅通过联系表单以自愿方式收集个人信息，目的是向用户介绍其感兴趣的学术项目。用户可随时申请退订。所收集的信息不会向第三方提供。' },
+      { heading: '向第三方提供信息', body: 'UAI未经数据当事人明确同意，不会向第三方传达或转让个人数据。依据智利现行法律法规，司法或行政机构的要求除外。' },
+      { heading: '信息使用', body: 'CEIE UAI网站的所有权利归阿道夫·伊瓦涅斯大学所有。访客可将内容用于个人非商业目的。UAI对外部链接内容的准确性不承担责任。在注明来源的前提下，可转载网站内容，但不得使用大学品牌标识和徽标。' },
+      { heading: 'Cookie', body: 'Cookie是用于识别访问页面及频率的文件，仅用于统计分析目的，使用后将被永久删除。用户可通过浏览器设置删除或拒绝Cookie；拒绝Cookie可能会限制对网站某些服务的访问。' },
+      { heading: '外部服务', body: '本网站使用YouTube API展示视听内容。UAI对YouTube或Google使用用户数据的方式不承担任何责任。如需了解更多信息，请参阅YouTube服务条款及Google隐私政策。' },
     ],
   },
   cookies: {
