@@ -20,8 +20,8 @@ const config: Config = {
         'gris-claro': '#E5E3DE',
       },
       fontFamily: {
-        display: ['Playfair Display', 'Georgia', 'serif'],
-        body:    ['Outfit', 'system-ui', 'sans-serif'],
+        display: ['Made Tommy', 'system-ui', 'sans-serif'],
+        body:    ['Roboto', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         DEFAULT: '2px',

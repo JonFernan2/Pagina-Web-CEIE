@@ -1,4 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+/* Made Tommy — fuente corporativa UAI (archivos locales) */
+@font-face {
+  font-family: 'Made Tommy';
+  src: url('/fonts/made-tommy/made_tommy_thin-webfont.woff2') format('woff2'),
+       url('/fonts/made-tommy/made_tommy_thin-webfont.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Made Tommy';
+  src: url('/fonts/made-tommy/made_tommy_light-webfont.woff2') format('woff2'),
+       url('/fonts/made-tommy/made_tommy_light-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Made Tommy';
+  src: url('/fonts/made-tommy/made_tommy_regular-webfont.woff2') format('woff2'),
+       url('/fonts/made-tommy/made_tommy_regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Made Tommy';
+  src: url('/fonts/made-tommy/made_tommy_medium-webfont.woff2') format('woff2'),
+       url('/fonts/made-tommy/made_tommy_medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Made Tommy';
+  src: url('/fonts/made-tommy/made_tommy_bold-webfont.woff2') format('woff2'),
+       url('/fonts/made-tommy/made_tommy_bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Made Tommy';
+  src: url('/fonts/made-tommy/made_tommy_extrabold-webfont.woff2') format('woff2'),
+       url('/fonts/made-tommy/made_tommy_extrabold-webfont.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
 
 @tailwind base;
 @tailwind components;
@@ -15,8 +63,8 @@
   --gris-claro:     #E5E3DE;
   --blanco:         #FFFFFF;
 
-  --font-display:   'Playfair Display', Georgia, serif;
-  --font-body:      'Outfit', system-ui, sans-serif;
+  --font-display:   'Made Tommy', system-ui, sans-serif;
+  --font-body:      'Roboto', system-ui, sans-serif;
 
   --section-y:      5rem;
   --max-width:      1200px;
