@@ -12,9 +12,14 @@ export default function AdmisionPage() {
   const d = ADMISSIONS_ES
   const [submitted, setSubmitted] = useState(false)
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    setSubmitted(true)
+    const res = await fetch('https://formspree.io/f/mjybwjrn', {
+      method: 'POST',
+      body: new FormData(e.currentTarget),
+      headers: { Accept: 'application/json' },
+    })
+    if (res.ok) setSubmitted(true)
   }
 
   return (
@@ -100,7 +105,6 @@ export default function AdmisionPage() {
                 onSubmit={handleSubmit}
                 className="flex flex-col gap-5 p-6"
                 style={{ background: '#FFFFFF', border: '1px solid #E5E3DE', borderRadius: '4px' }}
-                action="[PENDIENTE — endpoint backend UAI]"
               >
                 <FormField label={d.form.fields.name} id="name" type="text" required />
                 <FormField label={d.form.fields.country} id="country" type="text" required />
@@ -112,6 +116,7 @@ export default function AdmisionPage() {
                   </label>
                   <select
                     id="program"
+                    name="program"
                     required
                     className="px-3 py-2 text-sm font-body border"
                     style={{ borderColor: '#E5E3DE', borderRadius: '2px', color: '#2D2D2D' }}
@@ -129,6 +134,7 @@ export default function AdmisionPage() {
                   </label>
                   <select
                     id="level"
+                    name="level"
                     required
                     className="px-3 py-2 text-sm font-body border"
                     style={{ borderColor: '#E5E3DE', borderRadius: '2px', color: '#2D2D2D' }}
@@ -146,6 +152,7 @@ export default function AdmisionPage() {
                   </label>
                   <textarea
                     id="message"
+                    name="message"
                     rows={4}
                     className="px-3 py-2 text-sm font-body border resize-none"
                     style={{ borderColor: '#E5E3DE', borderRadius: '2px', color: '#2D2D2D' }}

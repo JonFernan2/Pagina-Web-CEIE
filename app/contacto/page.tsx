@@ -10,9 +10,14 @@ export default function ContactoPage() {
   const d = CONTACT_ES
   const [submitted, setSubmitted] = useState(false)
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    setSubmitted(true)
+    const res = await fetch('https://formspree.io/f/mjybwjrn', {
+      method: 'POST',
+      body: new FormData(e.currentTarget),
+      headers: { Accept: 'application/json' },
+    })
+    if (res.ok) setSubmitted(true)
   }
 
   return (

@@ -32,7 +32,15 @@ export default function ContactENPage() {
                 </div>
               ) : (
                 <form
-                  onSubmit={(e) => { e.preventDefault(); setSubmitted(true) }}
+                  onSubmit={async (e: React.FormEvent<HTMLFormElement>) => {
+                    e.preventDefault()
+                    const res = await fetch('https://formspree.io/f/mjybwjrn', {
+                      method: 'POST',
+                      body: new FormData(e.currentTarget),
+                      headers: { Accept: 'application/json' },
+                    })
+                    if (res.ok) setSubmitted(true)
+                  }}
                   className="flex flex-col gap-4 p-6"
                   style={{ background: '#FFFFFF', border: '1px solid #E5E3DE', borderRadius: '4px' }}
                 >
@@ -46,12 +54,12 @@ export default function ContactENPage() {
                   ].map((f) => (
                     <div key={f.id} className="flex flex-col gap-1">
                       <label htmlFor={f.id} className="text-sm font-medium text-negro">{f.label} {f.req && '*'}</label>
-                      <input type={f.type} id={f.id} required={f.req} className="px-3 py-2 text-sm font-body border" style={{ borderColor: '#E5E3DE', borderRadius: '2px' }} />
+                      <input type={f.type} id={f.id} name={f.id} required={f.req} className="px-3 py-2 text-sm font-body border" style={{ borderColor: '#E5E3DE', borderRadius: '2px' }} />
                     </div>
                   ))}
                   <div className="flex flex-col gap-1">
                     <label htmlFor="message" className="text-sm font-medium text-negro">{d.form.fields.message} *</label>
-                    <textarea id="message" rows={4} required className="px-3 py-2 text-sm font-body border resize-none" style={{ borderColor: '#E5E3DE', borderRadius: '2px' }} />
+                    <textarea id="message" name="message" rows={4} required className="px-3 py-2 text-sm font-body border resize-none" style={{ borderColor: '#E5E3DE', borderRadius: '2px' }} />
                   </div>
                   <button type="submit" className="py-3 font-body font-semibold text-sm uppercase tracking-widest" style={{ background: '#6493b5', color: '#1d1e20', borderRadius: '2px' }}>
                     {d.form.fields.submit}

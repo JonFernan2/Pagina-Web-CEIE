@@ -12,9 +12,14 @@ export default function ApplyZHPage() {
   const d = ADMISSIONS_ZH
   const [submitted, setSubmitted] = useState(false)
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    setSubmitted(true)
+    const res = await fetch('https://formspree.io/f/mjybwjrn', {
+      method: 'POST',
+      body: new FormData(e.currentTarget),
+      headers: { Accept: 'application/json' },
+    })
+    if (res.ok) setSubmitted(true)
   }
 
   return (
@@ -102,7 +107,7 @@ export default function ApplyZHPage() {
                 ))}
                 <div className="flex flex-col gap-1">
                   <label htmlFor="program" className="text-sm font-medium text-negro">{d.form.fields.program} *</label>
-                  <select id="program" required className="px-3 py-2 text-sm font-body border" style={{ borderColor: '#E5E3DE', borderRadius: '2px' }}>
+                  <select id="program" name="program" required className="px-3 py-2 text-sm font-body border" style={{ borderColor: '#E5E3DE', borderRadius: '2px' }}>
                     <option value="">请选择...</option>
                     <option value="semester">学期课程</option>
                     <option value="intensive">强化课程</option>
@@ -112,18 +117,18 @@ export default function ApplyZHPage() {
                 </div>
                 <div className="flex flex-col gap-1">
                   <label htmlFor="level" className="text-sm font-medium text-negro">{d.form.fields.level} *</label>
-                  <select id="level" required className="px-3 py-2 text-sm font-body border" style={{ borderColor: '#E5E3DE', borderRadius: '2px' }}>
+                  <select id="level" name="level" required className="px-3 py-2 text-sm font-body border" style={{ borderColor: '#E5E3DE', borderRadius: '2px' }}>
                     <option value="">请选择...</option>
                     {d.form.fields.levelOpts.map((opt) => <option key={opt} value={opt.toLowerCase()}>{opt}</option>)}
                   </select>
                 </div>
                 <div className="flex flex-col gap-1">
                   <label htmlFor="startDate" className="text-sm font-medium text-negro">{d.form.fields.startDate} *</label>
-                  <input type="date" id="startDate" required className="px-3 py-2 text-sm font-body border" style={{ borderColor: '#E5E3DE', borderRadius: '2px' }} />
+                  <input type="date" id="startDate" name="startDate" required className="px-3 py-2 text-sm font-body border" style={{ borderColor: '#E5E3DE', borderRadius: '2px' }} />
                 </div>
                 <div className="flex flex-col gap-1">
                   <label htmlFor="message" className="text-sm font-medium text-negro">{d.form.fields.message}</label>
-                  <textarea id="message" rows={4} className="px-3 py-2 text-sm font-body border resize-none" style={{ borderColor: '#E5E3DE', borderRadius: '2px' }} />
+                  <textarea id="message" name="message" rows={4} className="px-3 py-2 text-sm font-body border resize-none" style={{ borderColor: '#E5E3DE', borderRadius: '2px' }} />
                 </div>
                 <div className="flex items-start gap-2">
                   <input type="checkbox" id="privacy" required className="mt-0.5" />

@@ -10,9 +10,14 @@ export default function ContactZHPage() {
   const d = CONTACT_ZH
   const [submitted, setSubmitted] = useState(false)
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    setSubmitted(true)
+    const res = await fetch('https://formspree.io/f/mjybwjrn', {
+      method: 'POST',
+      body: new FormData(e.currentTarget),
+      headers: { Accept: 'application/json' },
+    })
+    if (res.ok) setSubmitted(true)
   }
 
   return (
@@ -64,7 +69,7 @@ export default function ContactZHPage() {
                   ))}
                   <div className="flex flex-col gap-1">
                     <label htmlFor="program" className="text-sm font-medium text-negro">{d.form.fields.program}</label>
-                    <select id="program" className="px-3 py-2 text-sm font-body border" style={{ borderColor: '#E5E3DE', borderRadius: '2px' }}>
+                    <select id="program" name="program" className="px-3 py-2 text-sm font-body border" style={{ borderColor: '#E5E3DE', borderRadius: '2px' }}>
                       <option value="">请选择...</option>
                       <option value="semester">学期课程</option>
                       <option value="intensive">强化课程</option>
@@ -74,7 +79,7 @@ export default function ContactZHPage() {
                   </div>
                   <div className="flex flex-col gap-1">
                     <label htmlFor="message" className="text-sm font-medium text-negro">{d.form.fields.message} *</label>
-                    <textarea id="message" rows={4} required className="px-3 py-2 text-sm font-body border resize-none" style={{ borderColor: '#E5E3DE', borderRadius: '2px' }} />
+                    <textarea id="message" name="message" rows={4} required className="px-3 py-2 text-sm font-body border resize-none" style={{ borderColor: '#E5E3DE', borderRadius: '2px' }} />
                   </div>
                   <button type="submit" className="py-3 px-8 font-body font-semibold text-sm uppercase tracking-widest" style={{ background: '#6493b5', color: '#1d1e20', borderRadius: '2px' }}>
                     {d.form.fields.submit}
