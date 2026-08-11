@@ -197,21 +197,34 @@ export default function HomePage() {
               </p>
             </div>
             <div className="flex flex-col gap-4">
-              {d.accreditation.badges.map((badge) => (
-                <div
-                  key={badge}
-                  className="flex items-center gap-4 p-4"
-                  style={{ border: '2px solid #6493b5', borderRadius: '4px', background: '#FFFFFF' }}
-                >
-                  <div
-                    className="w-10 h-10 shrink-0 flex items-center justify-center"
-                    style={{ background: '#6493b5', borderRadius: '2px' }}
-                  >
-                    <span className="text-negro font-bold text-sm">✓</span>
+              {/* CNA-Chile */}
+              <div style={{ background: '#FFFFFF', borderRadius: '4px', padding: '20px 24px' }}>
+                <div className="flex items-center gap-5">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/images/logo-cna-chile.png"
+                    alt="Comisión Nacional de Acreditación CNA-Chile"
+                    style={{ height: '72px', width: 'auto', filter: 'invert(1)' }}
+                  />
+                  <div style={{ borderLeft: '1px solid #D1CFC9', paddingLeft: '20px' }}>
+                    <p className="font-body font-semibold text-negro text-sm leading-snug">Universidad Adolfo Ibáñez</p>
+                    <p className="font-body font-semibold text-negro text-sm">Acreditada 6 años</p>
+                    <p className="font-body text-xs leading-relaxed mt-1" style={{ color: '#4a4a4a' }}>
+                      Áreas: Gestión institucional, Docencia de pregrado, Docencia de postgrado, Investigación y Vinculación con el medio. Hasta octubre 2027.
+                    </p>
                   </div>
-                  <p className="font-body font-medium text-negro text-sm">{badge}</p>
                 </div>
-              ))}
+              </div>
+
+              {/* Triple Crown: EQUIS · AACSB · AMBA */}
+              <div className="flex items-center justify-center" style={{ background: '#FFFFFF', borderRadius: '4px', padding: '20px 24px' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/logos-triple-crown.png"
+                  alt="Triple Crown: EQUIS · AACSB Accredited · Association of MBAs"
+                  style={{ maxHeight: '56px', width: '100%', objectFit: 'contain', filter: 'grayscale(1) opacity(0.75)' }}
+                />
+              </div>
             </div>
           </div>
         </div>
