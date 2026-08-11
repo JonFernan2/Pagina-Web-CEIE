@@ -396,7 +396,7 @@ export const CONTACT_EN = {
     phone: '(56 32) 250 3500',
     emails: ['caroline.cortes@uai.cl', 'programascortos@uai.cl'],
     hours: 'Monday to Friday · 9:00 AM – 6:00 PM',
-    social: ['Instagram: @uai.internacional', 'Instagram: @artesliberalesuai'],
+    social: ['Instagram: @uai.internacional'],
   },
 }
 
