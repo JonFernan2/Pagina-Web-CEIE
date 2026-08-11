@@ -250,26 +250,55 @@ export default function HomeENPage() {
 
       {/* ── NEWS ── */}
       <section style={{ background: '#FFFFFF' }} className="py-16">
-        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 text-center">
-          <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-4">
+        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
+          <h2 className="font-display font-bold text-negro text-3xl md:text-4xl text-center mb-12">
             News
           </h2>
-          <p className="text-sm uppercase tracking-widest mb-12" style={{ color: '#6493b5' }}>
-            Coming soon
-          </p>
-          <div
-            className="min-h-48 w-full mb-12"
-            style={{ border: '1px dashed #E5E3DE', borderRadius: '4px' }}
-          />
-          <a
-            href="https://www.uai.cl"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 font-body font-semibold text-sm uppercase tracking-widest transition-colors duration-200"
-            style={{ background: '#1d1e20', color: '#FFFFFF', borderRadius: '2px' }}
-          >
-            Visit Universidad Adolfo Ibáñez →
-          </a>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <a href="https://www.uai.cl/semana-de-la-migracion" target="_blank" rel="noopener noreferrer"
+              className="flex flex-col overflow-hidden group"
+              style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#FFFFFF' }}>
+              <div className="overflow-hidden" style={{ aspectRatio: '16/9' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="https://uai.cdn7pm.net/media/21006/foto-semana-migracion-uai-2026.jpg?fit=crop&crop=center,center"
+                  alt="UAI Migration Week 2026"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+              </div>
+              <div className="p-5 flex flex-col gap-3 flex-1">
+                <p className="text-xs font-medium uppercase tracking-widest" style={{ color: '#6493b5' }}>August 2026</p>
+                <h3 className="font-display font-bold text-negro text-lg leading-tight">Migration Week — 4th Edition</h3>
+                <p className="text-sm leading-relaxed flex-1" style={{ color: '#6B6B6B' }}>
+                  The fourth edition of UAI Migration Week will take place from August 17–21 with activities focused on memory, identity, territory, and displacement in Santiago and Viña del Mar.
+                </p>
+                <span className="text-sm font-medium" style={{ color: '#6493b5' }}>Read more →</span>
+              </div>
+            </a>
+            <a href="https://www.uai.cl/artesliberales/prisma" target="_blank" rel="noopener noreferrer"
+              className="flex flex-col overflow-hidden group"
+              style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#FFFFFF' }}>
+              <div className="overflow-hidden" style={{ aspectRatio: '16/9' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="https://uai.cdn7pm.net/seo/images/SBJRDubhm1sxg9zg7hmeCSVGSGMuIG-metaaW1hZ2VuLXByaXNtYS0yMDI2LmpwZw==-.jpg"
+                  alt="PRISMA International Congress 2026"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+              </div>
+              <div className="p-5 flex flex-col gap-3 flex-1">
+                <p className="text-xs font-medium uppercase tracking-widest" style={{ color: '#6493b5' }}>2026</p>
+                <h3 className="font-display font-bold text-negro text-lg leading-tight">PRISMA International Congress</h3>
+                <p className="text-sm leading-relaxed flex-1" style={{ color: '#6B6B6B' }}>
+                  6th International PRISMA Congress. Spanish today: Perspectives, transformations, and reach of a global language.
+                </p>
+                <span className="text-sm font-medium" style={{ color: '#6493b5' }}>Read more →</span>
+              </div>
+            </a>
+          </div>
+          <div className="text-center">
+            <a href="https://www.uai.cl" target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 font-body font-semibold text-sm uppercase tracking-widest transition-colors duration-200"
+              style={{ background: '#1d1e20', color: '#FFFFFF', borderRadius: '2px' }}>
+              Visit Universidad Adolfo Ibáñez →
+            </a>
+          </div>
         </div>
       </section>
 

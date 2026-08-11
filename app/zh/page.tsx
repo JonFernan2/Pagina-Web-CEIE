@@ -250,26 +250,55 @@ export default function HomeZHPage() {
 
       {/* ── 新闻 ── */}
       <section style={{ background: '#FFFFFF' }} className="py-16">
-        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 text-center">
-          <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-4">
+        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
+          <h2 className="font-display font-bold text-negro text-3xl md:text-4xl text-center mb-12">
             新闻
           </h2>
-          <p className="text-sm uppercase tracking-widest mb-12" style={{ color: '#6493b5' }}>
-            敬请期待
-          </p>
-          <div
-            className="min-h-48 w-full mb-12"
-            style={{ border: '1px dashed #E5E3DE', borderRadius: '4px' }}
-          />
-          <a
-            href="https://www.uai.cl"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 font-body font-semibold text-sm uppercase tracking-widest transition-colors duration-200"
-            style={{ background: '#1d1e20', color: '#FFFFFF', borderRadius: '2px' }}
-          >
-            访问阿道夫·伊瓦涅斯大学 →
-          </a>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <a href="https://www.uai.cl/semana-de-la-migracion" target="_blank" rel="noopener noreferrer"
+              className="flex flex-col overflow-hidden group"
+              style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#FFFFFF' }}>
+              <div className="overflow-hidden" style={{ aspectRatio: '16/9' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="https://uai.cdn7pm.net/media/21006/foto-semana-migracion-uai-2026.jpg?fit=crop&crop=center,center"
+                  alt="UAI移民周 2026"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+              </div>
+              <div className="p-5 flex flex-col gap-3 flex-1">
+                <p className="text-xs font-medium uppercase tracking-widest" style={{ color: '#6493b5' }}>2026年8月</p>
+                <h3 className="font-display font-bold text-negro text-lg leading-tight">移民周 — 第四届</h3>
+                <p className="text-sm leading-relaxed flex-1" style={{ color: '#6B6B6B' }}>
+                  UAI第四届移民周将于8月17日至21日举行，在圣地亚哥和比尼亚德尔马开展以记忆、身份、领土与流离失所为主题的系列活动。
+                </p>
+                <span className="text-sm font-medium" style={{ color: '#6493b5' }}>阅读更多 →</span>
+              </div>
+            </a>
+            <a href="https://www.uai.cl/artesliberales/prisma" target="_blank" rel="noopener noreferrer"
+              className="flex flex-col overflow-hidden group"
+              style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#FFFFFF' }}>
+              <div className="overflow-hidden" style={{ aspectRatio: '16/9' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="https://uai.cdn7pm.net/seo/images/SBJRDubhm1sxg9zg7hmeCSVGSGMuIG-metaaW1hZ2VuLXByaXNtYS0yMDI2LmpwZw==-.jpg"
+                  alt="PRISMA国际学术大会 2026"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+              </div>
+              <div className="p-5 flex flex-col gap-3 flex-1">
+                <p className="text-xs font-medium uppercase tracking-widest" style={{ color: '#6493b5' }}>2026</p>
+                <h3 className="font-display font-bold text-negro text-lg leading-tight">PRISMA国际学术大会</h3>
+                <p className="text-sm leading-relaxed flex-1" style={{ color: '#6B6B6B' }}>
+                  第六届PRISMA国际学术大会。当代西班牙语：一门全球语言的视角、变革与影响。
+                </p>
+                <span className="text-sm font-medium" style={{ color: '#6493b5' }}>阅读更多 →</span>
+              </div>
+            </a>
+          </div>
+          <div className="text-center">
+            <a href="https://www.uai.cl" target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 font-body font-semibold text-sm uppercase tracking-widest transition-colors duration-200"
+              style={{ background: '#1d1e20', color: '#FFFFFF', borderRadius: '2px' }}>
+              访问阿道夫·伊瓦涅斯大学 →
+            </a>
+          </div>
         </div>
       </section>
 

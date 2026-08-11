@@ -290,29 +290,55 @@ export default function HomePage() {
 
       {/* ── NOTICIAS ── */}
       <section style={{ background: '#FFFFFF' }} className="py-16">
-        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 text-center">
-          <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-4">
+        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
+          <h2 className="font-display font-bold text-negro text-3xl md:text-4xl text-center mb-12">
             Noticias
           </h2>
-          <p className="text-sm uppercase tracking-widest mb-12" style={{ color: '#6493b5' }}>
-            Próximamente
-          </p>
-
-          {/* Espacio reservado para artículos de noticias */}
-          <div
-            className="min-h-48 w-full mb-12"
-            style={{ border: '1px dashed #E5E3DE', borderRadius: '4px' }}
-          />
-
-          <a
-            href="https://www.uai.cl"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 font-body font-semibold text-sm uppercase tracking-widest transition-colors duration-200"
-            style={{ background: '#1d1e20', color: '#FFFFFF', borderRadius: '2px' }}
-          >
-            Visitar Universidad Adolfo Ibáñez →
-          </a>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <a href="https://www.uai.cl/semana-de-la-migracion" target="_blank" rel="noopener noreferrer"
+              className="flex flex-col overflow-hidden group"
+              style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#FFFFFF' }}>
+              <div className="overflow-hidden" style={{ aspectRatio: '16/9' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="https://uai.cdn7pm.net/media/21006/foto-semana-migracion-uai-2026.jpg?fit=crop&crop=center,center"
+                  alt="Semana de la Migración UAI 2026"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+              </div>
+              <div className="p-5 flex flex-col gap-3 flex-1">
+                <p className="text-xs font-medium uppercase tracking-widest" style={{ color: '#6493b5' }}>Agosto 2026</p>
+                <h3 className="font-display font-bold text-negro text-lg leading-tight">Semana de la migración — 4° versión</h3>
+                <p className="text-sm leading-relaxed flex-1" style={{ color: '#6B6B6B' }}>
+                  La cuarta edición de la Semana de la Migración UAI se realizará entre el 17 y 21 de agosto con actividades orientadas a memoria, identidad, territorio y desplazamiento en Santiago y Viña del Mar.
+                </p>
+                <span className="text-sm font-medium" style={{ color: '#6493b5' }}>Leer más →</span>
+              </div>
+            </a>
+            <a href="https://www.uai.cl/artesliberales/prisma" target="_blank" rel="noopener noreferrer"
+              className="flex flex-col overflow-hidden group"
+              style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#FFFFFF' }}>
+              <div className="overflow-hidden" style={{ aspectRatio: '16/9' }}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="https://uai.cdn7pm.net/seo/images/SBJRDubhm1sxg9zg7hmeCSVGSGMuIG-metaaW1hZ2VuLXByaXNtYS0yMDI2LmpwZw==-.jpg"
+                  alt="Congreso Internacional PRISMA 2026"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+              </div>
+              <div className="p-5 flex flex-col gap-3 flex-1">
+                <p className="text-xs font-medium uppercase tracking-widest" style={{ color: '#6493b5' }}>2026</p>
+                <h3 className="font-display font-bold text-negro text-lg leading-tight">Congreso Internacional PRISMA</h3>
+                <p className="text-sm leading-relaxed flex-1" style={{ color: '#6B6B6B' }}>
+                  VI Congreso Internacional PRISMA. El español hoy: Perspectivas, transformaciones y alcances de una lengua global.
+                </p>
+                <span className="text-sm font-medium" style={{ color: '#6493b5' }}>Leer más →</span>
+              </div>
+            </a>
+          </div>
+          <div className="text-center">
+            <a href="https://www.uai.cl" target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 font-body font-semibold text-sm uppercase tracking-widest transition-colors duration-200"
+              style={{ background: '#1d1e20', color: '#FFFFFF', borderRadius: '2px' }}>
+              Visitar Universidad Adolfo Ibáñez →
+            </a>
+          </div>
         </div>
       </section>
 
