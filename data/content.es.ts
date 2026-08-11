@@ -342,7 +342,7 @@ export const ADMISSIONS_ES = {
       {
         program: 'Semestral / Intensivo',
         schedule: 'Según el calendario académico de Chile',
-        detail: '1.er semestre: marzo – julio · 2.o semestre: agosto – diciembre',
+        detail: 'Hemisferio Sur — 1.er semestre: marzo – julio · 2.o semestre: agosto – diciembre',
       },
       {
         program: 'Fines Específicos',

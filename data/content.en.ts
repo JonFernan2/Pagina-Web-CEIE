@@ -342,7 +342,7 @@ export const ADMISSIONS_EN = {
       {
         program: 'Semester / Intensive',
         schedule: 'Follows the Chilean academic calendar',
-        detail: '1st semester: March – July · 2nd semester: August – December',
+        detail: 'Southern Hemisphere — 1st semester: March – July · 2nd semester: August – December',
       },
       {
         program: 'Specific Purposes',

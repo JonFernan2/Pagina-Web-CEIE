@@ -331,7 +331,7 @@ export const ADMISSIONS_PT = {
       {
         program: 'Semestral / Intensivo',
         schedule: 'Segue o calendário acadêmico chileno',
-        detail: '1.º semestre: março – julho · 2.º semestre: agosto – dezembro',
+        detail: 'Hemisfério Sul — 1.º semestre: março – julho · 2.º semestre: agosto – dezembro',
       },
       {
         program: 'Fins Específicos',

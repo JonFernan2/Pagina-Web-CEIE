@@ -330,7 +330,7 @@ export const ADMISSIONS_ZH = {
       {
         program: '学期课程 / 强化课程',
         schedule: '按照智利学年日历',
-        detail: '第一学期：3月 – 7月 · 第二学期：8月 – 12月',
+        detail: '南半球 — 第一学期：3月 – 7月 · 第二学期：8月 – 12月',
       },
       {
         program: '专业目的课程',
