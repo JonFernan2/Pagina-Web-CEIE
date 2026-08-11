@@ -325,8 +325,24 @@ export const ADMISSIONS_ZH = {
   },
   cohorts: {
     title: '近期开课时间',
-    note: '[待定 — 日期待UAI确认]',
-    individual: '个人定制课程：持续招生 — 确认后可即时开课。',
+    intro: '各类型课程的开课时间如下：',
+    rows: [
+      {
+        program: '学期课程 / 强化课程',
+        schedule: '按照智利学年日历',
+        detail: '第一学期：3月 – 7月 · 第二学期：8月 – 12月',
+      },
+      {
+        program: '专业目的课程',
+        schedule: '日期由双方协商确定',
+        detail: '',
+      },
+      {
+        program: '个人定制课程',
+        schedule: '持续招生',
+        detail: '确认后可即时开课',
+      },
+    ] as { program: string; schedule: string; detail: string }[],
   },
 }
 

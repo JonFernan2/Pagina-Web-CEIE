@@ -337,8 +337,24 @@ export const ADMISSIONS_EN = {
   },
   cohorts: {
     title: 'Upcoming cohorts',
-    note: '[PENDING — dates to be confirmed by UAI]',
-    individual: 'Individual Program: continuous enrollment — immediate start available upon confirmation.',
+    intro: 'Start dates follow this structure for each program type:',
+    rows: [
+      {
+        program: 'Semester / Intensive',
+        schedule: 'Follows the Chilean academic calendar',
+        detail: '1st semester: March – July · 2nd semester: August – December',
+      },
+      {
+        program: 'Specific Purposes',
+        schedule: 'Date to be agreed between both parties',
+        detail: '',
+      },
+      {
+        program: 'Individual',
+        schedule: 'Continuous enrollment',
+        detail: 'Immediate start available upon confirmation',
+      },
+    ] as { program: string; schedule: string; detail: string }[],
   },
 }
 

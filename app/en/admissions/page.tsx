@@ -146,6 +146,23 @@ export default function AdmissionsENPage() {
         </div>
       </section>
 
+      {/* Upcoming cohorts */}
+      <section style={{ background: '#FFFFFF' }} className="py-12">
+        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8" style={{ maxWidth: '42rem' }}>
+          <h2 className="font-display font-bold text-negro text-2xl mb-3">{d.cohorts.title}</h2>
+          <p className="text-sm mb-6" style={{ color: '#6B6B6B' }}>{d.cohorts.intro}</p>
+          <div className="flex flex-col gap-3">
+            {d.cohorts.rows.map((row) => (
+              <div key={row.program} className="px-4 py-3" style={{ background: '#F5F4F1', borderLeft: '3px solid #6493b5' }}>
+                <p className="text-sm font-semibold text-negro mb-0.5">{row.program}</p>
+                <p className="text-sm" style={{ color: '#2D2D2D' }}>{row.schedule}</p>
+                {row.detail && <p className="text-xs mt-1" style={{ color: '#6B6B6B' }}>{row.detail}</p>}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <Footer lang="en" />
       <CookieBanner lang="en" />
     </>

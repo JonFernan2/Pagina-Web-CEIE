@@ -337,8 +337,24 @@ export const ADMISSIONS_ES = {
   },
   cohorts: {
     title: 'Próximas cohortes',
-    note: '[PENDIENTE — fechas a confirmar por UAI]',
-    individual: 'Programa Individual: matrícula continua — inicio inmediato disponible previa confirmación.',
+    intro: 'Los inicios de cada programa siguen la siguiente estructura:',
+    rows: [
+      {
+        program: 'Semestral / Intensivo',
+        schedule: 'Según el calendario académico de Chile',
+        detail: '1.er semestre: marzo – julio · 2.o semestre: agosto – diciembre',
+      },
+      {
+        program: 'Fines Específicos',
+        schedule: 'Fecha a coordinar entre las partes',
+        detail: '',
+      },
+      {
+        program: 'Individual',
+        schedule: 'Matrícula continua',
+        detail: 'Inicio inmediato disponible previa confirmación',
+      },
+    ] as { program: string; schedule: string; detail: string }[],
   },
 }
 
