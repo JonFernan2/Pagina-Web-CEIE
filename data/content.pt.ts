@@ -48,7 +48,7 @@ export const HOME_PT = {
     description: 'Estude espanhol na costa do Pacífico Sul. Quatro programas alinhados ao Quadro Europeu Comum de Referência. Processo de acreditação SACIC · Instituto Cervantes.',
   },
   hero: {
-    badge: 'PROCESSO DE ACREDITAÇÃO SACIC · INSTITUTO CERVANTES 2026',
+
     h1: 'Aprenda espanhol\nno Pacífico Sul',
     subtitle: 'Centro de Ensino Integral do Espanhol · Universidad Adolfo Ibáñez · Viña del Mar, Chile',
     cta1: { label: 'Ver programas', href: '/pt/programas-e-cursos' },

@@ -38,9 +38,6 @@ export default function HomeZHPage() {
         </div>
 
         <div className="relative z-10 max-w-3xl mx-auto px-4 md:px-8 py-20">
-          <p className="font-body text-xs font-medium uppercase tracking-widest mb-6" style={{ color: '#6493b5' }}>
-            {d.hero.badge}
-          </p>
           <h1 className="font-display font-bold text-white text-4xl md:text-6xl leading-tight mb-6 whitespace-pre-line">
             {d.hero.h1}
           </h1>

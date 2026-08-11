@@ -59,7 +59,7 @@ export const HOME_ES = {
     description: 'Estudia español en la costa del Pacífico Sur. Cuatro programas alineados al Marco Común Europeo de Referencia. Proceso de acreditación SACIC · Instituto Cervantes.',
   },
   hero: {
-    badge: 'PROCESO DE ACREDITACIÓN SACIC · INSTITUTO CERVANTES 2026',
+
     h1: 'Aprende español\nen el Pacífico Sur',
     subtitle: 'Centro de Enseñanza Integral del Español · Universidad Adolfo Ibáñez · Viña del Mar, Chile',
     cta1: { label: 'Ver programas', href: '/programas-y-cursos' },

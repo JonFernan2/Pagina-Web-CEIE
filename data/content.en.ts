@@ -59,7 +59,7 @@ export const HOME_EN = {
     description: 'Study Spanish on the South Pacific coast. Four programs aligned with the Common European Framework of Reference. SACIC accreditation process · Instituto Cervantes.',
   },
   hero: {
-    badge: 'SACIC ACCREDITATION PROCESS · INSTITUTO CERVANTES 2026',
+
     h1: 'Learn Spanish\non the South Pacific',
     subtitle: 'Spanish Language Teaching Centre · Universidad Adolfo Ibáñez · Viña del Mar, Chile',
     cta1: { label: 'View programs', href: '/en/programs-and-courses' },

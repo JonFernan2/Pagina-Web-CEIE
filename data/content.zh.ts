@@ -48,7 +48,7 @@ export const HOME_ZH = {
     description: '在南太平洋海岸学习西班牙语。四种对接欧洲语言共同参考框架的课程。SACIC认证进程中 · 塞万提斯学院。',
   },
   hero: {
-    badge: 'SACIC 认证进程中 · 塞万提斯学院 2026',
+
     h1: '在南太平洋\n学习西班牙语',
     subtitle: '西班牙语综合教学中心 · 阿道夫·伊瓦涅斯大学 · 比尼亚德尔马，智利',
     cta1: { label: '查看课程', href: '/zh/programs' },
