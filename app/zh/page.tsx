@@ -248,6 +248,31 @@ export default function HomeZHPage() {
         </div>
       </section>
 
+      {/* ── 新闻 ── */}
+      <section style={{ background: '#FFFFFF' }} className="py-16">
+        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 text-center">
+          <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-4">
+            新闻
+          </h2>
+          <p className="text-sm uppercase tracking-widest mb-12" style={{ color: '#6493b5' }}>
+            敬请期待
+          </p>
+          <div
+            className="min-h-48 w-full mb-12"
+            style={{ border: '1px dashed #E5E3DE', borderRadius: '4px' }}
+          />
+          <a
+            href="https://www.uai.cl"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-4 font-body font-semibold text-sm uppercase tracking-widest transition-colors duration-200"
+            style={{ background: '#1d1e20', color: '#FFFFFF', borderRadius: '2px' }}
+          >
+            访问阿道夫·伊瓦涅斯大学 →
+          </a>
+        </div>
+      </section>
+
       <Footer lang="zh" />
       <CookieBanner lang="zh" />
     </>
