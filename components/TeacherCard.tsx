@@ -1,17 +1,44 @@
 import PlaceholderImage from './PlaceholderImage'
 
+type Lang = 'es' | 'en' | 'pt' | 'zh'
+
+interface MultiLang {
+  es: string
+  en: string
+  pt: string
+  zh: string
+}
+
+interface MultiLangList {
+  es: string[]
+  en: string[]
+  pt: string[]
+  zh: string[]
+}
+
 interface TeacherCardProps {
   nombre: string
-  rol: string
-  titulo: string
-  formacionLista: string[]
-  bio: string
+  rol: MultiLang
+  titulo: MultiLang
+  formacionLista: MultiLangList
+  bio: MultiLang
   email: string
   foto?: string | null
   fotoPendiente?: boolean
+  lang?: Lang
 }
 
-function Initials({ nombre }: { nombre: string }) {
+const LABELS: Record<string, Record<Lang, string>> = {
+  formacion: { es: 'Formación', en: 'Education', pt: 'Formação', zh: '学历' },
+  fotoPendiente: {
+    es: 'Fotografía pendiente · Sesión programada',
+    en: 'Photo pending · Session scheduled',
+    pt: 'Fotografia pendente · Sessão agendada',
+    zh: '照片待定 · 拍摄已安排',
+  },
+}
+
+function Initials({ nombre, lang = 'es' }: { nombre: string; lang?: Lang }) {
   const parts = nombre.split(' ').filter((p) => p && !p.startsWith('['))
   const initials = parts.length >= 2
     ? (parts[0][0] + parts[1][0]).toUpperCase()
@@ -29,14 +56,14 @@ function Initials({ nombre }: { nombre: string }) {
         className="absolute bottom-3 left-0 right-0 mx-4 py-1 text-center text-xs font-body font-medium"
         style={{ background: '#DC2626', color: '#FFFFFF', borderRadius: '2px' }}
       >
-        Fotografía pendiente · Sesión programada
+        {LABELS.fotoPendiente[lang]}
       </div>
     </div>
   )
 }
 
 export default function TeacherCard({
-  nombre, rol, titulo, formacionLista, bio, email, foto, fotoPendiente,
+  nombre, rol, titulo, formacionLista, bio, email, foto, fotoPendiente, lang = 'es',
 }: TeacherCardProps) {
   return (
     <div
@@ -48,14 +75,14 @@ export default function TeacherCard({
         {foto ? (
           <img
             src={foto}
-            alt={`Fotografía de ${nombre}, ${rol} del CEIE UAI`}
+            alt={`${nombre}, ${rol[lang]}`}
             className="w-full h-56 object-cover object-top"
           />
         ) : fotoPendiente ? (
-          <Initials nombre={nombre} />
+          <Initials nombre={nombre} lang={lang} />
         ) : (
           <div className="w-full h-56">
-            <PlaceholderImage label={`Foto: ${nombre}`} alt={`Fotografía de ${nombre}`} />
+            <PlaceholderImage label={`Foto: ${nombre}`} alt={`${nombre}`} />
           </div>
         )}
       </div>
@@ -65,21 +92,21 @@ export default function TeacherCard({
         <div>
           <h3 className="font-body text-lg font-semibold text-negro leading-tight">{nombre}</h3>
           <p className="text-xs font-medium uppercase tracking-widest mt-1" style={{ color: '#6493b5' }}>
-            {rol}
+            {rol[lang]}
           </p>
-          <p className="text-xs mt-1" style={{ color: '#6B6B6B' }}>{titulo}</p>
+          <p className="text-xs mt-1" style={{ color: '#6B6B6B' }}>{titulo[lang]}</p>
         </div>
 
         {/* Bio */}
         <p className="text-sm leading-relaxed" style={{ color: '#2D2D2D', borderTop: '1px solid #E5E3DE', paddingTop: '12px' }}>
-          {bio}
+          {bio[lang]}
         </p>
 
         {/* Formación */}
         <div style={{ borderTop: '1px solid #E5E3DE', paddingTop: '10px' }}>
-          <p className="text-xs font-semibold uppercase tracking-widest text-negro mb-2">Formación</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-negro mb-2">{LABELS.formacion[lang]}</p>
           <ul className="flex flex-col gap-1">
-            {formacionLista.map((item, i) => (
+            {formacionLista[lang].map((item, i) => (
               <li key={i} className="text-xs flex gap-2" style={{ color: '#6B6B6B' }}>
                 <span style={{ color: '#6493b5', flexShrink: 0 }}>·</span>
                 {item}
