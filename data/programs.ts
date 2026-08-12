@@ -176,7 +176,7 @@ export const PROGRAMS_DATA: ProgramData[] = [
       reconocimiento: 'Programa alineado al MCER. Equivalencias académicas según convenios UAI.',
     },
     precio: {
-      estandar: 'USD 950 / curso de lengua',
+      estandar: 'USD 950 / por participante',
       inSitu: 'USD 1.188 / curso temático o Core',
       notas: 'Paquete especial 5 cursos: USD 4.750',
     },

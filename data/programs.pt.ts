@@ -115,7 +115,7 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
       reconocimiento: 'Programa alinhado ao QECR. Equivalências acadêmicas por meio dos acordos internacionais da UAI.',
     },
     precio: {
-      estandar: 'USD 950 / curso de língua',
+      estandar: 'USD 950 / por participante',
       inSitu: 'USD 1.188 / curso temático ou Core',
       notas: 'Pacote especial 5 cursos: USD 4.750',
     },

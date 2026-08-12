@@ -115,7 +115,7 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
       reconocimiento: 'CEFR-aligned program. Academic equivalencies through UAI international agreements.',
     },
     precio: {
-      estandar: 'USD 950 / language course',
+      estandar: 'USD 950 / per participant',
       inSitu: 'USD 1,188 / thematic or Core course',
       notas: 'Special 5-course package: USD 4,750',
     },

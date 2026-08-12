@@ -115,7 +115,7 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
       reconocimiento: '课程对接CEFR。通过UAI国际合作协议进行学术等值认定。',
     },
     precio: {
-      estandar: 'USD 950 / 语言课程',
+      estandar: 'USD 950 / 每位参与者',
       inSitu: 'USD 1,188 / 专题课程或核心课程',
       notas: '5门课特惠套餐：USD 4,750',
     },
