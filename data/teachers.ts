@@ -8,6 +8,7 @@ export interface TeacherData {
   foto: string | null
   fotoPendiente: boolean
   fotoPosition?: string
+  fotoFit?: 'cover' | 'contain'
 }
 
 export const TEACHERS: TeacherData[] = [
@@ -206,6 +207,7 @@ export const TEACHERS: TeacherData[] = [
     email: 'jsalinas@edu.uai.cl',
     foto: '/images/docente-juan-ignacio-salinas.jpeg',
     fotoPendiente: false,
+    fotoFit: 'contain',
     fotoPosition: 'center',
   },
   {
