@@ -203,8 +203,8 @@ export const TEACHERS: TeacherData[] = [
       zh: '自2010年起在阿道夫·伊瓦涅斯大学任教，开设《活着是为了讲述：拉丁美洲文学》和《电影胆识：纪录片中的智利》等课程。在比尼亚德尔马大学任教，讲授文化接触、文学体裁选读和拉丁美洲文学等课程。',
     },
     email: 'jsalinas@edu.uai.cl',
-    foto: null,
-    fotoPendiente: true,
+    foto: '/images/docente-juan-ignacio-salinas.jpeg',
+    fotoPendiente: false,
   },
   {
     nombre: 'Pedro Pacheco',
