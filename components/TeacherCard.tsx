@@ -1,3 +1,6 @@
+'use client'
+
+import { useState } from 'react'
 import PlaceholderImage from './PlaceholderImage'
 
 type Lang = 'es' | 'en' | 'pt' | 'zh'
@@ -65,6 +68,8 @@ function Initials({ nombre, lang = 'es' }: { nombre: string; lang?: Lang }) {
 export default function TeacherCard({
   nombre, rol, titulo, formacionLista, bio, email, foto, fotoPendiente, lang = 'es',
 }: TeacherCardProps) {
+  const [imgError, setImgError] = useState(false)
+
   return (
     <div
       className="flex flex-col font-body overflow-hidden"
@@ -72,11 +77,12 @@ export default function TeacherCard({
     >
       {/* Photo */}
       <div className="overflow-hidden shrink-0">
-        {foto ? (
+        {foto && !imgError ? (
           <img
             src={foto}
             alt={`${nombre}, ${rol[lang]}`}
             className="w-full h-56 object-cover object-top"
+            onError={() => setImgError(true)}
           />
         ) : fotoPendiente ? (
           <Initials nombre={nombre} lang={lang} />
