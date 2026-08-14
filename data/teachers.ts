@@ -7,6 +7,7 @@ export interface TeacherData {
   email: string
   foto: string | null
   fotoPendiente: boolean
+  fotoPosition?: string
 }
 
 export const TEACHERS: TeacherData[] = [
