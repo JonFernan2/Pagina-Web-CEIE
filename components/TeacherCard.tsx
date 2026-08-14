@@ -28,6 +28,7 @@ interface TeacherCardProps {
   email: string
   foto?: string | null
   fotoPendiente?: boolean
+  fotoPosition?: string
   lang?: Lang
 }
 
@@ -66,7 +67,7 @@ function Initials({ nombre, lang = 'es' }: { nombre: string; lang?: Lang }) {
 }
 
 export default function TeacherCard({
-  nombre, rol, titulo, formacionLista, bio, email, foto, fotoPendiente, lang = 'es',
+  nombre, rol, titulo, formacionLista, bio, email, foto, fotoPendiente, fotoPosition = 'object-top', lang = 'es',
 }: TeacherCardProps) {
   const [imgError, setImgError] = useState(false)
 
@@ -81,7 +82,7 @@ export default function TeacherCard({
           <img
             src={foto}
             alt={`${nombre}, ${rol[lang]}`}
-            className="w-full h-56 object-cover object-center"
+            className={`w-full h-56 object-cover ${fotoPosition}`}
             onError={() => setImgError(true)}
           />
         ) : fotoPendiente ? (

@@ -205,6 +205,7 @@ export const TEACHERS: TeacherData[] = [
     email: 'jsalinas@edu.uai.cl',
     foto: '/images/docente-juan-ignacio-salinas.jpeg',
     fotoPendiente: false,
+    fotoPosition: 'object-center',
   },
   {
     nombre: 'Pedro Pacheco',
