@@ -81,7 +81,7 @@ export default function TeacherCard({
           <img
             src={foto}
             alt={`${nombre}, ${rol[lang]}`}
-            className="w-full h-56 object-cover object-top"
+            className="w-full h-56 object-cover object-center"
             onError={() => setImgError(true)}
           />
         ) : fotoPendiente ? (
