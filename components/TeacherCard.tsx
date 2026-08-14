@@ -67,7 +67,7 @@ function Initials({ nombre, lang = 'es' }: { nombre: string; lang?: Lang }) {
 }
 
 export default function TeacherCard({
-  nombre, rol, titulo, formacionLista, bio, email, foto, fotoPendiente, fotoPosition = 'object-center', lang = 'es',
+  nombre, rol, titulo, formacionLista, bio, email, foto, fotoPendiente, fotoPosition = 'object-top', lang = 'es',
 }: TeacherCardProps) {
   const [imgError, setImgError] = useState(false)
 
