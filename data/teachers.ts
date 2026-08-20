@@ -65,7 +65,7 @@ export const TEACHERS: TeacherData[] = [
     email: 'ilse.capona@uai.cl',
     foto: '/images/directorio-ilse-capona.jpg',
     fotoPendiente: false,
-    fotoFit: 'cover',
+    fotoFit: 'contain',
     fotoPosition: 'center center',
   },
   {
