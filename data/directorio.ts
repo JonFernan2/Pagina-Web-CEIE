@@ -109,7 +109,7 @@ export const DIRECTORIO: DirectorioMember[] = [
       zh: '国际关系协调 — 商务部',
     },
     foto: '/images/directorio-caroline-cortes.jpg',
-    fotoPosition: '20% top',
+    fotoPosition: '5% top',
     alt: {
       es: 'Caroline Cortés — Coordinadora RRII del CEIE UAI',
       en: 'Caroline Cortés — International Relations Coordinator, CEIE UAI',
