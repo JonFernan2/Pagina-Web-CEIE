@@ -1,6 +1,3 @@
-'use client'
-
-import { useState } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
@@ -8,17 +5,6 @@ import { CONTACT_ES } from '@/data/content.es'
 
 export default function ContactoPage() {
   const d = CONTACT_ES
-  const [submitted, setSubmitted] = useState(false)
-
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault()
-    const res = await fetch('https://formspree.io/f/mjybwjrn', {
-      method: 'POST',
-      body: new FormData(e.currentTarget),
-      headers: { Accept: 'application/json' },
-    })
-    if (res.ok) setSubmitted(true)
-  }
 
   return (
     <>
@@ -44,64 +30,16 @@ export default function ContactoPage() {
             {/* Form */}
             <div>
               <h2 className="font-display font-bold text-negro text-2xl mb-6">{d.form.title}</h2>
-              {submitted ? (
-                <div
-                  className="p-6"
-                  style={{ background: '#FFFFFF', border: '2px solid #6493b5', borderRadius: '4px' }}
-                >
-                  <p className="font-semibold text-negro mb-1">✓</p>
-                  <p style={{ color: '#2D2D2D' }}>{d.form.fields.success}</p>
-                </div>
-              ) : (
-                <form
-                  onSubmit={handleSubmit}
-                  className="flex flex-col gap-4 p-6"
-                  style={{ background: '#FFFFFF', border: '1px solid #E5E3DE', borderRadius: '4px' }}
-                >
-                  {[
-                    { id: 'name',         label: d.form.fields.name,         type: 'text',  required: true },
-                    { id: 'organization', label: d.form.fields.organization,  type: 'text',  required: false },
-                    { id: 'country',      label: d.form.fields.country,       type: 'text',  required: true },
-                    { id: 'email',        label: d.form.fields.email,         type: 'email', required: true },
-                    { id: 'phone',        label: d.form.fields.phone,         type: 'tel',   required: false },
-                    { id: 'program',      label: d.form.fields.program,       type: 'text',  required: false },
-                  ].map((f) => (
-                    <div key={f.id} className="flex flex-col gap-1">
-                      <label htmlFor={f.id} className="text-sm font-medium text-negro">
-                        {f.label} {f.required && '*'}
-                      </label>
-                      <input
-                        type={f.type}
-                        id={f.id}
-                        name={f.id}
-                        required={f.required}
-                        className="px-3 py-2 text-sm font-body border"
-                        style={{ borderColor: '#E5E3DE', borderRadius: '2px' }}
-                      />
-                    </div>
-                  ))}
-                  <div className="flex flex-col gap-1">
-                    <label htmlFor="message" className="text-sm font-medium text-negro">
-                      {d.form.fields.message} *
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={4}
-                      required
-                      className="px-3 py-2 text-sm font-body border resize-none"
-                      style={{ borderColor: '#E5E3DE', borderRadius: '2px' }}
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    className="py-3 font-body font-semibold text-sm uppercase tracking-widest transition-colors"
-                    style={{ background: '#6493b5', color: '#1d1e20', borderRadius: '2px' }}
-                  >
-                    {d.form.fields.submit}
-                  </button>
-                </form>
-              )}
+              <iframe
+                src="https://forms.cloud.microsoft/r/nAPfLyq21W?embed=true"
+                width="100%"
+                height="700"
+                frameBorder={0}
+                marginWidth={0}
+                marginHeight={0}
+                style={{ border: 'none', maxWidth: '100%', borderRadius: '4px' }}
+                allowFullScreen
+              />
             </div>
 
             {/* Contact info */}
