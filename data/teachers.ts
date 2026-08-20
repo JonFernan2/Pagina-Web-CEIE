@@ -13,6 +13,62 @@ export interface TeacherData {
 
 export const TEACHERS: TeacherData[] = [
   {
+    nombre: 'Ilse Capona',
+    rol: {
+      es: 'Directora Académica · Coordinadora CEIE',
+      en: 'Academic Director · CEIE Coordinator',
+      pt: 'Diretora Acadêmica · Coordenadora CEIE',
+      zh: '学术主任 · CEIE协调员',
+    },
+    titulo: {
+      es: 'Magíster en Comprensión Lectora y Producción de Textos',
+      en: "Master's in Reading Comprehension & Text Production",
+      pt: 'Mestre em Compreensão Leitora e Produção de Textos',
+      zh: '阅读理解与文本写作硕士',
+    },
+    formacionLista: {
+      es: [
+        'Magíster en Comprensión Lectora y Producción de Textos, UNAB 2021',
+        'Magíster en Currículum y Proyectos Educativos, UNAB 2018',
+        'Profesora de Inglés, PUCV 2002',
+        'Licenciada en Literatura Inglesa, PUCV 2002',
+        'Miembro Núcleo de Lingüística UAI',
+      ],
+      en: [
+        'Master in Reading Comprehension & Text Production, UNAB 2021',
+        'Master in Curriculum & Educational Projects, UNAB 2018',
+        'English Teacher, PUCV 2002',
+        'Bachelor in English Literature, PUCV 2002',
+        'Member, UAI Linguistics Research Group',
+      ],
+      pt: [
+        'Mestre em Compreensão Leitora e Produção de Textos, UNAB 2021',
+        'Mestre em Currículo e Projetos Educativos, UNAB 2018',
+        'Professora de Inglês, PUCV 2002',
+        'Licenciada em Literatura Inglesa, PUCV 2002',
+        'Membro do Núcleo de Linguística UAI',
+      ],
+      zh: [
+        '阅读理解与文本写作硕士，UNAB 2021',
+        '课程与教育项目硕士，UNAB 2018',
+        '英语教师，PUCV 2002',
+        '英国文学学士，PUCV 2002',
+        'UAI 语言学研究核心成员',
+      ],
+    },
+    bio: {
+      es: 'Directora Académica y Coordinadora del Centro de Español para Extranjeros (CEIE) de la Universidad Adolfo Ibáñez. Profesora de Inglés y Licenciada en Literatura Inglesa por la Pontificia Universidad Católica de Valparaíso, con dos magísteres en la Universidad Nacional Andrés Bello: Currículum y Proyectos Educativos (2018) y Comprensión Lectora y Producción de Textos (2021). Miembro del Núcleo de Lingüística UAI.',
+      en: 'Academic Director and Coordinator of the Spanish for Foreigners Center (CEIE) at Universidad Adolfo Ibáñez. English Teacher and Bachelor in English Literature from Pontificia Universidad Católica de Valparaíso, with two master\'s degrees from Universidad Nacional Andrés Bello: Curriculum & Educational Projects (2018) and Reading Comprehension & Text Production (2021). Member of the UAI Linguistics Research Group.',
+      pt: 'Diretora Acadêmica e Coordenadora do Centro de Espanhol para Estrangeiros (CEIE) da Universidad Adolfo Ibáñez. Professora de Inglês e Licenciada em Literatura Inglesa pela Pontificia Universidad Católica de Valparaíso, com dois mestrados na Universidad Nacional Andrés Bello: Currículo e Projetos Educativos (2018) e Compreensão Leitora e Produção de Textos (2021). Membro do Núcleo de Linguística UAI.',
+      zh: '阿道夫·伊瓦涅斯大学外国人西班牙语中心（CEIE）学术主任兼协调员。毕业于瓦尔帕莱索天主教大学，获英语教师资格及英国文学学士学位；并于安德烈斯贝略国立大学先后取得课程与教育项目硕士学位（2018年）及阅读理解与文本写作硕士学位（2021年）。UAI语言学研究核心成员。',
+    },
+    email: 'ilse.capona@uai.cl',
+    foto: '/images/directorio-ilse-capona.jpg',
+    fotoPendiente: false,
+    fotoFit: 'cover',
+    fotoPosition: 'center 20%',
+  },
+  {
     nombre: 'Manuel Casanueva',
     rol: {
       es: 'Profesor de Español como Lengua Extranjera',
