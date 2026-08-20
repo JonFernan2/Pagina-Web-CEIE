@@ -96,7 +96,7 @@ export default function HomePTPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {d.programs.items.map((p) => (
-              <ProgramCard key={p.href} {...p} />
+              <ProgramCard key={p.href} {...p} lang="pt" />
             ))}
           </div>
         </div>
