@@ -253,8 +253,8 @@ export const TEACHERS: TeacherData[] = [
       zh: '在阿道夫·伊瓦涅斯大学任教，为国际学生讲授西班牙语语音学和西班牙语语法课程。',
     },
     email: 'pedro.pacheco@edu.uai.cl',
-    foto: null,
-    fotoPendiente: true,
+    foto: '/images/docente-pedro-pacheco.jpg',
+    fotoPendiente: false,
   },
   {
     nombre: 'Christina Haska',
