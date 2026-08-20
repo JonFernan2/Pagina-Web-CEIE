@@ -66,7 +66,7 @@ export const TEACHERS: TeacherData[] = [
     foto: '/images/directorio-ilse-capona.jpg',
     fotoPendiente: false,
     fotoFit: 'cover',
-    fotoPosition: 'center 20%',
+    fotoPosition: 'center center',
   },
   {
     nombre: 'Manuel Casanueva',
