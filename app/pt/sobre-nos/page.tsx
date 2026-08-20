@@ -47,7 +47,8 @@ export default function SobreNosPTPage() {
                   <img
                     src={member.foto}
                     alt={member.alt.pt}
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-cover"
+                    style={{ objectPosition: member.fotoPosition ?? 'center center' }}
                   />
                 </div>
                 <p className="font-body font-semibold text-negro text-base leading-tight mb-1">
