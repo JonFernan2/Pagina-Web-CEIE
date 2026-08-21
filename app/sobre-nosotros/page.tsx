@@ -53,7 +53,8 @@ export default function SobreNosotrosPage() {
                   <img
                     src={member.foto}
                     alt={member.alt.es}
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-cover"
+                    style={{ objectPosition: member.fotoPosition ?? 'center center' }}
                   />
                 </div>
                 <p className="font-body font-semibold text-negro text-base leading-tight mb-1">
