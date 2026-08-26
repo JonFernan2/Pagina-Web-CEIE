@@ -303,13 +303,13 @@ export default function HomeZHPage() {
       <section style={{ background: '#C7C2ba' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 text-center">
           <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#6493b5' }}>
-            加入我们
+            现正招生
           </p>
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-4">
-            招聘信息
+            课程招生通告
           </h2>
           <p className="text-base leading-relaxed mb-8 mx-auto" style={{ color: '#2D2D2D', maxWidth: '560px' }}>
-            有意加入CEIE团队？请通过阿道夫·伊瓦涅斯大学官方招聘门户查看职位空缺并提交申请。
+            有意在阿道夫·伊瓦涅斯大学学习西班牙语？请通过UAI官方门户查看当前招生通告并提交申请。
           </p>
           <a
             href="https://postula.uai.cl/"
@@ -318,7 +318,7 @@ export default function HomeZHPage() {
             className="inline-flex items-center gap-2 px-8 py-4 font-body font-semibold text-sm uppercase tracking-widest transition-colors duration-200"
             style={{ background: '#1d1e20', color: '#FFFFFF', borderRadius: '2px' }}
           >
-            查看招聘职位 →
+            查看招生通告 →
           </a>
         </div>
       </section>
