@@ -23,6 +23,7 @@ export const FOOTER_ES = {
       { label: 'Voces del Centro',      href: '/voces-del-centro' },
       { label: 'Admisión',              href: '/admision' },
       { label: 'Contacto',              href: '/contacto' },
+      { label: 'Convocatorias',         href: 'https://postula.uai.cl/' },
     ],
   },
   col3: {

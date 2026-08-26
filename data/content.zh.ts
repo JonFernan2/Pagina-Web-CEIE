@@ -12,6 +12,7 @@ export const FOOTER_ZH = {
       { label: '学生心声',        href: '/zh/testimonials' },
       { label: '申请入学',        href: '/zh/apply' },
       { label: '联系我们',        href: '/zh/contact' },
+      { label: '招聘信息',        href: 'https://postula.uai.cl/' },
     ],
   },
   col3: {
