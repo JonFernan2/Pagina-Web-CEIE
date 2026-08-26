@@ -1,26 +1,11 @@
-'use client'
-
-import { useState } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
 import AdmissionSteps from '@/components/AdmissionSteps'
 import { ADMISSIONS_EN } from '@/data/content.en'
-import Link from 'next/link'
 
 export default function AdmissionsENPage() {
   const d = ADMISSIONS_EN
-  const [submitted, setSubmitted] = useState(false)
-
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault()
-    const res = await fetch('https://formspree.io/f/mjybwjrn', {
-      method: 'POST',
-      body: new FormData(e.currentTarget),
-      headers: { Accept: 'application/json' },
-    })
-    if (res.ok) setSubmitted(true)
-  }
 
   return (
     <>
@@ -72,77 +57,17 @@ export default function AdmissionsENPage() {
 
       <section style={{ background: '#C7C2ba' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
-          <div className="max-w-2xl mx-auto">
-            <h2 className="font-display font-bold text-negro text-3xl mb-8">{d.form.title}</h2>
-            {submitted ? (
-              <div className="p-6 text-center" style={{ background: '#FFFFFF', border: '2px solid #6493b5', borderRadius: '4px' }}>
-                <p className="text-lg font-semibold text-negro mb-2">✓</p>
-                <p style={{ color: '#2D2D2D' }}>{d.form.fields.success}</p>
-              </div>
-            ) : (
-              <form
-                onSubmit={handleSubmit}
-                className="flex flex-col gap-5 p-6"
-                style={{ background: '#FFFFFF', border: '1px solid #E5E3DE', borderRadius: '4px' }}
-              >
-                {[
-                  { id: 'name',    label: d.form.fields.name,    type: 'text',  required: true },
-                  { id: 'country', label: d.form.fields.country, type: 'text',  required: true },
-                  { id: 'email',   label: d.form.fields.email,   type: 'email', required: true },
-                  { id: 'phone',   label: d.form.fields.phone,   type: 'tel',   required: false },
-                ].map((f) => (
-                  <div key={f.id} className="flex flex-col gap-1">
-                    <label htmlFor={f.id} className="text-sm font-medium text-negro">
-                      {f.label} {f.required && '*'}
-                    </label>
-                    <input
-                      type={f.type}
-                      id={f.id}
-                      name={f.id}
-                      required={f.required}
-                      className="px-3 py-2 text-sm font-body border"
-                      style={{ borderColor: '#E5E3DE', borderRadius: '2px' }}
-                    />
-                  </div>
-                ))}
-                <div className="flex flex-col gap-1">
-                  <label htmlFor="program" className="text-sm font-medium text-negro">{d.form.fields.program} *</label>
-                  <select id="program" name="program" required className="px-3 py-2 text-sm font-body border" style={{ borderColor: '#E5E3DE', borderRadius: '2px' }}>
-                    <option value="">Select...</option>
-                    <option value="semester">Semester Program</option>
-                    <option value="intensive">Intensive Program</option>
-                    <option value="specific-purposes">Specific Purposes</option>
-                    <option value="individual">Individual Program</option>
-                  </select>
-                </div>
-                <div className="flex flex-col gap-1">
-                  <label htmlFor="level" className="text-sm font-medium text-negro">{d.form.fields.level} *</label>
-                  <select id="level" name="level" required className="px-3 py-2 text-sm font-body border" style={{ borderColor: '#E5E3DE', borderRadius: '2px' }}>
-                    <option value="">Select...</option>
-                    {d.form.fields.levelOpts.map((opt) => <option key={opt} value={opt.toLowerCase()}>{opt}</option>)}
-                  </select>
-                </div>
-                <div className="flex flex-col gap-1">
-                  <label htmlFor="startDate" className="text-sm font-medium text-negro">{d.form.fields.startDate} *</label>
-                  <input type="date" id="startDate" name="startDate" required className="px-3 py-2 text-sm font-body border" style={{ borderColor: '#E5E3DE', borderRadius: '2px' }} />
-                </div>
-                <div className="flex flex-col gap-1">
-                  <label htmlFor="message" className="text-sm font-medium text-negro">{d.form.fields.message}</label>
-                  <textarea id="message" name="message" rows={4} className="px-3 py-2 text-sm font-body border resize-none" style={{ borderColor: '#E5E3DE', borderRadius: '2px' }} />
-                </div>
-                <div className="flex items-start gap-2">
-                  <input type="checkbox" id="privacy" required className="mt-0.5" />
-                  <label htmlFor="privacy" className="text-sm" style={{ color: '#6B6B6B' }}>
-                    {d.form.fields.privacy}{' '}
-                    <Link href="/en/privacy-policy" className="underline" style={{ color: '#6493b5' }}>(see policy)</Link>
-                  </label>
-                </div>
-                <button type="submit" className="py-3 px-8 font-body font-semibold text-sm uppercase tracking-widest" style={{ background: '#6493b5', color: '#1d1e20', borderRadius: '2px' }}>
-                  {d.form.fields.submit}
-                </button>
-              </form>
-            )}
-          </div>
+          <h2 className="font-display font-bold text-negro text-3xl mb-8 text-center">{d.form.title}</h2>
+          <iframe
+            src="https://forms.cloud.microsoft/r/hKxAtJqgm5?embed=true"
+            width="100%"
+            height="800"
+            frameBorder={0}
+            marginWidth={0}
+            marginHeight={0}
+            style={{ border: 'none', maxWidth: '100%', borderRadius: '4px' }}
+            allowFullScreen
+          />
         </div>
       </section>
 

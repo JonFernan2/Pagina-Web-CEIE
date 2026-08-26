@@ -2,6 +2,7 @@ export interface DirectorioMember {
   nombre: string
   cargo: { es: string; en: string; pt: string; zh: string }
   foto: string
+  fotoPosition?: string
   alt: { es: string; en: string; pt: string; zh: string }
   credenciales?: { es: string[]; en: string[]; pt: string[]; zh: string[] }
 }
@@ -108,6 +109,7 @@ export const DIRECTORIO: DirectorioMember[] = [
       zh: '国际关系协调 — 商务部',
     },
     foto: '/images/directorio-caroline-cortes.jpg',
+    fotoPosition: 'left top',
     alt: {
       es: 'Caroline Cortés — Coordinadora RRII del CEIE UAI',
       en: 'Caroline Cortés — International Relations Coordinator, CEIE UAI',

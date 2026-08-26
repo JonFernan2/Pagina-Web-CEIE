@@ -78,7 +78,7 @@ export default function TeacherCard({
       style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#FFFFFF' }}
     >
       {/* Photo */}
-      <div className="overflow-hidden shrink-0">
+      <div className="overflow-hidden shrink-0" style={fotoFit === 'contain' ? { background: '#FFFFFF', padding: '12px 24px 0' } : undefined}>
         {foto && !imgError ? (
           <img
             src={foto}

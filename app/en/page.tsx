@@ -96,7 +96,7 @@ export default function HomeENPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {d.programs.items.map((p) => (
-              <ProgramCard key={p.href} {...p} />
+              <ProgramCard key={p.href} {...p} lang="en" />
             ))}
           </div>
         </div>
@@ -296,6 +296,30 @@ export default function HomeENPage() {
               Visit Universidad Adolfo Ibáñez →
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* ── JOB OPENINGS ── */}
+      <section style={{ background: '#C7C2ba' }} className="py-16">
+        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 text-center">
+          <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#6493b5' }}>
+            Work with us
+          </p>
+          <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-4">
+            Job Openings
+          </h2>
+          <p className="text-base leading-relaxed mb-8 mx-auto" style={{ color: '#2D2D2D', maxWidth: '560px' }}>
+            Interested in joining the CEIE team? Browse our open positions and apply through the official Universidad Adolfo Ibáñez portal.
+          </p>
+          <a
+            href="https://postula.uai.cl/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-4 font-body font-semibold text-sm uppercase tracking-widest transition-colors duration-200"
+            style={{ background: '#1d1e20', color: '#FFFFFF', borderRadius: '2px' }}
+          >
+            View open positions →
+          </a>
         </div>
       </section>
 

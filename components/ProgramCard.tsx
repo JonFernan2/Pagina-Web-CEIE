@@ -10,6 +10,42 @@ interface ProgramCardProps {
   grupoMax: string
   precioReferencial: string
   href: string
+  lang?: 'es' | 'en' | 'pt' | 'zh'
+}
+
+const labels = {
+  es: {
+    nivel: 'Nivel',
+    duracion: 'Duración',
+    horario: 'Horario',
+    grupo: 'Grupo',
+    precio: 'Precio referencial',
+    cta: 'Ver programa',
+  },
+  en: {
+    nivel: 'Level',
+    duracion: 'Duration',
+    horario: 'Schedule',
+    grupo: 'Group',
+    precio: 'Reference price',
+    cta: 'View program',
+  },
+  pt: {
+    nivel: 'Nível',
+    duracion: 'Duração',
+    horario: 'Horário',
+    grupo: 'Grupo',
+    precio: 'Preço referencial',
+    cta: 'Ver programa',
+  },
+  zh: {
+    nivel: '级别',
+    duracion: '时长',
+    horario: '课程时间',
+    grupo: '班级规模',
+    precio: '参考价格',
+    cta: '查看课程',
+  },
 }
 
 export default function ProgramCard({
@@ -21,7 +57,10 @@ export default function ProgramCard({
   grupoMax,
   precioReferencial,
   href,
+  lang = 'es',
 }: ProgramCardProps) {
+  const t = labels[lang]
+
   return (
     <div
       className="flex flex-col h-full font-body"
@@ -43,7 +82,7 @@ export default function ProgramCard({
           className="text-xs font-medium uppercase tracking-widest"
           style={{ color: '#6493b5' }}
         >
-          Nivel: {nivel}
+          {t.nivel}: {nivel}
         </span>
       </div>
 
@@ -57,21 +96,21 @@ export default function ProgramCard({
           <div className="flex items-start gap-2">
             <Clock size={14} className="mt-0.5 shrink-0" style={{ color: '#6493b5' }} />
             <div>
-              <span className="font-medium text-negro">Duración: </span>
+              <span className="font-medium text-negro">{t.duracion}: </span>
               <span style={{ color: '#6B6B6B' }}>{duracion}</span>
             </div>
           </div>
           <div className="flex items-start gap-2">
             <Clock size={14} className="mt-0.5 shrink-0" style={{ color: '#6493b5' }} />
             <div>
-              <span className="font-medium text-negro">Horario: </span>
+              <span className="font-medium text-negro">{t.horario}: </span>
               <span style={{ color: '#6B6B6B' }}>{horario}</span>
             </div>
           </div>
           <div className="flex items-start gap-2">
             <Users size={14} className="mt-0.5 shrink-0" style={{ color: '#6493b5' }} />
             <div>
-              <span className="font-medium text-negro">Grupo: </span>
+              <span className="font-medium text-negro">{t.grupo}: </span>
               <span style={{ color: '#6B6B6B' }}>{grupoMax}</span>
             </div>
           </div>
@@ -80,7 +119,7 @@ export default function ProgramCard({
         {/* Price */}
         <div className="mt-auto pt-4" style={{ borderTop: '1px solid #E5E3DE' }}>
           <p className="text-xs uppercase tracking-widest mb-1" style={{ color: '#6B6B6B' }}>
-            Precio referencial
+            {t.precio}
           </p>
           <p className="text-xl font-bold" style={{ color: '#6493b5' }}>
             {precioReferencial}
@@ -96,7 +135,7 @@ export default function ProgramCard({
             borderRadius: '2px',
           }}
         >
-          Ver programa <ChevronRight size={16} />
+          {t.cta} <ChevronRight size={16} />
         </Link>
       </div>
     </div>
