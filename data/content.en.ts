@@ -23,6 +23,7 @@ export const FOOTER_EN = {
       { label: 'Voices of the Centre',   href: '/en/voices-of-the-centre' },
       { label: 'Apply Now',              href: '/en/admissions' },
       { label: 'Contact',                href: '/en/contact' },
+      { label: 'Job Openings',           href: 'https://postula.uai.cl/' },
     ],
   },
   col3: {
