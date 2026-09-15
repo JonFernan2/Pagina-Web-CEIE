@@ -303,13 +303,13 @@ export default function HomeENPage() {
       <section style={{ background: '#C7C2ba' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 text-center">
           <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#6493b5' }}>
-            Work with us
+            Enrolment open
           </p>
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-4">
-            Job Openings
+            Open Calls
           </h2>
           <p className="text-base leading-relaxed mb-8 mx-auto" style={{ color: '#2D2D2D', maxWidth: '560px' }}>
-            Interested in joining the CEIE team? Browse our open positions and apply through the official Universidad Adolfo Ibáñez portal.
+            Interested in studying Spanish at Universidad Adolfo Ibáñez? Check our current open calls and apply through the official UAI portal.
           </p>
           <a
             href="https://postula.uai.cl/"
@@ -318,7 +318,7 @@ export default function HomeENPage() {
             className="inline-flex items-center gap-2 px-8 py-4 font-body font-semibold text-sm uppercase tracking-widest transition-colors duration-200"
             style={{ background: '#1d1e20', color: '#FFFFFF', borderRadius: '2px' }}
           >
-            View open positions →
+            View open calls →
           </a>
         </div>
       </section>

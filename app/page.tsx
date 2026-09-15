@@ -340,13 +340,13 @@ export default function HomePage() {
       <section style={{ background: '#C7C2ba' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 text-center">
           <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#6493b5' }}>
-            Trabaja con nosotros
+            Inscripciones abiertas
           </p>
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-4">
             Convocatorias
           </h2>
           <p className="text-base leading-relaxed mb-8 mx-auto" style={{ color: '#2D2D2D', maxWidth: '560px' }}>
-            ¿Te interesa ser parte del equipo CEIE? Revisa nuestras convocatorias abiertas y postula a través del portal oficial de la Universidad Adolfo Ibáñez.
+            ¿Te interesa estudiar español en la Universidad Adolfo Ibáñez? Revisa nuestras convocatorias vigentes y postula a través del portal oficial de la UAI.
           </p>
           <a
             href="https://postula.uai.cl/"
@@ -355,7 +355,7 @@ export default function HomePage() {
             className="inline-flex items-center gap-2 px-8 py-4 font-body font-semibold text-sm uppercase tracking-widest transition-colors duration-200"
             style={{ background: '#1d1e20', color: '#FFFFFF', borderRadius: '2px' }}
           >
-            Ver convocatorias abiertas →
+            Ver convocatorias →
           </a>
         </div>
       </section>
