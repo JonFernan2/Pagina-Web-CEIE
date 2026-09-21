@@ -122,31 +122,35 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
   },
   {
     slug: 'intensivo',
-    nombre: 'Cursos ELE Intensivos (Grupo)',
-    descripcionBreve: 'Formação intensiva presencial ou online em grupo. Modalidades Básico, Intermediário e Avançado, e ciclos conversacionais.',
+    nombre: 'Cursos ELE Intensivos e à Medida',
+    descripcionBreve: 'Formação intensiva em grupo (online ou presencial) ou personalizada um a um. Adaptada ao nível, ritmo e objetivos de cada participante.',
     descripcionExtendida:
-      'O Programa Intensivo oferece imersão acelerada para estudantes que precisam atingir um nível comunicativo em pouco tempo. Aulas diárias combinadas com atividades culturais permitem progresso significativo em 2 a 3 semanas.',
+      'O Curso ELE Intensivo e à Medida reúne duas modalidades complementares em uma oferta flexível: formação intensiva em grupos reduzidos para quem precisa avançar rapidamente em um contexto coletivo, e formação individualizada um a um para quem requer currículo, horário e ritmo completamente personalizados. Ambas as modalidades estão disponíveis de forma presencial no campus UAI Viña del Mar ou na modalidade online.',
     objetivo:
-      'Fortalecer as competências comunicativas em espanhol por meio de formação intensiva presencial ou online, orientada a estudantes que precisam avançar no domínio do idioma em um período breve.',
-    niveles: ['A1', 'A2', 'B1', 'B2'],
+      'Fortalecer as competências comunicativas em espanhol por meio de formação intensiva — grupal ou individual — adaptada ao nível, ritmo e objetivos acadêmicos ou profissionais de cada participante.',
+    niveles: ['A1', 'A2', 'B1', 'B2', 'Todos os níveis'],
     sedes: ['Viña del Mar', 'Santiago'],
     publicoObjetivo: 'Estudantes internacionais não falantes de espanhol. Profissionais, pesquisadores, executivos, empresas e funcionários diplomáticos.',
     cursosTabla: [
-      { nombre: 'Básico Online', horas: 30, precioUSD: 300, modalidad: '3 semanas' },
-      { nombre: 'Intermediário Online', horas: 30, precioUSD: 300, modalidad: '3 semanas' },
-      { nombre: 'Avançado Online', horas: 30, precioUSD: 300, modalidad: '3 semanas' },
-      { nombre: 'Básico Presencial', horas: 40, precioUSD: 800, modalidad: '2 semanas' },
-      { nombre: 'Intermediário Presencial', horas: 40, precioUSD: 800, modalidad: '2 semanas' },
-      { nombre: 'Avançado Presencial', horas: 40, precioUSD: 800, modalidad: '2 semanas' },
-      { nombre: 'Ciclo Conversacional: Take a Break / Hablemos Español (Online)', horas: 8, precioUSD: 100, modalidad: '8 sessões, 2×/semana' },
+      { nombre: 'Grupal · Básico Online', horas: 30, precioUSD: 300, modalidad: '3 semanas' },
+      { nombre: 'Grupal · Intermediário Online', horas: 30, precioUSD: 300, modalidad: '3 semanas' },
+      { nombre: 'Grupal · Avançado Online', horas: 30, precioUSD: 300, modalidad: '3 semanas' },
+      { nombre: 'Grupal · Básico Presencial', horas: 40, precioUSD: 800, modalidad: '2 semanas' },
+      { nombre: 'Grupal · Intermediário Presencial', horas: 40, precioUSD: 800, modalidad: '2 semanas' },
+      { nombre: 'Grupal · Avançado Presencial', horas: 40, precioUSD: 800, modalidad: '2 semanas' },
+      { nombre: 'Grupal · Ciclo Conversacional (Online)', horas: 8, precioUSD: 100, modalidad: '8 sessões, 2×/semana' },
+      { nombre: 'Individual · Básico', horas: 20, precioUSD: 1000, modalidad: 'À medida' },
+      { nombre: 'Individual · Intermediário', horas: 30, precioUSD: 1500, modalidad: 'À medida' },
+      { nombre: 'Individual · Avançado', horas: 40, precioUSD: 2000, modalidad: 'À medida' },
     ],
     horarios: [
-      { turno: 'Manhã (presencial)', dias: 'Segunda a sexta-feira', hora: '09:00 – 13:00' },
-      { turno: 'Online', dias: 'Coordenado com o grupo', hora: 'Flexível' },
+      { turno: 'Grupal presencial', dias: 'Segunda a sexta-feira', hora: '09:00 – 13:00' },
+      { turno: 'Grupal online', dias: 'Coordenado com o grupo', hora: 'Flexível' },
+      { turno: 'Individual', dias: 'Acordado com o estudante', hora: 'Incluindo noturno e fins de semana' },
     ],
     temario: [
       {
-        nivel: 'A1–A2 — Iniciante a Elementar',
+        nivel: 'A1–A2 — Iniciante a Elementar (Grupal)',
         contenidos: [
           'Comunicação básica em situações cotidianas',
           'Presente, passado e futuro imediato',
@@ -155,7 +159,7 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
         ],
       },
       {
-        nivel: 'B1–B2 — Intermediário',
+        nivel: 'B1–B2 — Intermediário (Grupal)',
         contenidos: [
           'Conversação fluente sobre temas familiares',
           'Redação de textos estruturados',
@@ -163,62 +167,8 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
           'Expressão de opiniões e argumentação',
         ],
       },
-    ],
-    actividades: [
-      'Sessões diárias de conversação cultural',
-      'City tour: Valparaíso e Viña del Mar',
-      'Workshop de gastronomia chilena',
-      'Atividades sociais com a comunidade de estudantes internacionais da UAI',
-    ],
-    condiciones: [
       {
-        titulo: 'Requisito de entrada',
-        descripcion: 'A1 ou sem conhecimentos prévios. Teste de diagnóstico antes do início do programa.',
-      },
-      {
-        titulo: 'Presença',
-        descripcion: 'Mínimo de 85% de frequência exigido pela natureza intensiva do programa.',
-      },
-      {
-        titulo: 'Cancelamento',
-        descripcion: 'Com 45+ dias de antecedência: sem encargos. 15–44 dias: encargo de 50%. Menos de 15 dias: sem reembolso. Força maior avaliada individualmente. Por escrito para caroline.cortes@uai.cl.',
-      },
-    ],
-    grupoMaximo: 10,
-    duracion: '2–3 semanas conforme modalidade',
-    certificado: {
-      tipo: 'Certificado de Participação CEIE-UAI',
-      emite: 'Universidad Adolfo Ibáñez',
-      reconocimiento: 'Equivalências conforme a instituição de origem do estudante.',
-    },
-    precio: {
-      estandar: 'USD 300 (online · 30 hrs)',
-      inSitu: 'USD 800 (presencial · 40 hrs)',
-      notas: 'Ciclo conversacional: USD 100 (8 sessões)',
-    },
-  },
-  {
-    slug: 'individual',
-    nombre: 'Curso ELE à Medida (Individual)',
-    descripcionBreve: 'Formação personalizada individual, adaptada ao nível, ritmo e objetivos de cada participante. Disponível no campus ou in situ.',
-    descripcionExtendida:
-      'O Programa Individual oferece instrução personalizada um a um com um especialista do CEIE. Currículo, materiais, horário e ritmo são totalmente adaptados ao perfil do estudante. Disponível no campus UAI Viña del Mar ou na modalidade in situ no local profissional do estudante — embaixadas, escritórios corporativos ou residência particular.',
-    objetivo:
-      'Desenvolver competências comunicativas em espanhol por meio de formação personalizada, adaptada ao nível, ritmo de aprendizagem e objetivos acadêmicos ou profissionais de cada participante.',
-    niveles: ['Todos os níveis'],
-    sedes: ['Viña del Mar', 'Santiago'],
-    publicoObjetivo: 'Estudantes internacionais não falantes de espanhol. Profissionais, pesquisadores, executivos, empresas e funcionários diplomáticos.',
-    cursosTabla: [
-      { nombre: 'Básico', horas: 20, precioUSD: 1000 },
-      { nombre: 'Intermediário', horas: 30, precioUSD: 1500 },
-      { nombre: 'Avançado', horas: 40, precioUSD: 2000 },
-    ],
-    horarios: [
-      { turno: 'Flexível', dias: 'Acordado com o estudante', hora: 'Incluindo noturno e fins de semana' },
-    ],
-    temario: [
-      {
-        nivel: 'Desenho curricular personalizado',
+        nivel: 'Individual — Desenho curricular personalizado',
         contenidos: [
           'Diagnóstico inicial detalhado',
           'Objetivos de aprendizagem específicos do estudante',
@@ -228,43 +178,56 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
       },
     ],
     actividades: [
-      'Desenho curricular totalmente personalizado',
-      'Materiais adaptados à área profissional do estudante',
+      'Sessões diárias de conversação cultural (modalidade grupal)',
+      'City tour: Valparaíso e Viña del Mar',
+      'Workshop de gastronomia chilena',
+      'Atividades sociais com a comunidade de estudantes internacionais da UAI',
+      'Desenho curricular totalmente personalizado (modalidade individual)',
       'Horários flexíveis — incluindo noturno e fins de semana',
       'Relatórios de progresso em intervalos acordados',
     ],
     condiciones: [
       {
-        titulo: 'Sem mínimo de horas',
-        descripcion: 'Sem requisito mínimo de horas. O programa é totalmente flexível.',
+        titulo: 'Requisito de entrada',
+        descripcion: 'A1 ou sem conhecimentos prévios. Teste de diagnóstico antes do início do programa.',
       },
       {
-        titulo: 'Cancelamento de sessão',
+        titulo: 'Presença (grupal)',
+        descripcion: 'Mínimo de 85% de frequência exigido pela natureza intensiva do programa.',
+      },
+      {
+        titulo: 'Cancelamento de sessão (individual)',
         descripcion: 'Cancelamento com pelo menos 24 horas de antecedência. Sessões não canceladas no prazo são cobradas.',
       },
       {
-        titulo: 'Modalidade in situ',
-        descripcion: 'A modalidade in situ inclui despesas de deslocamento do professor conforme o local acordado.',
+        titulo: 'Cancelamento de programa',
+        descripcion: 'Com 45+ dias de antecedência: sem encargos. 15–44 dias: encargo de 50%. Menos de 15 dias: sem reembolso. Por escrito para caroline.cortes@uai.cl.',
+      },
+      {
+        titulo: 'Modalidade in situ (individual)',
+        descripcion: 'Inclui despesas de deslocamento do professor conforme o local acordado.',
       },
     ],
-    grupoMaximo: 1,
-    duracion: 'Flexível',
+    grupoMaximo: '1–10 conforme modalidade',
+    duracion: '2–3 semanas (grupal) · À medida (individual)',
     certificado: {
-      tipo: 'Certificado de Estudos CEIE-UAI',
+      tipo: 'Certificado de Participação CEIE-UAI',
       emite: 'Universidad Adolfo Ibáñez',
       reconocimiento: 'Certifica as horas concluídas e o nível QECR atingido.',
     },
     precio: {
-      estandar: 'USD 1.000 (Básico · 20 hrs)',
-      inSitu: 'USD 1.500 (Intermediário · 30 hrs)',
-      largoplazo: 'USD 2.000 (Avançado · 40 hrs)',
+      estandar: 'Grupal online: USD 300 (30 hrs) · Presencial: USD 800 (40 hrs)',
+      inSitu: 'Individual: a partir de USD 1.000 (20 hrs)',
+      notas: 'Ciclo conversacional grupal: USD 100 (8 sessões)',
     },
     modalidades: [
-      'Presencial · Campus Viña del Mar',
-      'In situ · Instalações do contratante',
-      'Videoconferência [consulte disponibilidade]',
+      'Grupal · Online',
+      'Grupal · Presencial Campus Viña del Mar',
+      'Individual · Campus Viña del Mar',
+      'Individual · In situ (instalações do contratante)',
+      'Individual · Videoconferência',
     ],
-    perfilIdeal: 'Profissionais, executivos, diplomatas, pesquisadores e acadêmicos.',
+    perfilIdeal: 'Profissionais, executivos, diplomatas, pesquisadores, acadêmicos e estudantes internacionais.',
   },
   {
     slug: 'fins-especificos',
@@ -353,63 +316,5 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
       'Espanhol por setor (saúde, direito, construção)',
     ],
     nota: 'Destinado a organizações: embaixadas, empresas, universidades parceiras, governos regionais.',
-  },
-  {
-    slug: 'projetos',
-    nombre: 'Projetos e Licitações',
-    descripcionBreve: 'Programas corporativos à medida para empresas, organismos internacionais e grupos profissionais, com design curricular por setor e objetivos institucionais.',
-    descripcionExtendida:
-      'Elaboração e execução de programas de ensino de espanhol totalmente personalizados para organizações que participam de processos de licitação, projetos internacionais ou requerem formação em larga escala. Currículo, duração, preço e sede são definidos conforme os requisitos do cliente.',
-    objetivo:
-      'Desenvolver competências comunicativas em espanhol adaptadas às necessidades específicas de cada organização ou grupo profissional, com design curricular à medida por setor, nível e objetivos institucionais.',
-    niveles: ['Variável'],
-    sedes: ['Viña del Mar', 'Santiago'],
-    publicoObjetivo: 'Empresas, organismos internacionais e grupos profissionais.',
-    cursosTabla: [
-      { nombre: 'Programa à medida (por projeto)', horas: 'Variável', precioUSD: 'Variável', modalidad: 'Variável' },
-    ],
-    horarios: [
-      { turno: 'Variável', dias: 'Coordenado com o cliente', hora: 'Por projeto' },
-    ],
-    temario: [
-      {
-        nivel: 'Design à medida',
-        contenidos: [
-          'Levantamento de necessidades institucionais',
-          'Design curricular por setor e nível',
-          'Implementação com equipe docente especializada',
-          'Avaliação e entrega de relatórios de progresso',
-        ],
-      },
-    ],
-    actividades: [
-      'Design curricular institucional personalizado',
-      'Coordenação com área de RH ou capacitação do cliente',
-      'Relatórios de progresso e avaliação de impacto',
-      'Possibilidade de implementação presencial ou remota',
-    ],
-    condiciones: [
-      {
-        titulo: 'Processo',
-        descripcion: 'Exige proposta formal do CEIE, aprovada pela organização cliente. Contrato específico por projeto.',
-      },
-      {
-        titulo: 'Preço',
-        descripcion: 'Orçamento conforme volume de horas, número de participantes e complexidade do design curricular.',
-      },
-    ],
-    grupoMaximo: 'Variável',
-    duracion: 'Variável',
-    certificado: {
-      tipo: 'Certificado Institucional CEIE-UAI',
-      emite: 'Universidad Adolfo Ibáñez',
-      reconocimiento: 'Certifica as horas concluídas e o nível atingido conforme os objetivos do projeto.',
-    },
-    precio: {
-      valor: 'Orçamento à medida',
-      notas: 'Contactar programascortos@uai.cl para solicitar proposta.',
-    },
-    nota: 'Para projetos corporativos, licitações públicas e programas de formação em larga escala.',
-    noSubPage: true,
   },
 ]

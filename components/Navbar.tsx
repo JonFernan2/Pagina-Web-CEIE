@@ -76,7 +76,6 @@ const routeQuad: Array<{ es: string; en: string; pt: string; zh: string }> = [
   { es: '/programas-y-cursos/semestral',            en: '/en/programs-and-courses/semester',          pt: '/pt/programas-e-cursos/semestral',    zh: '/zh/programs/semester' },
   { es: '/programas-y-cursos/intensivo',            en: '/en/programs-and-courses/intensive',         pt: '/pt/programas-e-cursos/intensivo',    zh: '/zh/programs/intensive' },
   { es: '/programas-y-cursos/fines-especificos',    en: '/en/programs-and-courses/specific-purposes', pt: '/pt/programas-e-cursos/fins-especificos', zh: '/zh/programs/specific-purposes' },
-  { es: '/programas-y-cursos/individual',           en: '/en/programs-and-courses/individual',        pt: '/pt/programas-e-cursos/individual',   zh: '/zh/programs/individual' },
   { es: '/equipo-docente',                          en: '/en/teaching-team',                          pt: '/pt/equipe-docente',                  zh: '/zh/teaching-team' },
   { es: '/sobre-nosotros',                          en: '/en/about-us',                               pt: '/pt/sobre-nos',                       zh: '/zh/about-us' },
   { es: '/admision',                                en: '/en/admissions',                             pt: '/pt/admissao',                        zh: '/zh/apply' },

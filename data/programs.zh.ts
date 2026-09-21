@@ -122,31 +122,35 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
   },
   {
     slug: 'intensive',
-    nombre: '强化西班牙语课程（小组）',
-    descripcionBreve: '强化面授或在线小组培训。初级、中级与高级模式，以及对话交流课程。',
+    nombre: '强化与定制西班牙语课程',
+    descripcionBreve: '强化小组培训（在线或面授）或一对一个性化授课。根据每位学员的水平、节奏和目标量身定制。',
     descripcionExtendida:
-      '强化课程为需要在短时间内达到交际水平的学员提供加速沉浸式体验。每日课程结合文化活动，在2至3周内即可取得显著进步。',
+      '强化与定制西班牙语课程将两种互补模式整合于一个灵活的教学体系中：强化小组培训适合需要在集体环境中快速提升的学员；一对一个性化教学则适合需要完全定制课程体系、时间表和学习节奏的学员。两种模式均支持在UAI Viña del Mar校区面授或在线学习。',
     objetivo:
-      '通过强化面授或在线培训，帮助需要在短期内提升西班牙语水平的学员增强交际能力。',
-    niveles: ['A1', 'A2', 'B1', 'B2'],
+      '通过强化培训——小组或个人——根据每位学员的水平、节奏和学术或职业目标，培养其西班牙语交际能力。',
+    niveles: ['A1', 'A2', 'B1', 'B2', '各级别均可'],
     sedes: ['Viña del Mar', 'Santiago'],
     publicoObjetivo: '无西班牙语基础的国际学员。职业人士、研究人员、高管、企业及外交官员。',
     cursosTabla: [
-      { nombre: '初级在线课程', horas: 30, precioUSD: 300, modalidad: '3周' },
-      { nombre: '中级在线课程', horas: 30, precioUSD: 300, modalidad: '3周' },
-      { nombre: '高级在线课程', horas: 30, precioUSD: 300, modalidad: '3周' },
-      { nombre: '初级面授课程', horas: 40, precioUSD: 800, modalidad: '2周' },
-      { nombre: '中级面授课程', horas: 40, precioUSD: 800, modalidad: '2周' },
-      { nombre: '高级面授课程', horas: 40, precioUSD: 800, modalidad: '2周' },
-      { nombre: '对话交流课程：休息一下 / 我们说西班牙语（在线）', horas: 8, precioUSD: 100, modalidad: '8次课，每周2次' },
+      { nombre: '小组 · 初级在线', horas: 30, precioUSD: 300, modalidad: '3周' },
+      { nombre: '小组 · 中级在线', horas: 30, precioUSD: 300, modalidad: '3周' },
+      { nombre: '小组 · 高级在线', horas: 30, precioUSD: 300, modalidad: '3周' },
+      { nombre: '小组 · 初级面授', horas: 40, precioUSD: 800, modalidad: '2周' },
+      { nombre: '小组 · 中级面授', horas: 40, precioUSD: 800, modalidad: '2周' },
+      { nombre: '小组 · 高级面授', horas: 40, precioUSD: 800, modalidad: '2周' },
+      { nombre: '小组 · 对话交流课程（在线）', horas: 8, precioUSD: 100, modalidad: '8次课，每周2次' },
+      { nombre: '个人 · 初级', horas: 20, precioUSD: 1000, modalidad: '定制' },
+      { nombre: '个人 · 中级', horas: 30, precioUSD: 1500, modalidad: '定制' },
+      { nombre: '个人 · 高级', horas: 40, precioUSD: 2000, modalidad: '定制' },
     ],
     horarios: [
-      { turno: '上午班（面授）', dias: '周一至周五', hora: '09:00 – 13:00' },
-      { turno: '在线', dias: '与小组协商', hora: '灵活安排' },
+      { turno: '小组面授', dias: '周一至周五', hora: '09:00 – 13:00' },
+      { turno: '小组在线', dias: '与小组协商', hora: '灵活安排' },
+      { turno: '个人', dias: '与学员协商', hora: '含夜间及周末' },
     ],
     temario: [
       {
-        nivel: 'A1–A2 — 初学至初级',
+        nivel: 'A1–A2 — 初学至初级（小组）',
         contenidos: [
           '日常场景基础交流',
           '现在时、过去时与即将发生的将来时',
@@ -155,7 +159,7 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
         ],
       },
       {
-        nivel: 'B1–B2 — 中级',
+        nivel: 'B1–B2 — 中级（小组）',
         contenidos: [
           '就熟悉话题流畅交谈',
           '结构化文章写作',
@@ -163,62 +167,8 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
           '表达观点与论证',
         ],
       },
-    ],
-    actividades: [
-      '每日文化对话课',
-      '城市游览：瓦尔帕莱索与比尼亚德尔马',
-      '智利美食烹饪工作坊',
-      '与UAI国际学生社区互动社交活动',
-    ],
-    condiciones: [
       {
-        titulo: '入学要求',
-        descripcion: 'A1级或零基础。课程开始前须完成诊断测试。',
-      },
-      {
-        titulo: '出勤率',
-        descripcion: '因课程强化性质，须达到85%以上出勤率。',
-      },
-      {
-        titulo: '取消政策',
-        descripcion: '提前30天以上取消：退款80%。提前15–29天：退款50%。提前15天以内：不予退款。',
-      },
-    ],
-    grupoMaximo: 10,
-    duracion: '2–3周（视授课方式而定）',
-    certificado: {
-      tipo: 'CEIE-UAI 结业证书',
-      emite: '阿道夫·伊瓦涅斯大学',
-      reconocimiento: '等值认定视学员所在机构而定。',
-    },
-    precio: {
-      estandar: 'USD 300（在线 · 30课时）',
-      inSitu: 'USD 800（面授 · 40课时）',
-      notas: '对话交流课程：USD 100（8次课）',
-    },
-  },
-  {
-    slug: 'individual',
-    nombre: '个人定制西班牙语课程',
-    descripcionBreve: '根据每位学员的水平、节奏和目标量身定制的个人培训。可在校园授课或上门服务。',
-    descripcionExtendida:
-      '个人定制课程提供与CEIE专家一对一的个性化教学。课程体系、教材、时间表和学习节奏完全根据学员个人情况定制。可在UAI Viña del Mar校区授课，也可赴学员职业工作地上课——使馆、企业办公室或私人住所。',
-    objetivo:
-      '通过个性化培训，根据每位学员的水平、学习节奏及学术或职业目标，培养其西班牙语交际能力。',
-    niveles: ['各级别均可'],
-    sedes: ['Viña del Mar', 'Santiago'],
-    publicoObjetivo: '无西班牙语基础的国际学员。职业人士、研究人员、高管、企业及外交官员。',
-    cursosTabla: [
-      { nombre: '初级', horas: 20, precioUSD: 1000 },
-      { nombre: '中级', horas: 30, precioUSD: 1500 },
-      { nombre: '高级', horas: 40, precioUSD: 2000 },
-    ],
-    horarios: [
-      { turno: '灵活', dias: '与学员协商', hora: '含夜间及周末' },
-    ],
-    temario: [
-      {
-        nivel: '个性化课程设计',
+        nivel: '个人 — 个性化课程设计',
         contenidos: [
           '详细初始诊断评估',
           '学员专项学习目标设定',
@@ -228,43 +178,56 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
       },
     ],
     actividades: [
-      '完全个性化课程设计',
-      '适合学员职业领域的定制教材',
+      '每日文化对话课（小组模式）',
+      '城市游览：瓦尔帕莱索与比尼亚德尔马',
+      '智利美食烹饪工作坊',
+      '与UAI国际学生社区互动社交活动',
+      '完全个性化课程设计（个人模式）',
       '灵活时间安排——含夜间及周末',
       '按约定间隔提交进度报告',
     ],
     condiciones: [
       {
-        titulo: '无最低课时要求',
-        descripcion: '课程完全灵活，无最低课时限制。',
+        titulo: '入学要求',
+        descripcion: 'A1级或零基础。课程开始前须完成诊断测试。',
       },
       {
-        titulo: '单次取消',
+        titulo: '出勤率（小组）',
+        descripcion: '因课程强化性质，须达到85%以上出勤率。',
+      },
+      {
+        titulo: '单次取消（个人）',
         descripcion: '须提前至少24小时取消。未在规定时间内取消的课时照常计费。',
       },
       {
-        titulo: '上门授课模式',
+        titulo: '课程取消',
+        descripcion: '提前45天以上：不收费。提前15–44天：收取50%费用。提前15天以内：不予退款。请发送书面通知至 caroline.cortes@uai.cl。',
+      },
+      {
+        titulo: '上门授课模式（个人）',
         descripcion: '上门授课含按约定地点计算的教师交通费用。',
       },
     ],
-    grupoMaximo: 1,
-    duracion: '灵活安排',
+    grupoMaximo: '1–10人（视授课模式而定）',
+    duracion: '2–3周（小组）· 定制安排（个人）',
     certificado: {
-      tipo: 'CEIE-UAI 学业证书',
+      tipo: 'CEIE-UAI 结业证书',
       emite: '阿道夫·伊瓦涅斯大学',
       reconocimiento: '证明已完成课时数及达到的CEFR级别。',
     },
     precio: {
-      estandar: 'USD 1,000（初级 · 20课时）',
-      inSitu: 'USD 1,500（中级 · 30课时）',
-      largoplazo: 'USD 2,000（高级 · 40课时）',
+      estandar: '小组在线：USD 300（30课时）· 面授：USD 800（40课时）',
+      inSitu: '个人：起价 USD 1,000（20课时）',
+      notas: '小组对话交流课程：USD 100（8次课）',
     },
     modalidades: [
-      '面授 · Viña del Mar 校区',
-      '上门授课 · 合作机构场所',
-      '视频会议 [请咨询可用情况]',
+      '小组 · 在线',
+      '小组 · 面授 Viña del Mar 校区',
+      '个人 · Viña del Mar 校区',
+      '个人 · 上门授课（合作机构场所）',
+      '个人 · 视频会议',
     ],
-    perfilIdeal: '职业人士、高管、外交官、研究人员及学者。',
+    perfilIdeal: '职业人士、高管、外交官、研究人员、学者及国际学员。',
   },
   {
     slug: 'specific-purposes',
@@ -353,63 +316,5 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
       '行业专项西班牙语（医疗、法律、建筑）',
     ],
     nota: '面向机构：使馆、企业、合作大学、地方政府。',
-  },
-  {
-    slug: 'projects',
-    nombre: '项目与招标',
-    descripcionBreve: '面向企业、国际组织和职业群体的定制企业培训项目，按行业和机构目标进行课程设计。',
-    descripcionExtendida:
-      '为参与招标流程、国际项目或需要大规模培训的机构设计和实施完全定制化的西班牙语教学项目。课程体系、时长、费用和授课地点均根据客户需求确定。',
-    objetivo:
-      '根据每个机构或职业群体的具体需求，按行业、级别和机构目标进行定制化课程设计，培养其西班牙语交际能力。',
-    niveles: ['视项目而定'],
-    sedes: ['Viña del Mar', 'Santiago'],
-    publicoObjetivo: '企业、国际组织及职业群体。',
-    cursosTabla: [
-      { nombre: '定制课程（按项目）', horas: '视项目而定', precioUSD: '视项目而定', modalidad: '视项目而定' },
-    ],
-    horarios: [
-      { turno: '灵活', dias: '与客户协商', hora: '按项目安排' },
-    ],
-    temario: [
-      {
-        nivel: '定制化设计',
-        contenidos: [
-          '机构需求调研',
-          '按行业和级别进行课程设计',
-          '专业教学团队实施',
-          '评估与进度报告',
-        ],
-      },
-    ],
-    actividades: [
-      '个性化机构课程设计',
-      '与客户人力资源或培训部门协调',
-      '进度报告与效果评估',
-      '支持面授或远程实施',
-    ],
-    condiciones: [
-      {
-        titulo: '流程',
-        descripcion: '须提交CEIE正式提案，经客户机构批准。按项目签订专项合同。',
-      },
-      {
-        titulo: '费用',
-        descripcion: '根据课时量、参与人数及课程设计复杂程度报价。',
-      },
-    ],
-    grupoMaximo: '视项目而定',
-    duracion: '视项目而定',
-    certificado: {
-      tipo: 'CEIE-UAI 机构证书',
-      emite: '阿道夫·伊瓦涅斯大学',
-      reconocimiento: '证明已完成课时数及按项目目标达到的语言级别。',
-    },
-    precio: {
-      valor: '定制报价',
-      notas: '请联系 programascortos@uai.cl 申请提案。',
-    },
-    nota: '适用于企业项目、公开招标及大规模培训项目。',
-    noSubPage: true,
   },
 ]
