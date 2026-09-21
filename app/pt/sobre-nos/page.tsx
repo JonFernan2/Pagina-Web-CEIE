@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
+import SpacesGallery from '@/components/SpacesGallery'
+import LaunchGallery from '@/components/LaunchGallery'
 import { ABOUT_PT } from '@/data/content.pt'
 import { DIRECTORIO } from '@/data/directorio'
 
@@ -14,6 +16,16 @@ const SPACE_IMAGES = [
 ]
 
 const ACTIVIDADES_IMG2 = '/images/espacio-sala-conferencias.jpg'
+
+const LAUNCH_IMAGES_PT = [
+  { src: '/images/galeria-ceie-lanzamiento-auditorio.jpg', alt: 'Inauguração do CEIE UAI — grupo completo no auditório com letras UAI e bandeiras internacionais', colSpan: 2, height: 320, objectPosition: 'center' },
+  { src: '/images/galeria-ceie-equipo.jpg', alt: 'Equipe CEIE UAI ao lado do painel do lançamento Del Desierto a la Patagonia', height: 320, objectPosition: 'top' },
+  { src: '/images/galeria-ceie-lanzamiento-coctel.jpg', alt: 'Coquetel de boas-vindas do lançamento CEIE no lobby da UAI Viña del Mar', height: 220, objectPosition: 'center' },
+  { src: '/images/galeria-ceie-lanzamiento-grupo.jpg', alt: 'Estudantes internacionais e acadêmicos na cerimônia de lançamento do CEIE UAI', height: 220, objectPosition: 'top' },
+  { src: '/images/galeria-ceie-lanzamiento-kahoot-1.jpg', alt: 'Atividade de integração Kahoot durante o lançamento do CEIE UAI com bandeiras de países', height: 220, objectPosition: 'center' },
+  { src: '/images/actividad-exterior-vina.jpg', alt: 'Estudantes internacionais do CEIE nos jardins do campus UAI com vista para Viña del Mar', colSpan: 2, height: 220, objectPosition: 'center' },
+  { src: '/images/galeria-ceie-equipo-admin.jpg', alt: 'Equipe administrativa do CEIE UAI no campus Viña del Mar', height: 220, objectPosition: 'center' },
+]
 
 export const metadata: Metadata = {
   title: ABOUT_PT.meta.title,
@@ -127,111 +139,18 @@ export default function SobreNosPTPage() {
         </div>
       </section>
 
-      {/* Facilities */}
-      <section style={{ background: '#C7C2ba' }} className="py-16">
-        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
-          <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-8">{d.sections.espacios.title}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {d.sections.espacios.spaces.map((space, i) => (
-              <div
-                key={space.nombre}
-                className={`flex flex-col overflow-hidden ${i === 4 ? 'md:col-span-2' : ''}`}
-                style={{ border: '1px solid #E5E3DE', borderRadius: '4px' }}
-              >
-                <div className="w-full overflow-hidden" style={{ height: i === 4 ? '280px' : '220px' }}>
-                  {i === 4 ? (
-                    <div className="flex h-full gap-1">
-                      <img
-                        src={SPACE_IMAGES[i]}
-                        alt={space.alt}
-                        className="w-1/2 h-full object-cover object-center"
-                      />
-                      <img
-                        src={ACTIVIDADES_IMG2}
-                        alt={space.alt}
-                        className="w-1/2 h-full object-cover object-center"
-                      />
-                    </div>
-                  ) : (
-                    <img
-                      src={SPACE_IMAGES[i]}
-                      alt={space.alt}
-                      className="w-full h-full object-cover object-center"
-                    />
-                  )}
-                </div>
-                <div className="p-5 flex-1">
-                  <h3 className="font-body text-lg font-semibold text-negro mb-2">{space.nombre}</h3>
-                  <p className="text-sm leading-relaxed" style={{ color: '#6B6B6B' }}>{space.descripcion}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <SpacesGallery
+        spaces={d.sections.espacios.spaces}
+        title={d.sections.espacios.title}
+        spaceImages={SPACE_IMAGES}
+        activitiesImg2={ACTIVIDADES_IMG2}
+      />
 
-      {/* Launch Gallery */}
-      <section style={{ background: '#FFFFFF' }} className="py-16">
-        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
-          <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-3">
-            Galeria do Lançamento
-          </h2>
-          <p className="font-body text-sm mb-8" style={{ color: '#6B6B6B' }}>
-            Imagens do ato oficial de inauguração do CEIE na Universidad Adolfo Ibáñez, Viña del Mar.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-            <div className="md:col-span-2 overflow-hidden" style={{ height: '320px', borderRadius: '4px' }}>
-              <img
-                src="/images/galeria-ceie-lanzamiento-auditorio.jpg"
-                alt="Inauguração do CEIE UAI — grupo completo no auditório com letras UAI e bandeiras internacionais"
-                className="w-full h-full object-cover object-center"
-              />
-            </div>
-            <div className="overflow-hidden" style={{ height: '320px', borderRadius: '4px' }}>
-              <img
-                src="/images/galeria-ceie-equipo.jpg"
-                alt="Equipe CEIE UAI ao lado do painel do lançamento Del Desierto a la Patagonia"
-                className="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div className="overflow-hidden" style={{ height: '220px', borderRadius: '4px' }}>
-              <img
-                src="/images/galeria-ceie-lanzamiento-coctel.jpg"
-                alt="Coquetel de boas-vindas do lançamento CEIE no lobby da UAI Viña del Mar"
-                className="w-full h-full object-cover object-center"
-              />
-            </div>
-            <div className="overflow-hidden" style={{ height: '220px', borderRadius: '4px' }}>
-              <img
-                src="/images/galeria-ceie-lanzamiento-grupo.jpg"
-                alt="Estudantes internacionais e acadêmicos na cerimônia de lançamento do CEIE UAI"
-                className="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div className="overflow-hidden" style={{ height: '220px', borderRadius: '4px' }}>
-              <img
-                src="/images/galeria-ceie-lanzamiento-kahoot-1.jpg"
-                alt="Atividade de integração Kahoot durante o lançamento do CEIE UAI com bandeiras de países"
-                className="w-full h-full object-cover object-center"
-              />
-            </div>
-            <div className="md:col-span-2 overflow-hidden" style={{ height: '220px', borderRadius: '4px' }}>
-              <img
-                src="/images/actividad-exterior-vina.jpg"
-                alt="Estudantes internacionais do CEIE nos jardins do campus UAI com vista para Viña del Mar"
-                className="w-full h-full object-cover object-center"
-              />
-            </div>
-            <div className="overflow-hidden" style={{ height: '220px', borderRadius: '4px' }}>
-              <img
-                src="/images/galeria-ceie-equipo-admin.jpg"
-                alt="Equipe administrativa do CEIE UAI no campus Viña del Mar"
-                className="w-full h-full object-cover object-center"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <LaunchGallery
+        title="Galeria do Lançamento"
+        subtitle="Imagens do ato oficial de inauguração do CEIE na Universidad Adolfo Ibáñez, Viña del Mar."
+        images={LAUNCH_IMAGES_PT}
+      />
 
       <Footer lang="pt" />
       <CookieBanner lang="pt" />
