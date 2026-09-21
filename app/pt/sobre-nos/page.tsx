@@ -6,12 +6,14 @@ import { ABOUT_PT } from '@/data/content.pt'
 import { DIRECTORIO } from '@/data/directorio'
 
 const SPACE_IMAGES = [
-  '/images/espacio-aula-principal.jpg',
+  '/images/actividad-exterior-vina.jpg',
   '/images/galeria-ceie-spanish-corner.jpg',
   '/images/espacio-seminario-1.jpg',
-  '/images/actividad-exterior-vina.jpg',
-  '/images/espacio-sala-conferencias.jpg',
+  '/images/campus-vina-aerea.jpg',
+  '/images/espacio-aula-principal.jpg',
 ]
+
+const ACTIVIDADES_IMG2 = '/images/espacio-sala-conferencias.jpg'
 
 export const metadata: Metadata = {
   title: ABOUT_PT.meta.title,
@@ -137,11 +139,26 @@ export default function SobreNosPTPage() {
                 style={{ border: '1px solid #E5E3DE', borderRadius: '4px' }}
               >
                 <div className="w-full overflow-hidden" style={{ height: i === 4 ? '280px' : '220px' }}>
-                  <img
-                    src={SPACE_IMAGES[i]}
-                    alt={space.alt}
-                    className="w-full h-full object-cover object-center"
-                  />
+                  {i === 4 ? (
+                    <div className="flex h-full gap-1">
+                      <img
+                        src={SPACE_IMAGES[i]}
+                        alt={space.alt}
+                        className="w-1/2 h-full object-cover object-center"
+                      />
+                      <img
+                        src={ACTIVIDADES_IMG2}
+                        alt={space.alt}
+                        className="w-1/2 h-full object-cover object-center"
+                      />
+                    </div>
+                  ) : (
+                    <img
+                      src={SPACE_IMAGES[i]}
+                      alt={space.alt}
+                      className="w-full h-full object-cover object-center"
+                    />
+                  )}
                 </div>
                 <div className="p-5 flex-1">
                   <h3 className="font-body text-lg font-semibold text-negro mb-2">{space.nombre}</h3>
