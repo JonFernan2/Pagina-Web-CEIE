@@ -68,7 +68,7 @@ function Initials({ nombre, lang = 'es' }: { nombre: string; lang?: Lang }) {
 }
 
 export default function TeacherCard({
-  nombre, rol, titulo, formacionLista, bio, email, foto, fotoPendiente, fotoPosition = 'center 20%', fotoFit = 'cover', lang = 'es',
+  nombre, rol, titulo, formacionLista, bio, email, foto, fotoPendiente, fotoPosition = 'center center', fotoFit = 'contain', lang = 'es',
 }: TeacherCardProps) {
   const [imgError, setImgError] = useState(false)
 
@@ -79,15 +79,14 @@ export default function TeacherCard({
     >
       {/* Photo */}
       <div
-        className="overflow-hidden shrink-0"
-        style={fotoFit === 'contain' ? { background: '#FFFFFF', padding: '12px 24px 0' } : { background: '#FFFFFF' }}
+        className="overflow-hidden shrink-0 flex items-center justify-center"
+        style={{ background: '#FFFFFF', height: '224px' }}
       >
         {foto && !imgError ? (
           <img
             src={foto}
             alt={`${nombre}, ${rol[lang]}`}
-            className="w-full h-56"
-            style={{ objectFit: fotoFit, objectPosition: fotoPosition }}
+            style={{ maxWidth: '100%', maxHeight: '224px', objectFit: 'contain', objectPosition: fotoPosition, display: 'block' }}
             onError={() => setImgError(true)}
           />
         ) : fotoPendiente ? (
