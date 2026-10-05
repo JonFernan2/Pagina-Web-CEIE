@@ -178,7 +178,7 @@ export const HOME_PT = {
         text: '[PENDENTE — testemunho real de estudante]',
       },
     ],
-    readMoreLink: { label: 'Ler mais depoimentos', href: '/pt/vozes-do-centro' },
+    readMoreLink: { label: 'Ver mais depoimentos', href: '/pt/vozes-do-centro' },
   },
   contact: {
     title: 'Localização e contato',

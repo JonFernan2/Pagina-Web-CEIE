@@ -189,7 +189,7 @@ export const HOME_EN = {
         text: '[PENDING — real student testimonial]',
       },
     ],
-    readMoreLink: { label: 'Read more testimonials', href: '/en/voices-of-the-centre' },
+    readMoreLink: { label: 'See more testimonials', href: '/en/voices-of-the-centre' },
   },
   contact: {
     title: 'Location and contact',

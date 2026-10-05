@@ -189,7 +189,7 @@ export const HOME_ES = {
         text: '[PENDIENTE — testimonio real de estudiante]',
       },
     ],
-    readMoreLink: { label: 'Leer más testimonios', href: '/voces-del-centro' },
+    readMoreLink: { label: 'Ver más testimonios', href: '/voces-del-centro' },
   },
   contact: {
     title: 'Ubicación y contacto',
