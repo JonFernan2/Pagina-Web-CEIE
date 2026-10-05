@@ -153,19 +153,9 @@ export default function SobreNosotrosPage() {
           <p className="text-base leading-relaxed mb-4" style={{ color: '#2D2D2D' }}>
             {d.sections.sacic.p1}
           </p>
-          <p className="text-base leading-relaxed mb-6" style={{ color: '#2D2D2D' }}>
+          <p className="text-base leading-relaxed" style={{ color: '#2D2D2D' }}>
             {d.sections.sacic.p2}
           </p>
-          <div
-            className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium"
-            style={{
-              background: '#6493b5',
-              color: '#1d1e20',
-              borderRadius: '2px',
-            }}
-          >
-            <span>●</span> {d.sections.sacic.status}
-          </div>
         </div>
       </section>
 

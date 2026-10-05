@@ -129,13 +129,7 @@ export default function AboutENPage() {
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 max-w-3xl">
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-6">{d.sections.sacic.title}</h2>
           <p className="text-base leading-relaxed mb-4" style={{ color: '#2D2D2D' }}>{d.sections.sacic.p1}</p>
-          <p className="text-base leading-relaxed mb-6" style={{ color: '#2D2D2D' }}>{d.sections.sacic.p2}</p>
-          <div
-            className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium"
-            style={{ background: '#6493b5', color: '#1d1e20', borderRadius: '2px' }}
-          >
-            <span>●</span> {d.sections.sacic.status}
-          </div>
+          <p className="text-base leading-relaxed" style={{ color: '#2D2D2D' }}>{d.sections.sacic.p2}</p>
         </div>
       </section>
 
