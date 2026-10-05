@@ -1,5 +1,8 @@
+'use client'
+
+import { useId, useState } from 'react'
 import Link from 'next/link'
-import { Clock, Users, ChevronRight } from 'lucide-react'
+import { Clock, Users, ChevronRight, ChevronDown } from 'lucide-react'
 
 interface ProgramCardProps {
   nombre: string
@@ -21,6 +24,8 @@ const labels = {
     grupo: 'Grupo',
     precio: 'Precio referencial',
     cta: 'Ver programa',
+    detalles: 'Ver detalles',
+    ocultar: 'Ocultar',
   },
   en: {
     nivel: 'Level',
@@ -29,6 +34,8 @@ const labels = {
     grupo: 'Group',
     precio: 'Reference price',
     cta: 'View program',
+    detalles: 'View details',
+    ocultar: 'Hide',
   },
   pt: {
     nivel: 'Nível',
@@ -37,6 +44,8 @@ const labels = {
     grupo: 'Grupo',
     precio: 'Preço referencial',
     cta: 'Ver programa',
+    detalles: 'Ver detalhes',
+    ocultar: 'Ocultar',
   },
   zh: {
     nivel: '级别',
@@ -45,6 +54,8 @@ const labels = {
     grupo: '参与人数',
     precio: '参考价格',
     cta: '查看课程',
+    detalles: '查看详情',
+    ocultar: '收起',
   },
 }
 
@@ -60,10 +71,12 @@ export default function ProgramCard({
   lang = 'es',
 }: ProgramCardProps) {
   const t = labels[lang]
+  const [open, setOpen] = useState(false)
+  const detailsId = useId()
 
   return (
     <div
-      className="flex flex-col h-full font-body"
+      className="flex flex-col font-body"
       style={{
         border: '1px solid #E5E3DE',
         borderRadius: '4px',
@@ -88,6 +101,24 @@ export default function ProgramCard({
 
       {/* Body */}
       <div className="flex flex-col flex-1 px-6 py-5 gap-4">
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          aria-expanded={open}
+          aria-controls={detailsId}
+          className="flex items-center justify-between w-full text-xs font-semibold uppercase tracking-widest focus:outline-none focus-visible:ring-2"
+          style={{ color: '#6493b5' }}
+        >
+          {open ? t.ocultar : t.detalles}
+          <ChevronDown
+            size={18}
+            aria-hidden="true"
+            className="transition-transform duration-200"
+            style={{ transform: open ? 'rotate(180deg)' : 'none' }}
+          />
+        </button>
+
+        <div id={detailsId} className={open ? 'flex flex-col gap-4' : 'hidden'}>
         <p className="text-sm leading-relaxed" style={{ color: '#6B6B6B' }}>
           {descripcion}
         </p>
@@ -114,6 +145,7 @@ export default function ProgramCard({
               <span style={{ color: '#6B6B6B' }}>{grupoMax}</span>
             </div>
           </div>
+        </div>
         </div>
 
         {/* Price */}
