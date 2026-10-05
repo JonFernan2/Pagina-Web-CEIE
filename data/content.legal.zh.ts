@@ -18,7 +18,7 @@ export const LEGAL_ZH = {
       { heading: '用户信息', body: 'UAI收集访客数据以记录浏览活动和受众情况，无需用户进行个人身份验证。仅通过联系表单以自愿方式收集个人信息，目的是向用户介绍其感兴趣的学术项目。用户可随时申请退订。所收集的信息不会向第三方提供。' },
       { heading: '向第三方提供信息', body: 'UAI未经数据当事人明确同意，不会向第三方传达或转让个人数据。依据智利现行法律法规，司法或行政机构的要求除外。' },
       { heading: '信息使用', body: 'CEIE UAI网站的所有权利归阿道夫·伊瓦涅斯大学所有。访客可将内容用于个人非商业目的。UAI对外部链接内容的准确性不承担责任。在注明来源的前提下，可转载网站内容，但不得使用大学品牌标识和徽标。' },
-      { heading: 'Cookie', body: 'Cookie是用于识别访问页面及频率的文件，仅用于统计分析目的，使用后将被永久删除。用户可通过浏览器设置删除或拒绝Cookie；拒绝Cookie可能会限制对网站某些服务的访问。' },
+      { heading: 'Cookie', body: '本网站不使用用于统计分析或广告的Cookie。网站仅在您的浏览器中保存您在Cookie提示中所作的选择；只有当您播放嵌入的视频时，YouTube（谷歌）才可能设置其自有Cookie。详情请参阅Cookie政策。用户可通过浏览器设置删除或屏蔽Cookie。' },
       { heading: '外部服务', body: '本网站使用YouTube API展示视听内容。UAI对YouTube或Google使用用户数据的方式不承担任何责任。如需了解更多信息，请参阅YouTube服务条款及Google隐私政策。' },
     ],
   },
@@ -26,10 +26,10 @@ export const LEGAL_ZH = {
     title: 'Cookie 政策',
     sections: [
       { heading: '什么是Cookie', body: 'Cookie是当您访问网站时，浏览器存储的小型文本文件。它们使网站能够记住您的偏好设置并改善浏览体验。' },
-      { heading: '使用的Cookie类型', body: '本网站仅使用两类存储。（1）技术性/必要存储：网站会在您的浏览器中保存您在Cookie提示中所作的选择，以免再次显示该提示；该信息不用于识别您的身份，也不会与第三方共享。（2）YouTube第三方Cookie：加载或播放嵌入视频时，YouTube（谷歌）可能会设置其自有Cookie，用于统计播放情况及记住播放器偏好，其使用受谷歌隐私政策约束。本网站不使用自有的分析、广告或社交媒体Cookie。网站性能监测（Vercel Speed Insights）不使用Cookie。' },
+      { heading: '使用的Cookie类型', body: '本网站仅使用两类存储。（1）技术性/必要存储：网站会在您的浏览器中保存您在Cookie提示中所作的选择，以免再次显示该提示；该信息不用于识别您的身份，也不会与第三方共享。（2）YouTube第三方Cookie：视频以增强隐私模式嵌入，只有当您播放视频时，YouTube（谷歌）才可能设置Cookie，用于统计播放情况及记住播放器偏好，其使用受谷歌隐私政策约束。本网站不使用自有的分析、广告或社交媒体Cookie。网站性能监测（Vercel Speed Insights）不使用Cookie。' },
       {
         heading: 'Cookie列表',
-        body: '以下为您在本网站可能遇到的Cookie及存储项目明细。YouTube Cookie由谷歌管理，其名称和有效期可能有所变化。',
+        body: '以下为您在本网站可能遇到的Cookie及存储项目明细。YouTube Cookie仅在您播放视频时设置，由谷歌管理，其名称和有效期可能有所变化。',
         table: {
           headers: ['名称', '提供方', '用途', '有效期', '类型'],
           rows: [

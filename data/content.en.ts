@@ -400,7 +400,7 @@ export const LEGAL_EN = {
       { heading: 'User information', body: 'UAI collects visitor data to record browsing activity and audience metrics without requiring personal identification. Personal information is only requested voluntarily through contact forms, for the purpose of providing information about academic programmes of interest. Users may request unsubscription at any time. Collected information is not shared with third parties.' },
       { heading: 'Disclosure to third parties', body: 'UAI does not communicate or transfer personal data to third parties without the express consent of the data subject, except where required by judicial or administrative authority under applicable Chilean law.' },
       { heading: 'Use of information', body: 'All rights to the CEIE UAI website belong to Universidad Adolfo Ibáñez. Visitors may use its contents for personal, non-commercial purposes. UAI accepts no responsibility for the accuracy of external links. Reproduction of content is permitted with attribution to the source, except for the institutional brand and logo.' },
-      { heading: 'Cookies', body: 'Cookies are files that record pages visited and frequency of access, used solely for statistical analysis and deleted permanently afterwards. Users may delete or decline cookies through their browser settings; declining cookies may limit access to certain site services.' },
+      { heading: 'Cookies', body: 'This website does not use cookies for statistical analysis or advertising. It only stores in your browser the choice you make in the cookie notice and, only if you play one of the embedded videos, YouTube (Google) may set its own cookies. Details are available in the Cookie Policy. Users can delete or block cookies in their browser settings.' },
       { heading: 'External services', body: 'This site uses the YouTube API to display audiovisual content. UAI accepts no responsibility for how YouTube or Google may use user data. Users are referred to the YouTube Terms of Service and Google Privacy Policy for further information.' },
     ],
   },
@@ -408,10 +408,10 @@ export const LEGAL_EN = {
     title: 'Cookie Policy',
     sections: [
       { heading: 'What are cookies', body: 'Cookies are small text files stored by your browser when you visit a website. They allow the site to remember your preferences and improve your browsing experience.' },
-      { heading: 'Types of cookies used', body: 'This website uses only two kinds of storage. (1) Technical or necessary: the site stores in your browser the choice you make in the cookie notice, so it is not shown again. It is not used to identify you and is not shared with third parties. (2) Third-party YouTube cookies: when the embedded videos load or play, YouTube (Google) may set its own cookies to measure views and remember player preferences; their use is governed by Google\'s Privacy Policy. The site does not use its own analytics, advertising or social media cookies. Site performance monitoring (Vercel Speed Insights) does not use cookies.' },
+      { heading: 'Types of cookies used', body: 'This website uses only two kinds of storage. (1) Technical or necessary: the site stores in your browser the choice you make in the cookie notice, so it is not shown again. It is not used to identify you and is not shared with third parties. (2) Third-party YouTube cookies: videos are embedded in privacy-enhanced mode, so YouTube (Google) can only set cookies if you play a video; it then uses them to measure views and remember player preferences, and their use is governed by Google\'s Privacy Policy. The site does not use its own analytics, advertising or social media cookies. Site performance monitoring (Vercel Speed Insights) does not use cookies.' },
       {
         heading: 'Cookie table',
-        body: 'Details of the cookies and storage items you may encounter on this site. YouTube cookies are managed by Google and their names and duration may vary.',
+        body: 'Details of the cookies and storage items you may encounter on this site. YouTube cookies are only set if you play a video, are managed by Google, and their names and duration may vary.',
         table: {
           headers: ['Name', 'Provider', 'Purpose', 'Duration', 'Type'],
           rows: [

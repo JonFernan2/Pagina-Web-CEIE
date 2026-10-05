@@ -31,7 +31,7 @@ export default function VideoCarousel({ videos, lang }: { videos: Video[]; lang:
           <div style={{ position: 'relative', paddingBottom: '56.25%' }}>
             <iframe
               key={v.id}
-              src={`https://www.youtube.com/embed/${v.id}?rel=0&modestbranding=1`}
+              src={`https://www.youtube-nocookie.com/embed/${v.id}?rel=0&modestbranding=1`}
               title={v.title}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
