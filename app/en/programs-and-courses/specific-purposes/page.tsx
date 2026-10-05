@@ -33,7 +33,7 @@ export default function SpecificPurposesENPage() {
           conditions: 'Conditions',
           certificate: 'Certificate',
           pricing: 'Pricing',
-          groupSize: 'Group size',
+          groupSize: 'Participants',
           duration: 'Duration',
           levels: 'Levels',
           cerfNote: 'Adapted to institutional context',

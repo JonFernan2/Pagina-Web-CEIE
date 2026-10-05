@@ -33,7 +33,7 @@ export default function SemestralPTPage() {
           conditions: 'Condições',
           certificate: 'Certificado',
           pricing: 'Preços',
-          groupSize: 'Máximo de alunos por turma',
+          groupSize: 'Mínimo de participantes',
           duration: 'Duração',
           levels: 'Níveis QECR',
           cerfNote: 'Alinhado ao QECR',

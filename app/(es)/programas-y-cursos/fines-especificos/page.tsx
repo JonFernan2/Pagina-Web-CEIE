@@ -33,7 +33,7 @@ export default function FinesEspecificosPage() {
           conditions: 'Condiciones',
           certificate: 'Certificado',
           pricing: 'Precios',
-          groupSize: 'Tamaño de grupo',
+          groupSize: 'Participantes',
           duration: 'Duración',
           levels: 'Niveles',
           cerfNote: 'Adaptado al contexto institucional',

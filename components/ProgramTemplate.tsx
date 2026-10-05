@@ -106,7 +106,7 @@ export default function ProgramTemplate({
                 {data.descripcionExtendida}
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
-                <StatBox icon={<Users size={20} />} label={labels.groupSize} value={String(data.grupoMaximo)} />
+                <StatBox icon={<Users size={20} />} label={labels.groupSize} value={data.participantes} />
                 <StatBox icon={<Clock size={20} />} label={labels.duration} value={data.duracion} />
                 <StatBox icon={<BookOpen size={20} />} label={labels.levels} value={data.niveles.join(', ')} />
               </div>
@@ -262,7 +262,7 @@ export default function ProgramTemplate({
               <div className="flex flex-col gap-3 text-sm">
                 <AsideStat label={labels.levels} value={data.niveles.join(', ')} />
                 <AsideStat label={labels.duration} value={data.duracion} />
-                <AsideStat label={labels.groupSize} value={String(data.grupoMaximo)} />
+                <AsideStat label={labels.groupSize} value={data.participantes} />
                 <AsideStat
                   label={labels.pricing}
                   value={priceDisplay}

@@ -42,7 +42,7 @@ const labels = {
     nivel: '级别',
     duracion: '时长',
     horario: '课程时间',
-    grupo: '班级规模',
+    grupo: '参与人数',
     precio: '参考价格',
     cta: '查看课程',
   },

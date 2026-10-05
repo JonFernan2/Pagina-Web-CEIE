@@ -106,7 +106,7 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
         descripcion: 'Com 45+ dias de antecedência: sem encargos. 15–44 dias: encargo de 50%. Menos de 15 dias: sem reembolso. Força maior avaliada individualmente. Por escrito para caroline.cortes@uai.cl.',
       },
     ],
-    grupoMaximo: 24,
+    participantes: '5 pessoas',
     duracion: '17 semanas',
     certificado: {
       tipo: 'Histórico Escolar Oficial',
@@ -202,7 +202,7 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
         descripcion: 'Com 45+ dias de antecedência: sem encargos. 15–44 dias: encargo de 50%. Menos de 15 dias: sem reembolso. Força maior avaliada individualmente. Por escrito para caroline.cortes@uai.cl.',
       },
     ],
-    grupoMaximo: 15,
+    participantes: '5 pessoas',
     duracion: '2 a 4 semanas',
     certificado: {
       tipo: 'Histórico Escolar Oficial',
@@ -292,7 +292,7 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
         descripcion: 'Com 45+ dias de antecedência: sem encargos. 15–44 dias: encargo de 50%. Menos de 15 dias: sem reembolso. Força maior avaliada individualmente. Por escrito para caroline.cortes@uai.cl.',
       },
     ],
-    grupoMaximo: 'Variável conforme acordo institucional',
+    participantes: 'Variável conforme acordo institucional',
     duracion: '1 a 2 semanas (à medida)',
     certificado: {
       tipo: 'Certificado de Formação Especializada CEIE-UAI',

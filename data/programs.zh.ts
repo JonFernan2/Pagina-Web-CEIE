@@ -106,7 +106,7 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
         descripcion: '提前45天以上取消：不收费。提前15–44天：收取50%费用。提前15天以内：不予退款。不可抗力情况个别评估。请发送书面通知至 caroline.cortes@uai.cl。',
       },
     ],
-    grupoMaximo: 24,
+    participantes: '5人',
     duracion: '17周',
     certificado: {
       tipo: '官方成绩单',
@@ -202,7 +202,7 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
         descripcion: '提前45天以上取消：不收费。提前15–44天：收取50%费用。提前15天以内：不予退款。不可抗力情况个别评估。请发送书面通知至 caroline.cortes@uai.cl。',
       },
     ],
-    grupoMaximo: 15,
+    participantes: '5人',
     duracion: '2至4周',
     certificado: {
       tipo: '官方成绩单',
@@ -292,7 +292,7 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
         descripcion: '提前45天以上取消：不收费。提前15–44天：收取50%费用。提前15天以内：不予退款。不可抗力情况个别评估。请发送书面通知至 caroline.cortes@uai.cl。',
       },
     ],
-    grupoMaximo: '根据机构协议而定',
+    participantes: '根据机构协议而定',
     duracion: '1至2周（定制）',
     certificado: {
       tipo: 'CEIE-UAI 专业培训证书',

@@ -33,7 +33,7 @@ export default function SemesterENPage() {
           conditions: 'Conditions',
           certificate: 'Certificate',
           pricing: 'Pricing',
-          groupSize: 'Maximum students per class',
+          groupSize: 'Minimum participants',
           duration: 'Duration',
           levels: 'CEFR Levels',
           cerfNote: 'CEFR-aligned',
