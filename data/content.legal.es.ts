@@ -26,8 +26,20 @@ export const LEGAL_ES = {
     title: 'Política de Cookies',
     sections: [
       { heading: 'Qué son las cookies', body: 'Las cookies son pequeños archivos de texto almacenados por su navegador cuando visita un sitio web. Permiten que el sitio recuerde sus preferencias y mejore la experiencia de navegación.' },
-      { heading: 'Tipos de cookies utilizadas', body: '[PENDIENTE — asesoría jurídica]' },
-      { heading: 'Tabla de cookies', body: '[PENDIENTE — asesoría jurídica]' },
+      { heading: 'Tipos de cookies utilizadas', body: 'Este sitio utiliza solo dos tipos de almacenamiento. (1) Técnico o necesario: el sitio guarda en su navegador la elección que usted hace en el aviso de cookies, para no volver a mostrárselo. No se usa para identificarle ni se comparte con terceros. (2) Cookies de terceros de YouTube: al cargar o reproducir los videos incrustados, YouTube (Google) puede instalar sus propias cookies para medir reproducciones y recordar preferencias del reproductor; su uso se rige por la Política de Privacidad de Google. El sitio no utiliza cookies propias de analítica, publicidad ni redes sociales. La medición de rendimiento del sitio (Vercel Speed Insights) no utiliza cookies.' },
+      {
+        heading: 'Tabla de cookies',
+        body: 'Detalle de las cookies y elementos de almacenamiento que puede encontrar en este sitio. Las cookies de YouTube son administradas por Google y su nombre y duración pueden variar.',
+        table: {
+          headers: ['Nombre', 'Proveedor', 'Finalidad', 'Duración', 'Tipo'],
+          rows: [
+            ['ceie-cookie-consent', 'CEIE UAI (almacenamiento local)', 'Recordar su elección en el aviso de cookies', 'Hasta que borre los datos del navegador', 'Técnica / necesaria'],
+            ['YSC', 'YouTube (Google)', 'Identificar la sesión de reproducción de videos', 'Sesión', 'De terceros'],
+            ['VISITOR_INFO1_LIVE', 'YouTube (Google)', 'Estimar el ancho de banda y adaptar la calidad del video', 'Aprox. 6 meses', 'De terceros'],
+            ['PREF', 'YouTube (Google)', 'Guardar preferencias del reproductor de video', 'Aprox. 8 meses', 'De terceros'],
+          ],
+        },
+      },
       { heading: 'Cómo gestionar cookies', body: 'Puede aceptar o rechazar las cookies no esenciales mediante el banner que aparece en su primera visita. También puede gestionar las cookies desde la configuración de su navegador en cualquier momento.' },
     ],
   },

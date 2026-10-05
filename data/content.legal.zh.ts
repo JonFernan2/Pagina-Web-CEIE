@@ -26,8 +26,20 @@ export const LEGAL_ZH = {
     title: 'Cookie 政策',
     sections: [
       { heading: '什么是Cookie', body: 'Cookie是当您访问网站时，浏览器存储的小型文本文件。它们使网站能够记住您的偏好设置并改善浏览体验。' },
-      { heading: '使用的Cookie类型', body: '[待定 — 法律顾问确认]' },
-      { heading: 'Cookie列表', body: '[待定 — 法律顾问确认]' },
+      { heading: '使用的Cookie类型', body: '本网站仅使用两类存储。（1）技术性/必要存储：网站会在您的浏览器中保存您在Cookie提示中所作的选择，以免再次显示该提示；该信息不用于识别您的身份，也不会与第三方共享。（2）YouTube第三方Cookie：加载或播放嵌入视频时，YouTube（谷歌）可能会设置其自有Cookie，用于统计播放情况及记住播放器偏好，其使用受谷歌隐私政策约束。本网站不使用自有的分析、广告或社交媒体Cookie。网站性能监测（Vercel Speed Insights）不使用Cookie。' },
+      {
+        heading: 'Cookie列表',
+        body: '以下为您在本网站可能遇到的Cookie及存储项目明细。YouTube Cookie由谷歌管理，其名称和有效期可能有所变化。',
+        table: {
+          headers: ['名称', '提供方', '用途', '有效期', '类型'],
+          rows: [
+            ['ceie-cookie-consent', 'CEIE UAI（本地存储）', '记住您在Cookie提示中的选择', '直至您清除浏览器数据', '技术性/必要'],
+            ['YSC', 'YouTube（谷歌）', '识别视频播放会话', '会话期间', '第三方'],
+            ['VISITOR_INFO1_LIVE', 'YouTube（谷歌）', '估算带宽并调整视频画质', '约6个月', '第三方'],
+            ['PREF', 'YouTube（谷歌）', '保存视频播放器偏好', '约8个月', '第三方'],
+          ],
+        },
+      },
       { heading: '如何管理Cookie', body: '您可以通过首次访问时显示的横幅接受或拒绝非必要Cookie。也可以随时在浏览器设置中管理Cookie。' },
     ],
   },

@@ -2,6 +2,7 @@
 interface LegalSection {
   heading: string
   body: string
+  table?: { headers: string[]; rows: string[][] }
 }
 
 interface LegalPageTemplateProps {
@@ -54,6 +55,32 @@ export default function LegalPageTemplate({
               <p className="text-base leading-relaxed" style={{ color: '#2D2D2D' }}>
                 {section.body}
               </p>
+              {section.table && (
+                <div className="overflow-x-auto mt-4">
+                  <table className="w-full text-sm" style={{ borderCollapse: 'collapse' }}>
+                    <thead>
+                      <tr style={{ background: '#1d1e20' }}>
+                        {section.table.headers.map((h) => (
+                          <th key={h} className="text-left text-xs font-medium uppercase tracking-widest px-3 py-2" style={{ color: '#6493b5' }}>
+                            {h}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {section.table.rows.map((row, r) => (
+                        <tr key={r} style={{ background: r % 2 === 0 ? '#F4F2EE' : '#FFFFFF' }}>
+                          {row.map((cell, c) => (
+                            <td key={c} className="px-3 py-2 align-top" style={{ color: '#2D2D2D', borderBottom: '1px solid #E5E3DE' }}>
+                              {cell}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
             </section>
           ))}
         </div>

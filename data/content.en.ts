@@ -408,8 +408,20 @@ export const LEGAL_EN = {
     title: 'Cookie Policy',
     sections: [
       { heading: 'What are cookies', body: 'Cookies are small text files stored by your browser when you visit a website. They allow the site to remember your preferences and improve your browsing experience.' },
-      { heading: 'Types of cookies used', body: '[PENDING — UAI legal counsel]' },
-      { heading: 'Cookie table', body: '[PENDING — UAI legal counsel]' },
+      { heading: 'Types of cookies used', body: 'This website uses only two kinds of storage. (1) Technical or necessary: the site stores in your browser the choice you make in the cookie notice, so it is not shown again. It is not used to identify you and is not shared with third parties. (2) Third-party YouTube cookies: when the embedded videos load or play, YouTube (Google) may set its own cookies to measure views and remember player preferences; their use is governed by Google\'s Privacy Policy. The site does not use its own analytics, advertising or social media cookies. Site performance monitoring (Vercel Speed Insights) does not use cookies.' },
+      {
+        heading: 'Cookie table',
+        body: 'Details of the cookies and storage items you may encounter on this site. YouTube cookies are managed by Google and their names and duration may vary.',
+        table: {
+          headers: ['Name', 'Provider', 'Purpose', 'Duration', 'Type'],
+          rows: [
+            ['ceie-cookie-consent', 'CEIE UAI (local storage)', 'Remember your choice in the cookie notice', 'Until you clear your browser data', 'Technical / necessary'],
+            ['YSC', 'YouTube (Google)', 'Identify the video playback session', 'Session', 'Third-party'],
+            ['VISITOR_INFO1_LIVE', 'YouTube (Google)', 'Estimate bandwidth and adapt video quality', 'Approx. 6 months', 'Third-party'],
+            ['PREF', 'YouTube (Google)', 'Store video player preferences', 'Approx. 8 months', 'Third-party'],
+          ],
+        },
+      },
       { heading: 'How to manage cookies', body: 'You can accept or reject non-essential cookies using the banner that appears on your first visit. You can also manage cookies through your browser settings at any time.' },
     ],
   },
