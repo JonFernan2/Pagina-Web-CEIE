@@ -114,8 +114,10 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
       reconocimiento: 'CEFR-aligned program. Academic equivalencies through UAI international agreements.',
     },
     precio: {
-      estandar: 'USD 950 / per participant',
-      inSitu: 'USD 1,188 / thematic or Core course',
+      estandarLabel: 'Spanish courses (ELE)',
+      estandar: 'USD 950 per course',
+      inSituLabel: 'Thematic and Core courses',
+      inSitu: 'USD 1,188 per course',
     },
   },
   {
@@ -217,8 +219,10 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
       reconocimiento: 'Certifies hours completed and CEFR level attained.',
     },
     precio: {
-      estandar: 'USD 900 (2-Week Intensive · both courses)',
-      inSitu: 'USD 1,800 (4-Week Intensive · both courses)',
+      estandarLabel: '2-week Intensive',
+      estandar: 'USD 900 (both courses)',
+      inSituLabel: '4-week Intensive',
+      inSitu: 'USD 1,800 (both courses)',
     },
     modalidades: [
       'In-Person · Campus Viña del Mar',
@@ -304,6 +308,7 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
       reconocimiento: 'Certifies hours completed and CEFR level attained in the area of specialization.',
     },
     precio: {
+      estandarLabel: 'Depending on length and format',
       estandar: 'USD 900 – 1,500',
       notas: 'Request a formal proposal at programascortos@uai.cl',
     },

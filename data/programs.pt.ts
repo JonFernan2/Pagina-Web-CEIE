@@ -114,8 +114,10 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
       reconocimiento: 'Programa alinhado ao QECR. Equivalências acadêmicas por meio dos acordos internacionais da UAI.',
     },
     precio: {
-      estandar: 'USD 950 / por participante',
-      inSitu: 'USD 1.188 / curso temático ou Core',
+      estandarLabel: 'Cursos de Espanhol (ELE)',
+      estandar: 'USD 950 por curso',
+      inSituLabel: 'Cursos temáticos e Core',
+      inSitu: 'USD 1.188 por curso',
     },
   },
   {
@@ -208,8 +210,10 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
       reconocimiento: 'Certifica as horas concluídas e o nível QECR atingido.',
     },
     precio: {
-      estandar: 'USD 900 (Intensivo 2 semanas · ambos os cursos)',
-      inSitu: 'USD 1.800 (Intensivo 4 semanas · ambos os cursos)',
+      estandarLabel: 'Intensivo 2 semanas',
+      estandar: 'USD 900 (ambos os cursos)',
+      inSituLabel: 'Intensivo 4 semanas',
+      inSitu: 'USD 1.800 (ambos os cursos)',
     },
     modalidades: [
       'Presencial · Campus Viña del Mar',
@@ -295,6 +299,7 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
       reconocimiento: 'Certifica as horas concluídas e o nível QECR atingido na área de especialização.',
     },
     precio: {
+      estandarLabel: 'Conforme duração e modalidade',
       estandar: 'USD 900 – 1.500',
       notas: 'Solicite uma proposta formal em programascortos@uai.cl',
     },

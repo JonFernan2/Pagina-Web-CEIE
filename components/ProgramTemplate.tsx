@@ -217,10 +217,10 @@ export default function ProgramTemplate({
               <SectionTitle>{labels.pricing}</SectionTitle>
               <div className="flex flex-col gap-3">
                 {data.precio.estandar && (
-                  <PriceRow label={ui.standard} value={data.precio.estandar} />
+                  <PriceRow label={data.precio.estandarLabel ?? ui.standard} value={data.precio.estandar} />
                 )}
                 {data.precio.inSitu && (
-                  <PriceRow label={ui.inSitu} value={data.precio.inSitu} />
+                  <PriceRow label={data.precio.inSituLabel ?? ui.inSitu} value={data.precio.inSitu} />
                 )}
                 {data.precio.largoplazo && (
                   <PriceRow label={ui.longTerm} value={data.precio.largoplazo} />

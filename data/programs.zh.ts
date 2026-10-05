@@ -114,8 +114,10 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
       reconocimiento: '课程对接CEFR。通过UAI国际合作协议进行学术等值认定。',
     },
     precio: {
-      estandar: 'USD 950 / 每位参与者',
-      inSitu: 'USD 1,188 / 专题课程或核心课程',
+      estandarLabel: '西班牙语课程（ELE）',
+      estandar: '每门课程 USD 950',
+      inSituLabel: '专题课程及核心课程',
+      inSitu: '每门课程 USD 1,188',
     },
   },
   {
@@ -208,8 +210,10 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
       reconocimiento: '证明已完成课时数及达到的CEFR级别。',
     },
     precio: {
-      estandar: 'USD 900（2周强化 · 两门课合计）',
-      inSitu: 'USD 1,800（4周强化 · 两门课合计）',
+      estandarLabel: '2周强化',
+      estandar: 'USD 900（两门课合计）',
+      inSituLabel: '4周强化',
+      inSitu: 'USD 1,800（两门课合计）',
     },
     modalidades: [
       '面授 · Viña del Mar 校区',
@@ -295,6 +299,7 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
       reconocimiento: '证明已完成课时数及在专业领域达到的CEFR级别。',
     },
     precio: {
+      estandarLabel: '视时长与形式而定',
       estandar: 'USD 900 – 1,500',
       notas: '请发送正式询价至 programascortos@uai.cl',
     },

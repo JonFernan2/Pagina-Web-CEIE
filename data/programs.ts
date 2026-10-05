@@ -25,7 +25,9 @@ export interface PrecioInfo {
   moneda?: string
   notas?: string
   estandar?: string
+  estandarLabel?: string
   inSitu?: string
+  inSituLabel?: string
   largoplazo?: string
 }
 
@@ -180,8 +182,10 @@ export const PROGRAMS_DATA: ProgramData[] = [
       reconocimiento: 'Programa alineado al MCER. Equivalencias académicas según convenios UAI.',
     },
     precio: {
-      estandar: 'USD 950 / por participante',
-      inSitu: 'USD 1.188 / curso temático o Core',
+      estandarLabel: 'Cursos de Español (ELE)',
+      estandar: 'USD 950 por curso',
+      inSituLabel: 'Cursos temáticos y Core',
+      inSitu: 'USD 1.188 por curso',
       notas: 'Paquete especial 5 cursos: USD 4.750',
     },
   },
@@ -275,8 +279,10 @@ export const PROGRAMS_DATA: ProgramData[] = [
       reconocimiento: 'Certifica las horas completadas y el nivel MCER alcanzado.',
     },
     precio: {
-      estandar: 'USD 900 (Intensivo 2 semanas · ambos cursos)',
-      inSitu: 'USD 1.800 (Intensivo 4 semanas · ambos cursos)',
+      estandarLabel: 'Intensivo 2 semanas',
+      estandar: 'USD 900 (ambos cursos)',
+      inSituLabel: 'Intensivo 4 semanas',
+      inSitu: 'USD 1.800 (ambos cursos)',
     },
     modalidades: [
       'Presencial · Campus Viña del Mar',
@@ -362,6 +368,7 @@ export const PROGRAMS_DATA: ProgramData[] = [
       reconocimiento: 'Certifica horas completadas y nivel MCER alcanzado en el área de especialización.',
     },
     precio: {
+      estandarLabel: 'Según duración y modalidad',
       estandar: 'USD 900 – 1.500',
       notas: 'Solicitar propuesta formal a programascortos@uai.cl',
     },
