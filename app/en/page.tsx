@@ -30,7 +30,7 @@ export default function HomeENPage() {
       <section className="relative flex items-center justify-center text-center" style={{ minHeight: '90vh' }}>
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src="/images/hero-campus-vina-del-mar.png"
+            src="/images/hero-campus-vina-del-mar.jpg"
             alt="Universidad Adolfo Ibáñez campus in Viña del Mar, Pacific Ocean view"
             className="w-full h-full object-cover object-center"
           />
