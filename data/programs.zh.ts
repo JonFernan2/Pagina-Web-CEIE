@@ -4,27 +4,29 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
   {
     slug: 'semester',
     nombre: '学期西班牙语课程',
-    descripcionBreve: '按CEFR级别17周系统进阶。语言课程、专题课程及国际核心课程。',
+    descripcionBreve: '西班牙语作为外语课程（A1–C1级别）、专题选修课程及UAI核心课程。',
     descripcionExtendida:
-      '西班牙语学期课程旨在循序渐进地培养国际非西班牙语学员的语言、学术及文化能力，促进其融入大学学习生活。课程与欧洲语言共同参考框架（CEFR）接轨，遵循塞万提斯学院课程计划（PCIC）标准，提供A1至C1各级别课程，并授予学分。',
+      '西班牙语学期课程旨在循序渐进地培养国际非西班牙语学员的语言、学术及文化能力，促进其融入大学学习生活。课程与欧洲语言共同参考框架（CEFR）接轨，遵循塞万提斯学院课程计划（PCIC）标准，提供A1至C1各级别课程，并授予学分。\n\n与智利其他西班牙语项目不同，UAI学期课程将语言教学与彰显本校特色的博雅教育模式相融合。学生不仅学习西班牙语，更通过借鉴哥伦比亚大学核心课程理念的主动参与式教学法，培养批判性思维、论证能力及对智利与拉丁美洲文化的深刻理解。此外，学生有机会融入UAI社区，与来自20多个国家的智利及国际学生共同参加学生组织、课外工作坊、文化活动和体育赛事。',
     objetivo:
       '循序渐进地培养国际非西班牙语学员的语言、学术及文化能力，促进其融入大学学习生活。',
     niveles: ['A1', 'A2', 'B1', 'B2', 'C1'],
     sedes: ['Viña del Mar'],
     publicoObjetivo: '无西班牙语基础的国际本科生。',
     cursosTabla: [
-      { nombre: '基础西班牙语语法', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE' },
-      { nombre: '基础西班牙语交际', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE' },
-      { nombre: '中级西班牙语语法', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE' },
-      { nombre: '中级西班牙语交际', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE' },
-      { nombre: '高级西班牙语语法', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE' },
-      { nombre: '高级西班牙语交际', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE' },
-      { nombre: '西班牙语语音学', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE' },
-      { nombre: '专题：商务与全球市场专业西班牙语', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: '专题课程' },
-      { nombre: '专题：医疗健康与医学交流西班牙语', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: '专题课程' },
-      { nombre: '专题：活着讲述——拉丁美洲文学', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: '专题课程' },
-      { nombre: '专题：影像无畏——纪录片中的智利', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: '专题课程' },
-      { nombre: '国际核心课程（文学、伦理、科学、当代文明、写作与艺术）', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: '国际核心课程' },
+      { nombre: '西班牙语基础 A1/A2', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE', descripcion: '本课程注重在正式与非正式、个人与职业等多种语境中培养西班牙语口头与书面交际能力，通过语境化语言运用实现清晰有效的沟通目标。' },
+      { nombre: '西班牙语中级：交际 B1/B2', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE', descripcion: '本课程旨在通过正式与非正式语境下的持续互动，巩固西班牙语交际能力，培养口头与书面表达能力，为有效融入社会奠定基础。' },
+      { nombre: '西班牙语中级：语法 B1–B2', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE', descripcion: '本课程面向中级学员，旨在巩固和深化西班牙语语法掌握。通过语境化分析与练习，学员系统学习复杂语法结构，在多样化交际场景中实现更精准、规范的表达。' },
+      { nombre: '西班牙语高级：智利文化 C1', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE', descripcion: '本课程为高级学员设计，通过研究智利文化深化语言能力。借助文本、视听材料与交际活动，学员分析智利的社会、历史与文化面貌，强化批判性理解与西班牙语表达能力。' },
+      { nombre: '西班牙语高级：语法 C1', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE', descripcion: '本课程通过有意识地分析和运用学术、职业及文化语境中的复杂语法结构，深化西班牙语掌握，着力提升精确性、连贯性与话语得体性，使学员在高要求场合实现清晰、细腻的表达。' },
+      { nombre: '西班牙语语音学', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE', descripcion: '本课程介绍西班牙语语音与音位体系，重点涵盖发音、语调与节奏。通过语音感知与口头产出练习，学员在不同交际场景中形成更清晰易懂的发音。' },
+      { nombre: '商务与全球市场专业西班牙语（B1/B2）', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: '专题课程', descripcion: '本课程面向需要在商务职业场景中使用西班牙语的学员，涵盖会议、演示、谈判等商业交际情景，并提供所需词汇与语言结构。课程通过参与商业讲座、活动和企业参访，推动情境化语言学习。' },
+      { nombre: '医疗健康与医学交流西班牙语（B1/B2）', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: '专题课程', descripcion: '本课程面向需要在医疗场景中使用西班牙语的学员或专业人士。通过真实交际情境，培养患者沟通、医疗团队协作及专业文献理解的语言能力，注重清晰、人文关怀与专业性的表达。' },
+      { nombre: '活着讲述：拉丁美洲文学', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: '专题课程', descripcion: '本课程探讨记忆、乡愁与身份认同在拉丁美洲文学中的作用。通过研读加西亚·马尔克斯等代表作家的文学作品，学员将发现这一地区的作家如何将个人回忆与经历转化为折射个体历史与集体文化进程的叙事。' },
+      { nombre: '影像无畏：纪录片中的智利', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: '专题课程', descripcion: '本课程以智利纪录片电影为切入点，探讨该国历史、记忆与社会进程。通过分析重要导演的代表作品，学员将了解纪录片如何保存集体记忆、反思重大历史事件，并培养对智利社会的批判性视角。' },
+      { nombre: '核心课程：艺术与人文', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'UAI核心课程', descripcion: '本课程提出对建筑、绘画和雕塑经典作品的批判性分析与直接观察练习，引导学员从作品的形式结构与创作背景中提取有效信息，从技术描述深入图像与象征解读，并通过参观纪念地与展览丰富学习体验。' },
+      { nombre: '核心课程：科学', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'UAI核心课程', descripcion: '本课程探讨当代物理学与生物学的重大问题，以科学为工具强化逻辑推理能力。课程引导学员学会权衡理论价值与现有证据的支撑，培养能够构建严谨、以科学依据为基础论点的批判性思维。' },
+      { nombre: '核心课程：论证写作', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'UAI核心课程', descripcion: '秉承"在写作中学会写作"的教学理念，本课程旨在将思想转化为有效的论说文本。通过文献研究与说服技巧训练，要求学员持续修改打磨，最终在任何职业环境中实现自主表达。' },
+      { nombre: '核心课程：伦理学', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'UAI核心课程', descripcion: '本课程深入探讨人类存在的道德维度，聚焦个体的现实责任。通过对行为正义与美好生活的追问，学员学会分析、评价并论证日常与职业决策，以知识自主性和诚信作为职业实践的核心。' },
     ],
     horarios: [
       { turno: '课程', dias: '周一至周五', hora: '08:30 – 18:55' },
@@ -119,7 +121,7 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
   {
     slug: 'intensive',
     nombre: '西班牙语强化课程',
-    descripcionBreve: '面向国际学员的强化小组培训，无需完整学期，短期内提升西班牙语能力。',
+    descripcionBreve: '2周或4周西班牙语强化课程。',
     descripcionExtendida:
       '西班牙语强化课程面向希望在短期内提升西班牙语能力的国际非母语学员，无需在智利停留整整一个学期。课程将强化语言学习与文化沉浸体验相结合，在西班牙语环境中促进实践性、有意义的学习。\n\n课程与欧洲语言共同参考框架（CEFR）接轨，遵循塞万提斯学院课程计划（PCIC）标准，助力学员通过集中式语言与文化学习体验稳步提升西班牙语水平。',
     objetivo:
@@ -128,8 +130,8 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
     sedes: ['Viña del Mar'],
     publicoObjetivo: '寻求短期强化语言培训的国际非西班牙语学员。',
     cursosTabla: [
-      { nombre: '语法与交际结构', horas: 22, precioUSD: '900 USD（两门课合计）', creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '2周强化课程', descripcion: '强化课程，专注于培养和巩固与学员水平相符的西班牙语语法与语言资源。通过主动应用的教学法，学员学习在不同场景下实现日益精准、得体的交际。' },
-      { nombre: '交际与智利文化', horas: 22, precioUSD: '已含', creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '2周强化课程', descripcion: '强化课程，培养西班牙语交际能力，同时融入智利与拉丁美洲文化学习。包含Viña del Mar和Valparaíso的文化体验活动。' },
+      { nombre: '语法与交际结构', horas: 22, precioUSD: '900 USD（两门课合计）', creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '2周强化课程', descripcion: '本强化课程专注于培养西班牙语的基础语法结构。通过主动应用的教学法，学员掌握理解和运用语言主要结构所需的工具，用于日常交际情境。课程涵盖基础语法内容，整合词汇、理解与口头及书面产出练习。' },
+      { nombre: '交际与智利文化', horas: 22, precioUSD: '已含', creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '2周强化课程', descripcion: '本强化课程培养西班牙语基础交际能力，将语言学习与智利及拉丁美洲文化融合。通过实践活动与沉浸体验，学员在真实场景中运用西班牙语，探索智利日常生活与文化。包含Viña del Mar和Valparaíso的文化活动。' },
       { nombre: '语法与交际结构', horas: 40, precioUSD: '1,800 USD（两门课合计）', creditos: 4, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '4周强化课程', descripcion: '强化课程，专注于培养和巩固西班牙语语法与语言资源。四周制教学安排有助于循序渐进地掌握和巩固相应级别的语法结构。' },
       { nombre: '交际与智利文化', horas: 40, precioUSD: '已含', creditos: 4, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '4周强化课程', descripcion: '强化课程，融合文化学习的西班牙语交际能力培养。四周制安排有助于学员循序渐进地深化交际能力，并进一步整合语言学习与文化体验。' },
     ],
@@ -178,15 +180,6 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
           '职业场合西班牙语',
         ],
       },
-      {
-        nivel: 'C1 — 高级',
-        contenidos: [
-          '语义细微差别与复杂语体表达',
-          '智利及拉丁美洲文学分析',
-          '高级学术写作',
-          '语用学与话语连贯性',
-        ],
-      },
     ],
     actividades: [
       '入学迎新导引',
@@ -226,7 +219,7 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
   {
     slug: 'specific-purposes',
     nombre: '专业目的西班牙语课程',
-    descripcionBreve: '为个人、群体或机构量身定制的短期西班牙语课程，根据具体需求、兴趣和目标进行设计。',
+    descripcionBreve: '根据每位学员、群体或机构的具体需求、兴趣和目标量身定制的短期课程。',
     descripcionExtendida:
       '专业目的西班牙语课程是根据每位学员、群体或机构的具体需求、兴趣和目标量身定制的短期课程。其目的是通过适合参与者语言水平和专业背景的内容与活动，在学术、职业或专业领域强化西班牙语交际能力。\n\n课程将目标领域专业词汇、交际功能和语言资源的发展与专项实践活动相结合，这些活动聚焦于在各领域特定场景和语境中使用西班牙语。教学方法和内容根据课程目标确定，可包含西班牙语课堂教学、工作坊、实践活动以及文化或职业体验。',
     objetivo:
@@ -235,10 +228,8 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
     sedes: ['Viña del Mar', 'Santiago'],
     publicoObjetivo: '拉美地区学员（本科生、研究生）、高管、企业、国际组织及职业群体。',
     cursosTabla: [
-      { nombre: '医疗健康', horas: '30–50', precioUSD: 'USD 900–1,500', modalidad: '1–2周，定制' },
-      { nombre: '商务', horas: '30–50', precioUSD: 'USD 900–1,500', modalidad: '定制' },
-      { nombre: '天文学', horas: '30–50', precioUSD: 'USD 900–1,500', modalidad: '定制' },
-      { nombre: '文学之旅', horas: '30–50', precioUSD: 'USD 900–1,500', modalidad: '定制' },
+      { nombre: '个性化一对一课程', horas: '灵活', precioUSD: '询价', modalidad: '面授或线上', descripcion: '根据每位学员的水平、目标、兴趣和可用时间量身定制的西班牙语课程。学习内容和节奏因人而异，可针对通用语言能力或学术、职业及个人兴趣领域进行深化。课程采用交际式个性化教学法，结合专为每位学员精选的活动与材料。课程时长、强度、形式和内容均可灵活调整。' },
+      { nombre: '机构团体课程', horas: '灵活', precioUSD: '询价', modalidad: '面授或线上', descripcion: '面向大学、机构、企业或其他团体量身定制的西班牙语课程，根据学员背景及每次体验确定的学术、职业或文化目标进行设计。课程可将西班牙语教学与专业内容、文化活动、沉浸式体验及学术或职业参观相结合。课程设计、时长、强度和形式由CEIE与申请机构共同确定。' },
     ],
     horarios: [
       { turno: '灵活', dias: '与合作机构协商', hora: '按协议安排' },
@@ -308,10 +299,8 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
       notas: '请发送正式询价至 programascortos@uai.cl',
     },
     submodalidades: [
-      '商务与行业西班牙语',
-      '学术西班牙语',
-      '外交与国际关系西班牙语',
-      '行业专项西班牙语（医疗、法律、建筑）',
+      '个性化一对一课程',
+      '机构团体课程',
     ],
     nota: '面向机构：使馆、企业、合作大学、地方政府。',
   },
