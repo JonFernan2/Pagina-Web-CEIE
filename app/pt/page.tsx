@@ -193,7 +193,7 @@ export default function HomePTPage() {
           <div style={{ maxWidth: '720px', margin: '0 auto' }}>
             <div style={{ position: 'relative', paddingBottom: '56.25%', borderRadius: '4px', border: '1px solid #E5E3DE', overflow: 'hidden' }}>
               <iframe
-                src="https://www.youtube.com/embed/hGd8OBLONvc?rel=0&modestbranding=1"
+                src="https://www.youtube-nocookie.com/embed/hGd8OBLONvc?rel=0&modestbranding=1"
                 title={d.testimonials.title}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

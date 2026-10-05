@@ -101,7 +101,7 @@ export default function HomePage() {
           <div className="mx-auto w-full max-w-3xl" style={{ borderRadius: '4px', border: '2px solid #6493b5', overflow: 'hidden' }}>
             <div style={{ position: 'relative', paddingTop: '56.25%' }}>
               <iframe
-                src="https://www.youtube.com/embed/PwjXWu6HtsQ"
+                src="https://www.youtube-nocookie.com/embed/PwjXWu6HtsQ"
                 title="Video promocional CEIE — Universidad Adolfo Ibáñez"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -230,7 +230,7 @@ export default function HomePage() {
           <div style={{ maxWidth: '720px', margin: '0 auto' }}>
             <div style={{ position: 'relative', paddingBottom: '56.25%', borderRadius: '4px', border: '1px solid #E5E3DE', overflow: 'hidden' }}>
               <iframe
-                src="https://www.youtube.com/embed/hGd8OBLONvc?rel=0&modestbranding=1"
+                src="https://www.youtube-nocookie.com/embed/hGd8OBLONvc?rel=0&modestbranding=1"
                 title={d.testimonials.title}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
