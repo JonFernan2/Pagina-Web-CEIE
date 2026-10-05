@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+import { useId, useState } from 'react'
+import { ChevronDown } from 'lucide-react'
 import PlaceholderImage from './PlaceholderImage'
 
 type Lang = 'es' | 'en' | 'pt' | 'zh'
@@ -35,6 +36,8 @@ interface TeacherCardProps {
 
 const LABELS: Record<string, Record<Lang, string>> = {
   formacion: { es: 'Formación', en: 'Education', pt: 'Formação', zh: '学历' },
+  verPerfil: { es: 'Ver perfil', en: 'View profile', pt: 'Ver perfil', zh: '查看简介' },
+  ocultar: { es: 'Ocultar', en: 'Hide', pt: 'Ocultar', zh: '收起' },
   fotoPendiente: {
     es: 'Fotografía pendiente · Sesión programada',
     en: 'Photo pending · Session scheduled',
@@ -71,6 +74,8 @@ export default function TeacherCard({
   nombre, rol, titulo, formacionLista, bio, email, foto, fotoPendiente, fotoPosition = 'center 20%', fotoFit = 'cover', lang = 'es',
 }: TeacherCardProps) {
   const [imgError, setImgError] = useState(false)
+  const [open, setOpen] = useState(false)
+  const detailsId = useId()
 
   return (
     <div
@@ -109,22 +114,39 @@ export default function TeacherCard({
           <p className="text-xs mt-1" style={{ color: '#6B6B6B' }}>{titulo[lang]}</p>
         </div>
 
-        {/* Bio */}
-        <p className="text-sm leading-relaxed" style={{ color: '#2D2D2D', borderTop: '1px solid #E5E3DE', paddingTop: '12px' }}>
-          {bio[lang]}
-        </p>
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          aria-expanded={open}
+          aria-controls={detailsId}
+          className="flex items-center justify-between w-full text-xs font-semibold uppercase tracking-widest py-2 focus:outline-none focus-visible:ring-2"
+          style={{ color: '#6493b5', borderTop: '1px solid #E5E3DE', paddingTop: '12px' }}
+        >
+          {open ? LABELS.ocultar[lang] : LABELS.verPerfil[lang]}
+          <ChevronDown
+            size={18}
+            aria-hidden="true"
+            className="transition-transform duration-200"
+            style={{ transform: open ? 'rotate(180deg)' : 'none' }}
+          />
+        </button>
 
-        {/* Formación */}
-        <div style={{ borderTop: '1px solid #E5E3DE', paddingTop: '10px' }}>
-          <p className="text-xs font-semibold uppercase tracking-widest text-negro mb-2">{LABELS.formacion[lang]}</p>
-          <ul className="flex flex-col gap-1">
-            {formacionLista[lang].map((item, i) => (
-              <li key={i} className="text-xs flex gap-2" style={{ color: '#6B6B6B' }}>
-                <span style={{ color: '#6493b5', flexShrink: 0 }}>·</span>
-                {item}
-              </li>
-            ))}
-          </ul>
+        <div id={detailsId} className={open ? 'flex flex-col gap-3' : 'hidden'}>
+          <p className="text-sm leading-relaxed" style={{ color: '#2D2D2D' }}>
+            {bio[lang]}
+          </p>
+
+          <div style={{ borderTop: '1px solid #E5E3DE', paddingTop: '10px' }}>
+            <p className="text-xs font-semibold uppercase tracking-widest text-negro mb-2">{LABELS.formacion[lang]}</p>
+            <ul className="flex flex-col gap-1">
+              {formacionLista[lang].map((item, i) => (
+                <li key={i} className="text-xs flex gap-2" style={{ color: '#6B6B6B' }}>
+                  <span style={{ color: '#6493b5', flexShrink: 0 }}>·</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         {/* Email */}
