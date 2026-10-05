@@ -28,6 +28,7 @@ export interface PrecioInfo {
   estandarLabel?: string
   inSitu?: string
   inSituLabel?: string
+  resumen?: string
   largoplazo?: string
 }
 
@@ -279,6 +280,7 @@ export const PROGRAMS_DATA: ProgramData[] = [
       reconocimiento: 'Certifica las horas completadas y el nivel MCER alcanzado.',
     },
     precio: {
+      resumen: 'Desde USD 900',
       estandarLabel: 'Intensivo 2 semanas',
       estandar: 'USD 900 (ambos cursos)',
       inSituLabel: 'Intensivo 4 semanas',
