@@ -43,15 +43,15 @@ export const DIRECTORIO: DirectorioMember[] = [
   {
     nombre: 'Caroline Cortés',
     cargo: {
-      es: 'Global Program Coordinator CEIE / RR.II',
+      es: 'Coordinadora Programas Internacionales CEIE / RR.II',
       en: 'Global Program Coordinator CEIE / Int\'l Relations',
-      pt: 'Global Program Coordinator CEIE / RR.II',
+      pt: 'Coordenadora de Programas Internacionais CEIE / RR.II',
       zh: 'CEIE全球项目协调员 / 国际关系',
     },
     foto: '/images/directorio-caroline-cortes.jpg',
     fotoPosition: 'center top',
     alt: {
-      es: 'Caroline Cortés — Coordinadora RRII del CEIE UAI',
+      es: 'Caroline Cortés — Coordinadora Programas Internacionales CEIE / RR.II',
       en: 'Caroline Cortés — International Relations Coordinator, CEIE UAI',
       pt: 'Caroline Cortés — Coordenadora de Relações Internacionais, CEIE UAI',
       zh: 'Caroline Cortés — CEIE UAI 国际关系协调员',
@@ -60,14 +60,14 @@ export const DIRECTORIO: DirectorioMember[] = [
   {
     nombre: 'Lorena León',
     cargo: {
-      es: 'Budgetary Control & Management RR.II / CEIE',
+      es: 'Control y Gestión presupuestario CEIE / RR.II',
       en: 'Budgetary Control & Management Int\'l Relations / CEIE',
-      pt: 'Budgetary Control & Management RR.II / CEIE',
+      pt: 'Controle e Gestão Orçamentária CEIE / RR.II',
       zh: '国际关系/CEIE预算控制与管理',
     },
     foto: '/images/directorio-lorena-leon.jpg',
     alt: {
-      es: 'Lorena León — Coordinadora Administración del CEIE UAI',
+      es: 'Lorena León — Control y Gestión presupuestario CEIE / RR.II',
       en: 'Lorena León — Administration Coordinator, CEIE UAI',
       pt: 'Lorena León — Coordenadora de Administração, CEIE UAI',
       zh: 'Lorena León — CEIE UAI 行政协调员',

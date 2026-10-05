@@ -177,9 +177,9 @@ export default function HomeZHPage() {
               <div className="flex items-center justify-center" style={{ background: '#FFFFFF', borderRadius: '4px', padding: '20px 24px' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/triple-crown-logos.webp"
+                  src="/images/triple-crown-logos-v2.webp"
                   alt="三重皇冠认证：AACSB认证 · EFMD EQUIS认证 · AMBA认证"
-                  style={{ maxHeight: '80px', width: '100%', objectFit: 'contain' }}
+                  style={{ maxHeight: '150px', width: '100%', objectFit: 'contain' }}
                 />
               </div>
             </div>
