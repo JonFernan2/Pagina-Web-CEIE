@@ -14,7 +14,9 @@ export default function CondicoesContratacaoPTPage() {
   return (
     <>
       <Navbar lang="pt" currentPath="/pt/condicoes-contratacao" />
+      <main id="contenido">
       <LegalPageTemplate lang="pt" title={LEGAL_PT.condicoesContratacao.title} sections={LEGAL_PT.condicoesContratacao.sections} lastUpdated="Agosto 2026" />
+      </main>
       <Footer lang="pt" />
       <CookieBanner lang="pt" />
     </>

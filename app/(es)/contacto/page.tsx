@@ -15,6 +15,7 @@ export default function ContactoPage() {
   return (
     <>
       <Navbar lang="es" currentPath="/contacto" />
+      <main id="contenido">
 
       {/* Hero */}
       <div
@@ -37,6 +38,7 @@ export default function ContactoPage() {
             <div>
               <h2 className="font-display font-bold text-negro text-2xl mb-6">{d.form.title}</h2>
               <iframe
+                title="Formulario de contacto"
                 src="https://forms.cloud.microsoft/r/nAPfLyq21W?embed=true"
                 width="100%"
                 height="700"
@@ -54,15 +56,15 @@ export default function ContactoPage() {
               <div className="flex flex-col gap-4 mb-6 text-sm" style={{ color: '#2D2D2D' }}>
                 <div>
                   <p className="font-semibold text-negro">{d.info.campus}</p>
-                  <p style={{ color: '#6B6B6B' }}>{d.info.address}</p>
+                  <p style={{ color: '#2D2D2D' }}>{d.info.address}</p>
                 </div>
                 <p>{d.info.phone}</p>
                 {d.info.emails.map((em: string) => (
-                  <a key={em} href={`mailto:${em}`} className="hover:underline" style={{ color: '#6493b5' }}>{em}</a>
+                  <a key={em} href={`mailto:${em}`} className="underline underline-offset-2 hover:no-underline" style={{ color: '#1d1e20', textDecorationColor: '#6493b5' }}>{em}</a>
                 ))}
                 <p>{d.info.hours}</p>
                 {d.info.social.map((s) => (
-                  <p key={s} style={{ color: '#6B6B6B' }}>{s}</p>
+                  <p key={s} style={{ color: '#2D2D2D' }}>{s}</p>
                 ))}
               </div>
 
@@ -77,6 +79,8 @@ export default function ContactoPage() {
           </div>
         </div>
       </section>
+
+      </main>
 
       <Footer lang="es" />
       <CookieBanner lang="es" />

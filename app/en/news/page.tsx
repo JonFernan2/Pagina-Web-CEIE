@@ -13,6 +13,7 @@ export default function NewsPage() {
   return (
     <>
       <Navbar lang="en" currentPath="/en/news" />
+      <main id="contenido">
 
       {/* Hero */}
       <div
@@ -69,6 +70,8 @@ export default function NewsPage() {
           </div>
         </div>
       </section>
+
+      </main>
 
       <Footer lang="en" />
       <CookieBanner lang="en" />

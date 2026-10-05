@@ -16,6 +16,7 @@ export default function AdmisionPage() {
   return (
     <>
       <Navbar lang="es" currentPath="/admision" />
+      <main id="contenido">
 
       {/* Hero */}
       <div
@@ -82,6 +83,7 @@ export default function AdmisionPage() {
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="font-display font-bold text-negro text-3xl mb-8 text-center">{d.form.title}</h2>
           <iframe
+            title="Formulario de admisión"
             src="https://forms.cloud.microsoft/r/hKxAtJqgm5?embed=true"
             width="100%"
             height="800"
@@ -110,6 +112,8 @@ export default function AdmisionPage() {
           </div>
         </div>
       </section>
+
+      </main>
 
       <Footer lang="es" />
       <CookieBanner lang="es" />

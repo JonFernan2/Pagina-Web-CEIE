@@ -65,7 +65,7 @@ function FlagImg({ code, label }: { code: string; label: string }) {
       srcSet={`https://flagcdn.com/48x36/${code}.png 2x`}
       width={24}
       height={18}
-      alt={label}
+      alt=""
       style={{ display: 'inline-block', borderRadius: '2px', objectFit: 'cover' }}
     />
   )
@@ -79,10 +79,10 @@ function getLangPath(currentPath: string, currentLang: Lang, targetLang: Lang): 
 }
 
 const NAV_ARIA = {
-  es: { main: 'Navegación principal', open: 'Abrir menú', close: 'Cerrar menú' },
-  en: { main: 'Main navigation', open: 'Open menu', close: 'Close menu' },
-  pt: { main: 'Navegação principal', open: 'Abrir menu', close: 'Fechar menu' },
-  zh: { main: '主导航', open: '打开菜单', close: '关闭菜单' },
+  es: { main: 'Navegación principal', open: 'Abrir menú', close: 'Cerrar menú', language: 'Idioma', skip: 'Saltar al contenido' },
+  en: { main: 'Main navigation', open: 'Open menu', close: 'Close menu', language: 'Language', skip: 'Skip to content' },
+  pt: { main: 'Navegação principal', open: 'Abrir menu', close: 'Fechar menu', language: 'Idioma', skip: 'Pular para o conteúdo' },
+  zh: { main: '主导航', open: '打开菜单', close: '关闭菜单', language: '语言', skip: '跳至正文' },
 }
 
 export default function Navbar({ lang, currentPath }: NavbarProps) {
@@ -111,6 +111,14 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
   }, [])
 
   return (
+    <>
+    <a
+      href="#contenido"
+      className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold"
+      style={{ background: '#6493b5', color: '#1d1e20', borderRadius: '2px' }}
+    >
+      {NAV_ARIA[lang].skip}
+    </a>
     <nav
       className="sticky top-0 z-50 w-full"
       style={{
@@ -193,6 +201,7 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
                   className="absolute right-0 top-full mt-1 w-40 py-1 z-50"
                   style={{ background: '#1d1e20', border: '1px solid #2D2D2D', borderRadius: '4px', boxShadow: '0 8px 24px rgba(0,0,0,0.4)' }}
                   role="listbox"
+                  aria-label={NAV_ARIA[lang].language}
                 >
                   {(['es', 'en', 'pt', 'zh'] as const).map((l) => (
                     <Link
@@ -266,5 +275,6 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
         </div>
       )}
     </nav>
+    </>
   )
 }

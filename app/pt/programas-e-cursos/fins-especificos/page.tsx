@@ -16,6 +16,7 @@ export default function FinsEspecificosPTPage() {
   return (
     <>
       <Navbar lang="pt" currentPath="/pt/programas-e-cursos/fins-especificos" />
+      <main id="contenido">
       <ProgramTemplate
         lang="pt"
         data={program}
@@ -39,6 +40,7 @@ export default function FinsEspecificosPTPage() {
           cerfNote: 'Alinhado ao QECR',
         }}
       />
+      </main>
       <Footer lang="pt" />
       <CookieBanner lang="pt" />
     </>

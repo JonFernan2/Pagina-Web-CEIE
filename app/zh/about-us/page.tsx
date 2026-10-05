@@ -37,6 +37,7 @@ export default function AboutZHPage() {
   return (
     <>
       <Navbar lang="zh" currentPath="/zh/about-us" />
+      <main id="contenido">
 
       <div className="flex items-end pb-10 pt-24" style={{ background: '#1d1e20', minHeight: '280px' }}>
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 w-full">
@@ -70,7 +71,7 @@ export default function AboutZHPage() {
                 <p className="font-body font-semibold text-negro text-base leading-tight mb-1">
                   {member.nombre}
                 </p>
-                <p className="font-body text-sm leading-snug mb-2" style={{ color: '#6493b5' }}>
+                <p className="font-body text-sm font-medium leading-snug mb-2" style={{ color: '#1d1e20' }}>
                   {member.cargo.zh}
                 </p>
                 {member.credenciales && (
@@ -122,6 +123,8 @@ export default function AboutZHPage() {
         images={LAUNCH_IMAGES_ZH}
         lang="zh"
       />
+
+      </main>
 
       <Footer lang="zh" />
       <CookieBanner lang="zh" />

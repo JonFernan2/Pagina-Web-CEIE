@@ -14,12 +14,14 @@ export default function AvisoLegalPage() {
   return (
     <>
       <Navbar lang="es" currentPath="/aviso-legal" />
+      <main id="contenido">
       <LegalPageTemplate
         lang="es"
         title={LEGAL_ES.legalNotice.title}
         sections={LEGAL_ES.legalNotice.sections}
         lastUpdated="Agosto 2026"
       />
+      </main>
       <Footer lang="es" />
       <CookieBanner lang="es" />
     </>

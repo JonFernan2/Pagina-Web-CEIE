@@ -35,7 +35,7 @@ export default function AdmissionSteps({ steps }: AdmissionStepsProps) {
             <h3 className="font-body text-base font-semibold text-negro mb-2">
               {step.title}
             </h3>
-            <p className="text-sm leading-relaxed" style={{ color: '#6B6B6B' }}>
+            <p className="text-sm leading-relaxed" style={{ color: '#2D2D2D' }}>
               {step.desc}
             </p>
           </div>

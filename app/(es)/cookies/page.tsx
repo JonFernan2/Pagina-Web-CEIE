@@ -14,12 +14,14 @@ export default function CookiesPage() {
   return (
     <>
       <Navbar lang="es" currentPath="/cookies" />
+      <main id="contenido">
       <LegalPageTemplate
         lang="es"
         title={LEGAL_ES.cookies.title}
         sections={LEGAL_ES.cookies.sections}
         lastUpdated="Agosto 2026"
       />
+      </main>
       <Footer lang="es" />
       <CookieBanner lang="es" />
     </>

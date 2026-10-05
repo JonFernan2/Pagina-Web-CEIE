@@ -78,7 +78,7 @@ export default function ProductAccordion({ programs, lang }: ProductAccordionPro
                 </span>
                 <span
                   className="text-sm leading-relaxed"
-                  style={{ color: isOpen ? 'rgba(255,255,255,0.65)' : '#6B6B6B' }}
+                  style={{ color: isOpen ? 'rgba(255,255,255,0.75)' : '#2D2D2D' }}
                 >
                   {program.descripcionBreve}
                 </span>
@@ -99,12 +99,12 @@ export default function ProductAccordion({ programs, lang }: ProductAccordionPro
                 {/* Objective */}
                 {program.objetivo && (
                   <div>
-                    <h4
+                    <h2
                       className="text-xs font-semibold uppercase tracking-widest mb-2"
                       style={{ color: '#6493b5' }}
                     >
                       {lbl.objetivo}
-                    </h4>
+                    </h2>
                     <p className="text-sm leading-relaxed" style={{ color: '#2D2D2D' }}>
                       {program.objetivo}
                     </p>
@@ -114,12 +114,12 @@ export default function ProductAccordion({ programs, lang }: ProductAccordionPro
                 {/* Courses table */}
                 {program.cursosTabla && program.cursosTabla.length > 0 && (
                   <div>
-                    <h4
+                    <h2
                       className="text-xs font-semibold uppercase tracking-widest mb-3"
                       style={{ color: '#6493b5' }}
                     >
                       {lbl.cursos}
-                    </h4>
+                    </h2>
                     <div className="overflow-x-auto">
                       <table className="w-full text-sm" style={{ borderCollapse: 'collapse' }}>
                         <thead>

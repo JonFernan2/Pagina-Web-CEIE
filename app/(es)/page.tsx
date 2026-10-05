@@ -25,6 +25,7 @@ export default function HomePage() {
   return (
     <>
       <Navbar lang="es" currentPath="/" />
+      <main id="contenido">
 
       {/* ── HERO ── */}
       <section className="relative flex items-center justify-center text-center" style={{ minHeight: '90vh' }}>
@@ -116,7 +117,7 @@ export default function HomePage() {
               />
             </div>
           </div>
-          <p className="text-xs text-center mt-3 font-body" style={{ color: 'rgba(255,255,255,0.45)' }}>
+          <p className="text-xs text-center mt-3 font-body" style={{ color: 'rgba(255,255,255,0.7)' }}>
             Créditos: Mathias Adolf Harboe Damian
           </p>
         </div>
@@ -336,7 +337,7 @@ export default function HomePage() {
       {/* ── CONVOCATORIAS ── */}
       <section style={{ background: '#C7C2ba' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 text-center">
-          <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#6493b5' }}>
+          <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#1d1e20' }}>
             Inscripciones abiertas
           </p>
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-4">
@@ -356,6 +357,8 @@ export default function HomePage() {
           </a>
         </div>
       </section>
+
+      </main>
 
       <Footer lang="es" />
       <CookieBanner lang="es" />

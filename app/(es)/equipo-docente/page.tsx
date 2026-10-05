@@ -14,6 +14,7 @@ export default function EquipoDocentePage() {
   return (
     <>
       <Navbar lang="es" currentPath="/equipo-docente" />
+      <main id="contenido">
 
       {/* Hero */}
       <div
@@ -40,6 +41,8 @@ export default function EquipoDocentePage() {
           </div>
         </div>
       </section>
+
+      </main>
 
       <Footer lang="es" />
       <CookieBanner lang="es" />

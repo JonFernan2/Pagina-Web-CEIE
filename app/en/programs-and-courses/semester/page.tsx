@@ -16,6 +16,7 @@ export default function SemesterENPage() {
   return (
     <>
       <Navbar lang="en" currentPath="/en/programs-and-courses/semester" />
+      <main id="contenido">
       <ProgramTemplate
         lang="en"
         data={program}
@@ -39,6 +40,7 @@ export default function SemesterENPage() {
           cerfNote: 'CEFR-aligned',
         }}
       />
+      </main>
       <Footer lang="en" />
       <CookieBanner lang="en" />
     </>

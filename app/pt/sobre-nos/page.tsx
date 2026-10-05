@@ -37,6 +37,7 @@ export default function SobreNosPTPage() {
   return (
     <>
       <Navbar lang="pt" currentPath="/pt/sobre-nos" />
+      <main id="contenido">
 
       <div className="flex items-end pb-10 pt-24" style={{ background: '#1d1e20', minHeight: '280px' }}>
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 w-full">
@@ -70,7 +71,7 @@ export default function SobreNosPTPage() {
                 <p className="font-body font-semibold text-negro text-base leading-tight mb-1">
                   {member.nombre}
                 </p>
-                <p className="font-body text-sm leading-snug mb-2" style={{ color: '#6493b5' }}>
+                <p className="font-body text-sm font-medium leading-snug mb-2" style={{ color: '#1d1e20' }}>
                   {member.cargo.pt}
                 </p>
                 {member.credenciales && (
@@ -122,6 +123,8 @@ export default function SobreNosPTPage() {
         images={LAUNCH_IMAGES_PT}
         lang="pt"
       />
+
+      </main>
 
       <Footer lang="pt" />
       <CookieBanner lang="pt" />

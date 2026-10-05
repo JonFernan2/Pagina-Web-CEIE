@@ -25,6 +25,7 @@ export default function HomeZHPage() {
   return (
     <>
       <Navbar lang="zh" currentPath="/zh" />
+      <main id="contenido">
 
       {/* ── HERO ── */}
       <section className="relative flex items-center justify-center text-center" style={{ minHeight: '90vh' }}>
@@ -299,7 +300,7 @@ export default function HomeZHPage() {
       {/* ── 招聘信息 ── */}
       <section style={{ background: '#C7C2ba' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 text-center">
-          <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#6493b5' }}>
+          <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#1d1e20' }}>
             现正招生
           </p>
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-4">
@@ -319,6 +320,8 @@ export default function HomeZHPage() {
           </a>
         </div>
       </section>
+
+      </main>
 
       <Footer lang="zh" />
       <CookieBanner lang="zh" />

@@ -14,7 +14,9 @@ export default function LegalNoticeZHPage() {
   return (
     <>
       <Navbar lang="zh" currentPath="/zh/legal-notice" />
+      <main id="contenido">
       <LegalPageTemplate lang="zh" title={LEGAL_ZH.legalNotice.title} sections={LEGAL_ZH.legalNotice.sections} lastUpdated="2026年8月" />
+      </main>
       <Footer lang="zh" />
       <CookieBanner lang="zh" />
     </>

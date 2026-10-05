@@ -16,6 +16,7 @@ export default function SemesterZHPage() {
   return (
     <>
       <Navbar lang="zh" currentPath="/zh/programs/semester" />
+      <main id="contenido">
       <ProgramTemplate
         lang="zh"
         data={program}
@@ -39,6 +40,7 @@ export default function SemesterZHPage() {
           cerfNote: '对接CEFR',
         }}
       />
+      </main>
       <Footer lang="zh" />
       <CookieBanner lang="zh" />
     </>

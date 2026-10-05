@@ -14,7 +14,9 @@ export default function TermsENPage() {
   return (
     <>
       <Navbar lang="en" currentPath="/en/terms-and-conditions" />
+      <main id="contenido">
       <LegalPageTemplate lang="en" title={LEGAL_EN.termsAndConditions.title} sections={LEGAL_EN.termsAndConditions.sections} lastUpdated="August 2026" />
+      </main>
       <Footer lang="en" />
       <CookieBanner lang="en" />
     </>

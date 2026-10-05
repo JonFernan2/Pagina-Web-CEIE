@@ -16,6 +16,7 @@ export default function SpecificPurposesENPage() {
   return (
     <>
       <Navbar lang="en" currentPath="/en/programs-and-courses/specific-purposes" />
+      <main id="contenido">
       <ProgramTemplate
         lang="en"
         data={program}
@@ -39,6 +40,7 @@ export default function SpecificPurposesENPage() {
           cerfNote: 'Adapted to institutional context',
         }}
       />
+      </main>
       <Footer lang="en" />
       <CookieBanner lang="en" />
     </>

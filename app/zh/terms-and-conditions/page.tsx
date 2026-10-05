@@ -14,7 +14,9 @@ export default function TermsAndConditionsZHPage() {
   return (
     <>
       <Navbar lang="zh" currentPath="/zh/terms-and-conditions" />
+      <main id="contenido">
       <LegalPageTemplate lang="zh" title={LEGAL_ZH.condicoesContratacao.title} sections={LEGAL_ZH.condicoesContratacao.sections} lastUpdated="2026年8月" />
+      </main>
       <Footer lang="zh" />
       <CookieBanner lang="zh" />
     </>

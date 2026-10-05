@@ -14,7 +14,9 @@ export default function LegalNoticeENPage() {
   return (
     <>
       <Navbar lang="en" currentPath="/en/legal-notice" />
+      <main id="contenido">
       <LegalPageTemplate lang="en" title={LEGAL_EN.legalNotice.title} sections={LEGAL_EN.legalNotice.sections} lastUpdated="August 2026" />
+      </main>
       <Footer lang="en" />
       <CookieBanner lang="en" />
     </>

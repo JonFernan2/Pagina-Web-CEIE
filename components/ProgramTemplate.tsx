@@ -186,7 +186,7 @@ export default function ProgramTemplate({
               <div className="flex flex-col gap-4">
                 {data.condiciones.map((c, i) => (
                   <div key={i} className="p-4" style={{ border: '1px solid #E5E3DE', borderRadius: '4px' }}>
-                    <h4 className="font-semibold text-negro mb-1">{c.titulo}</h4>
+                    <h3 className="font-semibold text-negro mb-1">{c.titulo}</h3>
                     <p className="text-sm leading-relaxed" style={{ color: '#6B6B6B' }}>{c.descripcion}</p>
                   </div>
                 ))}
@@ -204,7 +204,7 @@ export default function ProgramTemplate({
                   <Award size={24} style={{ color: '#6493b5' }} />
                   <div>
                     <p className="font-semibold text-negro">{data.certificado.tipo}</p>
-                    <p className="text-sm" style={{ color: '#6B6B6B' }}>{data.certificado.emite}</p>
+                    <p className="text-sm" style={{ color: '#2D2D2D' }}>{data.certificado.emite}</p>
                   </div>
                 </div>
                 <p className="text-sm leading-relaxed" style={{ color: '#2D2D2D' }}>
@@ -255,7 +255,7 @@ export default function ProgramTemplate({
             >
               <h3
                 className="font-body text-sm font-semibold uppercase tracking-widest"
-                style={{ color: '#6493b5' }}
+                style={{ color: '#1d1e20' }}
               >
                 {asideTitle}
               </h3>
@@ -302,7 +302,7 @@ function StatBox({ icon, label, value }: { icon: React.ReactNode; label: string;
       style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#C7C2ba' }}
     >
       <div style={{ color: '#6493b5' }}>{icon}</div>
-      <p className="text-xs uppercase tracking-widest" style={{ color: '#6B6B6B' }}>{label}</p>
+      <p className="text-xs uppercase tracking-widest" style={{ color: '#2D2D2D' }}>{label}</p>
       <p className="font-semibold text-negro">{value}</p>
     </div>
   )
@@ -333,10 +333,10 @@ function PriceRow({ label, value, highlight }: { label: string; value: string; h
       className="flex items-center justify-between px-4 py-3"
       style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#C7C2ba' }}
     >
-      <span className="text-sm" style={{ color: '#6B6B6B' }}>{label}</span>
+      <span className="text-sm" style={{ color: '#2D2D2D' }}>{label}</span>
       <span
         className="text-base font-bold"
-        style={{ color: highlight ? '#6493b5' : '#1d1e20' }}
+        style={{ color: '#1d1e20' }}
       >
         {value}
       </span>
@@ -347,10 +347,10 @@ function PriceRow({ label, value, highlight }: { label: string; value: string; h
 function AsideStat({ label, value, highlight }: { label: string; value: string; highlight?: boolean }) {
   return (
     <div style={{ borderBottom: '1px solid #E5E3DE', paddingBottom: '0.75rem' }}>
-      <p className="text-xs uppercase tracking-widest mb-1" style={{ color: '#6B6B6B' }}>{label}</p>
+      <p className="text-xs uppercase tracking-widest mb-1" style={{ color: '#2D2D2D' }}>{label}</p>
       <p
         className={`font-semibold ${highlight ? 'text-xl' : 'text-sm'}`}
-        style={{ color: highlight ? '#6493b5' : '#1d1e20' }}
+        style={{ color: '#1d1e20' }}
       >
         {value}
       </p>

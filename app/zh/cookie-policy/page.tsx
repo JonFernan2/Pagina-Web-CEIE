@@ -14,7 +14,9 @@ export default function CookiePolicyZHPage() {
   return (
     <>
       <Navbar lang="zh" currentPath="/zh/cookie-policy" />
+      <main id="contenido">
       <LegalPageTemplate lang="zh" title={LEGAL_ZH.cookies.title} sections={LEGAL_ZH.cookies.sections} lastUpdated="2026年8月" />
+      </main>
       <Footer lang="zh" />
       <CookieBanner lang="zh" />
     </>

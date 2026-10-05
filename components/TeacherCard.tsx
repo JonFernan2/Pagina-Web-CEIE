@@ -107,7 +107,7 @@ export default function TeacherCard({
       {/* Info */}
       <div className="px-5 py-5 flex flex-col gap-3 flex-1">
         <div>
-          <h3 className="font-body text-lg font-semibold text-negro leading-tight">{nombre}</h3>
+          <h2 className="font-body text-lg font-semibold text-negro leading-tight">{nombre}</h2>
           <p className="text-xs font-medium uppercase tracking-widest mt-1" style={{ color: '#6493b5' }}>
             {rol[lang]}
           </p>

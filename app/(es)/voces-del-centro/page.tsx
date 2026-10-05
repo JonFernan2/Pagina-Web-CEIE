@@ -23,6 +23,7 @@ export default function VocesDelCentroPage() {
   return (
     <>
       <Navbar lang="es" currentPath="/voces-del-centro" />
+      <main id="contenido">
 
       {/* Hero */}
       <div
@@ -49,6 +50,8 @@ export default function VocesDelCentroPage() {
           <VideoCarousel videos={VIDEOS} lang="es" />
         </div>
       </section>
+
+      </main>
 
       <Footer lang="es" />
       <CookieBanner lang="es" />

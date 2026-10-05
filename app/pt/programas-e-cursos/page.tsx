@@ -15,6 +15,7 @@ export default function ProgramasPTPage() {
   return (
     <>
       <Navbar lang="pt" currentPath="/pt/programas-e-cursos" />
+      <main id="contenido">
 
       <div className="flex items-end pb-10 pt-24" style={{ background: '#1d1e20', minHeight: '280px' }}>
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 w-full">
@@ -35,6 +36,8 @@ export default function ProgramasPTPage() {
           <ProductAccordion programs={PROGRAMS_DATA_PT} lang="pt" />
         </div>
       </section>
+
+      </main>
 
       <Footer lang="pt" />
       <CookieBanner lang="pt" />

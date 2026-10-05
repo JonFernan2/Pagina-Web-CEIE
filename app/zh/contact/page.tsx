@@ -15,6 +15,7 @@ export default function ContactZHPage() {
   return (
     <>
       <Navbar lang="zh" currentPath="/zh/contact" />
+      <main id="contenido">
 
       <div className="flex items-end pb-10 pt-24" style={{ background: '#1d1e20', minHeight: '280px' }}>
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 w-full">
@@ -28,6 +29,7 @@ export default function ContactZHPage() {
             <div>
               <h2 className="font-display font-bold text-negro text-3xl mb-8">{d.form.title}</h2>
               <iframe
+                title="联系表单"
                 src="https://forms.cloud.microsoft/r/nAPfLyq21W?embed=true"
                 width="100%"
                 height="700"
@@ -46,10 +48,10 @@ export default function ContactZHPage() {
                 <p>{d.info.address}</p>
                 <p>{d.info.phone}</p>
                 {d.info.emails.map((em) => (
-                  <a key={em} href={`mailto:${em}`} className="transition-colors hover:text-negro" style={{ color: '#6493b5' }}>{em}</a>
+                  <a key={em} href={`mailto:${em}`} className="underline underline-offset-2 hover:no-underline" style={{ color: '#1d1e20', textDecorationColor: '#6493b5' }}>{em}</a>
                 ))}
                 <p>{d.info.hours}</p>
-                {d.info.social.map((s) => <p key={s} style={{ color: '#6B6B6B' }}>{s}</p>)}
+                {d.info.social.map((s) => <p key={s} style={{ color: '#2D2D2D' }}>{s}</p>)}
               </div>
               <div className="w-full aspect-video overflow-hidden" style={{ borderRadius: '4px', border: '2px solid #6493b5' }}>
                 <img
@@ -62,6 +64,8 @@ export default function ContactZHPage() {
           </div>
         </div>
       </section>
+
+      </main>
 
       <Footer lang="zh" />
       <CookieBanner lang="zh" />

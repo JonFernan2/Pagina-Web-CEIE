@@ -16,6 +16,7 @@ export default function FinesEspecificosPage() {
   return (
     <>
       <Navbar lang="es" currentPath="/programas-y-cursos/fines-especificos" />
+      <main id="contenido">
       <ProgramTemplate
         lang="es"
         data={program}
@@ -39,6 +40,7 @@ export default function FinesEspecificosPage() {
           cerfNote: 'Adaptado al contexto institucional',
         }}
       />
+      </main>
       <Footer lang="es" />
       <CookieBanner lang="es" />
     </>

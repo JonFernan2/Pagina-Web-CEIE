@@ -78,7 +78,7 @@ export default function VideoCarousel({ videos, lang }: { videos: Video[]; lang:
         ))}
       </div>
 
-      <p className="text-xs text-center mt-2 font-body" style={{ color: '#9CA3AF' }}>
+      <p className="text-xs text-center mt-2 font-body" style={{ color: '#6B6B6B' }}>
         {current + 1} / {videos.length}
       </p>
     </div>

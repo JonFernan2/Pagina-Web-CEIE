@@ -14,7 +14,9 @@ export default function WithdrawalRightsZHPage() {
   return (
     <>
       <Navbar lang="zh" currentPath="/zh/withdrawal-rights" />
+      <main id="contenido">
       <LegalPageTemplate lang="zh" title={LEGAL_ZH.direitoDesistencia.title} sections={LEGAL_ZH.direitoDesistencia.sections} lastUpdated="2026年8月" />
+      </main>
       <Footer lang="zh" />
       <CookieBanner lang="zh" />
     </>

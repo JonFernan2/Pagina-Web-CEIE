@@ -151,16 +151,16 @@ export default function Footer({ lang }: FooterProps) {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-xs text-white/40 hover:text-white/70 transition-colors duration-200"
+                className="text-xs text-white/70 hover:text-white transition-colors duration-200"
               >
                 {link.label}
               </Link>
             ))}
           </div>
-          <p className="text-xs text-white/30 text-center md:text-right">
+          <p className="text-xs text-white/60 text-center md:text-right">
             {f.legal.copyright}
           </p>
-          <p className="text-xs text-white/20 text-center md:text-right mt-1">
+          <p className="text-xs text-white/60 text-center md:text-right mt-1">
             {CREDIT[lang]} Jonathan Fernando Muñoz Alvarez
           </p>
         </div>
