@@ -241,22 +241,27 @@ export const ABOUT_PT = {
       spaces: [
         {
           nombre: 'Salas de espanhol',
-          descripcion: 'Salas equipadas com tecnologia audiovisual, distribuição flexível e capacidade para até 12 estudantes. Projetadas para metodologia ativa e participativa.',
-          alt: 'Sala do Centro de Ensino Integral do Espanhol da UAI em Viña del Mar, com cadeiras móveis, lousa e projetor, capacidade para 12 estudantes.',
+          descripcion: 'Salas equipadas com tecnologia audiovisual, distribuição flexível e capacidade para até 24 estudantes. Projetadas para metodologia ativa e participativa.',
+          alt: 'Sala do Centro de Ensino Integral do Espanhol da UAI em Viña del Mar, com cadeiras móveis, lousa e projetor, capacidade para 24 estudantes.',
         },
         {
           nombre: 'Biblioteca UAI',
-          descripcion: 'Acervo em espanhol e inglês com acesso para estudantes internacionais. Fundos de literatura, humanidades e ciências sociais. Salas de leitura silenciosa.',
+          descripcion: 'Acervo em espanhol e inglês com acesso para estudantes internacionais. Recursos de literatura, humanidades e ciências sociais. Salas de leitura silenciosa também estão disponíveis.',
           alt: 'Biblioteca da Universidad Adolfo Ibáñez campus Viña del Mar, com estantes de livros e área de leitura individual.',
         },
         {
           nombre: 'Salas de estudo',
-          descripcion: 'Espaços de trabalho grupal e individual distribuídos pelo campus. Acesso com credencial de estudante CEIE.',
+          descripcion: 'Espaços de trabalho grupal e individual no Edifício B do campus. Acesso mediante reserva prévia pelo WebC.',
           alt: 'Sala de estudo grupal no campus UAI Viña del Mar, com mesas de trabalho e acesso a wi-fi.',
         },
         {
+          nombre: 'Ginásio e atividades esportivas',
+          descripcion: 'Acesso às instalações esportivas do Campus Viña del Mar, incluindo ginásio, sala de musculação, espaços de treinamento e atividades recreativas. Os estudantes também podem participar de oficinas e atividades esportivas, sujeitas à disponibilidade.',
+          alt: 'Instalações esportivas do campus UAI Viña del Mar, incluindo ginásio e espaços de treinamento.',
+        },
+        {
           nombre: 'Entorno — Viña del Mar',
-          descripcion: 'O campus está situado de frente ao Pacífico em Viña del Mar, a 15 minutos de Valparaíso e a 1,5 hora de Santiago. Um ambiente de imersão linguística e cultural único na América do Sul.',
+          descripcion: 'O campus da Universidad Adolfo Ibáñez está situado em um ambiente privilegiado, cercado pela natureza e com vista para o oceano Pacífico. Localizado a 15 minutos de Valparaíso e a aproximadamente 1,5 hora de Santiago, oferece aos estudantes um ambiente universitário tranquilo e conectado a alguns dos principais atrativos culturais e turísticos da região.',
           alt: 'Vista do campus UAI Viña del Mar com acesso ao Pacífico, cidade de Viña del Mar ao fundo.',
         },
         {

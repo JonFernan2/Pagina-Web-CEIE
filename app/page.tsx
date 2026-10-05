@@ -214,9 +214,9 @@ export default function HomePage() {
               <div className="flex items-center justify-center" style={{ background: '#FFFFFF', borderRadius: '4px', padding: '20px 24px' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/logos-triple-crown.png"
-                  alt="Triple Crown: EQUIS · AACSB Accredited · Association of MBAs"
-                  style={{ maxHeight: '56px', width: '100%', objectFit: 'contain', filter: 'grayscale(1) opacity(0.75)' }}
+                  src="/images/triple-crown-logos.webp"
+                  alt="Triple Crown: AACSB Accredited · EFMD EQUIS Accredited · AMBA Accredited"
+                  style={{ maxHeight: '80px', width: '100%', objectFit: 'contain' }}
                 />
               </div>
             </div>
@@ -289,7 +289,7 @@ export default function HomePage() {
             Noticias
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-            <a href="https://www.uai.cl/semana-de-la-migracion" target="_blank" rel="noopener noreferrer"
+            <a href="/noticias#semana-migracion-2026"
               className="flex flex-col overflow-hidden group"
               style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#FFFFFF' }}>
               <div className="overflow-hidden" style={{ aspectRatio: '16/9' }}>
@@ -307,7 +307,7 @@ export default function HomePage() {
                 <span className="text-sm font-medium" style={{ color: '#6493b5' }}>Leer más →</span>
               </div>
             </a>
-            <a href="https://www.uai.cl/artesliberales/prisma" target="_blank" rel="noopener noreferrer"
+            <a href="/noticias#congreso-prisma-2026"
               className="flex flex-col overflow-hidden group"
               style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#FFFFFF' }}>
               <div className="overflow-hidden" style={{ aspectRatio: '16/9' }}>
@@ -327,10 +327,10 @@ export default function HomePage() {
             </a>
           </div>
           <div className="text-center">
-            <a href="https://www.uai.cl" target="_blank" rel="noopener noreferrer"
+            <a href="/noticias"
               className="inline-flex items-center gap-2 px-8 py-4 font-body font-semibold text-sm uppercase tracking-widest transition-colors duration-200"
               style={{ background: '#1d1e20', color: '#FFFFFF', borderRadius: '2px' }}>
-              Visitar Universidad Adolfo Ibáñez →
+              Ver todas las noticias →
             </a>
           </div>
         </div>
