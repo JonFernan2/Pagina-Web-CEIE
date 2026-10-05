@@ -161,9 +161,9 @@ export const TEACHERS: TeacherData[] = [
       zh: '西班牙语外语（ELE）教师。持有跨文化融合西班牙语教学文凭，拥有超过15年在基础、中级和高级各阶段的西班牙语教学经验，涵盖通识课程及为特定目的定制的个性化项目。她是DELE A1–C2级别认证考官，并参与了符合塞万提斯学院标准的课程设计工作。',
     },
     email: 'marisol.reyes@edu.uai.cl',
-    foto: '/images/docente-marisol-reyes.jpg',
+    foto: '/images/docente-marisol-reyes-v2.jpg',
     fotoPendiente: false,
-    fotoPosition: 'center 38%',
+    fotoPosition: 'center',
   },
   {
     nombre: 'Carolina Villalobos',
@@ -212,9 +212,9 @@ export const TEACHERS: TeacherData[] = [
       zh: '自2020年起在阿道夫·伊瓦涅斯大学任西班牙语教师，讲授基础和中级沟通课程。自2005年起在比尼亚德尔马大学任教，开设A1至B2水平的语法、沟通和智利文化课程，同时开设个性化专项西班牙语课程。',
     },
     email: 'carolina.villalobos@edu.uai.cl',
-    foto: '/images/docente-carolina-villalobos.jpg',
+    foto: '/images/docente-carolina-villalobos-v2.jpg',
     fotoPendiente: false,
-    fotoPosition: 'center 12%',
+    fotoPosition: 'center',
   },
   {
     nombre: 'Juan Ignacio Salinas',
