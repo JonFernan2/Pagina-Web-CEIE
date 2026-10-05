@@ -2,7 +2,7 @@ export const LEGAL_PT = {
   legalNotice: {
     title: 'Aviso Legal',
     sections: [
-      { heading: 'Identificação do titular', body: 'Universidad Adolfo Ibáñez · RUT: [PENDENTE — assessoria jurídica] · Padre Hurtado 750, Viña del Mar, Chile.' },
+      { heading: 'Identificação do titular', body: 'Universidad Adolfo Ibáñez · RUT: 71.543.200-5 · Padre Hurtado 750, Viña del Mar, Chile.' },
       { heading: 'Atividade do centro', body: 'O CEIE oferece programas de ensino de espanhol como língua estrangeira em nível universitário. Atua sob a Diretoria de Relações Internacionais da UAI.' },
       { heading: 'Responsável pelo site', body: 'O site ceie.uai.cl é administrado pelo Centro de Ensino Integral de Espanhol (CEIE), dependente da Diretoria de Relações Internacionais da Universidad Adolfo Ibáñez. Para consultas relacionadas ao conteúdo do site, entre em contato: caroline.cortes@uai.cl' },
       { heading: 'Propriedade intelectual', body: 'Todos os conteúdos do site (textos, imagens, fotografias, logotipos, design gráfico, vídeos e demais elementos) são propriedade da Universidad Adolfo Ibáñez ou de seus licenciantes, e estão protegidos pela Lei N.° 17.336 de Propriedade Intelectual do Chile e demais legislação aplicável. É proibida sua reprodução total ou parcial, distribuição, transformação ou comunicação pública sem autorização expressa e escrita do titular. Autoriza-se a reprodução de conteúdos para fins pessoais e não comerciais, desde que seja citada a fonte. A marca, o logotipo institucional e o nome CEIE · UAI são sinais distintivos protegidos; seu uso não autorizado é expressamente proibido.' },

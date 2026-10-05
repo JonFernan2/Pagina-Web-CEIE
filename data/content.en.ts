@@ -11,7 +11,7 @@ export const NAV_EN = {
 
 export const FOOTER_EN = {
   col1: {
-    description: 'Spanish Language Teaching Centre. SACIC accreditation process · Instituto Cervantes.',
+    description: 'Spanish Language Teaching Centre · Universidad Adolfo Ibáñez.',
     badges: ['CNA Excellence Accreditation', 'Triple Crown Recognition'],
   },
   col2: {
@@ -29,9 +29,9 @@ export const FOOTER_EN = {
   col3: {
     title: 'Programs',
     links: [
-      { label: 'Semester Program',       href: '/en/programs-and-courses/semester' },
-      { label: 'Intensive Programme',   href: '/en/programs-and-courses/intensive' },
-      { label: 'Specific Purposes',      href: '/en/programs-and-courses/specific-purposes' },
+      { label: 'Spanish Semester Programme',       href: '/en/programs-and-courses/semester' },
+      { label: 'Intensive Spanish Programme',   href: '/en/programs-and-courses/intensive' },
+      { label: 'Spanish for Specific Purposes Programme',      href: '/en/programs-and-courses/specific-purposes' },
     ],
   },
   col4: {
@@ -56,7 +56,7 @@ export const FOOTER_EN = {
 export const HOME_EN = {
   meta: {
     title: 'CEIE UAI — Learn Spanish in Chile | Universidad Adolfo Ibáñez',
-    description: 'Study Spanish on the South Pacific coast. Four programs aligned with the Common European Framework of Reference. SACIC accreditation process · Instituto Cervantes.',
+    description: 'Study Spanish on the South Pacific coast. Three programmes aligned with the Common European Framework of Reference.',
   },
   hero: {
 
@@ -158,10 +158,8 @@ export const HOME_EN = {
   },
   accreditation: {
     title: 'Certified quality',
-    p1: 'CEIE is currently undergoing the SACIC accreditation process of Instituto Cervantes, the global benchmark standard for Spanish as a foreign language teaching centres.',
     p2: 'UAI holds CNA Excellence Accreditation from Chile\'s National Accreditation Commission and Triple Crown recognition, backing the academic quality of all its programs.',
     badges: [
-      'SACIC · Instituto Cervantes · Accreditation process 2026',
       'CNA Excellence Accreditation',
       'Triple Crown Recognition',
     ],
@@ -172,21 +170,21 @@ export const HOME_EN = {
       {
         initials: 'A.M.',
         country: 'United States',
-        program: 'Semester Program',
+        program: 'Spanish Semester Programme',
         level: 'Level B2',
         text: '[PENDING — real student testimonial]',
       },
       {
         initials: 'K.L.',
         country: 'Germany',
-        program: 'Intensive Program',
+        program: 'Intensive Spanish Programme',
         level: 'Level B1',
         text: '[PENDING — real student testimonial]',
       },
       {
         initials: 'C.P.',
         country: 'Canada',
-        program: 'Specific Purposes Program',
+        program: 'Spanish for Specific Purposes Programme',
         level: 'Level B2+',
         text: '[PENDING — real student testimonial]',
       },
@@ -293,9 +291,9 @@ export const ADMISSIONS_EN = {
     table: {
       headers: ['Program', 'Level required', 'Documents'],
       rows: [
-        ['Semester Program',    'A1 (no prior knowledge required)', 'Passport / ID. Passport photo.'],
-        ['Intensive Program',   'A1 (no prior knowledge required)', 'Passport / ID. Passport photo.'],
-        ['Specific Purposes',   'As per program',                   'Sponsoring organization letter.'],
+        ['Spanish Semester Programme',    'A1 (no prior knowledge required)', 'Passport / ID. Passport photo.'],
+        ['Intensive Spanish Programme',   'A1 (no prior knowledge required)', 'Passport / ID. Passport photo.'],
+        ['Spanish for Specific Purposes Programme',   'As per program',                   'Sponsoring organization letter.'],
         ['Individual Program',  'None',                             'Passport / ID. Learning objectives.'],
       ],
     },
@@ -322,12 +320,12 @@ export const ADMISSIONS_EN = {
     intro: 'Start dates follow this structure for each program type:',
     rows: [
       {
-        program: 'Semester / Intensive',
+        program: 'Spanish Semester Programme / Intensive Spanish Programme',
         schedule: 'Follows the Chilean academic calendar',
         detail: 'Southern Hemisphere — 1st semester: March – July · 2nd semester: August – December',
       },
       {
-        program: 'Specific Purposes',
+        program: 'Spanish for Specific Purposes Programme',
         schedule: 'Date to be agreed between both parties',
         detail: '',
       },
@@ -383,14 +381,10 @@ export const CONTACT_EN = {
 }
 
 export const LEGAL_EN = {
-  alert: {
-    title: '⚠️ CONTENT PENDING LEGAL REVIEW',
-    body: "The content of this page is being drafted by UAI's legal counsel. This is a structural placeholder for the SACIC accreditation process.",
-  },
   legalNotice: {
     title: 'Legal Notice',
     sections: [
-      { heading: 'Identity of the data controller', body: 'Universidad Adolfo Ibáñez · RUT: [PENDING — UAI legal counsel] · Padre Hurtado 750, Viña del Mar, Chile.' },
+      { heading: 'Identity of the data controller', body: 'Universidad Adolfo Ibáñez · RUT: 71.543.200-5 · Padre Hurtado 750, Viña del Mar, Chile.' },
       { heading: 'Purpose of the centre', body: 'CEIE offers Spanish as a Foreign Language programs at university level. It operates under the Directorate of International Relations of UAI.' },
       { heading: 'Website responsibility', body: 'The website ceie.uai.cl is administered by the Centro de Enseñanza Integral del Español (CEIE), operating under the Directorate of International Relations of Universidad Adolfo Ibáñez. For enquiries relating to the website\'s content, please contact: caroline.cortes@uai.cl' },
       { heading: 'Intellectual property', body: 'All website content (texts, images, photographs, logos, graphic design, videos, and other elements) is the property of Universidad Adolfo Ibáñez or its licensors, and is protected by Chilean Intellectual Property Law No. 17,336 and other applicable legislation. Any total or partial reproduction, distribution, transformation, or public communication without the express written authorisation of the rights holder is prohibited. Reproduction of content for personal, non-commercial purposes is permitted provided the source is credited. The institutional brand, logo, and the name CEIE · UAI are protected distinctive marks; their unauthorised use is expressly prohibited.' },

@@ -1,6 +1,6 @@
 export const FOOTER_ZH = {
   col1: {
-    description: '西班牙语综合教学中心。SACIC认证进程中 · 塞万提斯学院',
+    description: '西班牙语综合教学中心 · 阿道夫·伊瓦涅斯大学',
     badges: ['CNA 卓越认证', 'Triple Crown 国际认证'],
   },
   col2: {
@@ -18,9 +18,9 @@ export const FOOTER_ZH = {
   col3: {
     title: '课程',
     links: [
-      { label: '学期课程',        href: '/zh/programs/semester' },
-      { label: '强化课程',        href: '/zh/programs/intensive' },
-      { label: '专业目的课程',    href: '/zh/programs/specific-purposes' },
+      { label: '学期西班牙语课程',        href: '/zh/programs/semester' },
+      { label: '西班牙语强化课程',        href: '/zh/programs/intensive' },
+      { label: '专业目的西班牙语课程',    href: '/zh/programs/specific-purposes' },
     ],
   },
   col4: {
@@ -45,7 +45,7 @@ export const FOOTER_ZH = {
 export const HOME_ZH = {
   meta: {
     title: 'CEIE UAI — 在智利学习西班牙语 | 阿道夫·伊瓦涅斯大学',
-    description: '在南太平洋海岸学习西班牙语。四种对接欧洲语言共同参考框架的课程。SACIC认证进程中 · 塞万提斯学院。',
+    description: '在南太平洋海岸学习西班牙语。三种对接欧洲语言共同参考框架的课程。',
   },
   hero: {
 
@@ -146,10 +146,8 @@ export const HOME_ZH = {
   },
   accreditation: {
     title: '认证质量保证',
-    p1: 'CEIE正在申请塞万提斯学院SACIC认证，这是全球对外西班牙语教学中心的权威认证标准。',
     p2: 'UAI持有国家认证委员会（CNA）卓越认证及Triple Crown国际认证，为所有课程的学术质量提供有力保障。',
     badges: [
-      'SACIC · 塞万提斯学院 · 认证申请中 2026',
       'CNA 卓越认证',
       'Triple Crown 国际认证',
     ],
@@ -160,21 +158,21 @@ export const HOME_ZH = {
       {
         initials: 'A.M.',
         country: '美国',
-        program: '学期课程',
+        program: '学期西班牙语课程',
         level: 'B2级',
         text: '[待定 — 真实学员感言]',
       },
       {
         initials: 'K.L.',
         country: '德国',
-        program: '强化课程',
+        program: '西班牙语强化课程',
         level: 'B1级',
         text: '[待定 — 真实学员感言]',
       },
       {
         initials: 'C.P.',
         country: '加拿大',
-        program: '专业目的课程',
+        program: '专业目的西班牙语课程',
         level: 'B2+级',
         text: '[待定 — 真实学员感言]',
       },
@@ -281,9 +279,9 @@ export const ADMISSIONS_ZH = {
     table: {
       headers: ['课程', '所需水平', '所需材料'],
       rows: [
-        ['学期课程',        'A1（无需西班牙语基础）', '护照/身份证件。3×4证件照。'],
-        ['强化课程',        'A1（无需西班牙语基础）', '护照/身份证件。3×4证件照。'],
-        ['专业目的课程',    '根据课程而定',           '赞助机构证明信。'],
+        ['学期西班牙语课程',        'A1（无需西班牙语基础）', '护照/身份证件。3×4证件照。'],
+        ['西班牙语强化课程',        'A1（无需西班牙语基础）', '护照/身份证件。3×4证件照。'],
+        ['专业目的西班牙语课程',    '根据课程而定',           '赞助机构证明信。'],
         ['个人定制课程',    '无要求',                 '护照/身份证件。学习目标说明。'],
       ],
     },
@@ -310,12 +308,12 @@ export const ADMISSIONS_ZH = {
     intro: '各类型课程的开课时间如下：',
     rows: [
       {
-        program: '学期课程 / 强化课程',
+        program: '学期西班牙语课程 / 西班牙语强化课程',
         schedule: '按照智利学年日历',
         detail: '南半球 — 第一学期：3月 – 7月 · 第二学期：8月 – 12月',
       },
       {
-        program: '专业目的课程',
+        program: '专业目的西班牙语课程',
         schedule: '日期由双方协商确定',
         detail: '',
       },

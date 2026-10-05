@@ -1,6 +1,6 @@
 export const FOOTER_PT = {
   col1: {
-    description: 'Centro de Ensino Integral do Espanhol. Processo de acreditação SACIC · Instituto Cervantes.',
+    description: 'Centro de Ensino Integral do Espanhol · Universidad Adolfo Ibáñez.',
     badges: ['CNA Acreditação de Excelência', 'Triple Crown Recognition'],
   },
   col2: {
@@ -18,9 +18,9 @@ export const FOOTER_PT = {
   col3: {
     title: 'Programas',
     links: [
-      { label: 'Programa Semestral',       href: '/pt/programas-e-cursos/semestral' },
-      { label: 'Programa Intensivo',        href: '/pt/programas-e-cursos/intensivo' },
-      { label: 'Fins Específicos',         href: '/pt/programas-e-cursos/fins-especificos' },
+      { label: 'Programa Semestral de Espanhol',       href: '/pt/programas-e-cursos/semestral' },
+      { label: 'Programa Intensivo de Espanhol',        href: '/pt/programas-e-cursos/intensivo' },
+      { label: 'Espanhol com Fins Específicos',         href: '/pt/programas-e-cursos/fins-especificos' },
     ],
   },
   col4: {
@@ -45,7 +45,7 @@ export const FOOTER_PT = {
 export const HOME_PT = {
   meta: {
     title: 'CEIE UAI — Aprenda espanhol no Chile | Universidad Adolfo Ibáñez',
-    description: 'Estude espanhol na costa do Pacífico Sul. Quatro programas alinhados ao Quadro Europeu Comum de Referência. Processo de acreditação SACIC · Instituto Cervantes.',
+    description: 'Estude espanhol na costa do Pacífico Sul. Três programas alinhados ao Quadro Europeu Comum de Referência.',
   },
   hero: {
 
@@ -147,10 +147,8 @@ export const HOME_PT = {
   },
   accreditation: {
     title: 'Qualidade certificada',
-    p1: 'O CEIE encontra-se em processo de obtenção da acreditação SACIC do Instituto Cervantes, o padrão de referência para centros de espanhol como língua estrangeira em nível mundial.',
     p2: 'A UAI possui Acreditação de Excelência da Comissão Nacional de Acreditação (CNA) e reconhecimento Triple Crown, respaldando a qualidade acadêmica de todos os seus programas.',
     badges: [
-      'SACIC · Instituto Cervantes · Em processo de acreditação 2026',
       'CNA Acreditação de Excelência',
       'Triple Crown Recognition',
     ],
@@ -161,21 +159,21 @@ export const HOME_PT = {
       {
         initials: 'A.M.',
         country: 'Estados Unidos',
-        program: 'Programa Semestral',
+        program: 'Programa Semestral de Espanhol',
         level: 'Nível B2',
         text: '[PENDENTE — testemunho real de estudante]',
       },
       {
         initials: 'K.L.',
         country: 'Alemanha',
-        program: 'Programa Intensivo',
+        program: 'Programa Intensivo de Espanhol',
         level: 'Nível B1',
         text: '[PENDENTE — testemunho real de estudante]',
       },
       {
         initials: 'C.P.',
         country: 'Canadá',
-        program: 'Programa EFE',
+        program: 'Espanhol com Fins Específicos',
         level: 'Nível B2+',
         text: '[PENDENTE — testemunho real de estudante]',
       },
@@ -282,9 +280,9 @@ export const ADMISSIONS_PT = {
     table: {
       headers: ['Programa', 'Nível requerido', 'Documentos'],
       rows: [
-        ['Programa Semestral',        'A1 (sem conhecimento prévio exigido)', 'Passaporte / documento de identidade. Foto 3×4.'],
-        ['Programa Intensivo',        'A1 (sem conhecimento prévio exigido)', 'Passaporte / documento de identidade. Foto 3×4.'],
-        ['Fins Específicos',          'Conforme programa',                    'Carta da organização patrocinadora.'],
+        ['Programa Semestral de Espanhol',        'A1 (sem conhecimento prévio exigido)', 'Passaporte / documento de identidade. Foto 3×4.'],
+        ['Programa Intensivo de Espanhol',        'A1 (sem conhecimento prévio exigido)', 'Passaporte / documento de identidade. Foto 3×4.'],
+        ['Espanhol com Fins Específicos',          'Conforme programa',                    'Carta da organização patrocinadora.'],
         ['Programa Individual',       'Sem requisito',                        'Passaporte / documento de identidade. Objetivos de aprendizagem.'],
       ],
     },
@@ -311,12 +309,12 @@ export const ADMISSIONS_PT = {
     intro: 'As datas de início seguem a seguinte estrutura por tipo de programa:',
     rows: [
       {
-        program: 'Semestral / Intensivo',
+        program: 'Programa Semestral de Espanhol / Programa Intensivo de Espanhol',
         schedule: 'Segue o calendário acadêmico chileno',
         detail: 'Hemisfério Sul — 1.º semestre: março – julho · 2.º semestre: agosto – dezembro',
       },
       {
-        program: 'Fins Específicos',
+        program: 'Espanhol com Fins Específicos',
         schedule: 'Data a coordenar entre as partes',
         detail: '',
       },

@@ -11,7 +11,7 @@ export const NAV_ES = {
 
 export const FOOTER_ES = {
   col1: {
-    description: 'Centro de Enseñanza Integral del Español. Proceso de acreditación SACIC · Instituto Cervantes.',
+    description: 'Centro de Enseñanza Integral del Español · Universidad Adolfo Ibáñez.',
     badges: ['CNA Acreditación de Excelencia', 'Triple Crown Recognition'],
   },
   col2: {
@@ -29,9 +29,9 @@ export const FOOTER_ES = {
   col3: {
     title: 'Programas',
     links: [
-      { label: 'Programa Semestral',        href: '/programas-y-cursos/semestral' },
-      { label: 'Programa Intensivo',         href: '/programas-y-cursos/intensivo' },
-      { label: 'Fines Específicos',         href: '/programas-y-cursos/fines-especificos' },
+      { label: 'Programa Semestral de Español',        href: '/programas-y-cursos/semestral' },
+      { label: 'Programa Intensivo de Español',         href: '/programas-y-cursos/intensivo' },
+      { label: 'Español con Fines Específicos',         href: '/programas-y-cursos/fines-especificos' },
     ],
   },
   col4: {
@@ -56,7 +56,7 @@ export const FOOTER_ES = {
 export const HOME_ES = {
   meta: {
     title: 'CEIE UAI — Aprende español en Chile | Universidad Adolfo Ibáñez',
-    description: 'Estudia español en la costa del Pacífico Sur. Cuatro programas alineados al Marco Común Europeo de Referencia. Proceso de acreditación SACIC · Instituto Cervantes.',
+    description: 'Estudia español en la costa del Pacífico Sur. Tres programas alineados al Marco Común Europeo de Referencia.',
   },
   hero: {
 
@@ -158,10 +158,8 @@ export const HOME_ES = {
   },
   accreditation: {
     title: 'Calidad certificada',
-    p1: 'El CEIE se encuentra en proceso de obtención de la acreditación SACIC del Instituto Cervantes, el estándar de referencia para centros de español como lengua extranjera a nivel mundial.',
     p2: 'La UAI cuenta con Acreditación de Excelencia de la Comisión Nacional de Acreditación (CNA) y reconocimiento Triple Crown, respaldando la calidad académica de todos sus programas.',
     badges: [
-      'SACIC · Instituto Cervantes · En proceso de acreditación 2026',
       'CNA Acreditación de Excelencia',
       'Triple Crown Recognition',
     ],
@@ -172,21 +170,21 @@ export const HOME_ES = {
       {
         initials: 'A.M.',
         country: 'Estados Unidos',
-        program: 'Programa Semestral',
+        program: 'Programa Semestral de Español',
         level: 'Nivel B2',
         text: '[PENDIENTE — testimonio real de estudiante]',
       },
       {
         initials: 'K.L.',
         country: 'Alemania',
-        program: 'Programa Intensivo',
+        program: 'Programa Intensivo de Español',
         level: 'Nivel B1',
         text: '[PENDIENTE — testimonio real de estudiante]',
       },
       {
         initials: 'C.P.',
         country: 'Canadá',
-        program: 'Programa EFE',
+        program: 'Español con Fines Específicos',
         level: 'Nivel B2+',
         text: '[PENDIENTE — testimonio real de estudiante]',
       },
@@ -293,9 +291,9 @@ export const ADMISSIONS_ES = {
     table: {
       headers: ['Programa', 'Nivel requerido', 'Documentos'],
       rows: [
-        ['Programa Semestral',       'A1 (sin conocimiento previo requerido)', 'Pasaporte / cédula. Foto carnet.'],
-        ['Programa Intensivo',       'A1 (sin conocimiento previo requerido)', 'Pasaporte / cédula. Foto carnet.'],
-        ['Fines Específicos',        'Según programa',                         'Carta de la organización patrocinadora.'],
+        ['Programa Semestral de Español',       'A1 (sin conocimiento previo requerido)', 'Pasaporte / cédula. Foto carnet.'],
+        ['Programa Intensivo de Español',       'A1 (sin conocimiento previo requerido)', 'Pasaporte / cédula. Foto carnet.'],
+        ['Español con Fines Específicos',        'Según programa',                         'Carta de la organización patrocinadora.'],
         ['Programa Individual',      'Sin requisito',                          'Pasaporte / cédula. Objetivos de aprendizaje.'],
       ],
     },
@@ -322,12 +320,12 @@ export const ADMISSIONS_ES = {
     intro: 'Los inicios de cada programa siguen la siguiente estructura:',
     rows: [
       {
-        program: 'Semestral / Intensivo',
+        program: 'Programa Semestral de Español / Programa Intensivo de Español',
         schedule: 'Según el calendario académico de Chile',
         detail: 'Hemisferio Sur — 1.er semestre: marzo – julio · 2.o semestre: agosto – diciembre',
       },
       {
-        program: 'Fines Específicos',
+        program: 'Español con Fines Específicos',
         schedule: 'Fecha a coordinar entre las partes',
         detail: '',
       },
