@@ -16,6 +16,7 @@ export default function SemestralPage() {
   return (
     <>
       <Navbar lang="es" currentPath="/programas-y-cursos/semestral" />
+      <main id="contenido">
       <ProgramTemplate
         lang="es"
         data={program}
@@ -39,6 +40,7 @@ export default function SemestralPage() {
           cerfNote: 'Alineado al MCER',
         }}
       />
+      </main>
       <Footer lang="es" />
       <CookieBanner lang="es" />
     </>

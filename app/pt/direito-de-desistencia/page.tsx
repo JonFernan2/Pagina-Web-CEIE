@@ -14,7 +14,9 @@ export default function DireitoDesistenciaPTPage() {
   return (
     <>
       <Navbar lang="pt" currentPath="/pt/direito-de-desistencia" />
+      <main id="contenido">
       <LegalPageTemplate lang="pt" title={LEGAL_PT.direitoDesistencia.title} sections={LEGAL_PT.direitoDesistencia.sections} lastUpdated="Agosto 2026" />
+      </main>
       <Footer lang="pt" />
       <CookieBanner lang="pt" />
     </>

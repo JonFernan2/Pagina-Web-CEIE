@@ -25,6 +25,7 @@ export default function HomeZHPage() {
   return (
     <>
       <Navbar lang="zh" currentPath="/zh" />
+      <main id="contenido">
 
       {/* ── HERO ── */}
       <section className="relative flex items-center justify-center text-center" style={{ minHeight: '90vh' }}>
@@ -259,12 +260,12 @@ export default function HomeZHPage() {
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
               </div>
               <div className="p-5 flex flex-col gap-3 flex-1">
-                <p className="text-xs font-medium uppercase tracking-widest" style={{ color: '#6493b5' }}>2026年8月</p>
+                <p className="text-xs font-medium uppercase tracking-widest" style={{ color: '#1d1e20' }}>2026年8月</p>
                 <h3 className="font-display font-bold text-negro text-lg leading-tight">移民周 — 第四届</h3>
                 <p className="text-sm leading-relaxed flex-1" style={{ color: '#6B6B6B' }}>
                   UAI第四届移民周将于8月17日至21日举行，在圣地亚哥和比尼亚德尔马开展以记忆、身份、领土与流离失所为主题的系列活动。
                 </p>
-                <span className="text-sm font-medium" style={{ color: '#6493b5' }}>阅读更多 →</span>
+                <span className="text-sm font-medium underline underline-offset-4" style={{ color: '#1d1e20', textDecorationColor: '#6493b5' }}>阅读更多 →</span>
               </div>
             </a>
             <a href="/zh/news#prisma-congress-2026"
@@ -277,12 +278,12 @@ export default function HomeZHPage() {
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
               </div>
               <div className="p-5 flex flex-col gap-3 flex-1">
-                <p className="text-xs font-medium uppercase tracking-widest" style={{ color: '#6493b5' }}>2026</p>
+                <p className="text-xs font-medium uppercase tracking-widest" style={{ color: '#1d1e20' }}>2026</p>
                 <h3 className="font-display font-bold text-negro text-lg leading-tight">PRISMA国际学术大会</h3>
                 <p className="text-sm leading-relaxed flex-1" style={{ color: '#6B6B6B' }}>
                   第六届PRISMA国际学术大会。当代西班牙语：一门全球语言的视角、变革与影响。
                 </p>
-                <span className="text-sm font-medium" style={{ color: '#6493b5' }}>阅读更多 →</span>
+                <span className="text-sm font-medium underline underline-offset-4" style={{ color: '#1d1e20', textDecorationColor: '#6493b5' }}>阅读更多 →</span>
               </div>
             </a>
           </div>
@@ -299,7 +300,7 @@ export default function HomeZHPage() {
       {/* ── 招聘信息 ── */}
       <section style={{ background: '#C7C2ba' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 text-center">
-          <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#6493b5' }}>
+          <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#1d1e20' }}>
             现正招生
           </p>
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-4">
@@ -319,6 +320,8 @@ export default function HomeZHPage() {
           </a>
         </div>
       </section>
+
+      </main>
 
       <Footer lang="zh" />
       <CookieBanner lang="zh" />

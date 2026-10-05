@@ -30,7 +30,7 @@ export default function LegalPageTemplate({
             {title}
           </h1>
           {lastUpdated && (
-            <p className="mt-2 text-sm" style={{ color: '#6B6B6B' }}>
+            <p className="mt-2 text-sm" style={{ color: 'rgba(255,255,255,0.7)' }}>
               {lang === 'es' ? 'Última actualización:' : lang === 'pt' ? 'Última atualização:' : lang === 'zh' ? '最后更新：' : 'Last updated:'} {lastUpdated}
             </p>
           )}

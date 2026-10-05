@@ -37,6 +37,7 @@ export default function SobreNosotrosPage() {
   return (
     <>
       <Navbar lang="es" currentPath="/sobre-nosotros" />
+      <main id="contenido">
 
       {/* Hero */}
       <div
@@ -76,7 +77,7 @@ export default function SobreNosotrosPage() {
                 <p className="font-body font-semibold text-negro text-base leading-tight mb-1">
                   {member.nombre}
                 </p>
-                <p className="font-body text-sm leading-snug mb-2" style={{ color: '#6493b5' }}>
+                <p className="font-body text-sm font-medium leading-snug mb-2" style={{ color: '#1d1e20' }}>
                   {member.cargo.es}
                 </p>
                 {member.credenciales && (
@@ -102,7 +103,7 @@ export default function SobreNosotrosPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="p-6" style={{ border: '2px solid #6493b5', borderRadius: '4px', background: '#FFFFFF' }}>
-              <h3 className="font-body text-lg font-semibold mb-3" style={{ color: '#6493b5' }}>Misión</h3>
+              <h3 className="font-body text-lg font-semibold mb-3" style={{ color: '#1d1e20' }}>Misión</h3>
               <p className="text-base leading-relaxed" style={{ color: '#2D2D2D' }}>{d.sections.mision.mision}</p>
             </div>
             <div className="p-6" style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#FFFFFF' }}>
@@ -130,6 +131,8 @@ export default function SobreNosotrosPage() {
         images={LAUNCH_IMAGES_ES}
         lang="es"
       />
+
+      </main>
 
       <Footer lang="es" />
       <CookieBanner lang="es" />

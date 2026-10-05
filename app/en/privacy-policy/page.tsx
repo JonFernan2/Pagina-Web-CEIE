@@ -14,7 +14,9 @@ export default function PrivacyPolicyENPage() {
   return (
     <>
       <Navbar lang="en" currentPath="/en/privacy-policy" />
+      <main id="contenido">
       <LegalPageTemplate lang="en" title={LEGAL_EN.privacyPolicy.title} sections={LEGAL_EN.privacyPolicy.sections} lastUpdated="August 2026" />
+      </main>
       <Footer lang="en" />
       <CookieBanner lang="en" />
     </>

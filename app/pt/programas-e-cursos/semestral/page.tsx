@@ -16,6 +16,7 @@ export default function SemestralPTPage() {
   return (
     <>
       <Navbar lang="pt" currentPath="/pt/programas-e-cursos/semestral" />
+      <main id="contenido">
       <ProgramTemplate
         lang="pt"
         data={program}
@@ -39,6 +40,7 @@ export default function SemestralPTPage() {
           cerfNote: 'Alinhado ao QECR',
         }}
       />
+      </main>
       <Footer lang="pt" />
       <CookieBanner lang="pt" />
     </>

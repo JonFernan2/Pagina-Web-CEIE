@@ -16,6 +16,7 @@ export default function AdmissionsENPage() {
   return (
     <>
       <Navbar lang="en" currentPath="/en/admissions" />
+      <main id="contenido">
 
       <div className="flex items-end pb-10 pt-24" style={{ background: '#1d1e20', minHeight: '280px' }}>
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 w-full">
@@ -65,6 +66,7 @@ export default function AdmissionsENPage() {
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="font-display font-bold text-negro text-3xl mb-8 text-center">{d.form.title}</h2>
           <iframe
+            title="Admission form"
             src="https://forms.cloud.microsoft/r/hKxAtJqgm5?embed=true"
             width="100%"
             height="800"
@@ -93,6 +95,8 @@ export default function AdmissionsENPage() {
           </div>
         </div>
       </section>
+
+      </main>
 
       <Footer lang="en" />
       <CookieBanner lang="en" />

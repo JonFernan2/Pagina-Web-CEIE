@@ -15,6 +15,7 @@ export default function ProgramasPage() {
   return (
     <>
       <Navbar lang="es" currentPath="/programas-y-cursos" />
+      <main id="contenido">
 
       {/* Hero */}
       <div
@@ -47,6 +48,8 @@ export default function ProgramasPage() {
           <ProductAccordion programs={PROGRAMS_DATA} />
         </div>
       </section>
+
+      </main>
 
       <Footer lang="es" />
       <CookieBanner lang="es" />

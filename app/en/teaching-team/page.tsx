@@ -14,6 +14,7 @@ export default function TeachingTeamENPage() {
   return (
     <>
       <Navbar lang="en" currentPath="/en/teaching-team" />
+      <main id="contenido">
 
       <div className="flex items-end pb-10 pt-24" style={{ background: '#1d1e20', minHeight: '280px' }}>
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 w-full">
@@ -39,6 +40,8 @@ export default function TeachingTeamENPage() {
           </div>
         </div>
       </section>
+
+      </main>
 
       <Footer lang="en" />
       <CookieBanner lang="en" />

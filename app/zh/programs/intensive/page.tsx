@@ -16,6 +16,7 @@ export default function IntensiveZHPage() {
   return (
     <>
       <Navbar lang="zh" currentPath="/zh/programs/intensive" />
+      <main id="contenido">
       <ProgramTemplate
         lang="zh"
         data={program}
@@ -39,6 +40,7 @@ export default function IntensiveZHPage() {
           cerfNote: '对接CEFR',
         }}
       />
+      </main>
       <Footer lang="zh" />
       <CookieBanner lang="zh" />
     </>

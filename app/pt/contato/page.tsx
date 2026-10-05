@@ -15,6 +15,7 @@ export default function ContatoPTPage() {
   return (
     <>
       <Navbar lang="pt" currentPath="/pt/contato" />
+      <main id="contenido">
 
       <div className="flex items-end pb-10 pt-24" style={{ background: '#1d1e20', minHeight: '240px' }}>
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 w-full">
@@ -28,6 +29,7 @@ export default function ContatoPTPage() {
             <div>
               <h2 className="font-display font-bold text-negro text-2xl mb-6">{d.form.title}</h2>
               <iframe
+                title="Formulário de contato"
                 src="https://forms.cloud.microsoft/r/nAPfLyq21W?embed=true"
                 width="100%"
                 height="700"
@@ -44,14 +46,14 @@ export default function ContatoPTPage() {
               <div className="flex flex-col gap-4 mb-6 text-sm" style={{ color: '#2D2D2D' }}>
                 <div>
                   <p className="font-semibold text-negro">{d.info.campus}</p>
-                  <p style={{ color: '#6B6B6B' }}>{d.info.address}</p>
+                  <p style={{ color: '#2D2D2D' }}>{d.info.address}</p>
                 </div>
                 <p>{d.info.phone}</p>
                 {d.info.emails.map((em: string) => (
-                  <a key={em} href={`mailto:${em}`} className="hover:underline" style={{ color: '#6493b5' }}>{em}</a>
+                  <a key={em} href={`mailto:${em}`} className="underline underline-offset-2 hover:no-underline" style={{ color: '#1d1e20', textDecorationColor: '#6493b5' }}>{em}</a>
                 ))}
                 <p>{d.info.hours}</p>
-                {d.info.social.map((s) => <p key={s} style={{ color: '#6B6B6B' }}>{s}</p>)}
+                {d.info.social.map((s) => <p key={s} style={{ color: '#2D2D2D' }}>{s}</p>)}
               </div>
               <div className="w-full aspect-video overflow-hidden" style={{ borderRadius: '4px', border: '2px solid #6493b5' }}>
                 <img
@@ -64,6 +66,8 @@ export default function ContatoPTPage() {
           </div>
         </div>
       </section>
+
+      </main>
 
       <Footer lang="pt" />
       <CookieBanner lang="pt" />

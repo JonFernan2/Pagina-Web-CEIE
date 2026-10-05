@@ -23,6 +23,7 @@ export default function VoicesENPage() {
   return (
     <>
       <Navbar lang="en" currentPath="/en/voices-of-the-centre" />
+      <main id="contenido">
 
       <div className="flex items-end pb-10 pt-24" style={{ background: '#1d1e20', minHeight: '280px' }}>
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 w-full">
@@ -42,6 +43,8 @@ export default function VoicesENPage() {
           <VideoCarousel videos={VIDEOS} lang="en" />
         </div>
       </section>
+
+      </main>
 
       <Footer lang="en" />
       <CookieBanner lang="en" />

@@ -14,6 +14,7 @@ export default function TeachingTeamZHPage() {
   return (
     <>
       <Navbar lang="zh" currentPath="/zh/teaching-team" />
+      <main id="contenido">
 
       <div className="flex items-end pb-10 pt-24" style={{ background: '#1d1e20', minHeight: '280px' }}>
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 w-full">
@@ -39,6 +40,8 @@ export default function TeachingTeamZHPage() {
           </div>
         </div>
       </section>
+
+      </main>
 
       <Footer lang="zh" />
       <CookieBanner lang="zh" />

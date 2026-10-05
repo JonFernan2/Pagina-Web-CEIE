@@ -14,12 +14,14 @@ export default function DesistimientoPage() {
   return (
     <>
       <Navbar lang="es" currentPath="/desistimiento" />
+      <main id="contenido">
       <LegalPageTemplate
         lang="es"
         title={LEGAL_ES.desistimiento.title}
         sections={LEGAL_ES.desistimiento.sections}
         lastUpdated="Agosto 2026"
       />
+      </main>
       <Footer lang="es" />
       <CookieBanner lang="es" />
     </>

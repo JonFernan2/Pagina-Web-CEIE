@@ -16,6 +16,7 @@ export default function ApplyZHPage() {
   return (
     <>
       <Navbar lang="zh" currentPath="/zh/apply" />
+      <main id="contenido">
 
       <div className="flex items-end pb-10 pt-24" style={{ background: '#1d1e20', minHeight: '280px' }}>
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 w-full">
@@ -65,6 +66,7 @@ export default function ApplyZHPage() {
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="font-display font-bold text-negro text-3xl mb-8 text-center">{d.form.title}</h2>
           <iframe
+            title="入学申请表"
             src="https://forms.cloud.microsoft/r/hKxAtJqgm5?embed=true"
             width="100%"
             height="800"
@@ -93,6 +95,8 @@ export default function ApplyZHPage() {
           </div>
         </div>
       </section>
+
+      </main>
 
       <Footer lang="zh" />
       <CookieBanner lang="zh" />

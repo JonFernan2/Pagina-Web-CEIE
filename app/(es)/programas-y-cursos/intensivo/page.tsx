@@ -16,6 +16,7 @@ export default function IntensivoPage() {
   return (
     <>
       <Navbar lang="es" currentPath="/programas-y-cursos/intensivo" />
+      <main id="contenido">
       <ProgramTemplate
         lang="es"
         data={program}
@@ -39,6 +40,7 @@ export default function IntensivoPage() {
           cerfNote: 'Alineado al MCER',
         }}
       />
+      </main>
       <Footer lang="es" />
       <CookieBanner lang="es" />
     </>

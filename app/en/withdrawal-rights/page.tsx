@@ -14,7 +14,9 @@ export default function WithdrawalENPage() {
   return (
     <>
       <Navbar lang="en" currentPath="/en/withdrawal-rights" />
+      <main id="contenido">
       <LegalPageTemplate lang="en" title={LEGAL_EN.withdrawalRights.title} sections={LEGAL_EN.withdrawalRights.sections} lastUpdated="August 2026" />
+      </main>
       <Footer lang="en" />
       <CookieBanner lang="en" />
     </>

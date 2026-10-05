@@ -14,7 +14,9 @@ export default function PrivacyPolicyZHPage() {
   return (
     <>
       <Navbar lang="zh" currentPath="/zh/privacy-policy" />
+      <main id="contenido">
       <LegalPageTemplate lang="zh" title={LEGAL_ZH.privacidad.title} sections={LEGAL_ZH.privacidad.sections} lastUpdated="2026年8月" />
+      </main>
       <Footer lang="zh" />
       <CookieBanner lang="zh" />
     </>

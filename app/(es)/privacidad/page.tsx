@@ -14,12 +14,14 @@ export default function PrivacidadPage() {
   return (
     <>
       <Navbar lang="es" currentPath="/privacidad" />
+      <main id="contenido">
       <LegalPageTemplate
         lang="es"
         title={LEGAL_ES.privacidad.title}
         sections={LEGAL_ES.privacidad.sections}
         lastUpdated="Agosto 2026"
       />
+      </main>
       <Footer lang="es" />
       <CookieBanner lang="es" />
     </>

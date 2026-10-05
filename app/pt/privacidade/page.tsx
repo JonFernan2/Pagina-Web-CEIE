@@ -14,7 +14,9 @@ export default function PrivacidadePTPage() {
   return (
     <>
       <Navbar lang="pt" currentPath="/pt/privacidade" />
+      <main id="contenido">
       <LegalPageTemplate lang="pt" title={LEGAL_PT.privacidade.title} sections={LEGAL_PT.privacidade.sections} lastUpdated="Agosto 2026" />
+      </main>
       <Footer lang="pt" />
       <CookieBanner lang="pt" />
     </>

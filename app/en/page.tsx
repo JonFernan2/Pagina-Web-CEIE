@@ -25,6 +25,7 @@ export default function HomeENPage() {
   return (
     <>
       <Navbar lang="en" currentPath="/en" />
+      <main id="contenido">
 
       {/* ── HERO ── */}
       <section className="relative flex items-center justify-center text-center" style={{ minHeight: '90vh' }}>
@@ -259,12 +260,12 @@ export default function HomeENPage() {
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
               </div>
               <div className="p-5 flex flex-col gap-3 flex-1">
-                <p className="text-xs font-medium uppercase tracking-widest" style={{ color: '#6493b5' }}>August 2026</p>
+                <p className="text-xs font-medium uppercase tracking-widest" style={{ color: '#1d1e20' }}>August 2026</p>
                 <h3 className="font-display font-bold text-negro text-lg leading-tight">Migration Week — 4th Edition</h3>
                 <p className="text-sm leading-relaxed flex-1" style={{ color: '#6B6B6B' }}>
                   The fourth edition of UAI Migration Week will take place from August 17–21 with activities focused on memory, identity, territory, and displacement in Santiago and Viña del Mar.
                 </p>
-                <span className="text-sm font-medium" style={{ color: '#6493b5' }}>Read more →</span>
+                <span className="text-sm font-medium underline underline-offset-4" style={{ color: '#1d1e20', textDecorationColor: '#6493b5' }}>Read more →</span>
               </div>
             </a>
             <a href="/en/news#prisma-congress-2026"
@@ -277,12 +278,12 @@ export default function HomeENPage() {
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
               </div>
               <div className="p-5 flex flex-col gap-3 flex-1">
-                <p className="text-xs font-medium uppercase tracking-widest" style={{ color: '#6493b5' }}>2026</p>
+                <p className="text-xs font-medium uppercase tracking-widest" style={{ color: '#1d1e20' }}>2026</p>
                 <h3 className="font-display font-bold text-negro text-lg leading-tight">PRISMA International Congress</h3>
                 <p className="text-sm leading-relaxed flex-1" style={{ color: '#6B6B6B' }}>
                   6th International PRISMA Congress. Spanish today: Perspectives, transformations, and reach of a global language.
                 </p>
-                <span className="text-sm font-medium" style={{ color: '#6493b5' }}>Read more →</span>
+                <span className="text-sm font-medium underline underline-offset-4" style={{ color: '#1d1e20', textDecorationColor: '#6493b5' }}>Read more →</span>
               </div>
             </a>
           </div>
@@ -299,7 +300,7 @@ export default function HomeENPage() {
       {/* ── JOB OPENINGS ── */}
       <section style={{ background: '#C7C2ba' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 text-center">
-          <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#6493b5' }}>
+          <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#1d1e20' }}>
             Enrolment open
           </p>
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-4">
@@ -319,6 +320,8 @@ export default function HomeENPage() {
           </a>
         </div>
       </section>
+
+      </main>
 
       <Footer lang="en" />
       <CookieBanner lang="en" />

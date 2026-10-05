@@ -56,7 +56,7 @@ export default function SpacesGallery({ spaces, title, spaceImages, lang = 'es' 
               </div>
               <div className="p-5 flex-1">
                 <h3 className="font-body text-lg font-semibold text-negro mb-2">{space.nombre}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: '#6B6B6B' }}>{space.descripcion}</p>
+                <p className="text-sm leading-relaxed" style={{ color: '#2D2D2D' }}>{space.descripcion}</p>
               </div>
             </div>
             )

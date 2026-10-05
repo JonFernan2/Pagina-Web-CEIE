@@ -14,12 +14,14 @@ export default function CondicionesContratacionPage() {
   return (
     <>
       <Navbar lang="es" currentPath="/condiciones-contratacion" />
+      <main id="contenido">
       <LegalPageTemplate
         lang="es"
         title={LEGAL_ES.condicionesContratacion.title}
         sections={LEGAL_ES.condicionesContratacion.sections}
         lastUpdated="Agosto 2026"
       />
+      </main>
       <Footer lang="es" />
       <CookieBanner lang="es" />
     </>

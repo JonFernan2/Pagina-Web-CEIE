@@ -37,6 +37,7 @@ export default function AboutENPage() {
   return (
     <>
       <Navbar lang="en" currentPath="/en/about-us" />
+      <main id="contenido">
 
       <div className="flex items-end pb-10 pt-24" style={{ background: '#1d1e20', minHeight: '280px' }}>
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 w-full">
@@ -70,7 +71,7 @@ export default function AboutENPage() {
                 <p className="font-body font-semibold text-negro text-base leading-tight mb-1">
                   {member.nombre}
                 </p>
-                <p className="font-body text-sm leading-snug mb-2" style={{ color: '#6493b5' }}>
+                <p className="font-body text-sm font-medium leading-snug mb-2" style={{ color: '#1d1e20' }}>
                   {member.cargo.en}
                 </p>
                 {member.credenciales && (
@@ -94,7 +95,7 @@ export default function AboutENPage() {
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-8">{d.sections.mision.title}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="p-6" style={{ border: '2px solid #6493b5', borderRadius: '4px', background: '#FFFFFF' }}>
-              <h3 className="font-body text-lg font-semibold mb-3" style={{ color: '#6493b5' }}>Mission</h3>
+              <h3 className="font-body text-lg font-semibold mb-3" style={{ color: '#1d1e20' }}>Mission</h3>
               <p className="text-base leading-relaxed" style={{ color: '#2D2D2D' }}>{d.sections.mision.mision}</p>
             </div>
             <div className="p-6" style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#FFFFFF' }}>
@@ -122,6 +123,8 @@ export default function AboutENPage() {
         images={LAUNCH_IMAGES_EN}
         lang="en"
       />
+
+      </main>
 
       <Footer lang="en" />
       <CookieBanner lang="en" />

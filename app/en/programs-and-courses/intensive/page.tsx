@@ -16,6 +16,7 @@ export default function IntensiveENPage() {
   return (
     <>
       <Navbar lang="en" currentPath="/en/programs-and-courses/intensive" />
+      <main id="contenido">
       <ProgramTemplate
         lang="en"
         data={program}
@@ -39,6 +40,7 @@ export default function IntensiveENPage() {
           cerfNote: 'CEFR-aligned',
         }}
       />
+      </main>
       <Footer lang="en" />
       <CookieBanner lang="en" />
     </>
