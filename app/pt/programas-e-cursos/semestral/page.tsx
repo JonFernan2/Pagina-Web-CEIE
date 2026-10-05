@@ -8,7 +8,7 @@ import { PROGRAMS_DATA_PT } from '@/data/programs.pt'
 const program = PROGRAMS_DATA_PT.find((p) => p.slug === 'semestral')!
 
 export const metadata: Metadata = {
-  title: 'Programa Semestral | CEIE UAI',
+  title: 'Programa Semestral de Espanhol | CEIE UAI',
   description: 'Progressão estruturada de espanhol A1–C1 em 15–18 semanas. Máx. 12 alunos por turma. Campus UAI Viña del Mar.',
 }
 

@@ -1,7 +1,13 @@
+import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
 import { CONTACT_PT } from '@/data/content.pt'
+
+export const metadata: Metadata = {
+  title: CONTACT_PT.meta.title,
+  description: CONTACT_PT.meta.description,
+}
 
 export default function ContatoPTPage() {
   const d = CONTACT_PT

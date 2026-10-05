@@ -1,7 +1,13 @@
+import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
 import { CONTACT_EN } from '@/data/content.en'
+
+export const metadata: Metadata = {
+  title: CONTACT_EN.meta.title,
+  description: CONTACT_EN.meta.description,
+}
 
 export default function ContactENPage() {
   const d = CONTACT_EN

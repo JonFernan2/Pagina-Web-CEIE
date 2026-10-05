@@ -8,7 +8,7 @@ import { PROGRAMS_DATA_ZH } from '@/data/programs.zh'
 const program = PROGRAMS_DATA_ZH.find((p) => p.slug === 'specific-purposes')!
 
 export const metadata: Metadata = {
-  title: '专业目的课程 | CEIE UAI',
+  title: '专业目的西班牙语课程 | CEIE UAI',
   description: '面向职业、外交及机构背景开发的西班牙语课程。UAI Viña del Mar 校区。',
 }
 

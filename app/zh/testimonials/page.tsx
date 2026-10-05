@@ -39,7 +39,7 @@ export default function TestimonialsZHPage() {
           <p className="text-center font-body mb-10 max-w-2xl mx-auto" style={{ color: '#6B6B6B' }}>
             国际学员与学者分享在阿道夫·伊瓦涅斯大学Viña del Mar生活并学习西班牙语的真实体验。
           </p>
-          <VideoCarousel videos={VIDEOS} />
+          <VideoCarousel videos={VIDEOS} lang="zh" />
         </div>
       </section>
 

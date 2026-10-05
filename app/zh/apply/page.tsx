@@ -1,8 +1,14 @@
+import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
 import AdmissionSteps from '@/components/AdmissionSteps'
 import { ADMISSIONS_ZH } from '@/data/content.zh'
+
+export const metadata: Metadata = {
+  title: ADMISSIONS_ZH.meta.title,
+  description: ADMISSIONS_ZH.meta.description,
+}
 
 export default function ApplyZHPage() {
   const d = ADMISSIONS_ZH

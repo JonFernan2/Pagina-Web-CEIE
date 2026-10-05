@@ -8,7 +8,7 @@ import { PROGRAMS_DATA_EN } from '@/data/programs.en'
 const program = PROGRAMS_DATA_EN.find((p) => p.slug === 'intensive')!
 
 export const metadata: Metadata = {
-  title: 'Intensive Program | CEIE UAI',
+  title: 'Intensive Spanish Programme | CEIE UAI',
   description: 'Total Spanish immersion in 4–8 weeks. Levels A1–B2. Max 10 students. UAI Viña del Mar campus.',
 }
 
