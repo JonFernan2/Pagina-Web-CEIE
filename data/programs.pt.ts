@@ -210,6 +210,7 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
       reconocimiento: 'Certifica as horas concluídas e o nível QECR atingido.',
     },
     precio: {
+      resumen: 'A partir de USD 900',
       estandarLabel: 'Intensivo 2 semanas',
       estandar: 'USD 900 (ambos os cursos)',
       inSituLabel: 'Intensivo 4 semanas',

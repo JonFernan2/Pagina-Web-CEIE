@@ -210,6 +210,7 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
       reconocimiento: '证明已完成课时数及达到的CEFR级别。',
     },
     precio: {
+      resumen: 'USD 900 起',
       estandarLabel: '2周强化',
       estandar: 'USD 900（两门课合计）',
       inSituLabel: '4周强化',

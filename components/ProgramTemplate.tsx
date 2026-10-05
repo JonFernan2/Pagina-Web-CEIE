@@ -46,9 +46,10 @@ export default function ProgramTemplate({
 }: ProgramTemplateProps) {
   const ui = UI[lang]
   const priceDisplay =
-    data.precio.estandar
+    data.precio.resumen ??
+    (data.precio.estandar
       ? data.precio.estandar
-      : data.precio.valor ?? ui.onRequest
+      : data.precio.valor ?? ui.onRequest)
 
   return (
     <div className="font-body">

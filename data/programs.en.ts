@@ -219,6 +219,7 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
       reconocimiento: 'Certifies hours completed and CEFR level attained.',
     },
     precio: {
+      resumen: 'From USD 900',
       estandarLabel: '2-week Intensive',
       estandar: 'USD 900 (both courses)',
       inSituLabel: '4-week Intensive',
