@@ -141,7 +141,7 @@ export const HOME_ZH = {
         '提前15天以内取消：不予退款',
       ],
       link: { label: '查看完整条款', href: '/zh/terms-and-conditions' },
-      disclaimer: '[待定 — 具体金额及条件待UAI法律顾问最终确认]',
+      disclaimer: '取消申请仅在以书面形式发送至 caroline.cortes@uai.cl 并获确认收到后方为有效。',
     },
   },
   accreditation: {
