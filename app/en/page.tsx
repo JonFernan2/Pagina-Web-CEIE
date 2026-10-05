@@ -94,7 +94,7 @@ export default function HomeENPage() {
             </h2>
             <p className="text-base" style={{ color: '#6B6B6B' }}>{d.programs.subtitle}</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
             {d.programs.items.map((p) => (
               <ProgramCard key={p.href} {...p} lang="en" />
             ))}
