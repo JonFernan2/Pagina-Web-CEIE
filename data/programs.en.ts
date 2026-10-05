@@ -3,7 +3,7 @@ import type { ProgramData } from './programs'
 export const PROGRAMS_DATA_EN: ProgramData[] = [
   {
     slug: 'semester',
-    nombre: 'Spanish Semester Program',
+    nombre: 'Spanish Semester Programme',
     descripcionBreve: 'Structured progression through CEFR levels over 17 weeks. Language courses, thematic courses, and International Core.',
     descripcionExtendida:
       'The Spanish Language Semester Program is designed to progressively develop the linguistic, academic, and cultural competencies of international students whose native language is not Spanish, facilitating their integration into university life. Courses are aligned with the Common European Framework of Reference for Languages (CEFR) and follow the standards of the Instituto Cervantes Curriculum Plan (PCIC). Courses are offered from levels A1 to C1 and include academic credits.',
@@ -118,7 +118,7 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
   },
   {
     slug: 'intensive',
-    nombre: 'Intensive Spanish Program',
+    nombre: 'Intensive Spanish Programme',
     descripcionBreve: 'Intensive group training designed for international students seeking to develop their Spanish proficiency in a short period.',
     descripcionExtendida:
       'The Intensive Spanish Program is designed for international students who are non-native speakers of Spanish and want to build their language skills in a short period of time, without needing to spend a full semester in Chile. The program combines intensive language training with cultural immersion experiences, fostering practical and meaningful learning in a Spanish-speaking environment.\n\nCourses are aligned with the Common European Framework of Reference for Languages (CEFR) and follow the standards of the Instituto Cervantes Curriculum Plan (PCIC). The program allows students to advance their Spanish proficiency through a concentrated language and cultural learning experience.',
@@ -225,7 +225,7 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
   },
   {
     slug: 'specific-purposes',
-    nombre: 'Spanish for Specific Purposes',
+    nombre: 'Spanish for Specific Purposes Programme',
     descripcionBreve: 'Short-term Spanish program custom-designed for individuals, groups, or institutions. Tailored to specific needs, interests, and objectives.',
     descripcionExtendida:
       'Spanish for Specific Purposes is a short-term program custom-designed around the specific needs, interests, and goals of each individual, group, or institution. Its purpose is to strengthen communication skills in Spanish in academic, professional, or discipline-specific settings, through content and activities tailored to the profile and language level of the participants.\n\nThe program combines the development of specialized vocabulary, communicative functions, and linguistic resources relevant to the field of interest with practical activities focused on using Spanish in situations and contexts specific to each field. Methodology and content are defined according to the objectives of the program and may include Spanish classes, workshops, applied activities, and cultural or professional experiences.',

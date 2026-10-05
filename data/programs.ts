@@ -69,7 +69,7 @@ export interface ProgramData {
 export const PROGRAMS_DATA: ProgramData[] = [
   {
     slug: 'semestral',
-    nombre: 'Programa Español Semestral',
+    nombre: 'Programa Semestral de Español',
     descripcionBreve: 'Progresión estructurada por niveles MCER en 4 meses. Cursos de lengua, temáticos y Core Internacional.',
     descripcionExtendida:
       'El Programa Semestral de Español está diseñado para desarrollar progresivamente las competencias lingüísticas, académicas y culturales en español de estudiantes internacionales no hispanohablantes, facilitando su integración a la experiencia universitaria. Los cursos están alineados con el Marco Común Europeo de Referencia para las Lenguas (MCER) y siguen los estándares del Plan Curricular del Instituto Cervantes (PCIC). Se ofrecen desde el nivel A1 hasta el C1 y cuentan con créditos académicos.',
@@ -185,7 +185,7 @@ export const PROGRAMS_DATA: ProgramData[] = [
   },
   {
     slug: 'intensivo',
-    nombre: 'Cursos ELE Intensivo y a Medida',
+    nombre: 'Programa Intensivo de Español',
     descripcionBreve: 'Formación intensiva en grupo (online o presencial) o personalizada uno a uno. Adaptada al nivel, ritmo y objetivos de cada participante.',
     descripcionExtendida:
       'El Programa Intensivo de Español está diseñado para estudiantes internacionales no hispanohablantes que buscan desarrollar sus competencias en español en un período breve, sin necesidad de permanecer un semestre completo en Chile. El programa combina una formación intensiva en el idioma con experiencias de inmersión cultural, favoreciendo un aprendizaje práctico y significativo en un contexto hispanohablante.\n\nLos cursos están alineados con el Marco Común Europeo de Referencia para las Lenguas (MCER) y siguen los estándares del Plan Curricular del Instituto Cervantes (PCIC). El programa permite avanzar en el dominio del español mediante una experiencia concentrada de aprendizaje lingüístico y cultural.',
@@ -270,7 +270,7 @@ export const PROGRAMS_DATA: ProgramData[] = [
   },
   {
     slug: 'fines-especificos',
-    nombre: 'Programa Corto Español con Fines Específicos',
+    nombre: 'Español con Fines Específicos',
     descripcionBreve: 'Español diseñado para contextos profesionales y disciplinares: salud, negocios, astronomía, rutas literarias. Programa a medida de 1 a 2 semanas.',
     descripcionExtendida:
       'El Español con Fines Específicos es un programa de corta duración diseñado a medida de acuerdo con las necesidades, intereses y objetivos específicos de cada persona, grupo o institución. Su propósito es fortalecer las competencias comunicativas en español en ámbitos académicos, profesionales o disciplinares, mediante contenidos y actividades adaptados al perfil y nivel lingüístico de los participantes.\n\nEl programa combina el desarrollo de vocabulario especializado, funciones comunicativas y recursos lingüísticos relevantes para el área de interés, con actividades prácticas orientadas al uso del español en situaciones y contextos propios de cada ámbito. La metodología y los contenidos se definen en función de los objetivos del programa, pudiendo incorporar clases de español, talleres, actividades aplicadas y experiencias culturales o profesionales.',
