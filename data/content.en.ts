@@ -251,23 +251,28 @@ export const ABOUT_EN = {
       title: 'Our Facilities',
       spaces: [
         {
-          nombre: 'Spanish classrooms',
-          descripcion: 'Rooms equipped with audiovisual technology, flexible seating configuration, and capacity for up to 12 students. Designed for active-participatory methodology.',
-          alt: 'Spanish language classroom at UAI Viña del Mar campus, with movable chairs, whiteboard, and projector, capacity for 12 students.',
+          nombre: 'Spanish Language Classrooms',
+          descripcion: 'Equipped with audiovisual technology, flexible layouts, and capacity for up to 24 students. Designed to support active, participatory learning.',
+          alt: 'Spanish language classroom at UAI Viña del Mar campus, with movable chairs, whiteboard, and projector, capacity for 24 students.',
         },
         {
           nombre: 'UAI Library',
-          descripcion: 'Spanish and English collection with access for international students. Holdings in literature, humanities, and social sciences. Silent reading areas.',
+          descripcion: 'A collection of Spanish and English language resources available to international students, including literature, humanities, and social sciences. Quiet reading rooms are also available.',
           alt: 'Universidad Adolfo Ibáñez library at Viña del Mar campus, with bookshelves and individual reading area.',
         },
         {
-          nombre: 'Study rooms',
-          descripcion: 'Group and individual workspaces distributed across campus. Access with CEIE student credential.',
+          nombre: 'Study Rooms',
+          descripcion: 'Individual and group study spaces located in Building B on campus. Available by reservation through WebC.',
           alt: 'Group study room at UAI Viña del Mar campus with work tables and wifi access.',
         },
         {
+          nombre: 'Gym and Sports Activities',
+          descripcion: 'Access to the sports facilities at the Viña del Mar Campus, including a gym, weight training room, workout spaces, and recreational areas. Students may also participate in sports workshops and activities, subject to availability.',
+          alt: 'Sports facilities at UAI Viña del Mar campus, including gym and training spaces.',
+        },
+        {
           nombre: 'Viña del Mar — Campus setting',
-          descripcion: 'The campus is located facing the Pacific in Viña del Mar, 15 minutes from Valparaíso and 1.5 hours from Santiago. A unique linguistic and cultural immersion environment in South America.',
+          descripcion: 'The Universidad Adolfo Ibáñez campus enjoys a privileged setting, surrounded by nature and overlooking the Pacific Ocean. Located just 15 minutes from Valparaíso and approximately 1.5 hours from Santiago, it offers students a peaceful university environment with easy access to some of the region\'s main cultural and tourist attractions.',
           alt: 'UAI Viña del Mar campus facing the Pacific Ocean, with the city of Viña del Mar in the background.',
         },
         {

@@ -153,41 +153,59 @@ export default function ProductAccordion({ programs, lang }: ProductAccordionPro
                           </tr>
                         </thead>
                         <tbody>
-                          {program.cursosTabla.map((curso, i) => (
-                            <tr
-                              key={i}
-                              style={{ background: i % 2 === 0 ? '#F9F8F7' : '#FFFFFF' }}
-                            >
-                              <td
-                                className="px-4 py-3 text-sm"
-                                style={{ color: '#2D2D2D', borderBottom: '1px solid #E5E3DE' }}
-                              >
-                                {curso.nombre}
-                              </td>
-                              <td
-                                className="px-4 py-3 text-sm whitespace-nowrap"
-                                style={{ color: '#6B6B6B', borderBottom: '1px solid #E5E3DE' }}
-                              >
-                                {curso.horas}
-                              </td>
-                              <td
-                                className="px-4 py-3 text-sm font-semibold whitespace-nowrap"
-                                style={{ color: '#1d1e20', borderBottom: '1px solid #E5E3DE' }}
-                              >
-                                {typeof curso.precioUSD === 'number'
-                                  ? `USD ${curso.precioUSD.toLocaleString('es-CL')}`
-                                  : curso.precioUSD}
-                              </td>
-                              {program.cursosTabla!.some((c) => c.modalidad) && (
-                                <td
-                                  className="px-4 py-3 text-sm"
-                                  style={{ color: '#6B6B6B', borderBottom: '1px solid #E5E3DE' }}
+                          {program.cursosTabla.map((curso, i) => {
+                            const prevSubcat = i > 0 ? program.cursosTabla![i - 1].subcategoria : null
+                            const showSubcatHeader = curso.subcategoria && curso.subcategoria !== prevSubcat
+                            const colSpan = program.cursosTabla!.some((c) => c.modalidad) ? 4 : 3
+                            return (
+                              <>
+                                {showSubcatHeader && (
+                                  <tr key={`subcat-${i}`} style={{ background: '#6493b5' }}>
+                                    <td
+                                      colSpan={colSpan}
+                                      className="px-4 py-2 text-xs font-semibold uppercase tracking-widest"
+                                      style={{ color: '#1d1e20' }}
+                                    >
+                                      {curso.subcategoria}
+                                    </td>
+                                  </tr>
+                                )}
+                                <tr
+                                  key={i}
+                                  style={{ background: i % 2 === 0 ? '#F9F8F7' : '#FFFFFF' }}
                                 >
-                                  {curso.modalidad ?? '—'}
-                                </td>
-                              )}
-                            </tr>
-                          ))}
+                                  <td
+                                    className="px-4 py-3 text-sm"
+                                    style={{ color: '#2D2D2D', borderBottom: '1px solid #E5E3DE' }}
+                                  >
+                                    {curso.nombre}
+                                  </td>
+                                  <td
+                                    className="px-4 py-3 text-sm whitespace-nowrap"
+                                    style={{ color: '#6B6B6B', borderBottom: '1px solid #E5E3DE' }}
+                                  >
+                                    {curso.horas}
+                                  </td>
+                                  <td
+                                    className="px-4 py-3 text-sm font-semibold whitespace-nowrap"
+                                    style={{ color: '#1d1e20', borderBottom: '1px solid #E5E3DE' }}
+                                  >
+                                    {typeof curso.precioUSD === 'number'
+                                      ? `USD ${curso.precioUSD.toLocaleString('es-CL')}`
+                                      : curso.precioUSD}
+                                  </td>
+                                  {program.cursosTabla!.some((c) => c.modalidad) && (
+                                    <td
+                                      className="px-4 py-3 text-sm"
+                                      style={{ color: '#6B6B6B', borderBottom: '1px solid #E5E3DE' }}
+                                    >
+                                      {curso.modalidad ?? '—'}
+                                    </td>
+                                  )}
+                                </tr>
+                              </>
+                            )
+                          })}
                         </tbody>
                       </table>
                     </div>
