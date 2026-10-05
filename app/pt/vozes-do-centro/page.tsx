@@ -39,7 +39,7 @@ export default function VozesDocentroPTPage() {
           <p className="text-center font-body mb-10 max-w-2xl mx-auto" style={{ color: '#6B6B6B' }}>
             Estudantes e Acadêmicos internacionais compartilham como foi viver e aprender espanhol na Universidad Adolfo Ibáñez, Viña del Mar.
           </p>
-          <VideoCarousel videos={VIDEOS} />
+          <VideoCarousel videos={VIDEOS} lang="pt" />
         </div>
       </section>
 

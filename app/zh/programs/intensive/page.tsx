@@ -8,7 +8,7 @@ import { PROGRAMS_DATA_ZH } from '@/data/programs.zh'
 const program = PROGRAMS_DATA_ZH.find((p) => p.slug === 'intensive')!
 
 export const metadata: Metadata = {
-  title: '强化课程 | CEIE UAI',
+  title: '西班牙语强化课程 | CEIE UAI',
   description: '4至8周全面沉浸式西班牙语学习。快速、系统地提升语言能力。UAI Viña del Mar 校区。',
 }
 

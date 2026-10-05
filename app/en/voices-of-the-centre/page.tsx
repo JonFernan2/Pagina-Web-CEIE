@@ -39,7 +39,7 @@ export default function VoicesENPage() {
           <p className="text-center font-body mb-10 max-w-2xl mx-auto" style={{ color: '#6B6B6B' }}>
             International students and academics share what it was like to live and learn Spanish at Universidad Adolfo Ibáñez, Viña del Mar.
           </p>
-          <VideoCarousel videos={VIDEOS} />
+          <VideoCarousel videos={VIDEOS} lang="en" />
         </div>
       </section>
 

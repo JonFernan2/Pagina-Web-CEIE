@@ -8,6 +8,13 @@ interface FooterProps {
   lang: 'es' | 'en' | 'pt' | 'zh'
 }
 
+const CREDIT = {
+  es: 'Diseñado y desarrollado por',
+  en: 'Designed and developed by',
+  pt: 'Projetado e desenvolvido por',
+  zh: '设计与开发：',
+}
+
 export default function Footer({ lang }: FooterProps) {
   const f = lang === 'es' ? FOOTER_ES : lang === 'pt' ? FOOTER_PT : lang === 'zh' ? FOOTER_ZH : FOOTER_EN
 
@@ -154,7 +161,7 @@ export default function Footer({ lang }: FooterProps) {
             {f.legal.copyright}
           </p>
           <p className="text-xs text-white/20 text-center md:text-right mt-1">
-            Diseñado y desarrollado por Jonathan Fernando Muñoz Alvarez
+            {CREDIT[lang]} Jonathan Fernando Muñoz Alvarez
           </p>
         </div>
       </div>

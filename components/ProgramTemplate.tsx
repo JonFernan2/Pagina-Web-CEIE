@@ -2,6 +2,13 @@ import Link from 'next/link'
 import { ChevronRight, Users, Clock, Award, CheckCircle, BookOpen } from 'lucide-react'
 import type { ProgramData } from '@/data/programs'
 
+const UI = {
+  es: { shift: 'Turno', days: 'Días', time: 'Hora', standard: 'Estándar (campus UAI)', inSitu: 'In situ', longTerm: 'Largo plazo', price: 'Precio', onRequest: 'Consultar', priceNote: 'Valores referenciales en USD, sujetos a cambios. Consulte las condiciones vigentes.' },
+  en: { shift: 'Shift', days: 'Days', time: 'Time', standard: 'Standard (UAI campus)', inSitu: 'In situ', longTerm: 'Long term', price: 'Price', onRequest: 'On request', priceNote: 'Reference prices in USD, subject to change. Please check current conditions.' },
+  pt: { shift: 'Turno', days: 'Dias', time: 'Horário', standard: 'Padrão (campus UAI)', inSitu: 'In loco', longTerm: 'Longo prazo', price: 'Preço', onRequest: 'Sob consulta', priceNote: 'Valores de referência em USD, sujeitos a alterações. Consulte as condições vigentes.' },
+  zh: { shift: '时段', days: '日期', time: '时间', standard: '标准（UAI校区）', inSitu: '现场授课', longTerm: '长期', price: '价格', onRequest: '请咨询', priceNote: '以上为美元参考价格，可能调整，请咨询最新条件。' },
+}
+
 interface ProgramTemplateProps {
   lang: 'es' | 'en' | 'pt' | 'zh'
   data: ProgramData
@@ -37,10 +44,11 @@ export default function ProgramTemplate({
   asideApply,
   labels,
 }: ProgramTemplateProps) {
+  const ui = UI[lang]
   const priceDisplay =
     data.precio.estandar
       ? data.precio.estandar
-      : data.precio.valor ?? 'Consultar'
+      : data.precio.valor ?? ui.onRequest
 
   return (
     <div className="font-body">
@@ -110,9 +118,9 @@ export default function ProgramTemplate({
                 <table className="w-full text-sm" style={{ borderCollapse: 'collapse' }}>
                   <thead>
                     <tr style={{ background: '#1d1e20' }}>
-                      <Th>Turno / Shift</Th>
-                      <Th>Días / Days</Th>
-                      <Th>Hora / Time</Th>
+                      <Th>{ui.shift}</Th>
+                      <Th>{ui.days}</Th>
+                      <Th>{ui.time}</Th>
                     </tr>
                   </thead>
                   <tbody>
@@ -209,20 +217,20 @@ export default function ProgramTemplate({
               <SectionTitle>{labels.pricing}</SectionTitle>
               <div className="flex flex-col gap-3">
                 {data.precio.estandar && (
-                  <PriceRow label="Estándar (campus UAI)" value={data.precio.estandar} />
+                  <PriceRow label={ui.standard} value={data.precio.estandar} />
                 )}
                 {data.precio.inSitu && (
-                  <PriceRow label="In-situ" value={data.precio.inSitu} />
+                  <PriceRow label={ui.inSitu} value={data.precio.inSitu} />
                 )}
                 {data.precio.largoplazo && (
-                  <PriceRow label="Largo plazo" value={data.precio.largoplazo} />
+                  <PriceRow label={ui.longTerm} value={data.precio.largoplazo} />
                 )}
                 {data.precio.valor && !data.precio.estandar && (
-                  <PriceRow label={data.precio.notas ?? 'Precio'} value={data.precio.valor} />
+                  <PriceRow label={data.precio.notas ?? ui.price} value={data.precio.valor} />
                 )}
               </div>
               <p className="text-xs mt-4" style={{ color: '#6B6B6B' }}>
-                [PENDIENTE — Cifras sujetas a confirmación por UAI]
+                {ui.priceNote}
               </p>
             </section>
 

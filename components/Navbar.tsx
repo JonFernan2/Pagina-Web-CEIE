@@ -96,6 +96,13 @@ function getLangPath(currentPath: string, currentLang: Lang, targetLang: Lang): 
   return quad ? quad[targetLang] : defaults[targetLang]
 }
 
+const NAV_ARIA = {
+  es: { main: 'Navegación principal', open: 'Abrir menú', close: 'Cerrar menú' },
+  en: { main: 'Main navigation', open: 'Open menu', close: 'Close menu' },
+  pt: { main: 'Navegação principal', open: 'Abrir menu', close: 'Fechar menu' },
+  zh: { main: '主导航', open: '打开菜单', close: '关闭菜单' },
+}
+
 export default function Navbar({ lang, currentPath }: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
@@ -130,7 +137,7 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
         boxShadow: scrolled ? '0 4px 24px rgba(0,0,0,0.45)' : 'none',
         transition: 'box-shadow 0.3s ease',
       }}
-      aria-label="Navegación principal"
+      aria-label={NAV_ARIA[lang].main}
     >
       <div className="w-full px-6 lg:px-10">
         <div className="flex items-center justify-between h-16">
@@ -228,7 +235,7 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
           <button
             className="md:hidden text-white p-2"
             onClick={() => setMobileOpen((v) => !v)}
-            aria-label={mobileOpen ? 'Cerrar menú' : 'Abrir menú'}
+            aria-label={mobileOpen ? NAV_ARIA[lang].close : NAV_ARIA[lang].open}
             aria-expanded={mobileOpen}
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}

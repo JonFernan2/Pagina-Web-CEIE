@@ -9,7 +9,14 @@ interface Video {
   caption: string
 }
 
-export default function VideoCarousel({ videos }: { videos: Video[] }) {
+const ARIA = {
+  es: { prev: 'Video anterior', next: 'Siguiente video' },
+  en: { prev: 'Previous video', next: 'Next video' },
+  pt: { prev: 'Vídeo anterior', next: 'Próximo vídeo' },
+  zh: { prev: '上一个视频', next: '下一个视频' },
+}
+
+export default function VideoCarousel({ videos, lang }: { videos: Video[]; lang: 'es' | 'en' | 'pt' | 'zh' }) {
   const [current, setCurrent] = useState(0)
 
   const prev = () => setCurrent((c) => (c - 1 + videos.length) % videos.length)
@@ -35,7 +42,7 @@ export default function VideoCarousel({ videos }: { videos: Video[] }) {
 
         <button
           onClick={prev}
-          aria-label="Video anterior"
+          aria-label={ARIA[lang].prev}
           className="absolute left-3 top-1/2 -translate-y-1/2 flex items-center justify-center w-10 h-10 transition-opacity opacity-75 hover:opacity-100"
           style={{ background: 'rgba(29,30,32,0.80)', borderRadius: '50%', color: '#fff' }}
         >
@@ -44,7 +51,7 @@ export default function VideoCarousel({ videos }: { videos: Video[] }) {
 
         <button
           onClick={next}
-          aria-label="Siguiente video"
+          aria-label={ARIA[lang].next}
           className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center justify-center w-10 h-10 transition-opacity opacity-75 hover:opacity-100"
           style={{ background: 'rgba(29,30,32,0.80)', borderRadius: '50%', color: '#fff' }}
         >

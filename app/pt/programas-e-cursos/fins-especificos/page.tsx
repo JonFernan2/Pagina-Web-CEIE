@@ -8,7 +8,7 @@ import { PROGRAMS_DATA_PT } from '@/data/programs.pt'
 const program = PROGRAMS_DATA_PT.find((p) => p.slug === 'fins-especificos')!
 
 export const metadata: Metadata = {
-  title: 'Programas de Fins Específicos | CEIE UAI',
+  title: 'Espanhol com Fins Específicos | CEIE UAI',
   description: 'Espanhol para contextos profissionais, diplomáticos e institucionais. UAI Viña del Mar.',
 }
 

@@ -8,7 +8,7 @@ import { PROGRAMS_DATA_ZH } from '@/data/programs.zh'
 const program = PROGRAMS_DATA_ZH.find((p) => p.slug === 'semester')!
 
 export const metadata: Metadata = {
-  title: '学期课程 | CEIE UAI',
+  title: '学期西班牙语课程 | CEIE UAI',
   description: '按CEFR级别在15至18周内系统进阶。UAI Viña del Mar 校区。',
 }
 

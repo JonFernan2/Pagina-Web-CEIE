@@ -1,7 +1,13 @@
+import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
 import { CONTACT_ES } from '@/data/content.es'
+
+export const metadata: Metadata = {
+  title: CONTACT_ES.meta.title,
+  description: CONTACT_ES.meta.description,
+}
 
 export default function ContactoPage() {
   const d = CONTACT_ES

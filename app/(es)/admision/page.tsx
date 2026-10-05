@@ -1,8 +1,14 @@
+import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
 import AdmissionSteps from '@/components/AdmissionSteps'
 import { ADMISSIONS_ES } from '@/data/content.es'
+
+export const metadata: Metadata = {
+  title: ADMISSIONS_ES.meta.title,
+  description: ADMISSIONS_ES.meta.description,
+}
 
 export default function AdmisionPage() {
   const d = ADMISSIONS_ES
