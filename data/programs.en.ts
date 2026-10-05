@@ -106,7 +106,7 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
         descripcion: '45+ days in advance: no charge. 15–44 days: 50% charge. Less than 15 days: no refund. Force majeure evaluated individually. Written cancellation to caroline.cortes@uai.cl.',
       },
     ],
-    grupoMaximo: 24,
+    participantes: '5 people',
     duracion: '17 weeks',
     certificado: {
       tipo: 'Official Academic Transcript',
@@ -211,7 +211,7 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
         descripcion: '45+ days in advance: no charge. 15–44 days: 50% charge. Less than 15 days: no refund. Force majeure evaluated individually. Written cancellation to caroline.cortes@uai.cl.',
       },
     ],
-    grupoMaximo: 15,
+    participantes: '5 people',
     duracion: '2 to 4 weeks',
     certificado: {
       tipo: 'Official Academic Transcript',
@@ -301,7 +301,7 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
         descripcion: '45+ days before start date: no charge. 15–44 days: 50% fee. Less than 15 days: no refund. Force majeure evaluated individually. Written cancellation to caroline.cortes@uai.cl.',
       },
     ],
-    grupoMaximo: 'Variable according to institutional agreement',
+    participantes: 'Variable according to institutional agreement',
     duracion: '1 to 2 weeks (tailored)',
     certificado: {
       tipo: 'Certificate of Specialized Training CEIE-UAI',

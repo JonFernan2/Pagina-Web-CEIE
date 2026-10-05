@@ -33,7 +33,7 @@ export default function IntensiveZHPage() {
           conditions: '课程条件',
           certificate: '证书',
           pricing: '收费标准',
-          groupSize: '每班最大人数',
+          groupSize: '最少参与人数',
           duration: '课程时长',
           levels: 'CEFR 级别',
           cerfNote: '对接CEFR',

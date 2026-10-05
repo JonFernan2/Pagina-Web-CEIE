@@ -59,7 +59,7 @@ export interface ProgramData {
   temario: TemarioItem[]
   actividades: string[]
   condiciones: CondicionEntry[]
-  grupoMaximo: number | string
+  participantes: string
   duracion: string
   certificado: CertificadoInfo
   precio: PrecioInfo
@@ -175,7 +175,7 @@ export const PROGRAMS_DATA: ProgramData[] = [
         descripcion: 'Con 45+ días: sin cargo. Con 15–44 días: cargo del 50%. Menos de 15 días: sin reembolso. Fuerza mayor evaluada individualmente. Por escrito a caroline.cortes@uai.cl.',
       },
     ],
-    grupoMaximo: 24,
+    participantes: '5 personas',
     duracion: '17 semanas',
     certificado: {
       tipo: 'Certificado de Concentración de Notas',
@@ -272,7 +272,7 @@ export const PROGRAMS_DATA: ProgramData[] = [
         descripcion: 'Con 45+ días: sin cargo. Con 15–44 días: cargo del 50%. Menos de 15 días: sin reembolso. Fuerza mayor evaluada individualmente. Por escrito a caroline.cortes@uai.cl.',
       },
     ],
-    grupoMaximo: 15,
+    participantes: '5 personas',
     duracion: '2 a 4 semanas',
     certificado: {
       tipo: 'Certificado de Concentración de Notas',
@@ -362,7 +362,7 @@ export const PROGRAMS_DATA: ProgramData[] = [
         descripcion: 'Con 45+ días: sin cargo. Con 15–44 días: cargo del 50%. Menos de 15 días: sin reembolso. Fuerza mayor evaluada individualmente. Por escrito a caroline.cortes@uai.cl.',
       },
     ],
-    grupoMaximo: 'Variable según convenio institucional',
+    participantes: 'Variable según convenio institucional',
     duracion: '1 a 2 semanas (a medida)',
     certificado: {
       tipo: 'Certificado de Formación Especializada CEIE-UAI',

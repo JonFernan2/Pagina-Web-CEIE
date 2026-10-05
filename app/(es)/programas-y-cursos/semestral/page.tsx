@@ -33,7 +33,7 @@ export default function SemestralPage() {
           conditions: 'Condiciones',
           certificate: 'Certificado',
           pricing: 'Precios',
-          groupSize: 'Máximo de estudiantes',
+          groupSize: 'Mínimo de participantes',
           duration: 'Duración',
           levels: 'Niveles MCER',
           cerfNote: 'Alineado al MCER',

@@ -33,7 +33,7 @@ export default function FinsEspecificosPTPage() {
           conditions: 'Condições',
           certificate: 'Certificado',
           pricing: 'Preços',
-          groupSize: 'Tamanho do grupo',
+          groupSize: 'Participantes',
           duration: 'Duração',
           levels: 'Níveis',
           cerfNote: 'Alinhado ao QECR',
