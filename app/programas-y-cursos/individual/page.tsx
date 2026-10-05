@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation'
 
 export default function IndividualPage() {
-  redirect('/programas-y-cursos/intensivo')
+  redirect('/programas-y-cursos/fines-especificos')
 }

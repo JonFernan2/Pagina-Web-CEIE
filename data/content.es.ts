@@ -204,7 +204,7 @@ export const HOME_ES = {
 export const PROGRAMS_ES = {
   meta: {
     title: 'Programas y Cursos | CEIE UAI',
-    description: 'Cuatro programas de español: Semestral, Intensivo, Fines Específicos e Individual. Niveles MCER A1–C1. UAI Viña del Mar.',
+    description: 'Tres programas de español: Programa Semestral de Español, Programa Intensivo de Español y Español con Fines Específicos. Niveles MCER A1–C1. UAI Viña del Mar.',
   },
   hero: {
     h1: 'Nuestros Programas de Español',
@@ -293,8 +293,8 @@ export const ADMISSIONS_ES = {
       rows: [
         ['Programa Semestral de Español',       'A1 (sin conocimiento previo requerido)', 'Pasaporte / cédula. Foto carnet.'],
         ['Programa Intensivo de Español',       'A1 (sin conocimiento previo requerido)', 'Pasaporte / cédula. Foto carnet.'],
-        ['Español con Fines Específicos',        'Según programa',                         'Carta de la organización patrocinadora.'],
-        ['Programa Individual',      'Sin requisito',                          'Pasaporte / cédula. Objetivos de aprendizaje.'],
+        ['Español con Fines Específicos: programas grupales para instituciones', 'Según programa', 'Carta de la organización patrocinadora.'],
+        ['Español con Fines Específicos: cursos individuales personalizados', 'Sin requisito', 'Pasaporte / cédula. Objetivos de aprendizaje.'],
       ],
     },
   },
@@ -325,12 +325,12 @@ export const ADMISSIONS_ES = {
         detail: 'Hemisferio Sur — 1.er semestre: marzo – julio · 2.o semestre: agosto – diciembre',
       },
       {
-        program: 'Español con Fines Específicos',
+        program: 'Español con Fines Específicos: grupal',
         schedule: 'Fecha a coordinar entre las partes',
         detail: '',
       },
       {
-        program: 'Individual',
+        program: 'Español con Fines Específicos: individual',
         schedule: 'Matrícula continua',
         detail: 'Inicio inmediato disponible previa confirmación',
       },

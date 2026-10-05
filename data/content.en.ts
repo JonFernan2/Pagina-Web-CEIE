@@ -204,7 +204,7 @@ export const HOME_EN = {
 export const PROGRAMS_EN = {
   meta: {
     title: 'Programs & Courses | CEIE UAI',
-    description: 'Four Spanish programs: Semester, Intensive, Specific Purposes, and Individual. CEFR levels A1–C1. UAI Viña del Mar.',
+    description: 'Three Spanish programmes: Spanish Semester Programme, Intensive Spanish Programme and Spanish for Specific Purposes Programme. CEFR levels A1–C1. UAI Viña del Mar.',
   },
   hero: {
     h1: 'Our Spanish Programs',
@@ -293,8 +293,8 @@ export const ADMISSIONS_EN = {
       rows: [
         ['Spanish Semester Programme',    'A1 (no prior knowledge required)', 'Passport / ID. Passport photo.'],
         ['Intensive Spanish Programme',   'A1 (no prior knowledge required)', 'Passport / ID. Passport photo.'],
-        ['Spanish for Specific Purposes Programme',   'As per program',                   'Sponsoring organization letter.'],
-        ['Individual Program',  'None',                             'Passport / ID. Learning objectives.'],
+        ['Spanish for Specific Purposes Programme: group programmes for institutions', 'As per program', 'Sponsoring organization letter.'],
+        ['Spanish for Specific Purposes Programme: individual personalised courses', 'None', 'Passport / ID. Learning objectives.'],
       ],
     },
   },
@@ -325,12 +325,12 @@ export const ADMISSIONS_EN = {
         detail: 'Southern Hemisphere — 1st semester: March – July · 2nd semester: August – December',
       },
       {
-        program: 'Spanish for Specific Purposes Programme',
+        program: 'Spanish for Specific Purposes Programme: group',
         schedule: 'Date to be agreed between both parties',
         detail: '',
       },
       {
-        program: 'Individual',
+        program: 'Spanish for Specific Purposes Programme: individual',
         schedule: 'Continuous enrollment',
         detail: 'Immediate start available upon confirmation',
       },
