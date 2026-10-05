@@ -1,10 +1,8 @@
-import type { Metadata } from 'next'
 import SiteDocument from '@/components/SiteDocument'
+import { siteMetadata } from '@/lib/site'
+import { HOME_ZH } from '@/data/content.zh'
 
-export const metadata: Metadata = {
-  title: 'CEIE UAI — 西班牙语综合教学中心',
-  description: '西班牙语综合教学中心。阿道夫·伊瓦涅斯大学。智利比尼亚德尔马。',
-}
+export const metadata = siteMetadata('zh', HOME_ZH.meta.title, HOME_ZH.meta.description)
 
 export default function ZhLayout({ children }: { children: React.ReactNode }) {
   return <SiteDocument lang="zh-CN">{children}</SiteDocument>

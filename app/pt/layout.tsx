@@ -1,10 +1,8 @@
-import type { Metadata } from 'next'
 import SiteDocument from '@/components/SiteDocument'
+import { siteMetadata } from '@/lib/site'
+import { HOME_PT } from '@/data/content.pt'
 
-export const metadata: Metadata = {
-  title: 'CEIE UAI — Centro de Ensino Integral do Espanhol',
-  description: 'Centro de Ensino Integral do Espanhol. Universidad Adolfo Ibáñez. Viña del Mar, Chile.',
-}
+export const metadata = siteMetadata('pt', HOME_PT.meta.title, HOME_PT.meta.description)
 
 export default function PtLayout({ children }: { children: React.ReactNode }) {
   return <SiteDocument lang="pt">{children}</SiteDocument>
