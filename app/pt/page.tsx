@@ -177,9 +177,9 @@ export default function HomePTPage() {
               <div className="flex items-center justify-center" style={{ background: '#FFFFFF', borderRadius: '4px', padding: '20px 24px' }}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/logos-triple-crown.png"
-                  alt="Triple Crown: EQUIS · AACSB Accredited · Association of MBAs"
-                  style={{ maxHeight: '56px', width: '100%', objectFit: 'contain', filter: 'grayscale(1) opacity(0.75)' }}
+                  src="/images/triple-crown-logos.webp"
+                  alt="Triple Crown: AACSB Acreditada · EFMD EQUIS Acreditada · AMBA Acreditada"
+                  style={{ maxHeight: '80px', width: '100%', objectFit: 'contain' }}
                 />
               </div>
             </div>
