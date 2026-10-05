@@ -1,4 +1,3 @@
-import LegalAlert from './LegalAlert'
 
 interface LegalSection {
   heading: string
@@ -39,7 +38,6 @@ export default function LegalPageTemplate({
 
       {/* Content */}
       <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 py-12 max-w-3xl">
-        <LegalAlert lang={lang} />
 
         <div className="flex flex-col gap-8">
           {sections.map((section, i) => (

@@ -146,9 +146,6 @@ export default function HomeENPage() {
               <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-6">
                 {d.accreditation.title}
               </h2>
-              <p className="text-base leading-relaxed mb-4" style={{ color: '#2D2D2D' }}>
-                {d.accreditation.p1}
-              </p>
               <p className="text-base leading-relaxed" style={{ color: '#2D2D2D' }}>
                 {d.accreditation.p2}
               </p>

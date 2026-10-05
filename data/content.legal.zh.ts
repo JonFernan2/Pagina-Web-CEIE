@@ -2,7 +2,7 @@ export const LEGAL_ZH = {
   legalNotice: {
     title: '法律声明',
     sections: [
-      { heading: '网站所有者信息', body: 'Universidad Adolfo Ibáñez · RUT: [待定 — 法律顾问确认] · Padre Hurtado 750, Viña del Mar, 智利。' },
+      { heading: '网站所有者信息', body: 'Universidad Adolfo Ibáñez · RUT: 71.543.200-5 · Padre Hurtado 750, Viña del Mar, 智利。' },
       { heading: '中心业务范围', body: 'CEIE在大学层面提供对外西班牙语教学课程，隶属于UAI国际关系处。' },
       { heading: '网站负责人', body: '本网站ceie.uai.cl由阿道夫·伊瓦涅斯大学国际关系处下属的西班牙语综合教学中心（CEIE）负责管理。如需就网站内容进行咨询，请联系：caroline.cortes@uai.cl' },
       { heading: '知识产权', body: '本网站所有内容（文字、图片、照片、标志、平面设计、视频及其他元素）均为阿道夫·伊瓦涅斯大学或其授权方的财产，受智利《知识产权法》第17.336号法律及其他适用法规的保护。未经权利人明确书面授权，禁止对上述内容进行全部或部分复制、分发、改编或公开传播。允许以个人非商业目的转载内容，但须注明来源。大学品牌、机构标志及CEIE · UAI名称均为受保护的商标标识，未经授权使用严格禁止。' },
