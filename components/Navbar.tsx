@@ -114,7 +114,7 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
     <>
     <a
       href="#contenido"
-      className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:text-sm focus:font-semibold"
+      className="sr-only focus-visible:not-sr-only focus-visible:fixed focus-visible:top-2 focus-visible:left-2 focus-visible:z-[100] focus-visible:px-4 focus-visible:py-2 focus-visible:text-sm focus-visible:font-semibold"
       style={{ background: '#6493b5', color: '#1d1e20', borderRadius: '2px' }}
     >
       {NAV_ARIA[lang].skip}
