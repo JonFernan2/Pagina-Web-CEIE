@@ -30,7 +30,7 @@ export default function HomeZHPage() {
       <section className="relative flex items-center justify-center text-center" style={{ minHeight: '90vh' }}>
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src="/images/hero-campus-vina-del-mar.png"
+            src="/images/hero-campus-vina-del-mar.jpg"
             alt="阿道夫·伊瓦涅斯大学 Viña del Mar 校区，太平洋景观"
             className="w-full h-full object-cover object-center"
           />
