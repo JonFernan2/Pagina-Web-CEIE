@@ -32,7 +32,7 @@ export default function TeachingTeamENPage() {
           >
             <span className="font-semibold">Note:</span> Teacher photographs and biographies will be updated after the photo session and submission of biographical data by UAI.
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
             {TEACHERS.map((teacher) => (
               <TeacherCard key={teacher.nombre} {...teacher} lang="en" />
             ))}

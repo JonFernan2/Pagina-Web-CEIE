@@ -32,7 +32,7 @@ export default function TeachingTeamZHPage() {
           >
             <span className="font-semibold">注：</span>教师照片及简介将在UAI完成摄影拍摄及提交个人资料后更新。
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
             {TEACHERS.map((teacher) => (
               <TeacherCard key={teacher.nombre} {...teacher} lang="zh" />
             ))}

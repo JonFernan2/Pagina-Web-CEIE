@@ -33,7 +33,7 @@ export default function EquipoDocentePage() {
       {/* Teachers grid */}
       <section style={{ background: '#C7C2ba' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
             {TEACHERS.map((teacher) => (
               <TeacherCard key={teacher.nombre} {...teacher} lang="es" />
             ))}

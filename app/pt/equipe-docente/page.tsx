@@ -32,7 +32,7 @@ export default function EquipeDocentePTPage() {
           >
             <span className="font-semibold">Nota:</span> As fotografias e biografias dos professores serão atualizadas após a sessão fotográfica e envio dos dados biográficos pela UAI.
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
             {TEACHERS.map((teacher) => (
               <TeacherCard key={teacher.nombre} {...teacher} lang="pt" />
             ))}
