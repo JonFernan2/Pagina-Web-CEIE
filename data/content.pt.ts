@@ -193,7 +193,7 @@ export const HOME_PT = {
 export const PROGRAMS_PT = {
   meta: {
     title: 'Programas e Cursos | CEIE UAI',
-    description: 'Quatro programas de espanhol: Semestral, Intensivo, Fins Específicos e Individual. Níveis QECR A1–C1. UAI Viña del Mar.',
+    description: 'Três programas de espanhol: Programa Semestral de Espanhol, Programa Intensivo de Espanhol e Espanhol com Fins Específicos. Níveis QECR A1–C1. UAI Viña del Mar.',
   },
   hero: {
     h1: 'Nossos Programas de Espanhol',
@@ -282,8 +282,8 @@ export const ADMISSIONS_PT = {
       rows: [
         ['Programa Semestral de Espanhol',        'A1 (sem conhecimento prévio exigido)', 'Passaporte / documento de identidade. Foto 3×4.'],
         ['Programa Intensivo de Espanhol',        'A1 (sem conhecimento prévio exigido)', 'Passaporte / documento de identidade. Foto 3×4.'],
-        ['Espanhol com Fins Específicos',          'Conforme programa',                    'Carta da organização patrocinadora.'],
-        ['Programa Individual',       'Sem requisito',                        'Passaporte / documento de identidade. Objetivos de aprendizagem.'],
+        ['Espanhol com Fins Específicos: programas grupais para instituições', 'Conforme programa', 'Carta da organização patrocinadora.'],
+        ['Espanhol com Fins Específicos: cursos individuais personalizados', 'Sem requisito', 'Passaporte / documento de identidade. Objetivos de aprendizagem.'],
       ],
     },
   },
@@ -314,12 +314,12 @@ export const ADMISSIONS_PT = {
         detail: 'Hemisfério Sul — 1.º semestre: março – julho · 2.º semestre: agosto – dezembro',
       },
       {
-        program: 'Espanhol com Fins Específicos',
+        program: 'Espanhol com Fins Específicos: grupal',
         schedule: 'Data a coordenar entre as partes',
         detail: '',
       },
       {
-        program: 'Individual',
+        program: 'Espanhol com Fins Específicos: individual',
         schedule: 'Matrícula contínua',
         detail: 'Início imediato disponível mediante confirmação',
       },
