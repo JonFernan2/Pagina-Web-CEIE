@@ -107,14 +107,14 @@ export default function ProgramCard({
           aria-expanded={open}
           aria-controls={detailsId}
           className="flex items-center justify-between w-full text-xs font-semibold uppercase tracking-widest focus:outline-none focus-visible:ring-2"
-          style={{ color: '#6493b5' }}
+          style={{ color: '#1d1e20' }}
         >
           {open ? t.ocultar : t.detalles}
           <ChevronDown
             size={18}
             aria-hidden="true"
             className="transition-transform duration-200"
-            style={{ transform: open ? 'rotate(180deg)' : 'none' }}
+            style={{ transform: open ? 'rotate(180deg)' : 'none', color: '#6493b5' }}
           />
         </button>
 

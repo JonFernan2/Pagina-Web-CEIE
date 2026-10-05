@@ -50,7 +50,7 @@ export default function NoticiasPage() {
                   />
                 </div>
                 <div className="p-8 md:p-10">
-                  <p className="text-xs font-medium uppercase tracking-widest mb-3" style={{ color: '#6493b5' }}>
+                  <p className="text-xs font-medium uppercase tracking-widest mb-3" style={{ color: '#1d1e20' }}>
                     {article.date}
                   </p>
                   <h2 className="font-display font-bold text-negro text-2xl md:text-3xl mb-6 leading-tight">

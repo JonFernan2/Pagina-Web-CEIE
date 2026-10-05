@@ -108,7 +108,7 @@ export default function TeacherCard({
       <div className="px-5 py-5 flex flex-col gap-3 flex-1">
         <div>
           <h2 className="font-body text-lg font-semibold text-negro leading-tight">{nombre}</h2>
-          <p className="text-xs font-medium uppercase tracking-widest mt-1" style={{ color: '#6493b5' }}>
+          <p className="text-xs font-medium uppercase tracking-widest mt-1" style={{ color: '#1d1e20' }}>
             {rol[lang]}
           </p>
           <p className="text-xs mt-1" style={{ color: '#6B6B6B' }}>{titulo[lang]}</p>
@@ -120,14 +120,14 @@ export default function TeacherCard({
           aria-expanded={open}
           aria-controls={detailsId}
           className="flex items-center justify-between w-full text-xs font-semibold uppercase tracking-widest py-2 focus:outline-none focus-visible:ring-2"
-          style={{ color: '#6493b5', borderTop: '1px solid #E5E3DE', paddingTop: '12px' }}
+          style={{ color: '#1d1e20', borderTop: '1px solid #E5E3DE', paddingTop: '12px' }}
         >
           {open ? LABELS.ocultar[lang] : LABELS.verPerfil[lang]}
           <ChevronDown
             size={18}
             aria-hidden="true"
             className="transition-transform duration-200"
-            style={{ transform: open ? 'rotate(180deg)' : 'none' }}
+            style={{ transform: open ? 'rotate(180deg)' : 'none', color: '#6493b5' }}
           />
         </button>
 
@@ -152,8 +152,8 @@ export default function TeacherCard({
         {/* Email */}
         <a
           href={`mailto:${email}`}
-          className="text-xs mt-auto hover:underline"
-          style={{ color: '#6493b5' }}
+          className="text-xs mt-auto underline underline-offset-2 hover:no-underline"
+          style={{ color: '#1d1e20', textDecorationColor: '#6493b5' }}
         >
           {email}
         </a>

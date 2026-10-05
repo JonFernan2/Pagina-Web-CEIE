@@ -297,12 +297,12 @@ export default function HomePage() {
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
               </div>
               <div className="p-5 flex flex-col gap-3 flex-1">
-                <p className="text-xs font-medium uppercase tracking-widest" style={{ color: '#6493b5' }}>Agosto 2026</p>
+                <p className="text-xs font-medium uppercase tracking-widest" style={{ color: '#1d1e20' }}>Agosto 2026</p>
                 <h3 className="font-display font-bold text-negro text-lg leading-tight">Semana de la migración — 4° versión</h3>
                 <p className="text-sm leading-relaxed flex-1" style={{ color: '#6B6B6B' }}>
                   La cuarta edición de la Semana de la Migración UAI se realizará entre el 17 y 21 de agosto con actividades orientadas a memoria, identidad, territorio y desplazamiento en Santiago y Viña del Mar.
                 </p>
-                <span className="text-sm font-medium" style={{ color: '#6493b5' }}>Leer más →</span>
+                <span className="text-sm font-medium underline underline-offset-4" style={{ color: '#1d1e20', textDecorationColor: '#6493b5' }}>Leer más →</span>
               </div>
             </a>
             <a href="/noticias#congreso-prisma-2026"
@@ -315,12 +315,12 @@ export default function HomePage() {
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
               </div>
               <div className="p-5 flex flex-col gap-3 flex-1">
-                <p className="text-xs font-medium uppercase tracking-widest" style={{ color: '#6493b5' }}>2026</p>
+                <p className="text-xs font-medium uppercase tracking-widest" style={{ color: '#1d1e20' }}>2026</p>
                 <h3 className="font-display font-bold text-negro text-lg leading-tight">Congreso Internacional PRISMA</h3>
                 <p className="text-sm leading-relaxed flex-1" style={{ color: '#6B6B6B' }}>
                   VI Congreso Internacional PRISMA. El español hoy: Perspectivas, transformaciones y alcances de una lengua global.
                 </p>
-                <span className="text-sm font-medium" style={{ color: '#6493b5' }}>Leer más →</span>
+                <span className="text-sm font-medium underline underline-offset-4" style={{ color: '#1d1e20', textDecorationColor: '#6493b5' }}>Leer más →</span>
               </div>
             </a>
           </div>

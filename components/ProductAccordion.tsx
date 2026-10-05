@@ -101,7 +101,7 @@ export default function ProductAccordion({ programs, lang }: ProductAccordionPro
                   <div>
                     <h2
                       className="text-xs font-semibold uppercase tracking-widest mb-2"
-                      style={{ color: '#6493b5' }}
+                      style={{ color: '#1d1e20' }}
                     >
                       {lbl.objetivo}
                     </h2>
@@ -116,7 +116,7 @@ export default function ProductAccordion({ programs, lang }: ProductAccordionPro
                   <div>
                     <h2
                       className="text-xs font-semibold uppercase tracking-widest mb-3"
-                      style={{ color: '#6493b5' }}
+                      style={{ color: '#1d1e20' }}
                     >
                       {lbl.cursos}
                     </h2>
