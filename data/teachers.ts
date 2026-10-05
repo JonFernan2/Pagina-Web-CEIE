@@ -163,7 +163,7 @@ export const TEACHERS: TeacherData[] = [
     email: 'marisol.reyes@edu.uai.cl',
     foto: '/images/docente-marisol-reyes.jpg',
     fotoPendiente: false,
-    fotoPosition: 'center top',
+    fotoPosition: 'center 38%',
   },
   {
     nombre: 'Carolina Villalobos',
@@ -214,7 +214,7 @@ export const TEACHERS: TeacherData[] = [
     email: 'carolina.villalobos@edu.uai.cl',
     foto: '/images/docente-carolina-villalobos.jpg',
     fotoPendiente: false,
-    fotoPosition: 'center top',
+    fotoPosition: 'center 12%',
   },
   {
     nombre: 'Juan Ignacio Salinas',
