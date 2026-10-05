@@ -17,13 +17,13 @@ const SPACE_IMAGES: SpaceImages[] = [
 ]
 
 const LAUNCH_IMAGES_ZH = [
-  { src: '/images/galeria-ceie-lanzamiento-auditorio.jpg', alt: 'CEIE UAI成立典礼——礼堂全体合影，背景为UAI字样与各国国旗', colSpan: 2, height: 320, objectPosition: 'center' },
-  { src: '/images/galeria-ceie-equipo.jpg', alt: 'CEIE UAI团队于开幕展板前合影', height: 320, objectPosition: 'top' },
-  { src: '/images/galeria-ceie-lanzamiento-coctel.jpg', alt: 'CEIE成立典礼欢迎招待会，UAI Viña del Mar大厅', height: 220, objectPosition: 'center' },
-  { src: '/images/galeria-ceie-lanzamiento-grupo.jpg', alt: 'CEIE UAI成立典礼上的国际学员与师资合影', height: 220, objectPosition: 'top' },
-  { src: '/images/galeria-ceie-lanzamiento-kahoot-1.jpg', alt: 'CEIE UAI开幕Kahoot互动游戏，舞台背景展示各国国旗', height: 220, objectPosition: 'center' },
-  { src: '/images/actividad-exterior-vina.jpg', alt: 'CEIE国际学员在UAI校园花园，背景为Viña del Mar城市风光', colSpan: 2, height: 220, objectPosition: 'center' },
-  { src: '/images/galeria-ceie-equipo-admin.jpg', alt: 'CEIE UAI行政团队在Viña del Mar校区', height: 220, objectPosition: 'center' },
+  { src: '/images/galeria-ceie-lanzamiento-grupo.jpg', alt: 'CEIE UAI成立典礼——礼堂全体合影，背景为UAI字样与各国国旗', objectPosition: 'center' },
+  { src: '/images/galeria-ceie-equipo.jpg', alt: 'CEIE UAI团队于开幕展板前合影', objectPosition: 'top' },
+  { src: '/images/galeria-ceie-lanzamiento-coctel.jpg', alt: 'CEIE UAI开幕活动中Kahoot互动游戏获胜者登台合影', objectPosition: 'center' },
+  { src: '/images/galeria-ceie-lanzamiento-auditorio.jpg', alt: 'CEIE UAI成立典礼上的国际学员与师资合影', objectPosition: 'center' },
+  { src: '/images/galeria-ceie-lanzamiento-kahoot-1.jpg', alt: 'CEIE UAI开幕Kahoot互动游戏，舞台背景展示各国国旗', objectPosition: 'center' },
+  { src: '/images/espacio-aula-principal.jpg', alt: 'CEIE国际学员在UAI校园花园，背景为Viña del Mar城市风光', objectPosition: 'center' },
+  { src: '/images/galeria-ceie-equipo-admin.jpg', alt: 'CEIE UAI行政团队在Viña del Mar校区', objectPosition: 'center' },
 ]
 
 export const metadata: Metadata = {
@@ -113,12 +113,14 @@ export default function AboutZHPage() {
         spaces={d.sections.espacios.spaces}
         title={d.sections.espacios.title}
         spaceImages={SPACE_IMAGES}
+        lang="zh"
       />
 
       <LaunchGallery
         title="开幕活动图集"
         subtitle="CEIE在阿道夫·伊瓦涅斯大学Viña del Mar校区正式成立典礼的影像记录。"
         images={LAUNCH_IMAGES_ZH}
+        lang="zh"
       />
 
       <Footer lang="zh" />

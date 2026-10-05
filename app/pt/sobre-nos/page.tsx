@@ -17,13 +17,13 @@ const SPACE_IMAGES: SpaceImages[] = [
 ]
 
 const LAUNCH_IMAGES_PT = [
-  { src: '/images/galeria-ceie-lanzamiento-auditorio.jpg', alt: 'Inauguração do CEIE UAI — grupo completo no auditório com letras UAI e bandeiras internacionais', colSpan: 2, height: 320, objectPosition: 'center' },
-  { src: '/images/galeria-ceie-equipo.jpg', alt: 'Equipe CEIE UAI ao lado do painel do lançamento Del Desierto a la Patagonia', height: 320, objectPosition: 'top' },
-  { src: '/images/galeria-ceie-lanzamiento-coctel.jpg', alt: 'Coquetel de boas-vindas do lançamento CEIE no lobby da UAI Viña del Mar', height: 220, objectPosition: 'center' },
-  { src: '/images/galeria-ceie-lanzamiento-grupo.jpg', alt: 'Estudantes internacionais e acadêmicos na cerimônia de lançamento do CEIE UAI', height: 220, objectPosition: 'top' },
-  { src: '/images/galeria-ceie-lanzamiento-kahoot-1.jpg', alt: 'Atividade de integração Kahoot durante o lançamento do CEIE UAI com bandeiras de países', height: 220, objectPosition: 'center' },
-  { src: '/images/actividad-exterior-vina.jpg', alt: 'Estudantes internacionais do CEIE nos jardins do campus UAI com vista para Viña del Mar', colSpan: 2, height: 220, objectPosition: 'center' },
-  { src: '/images/galeria-ceie-equipo-admin.jpg', alt: 'Equipe administrativa do CEIE UAI no campus Viña del Mar', height: 220, objectPosition: 'center' },
+  { src: '/images/galeria-ceie-lanzamiento-grupo.jpg', alt: 'Inauguração do CEIE UAI — grupo completo no auditório com letras UAI e bandeiras internacionais', objectPosition: 'center' },
+  { src: '/images/galeria-ceie-equipo.jpg', alt: 'Equipe CEIE UAI ao lado do painel do lançamento Del Desierto a la Patagonia', objectPosition: 'top' },
+  { src: '/images/galeria-ceie-lanzamiento-coctel.jpg', alt: 'Vencedores da atividade Kahoot no palco durante o lançamento do CEIE UAI', objectPosition: 'center' },
+  { src: '/images/galeria-ceie-lanzamiento-auditorio.jpg', alt: 'Estudantes internacionais e acadêmicos na cerimônia de lançamento do CEIE UAI', objectPosition: 'center' },
+  { src: '/images/galeria-ceie-lanzamiento-kahoot-1.jpg', alt: 'Atividade de integração Kahoot durante o lançamento do CEIE UAI com bandeiras de países', objectPosition: 'center' },
+  { src: '/images/espacio-aula-principal.jpg', alt: 'Estudantes internacionais do CEIE nos jardins do campus UAI com vista para Viña del Mar', objectPosition: 'center' },
+  { src: '/images/galeria-ceie-equipo-admin.jpg', alt: 'Equipe administrativa do CEIE UAI no campus Viña del Mar', objectPosition: 'center' },
 ]
 
 export const metadata: Metadata = {
@@ -113,12 +113,14 @@ export default function SobreNosPTPage() {
         spaces={d.sections.espacios.spaces}
         title={d.sections.espacios.title}
         spaceImages={SPACE_IMAGES}
+        lang="pt"
       />
 
       <LaunchGallery
         title="Galeria do Lançamento"
         subtitle="Imagens do ato oficial de inauguração do CEIE na Universidad Adolfo Ibáñez, Viña del Mar."
         images={LAUNCH_IMAGES_PT}
+        lang="pt"
       />
 
       <Footer lang="pt" />

@@ -19,9 +19,10 @@ interface SpacesGalleryProps {
   spaces: Space[]
   title: string
   spaceImages: SpaceImages[]
+  lang?: 'es' | 'en' | 'pt' | 'zh'
 }
 
-export default function SpacesGallery({ spaces, title, spaceImages }: SpacesGalleryProps) {
+export default function SpacesGallery({ spaces, title, spaceImages, lang = 'es' }: SpacesGalleryProps) {
   const [lightbox, setLightbox] = useState<{ src: string; alt: string } | null>(null)
 
   return (
@@ -64,7 +65,7 @@ export default function SpacesGallery({ spaces, title, spaceImages }: SpacesGall
       </div>
 
       {lightbox && (
-        <ImageLightbox src={lightbox.src} alt={lightbox.alt} onClose={() => setLightbox(null)} />
+        <ImageLightbox src={lightbox.src} alt={lightbox.alt} lang={lang} onClose={() => setLightbox(null)} />
       )}
     </section>
   )
