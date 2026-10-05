@@ -146,16 +146,16 @@ export default function ProgramCard({
             </div>
           </div>
         </div>
-        </div>
 
         {/* Price */}
-        <div className="mt-auto pt-4" style={{ borderTop: '1px solid #E5E3DE' }}>
+        <div className="pt-4" style={{ borderTop: '1px solid #E5E3DE' }}>
           <p className="text-xs uppercase tracking-widest mb-1" style={{ color: '#6B6B6B' }}>
             {t.precio}
           </p>
           <p className="text-xl font-bold" style={{ color: '#6493b5' }}>
             {precioReferencial}
           </p>
+        </div>
         </div>
 
         <Link
