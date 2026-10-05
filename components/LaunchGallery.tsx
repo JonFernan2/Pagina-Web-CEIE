@@ -111,16 +111,11 @@ export default function LaunchGallery({ title, subtitle, images, lang = 'es' }: 
           ))}
 
           <div
-            className="absolute inset-x-0 bottom-0 z-10 flex items-end justify-between gap-4 px-4 md:px-6 pb-4 pt-16 pointer-events-none"
-            style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0))' }}
+            className="absolute bottom-3 right-3 z-10 flex items-center gap-2 px-2.5 py-1 pointer-events-none"
+            style={{ background: 'rgba(29,30,32,0.7)', borderRadius: '999px' }}
           >
-            <p className="font-body text-sm md:text-base text-white leading-snug max-w-3xl" aria-live="polite">
-              {current.alt}
-            </p>
-            <div className="flex items-center gap-3 shrink-0">
-              <span className="font-body text-xs text-white/80">{index + 1} / {count}</span>
-              <Expand size={16} className="text-white/80" aria-hidden="true" />
-            </div>
+            <span className="font-body text-xs text-white/90">{index + 1} / {count}</span>
+            <Expand size={14} className="text-white/90" aria-hidden="true" />
           </div>
 
           <button type="button" onClick={prev} className={`${arrow} left-3`} style={{ background: 'rgba(29,30,32,0.75)', color: '#fff' }} aria-label={t.prev}>
