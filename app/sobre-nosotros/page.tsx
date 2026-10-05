@@ -2,20 +2,19 @@ import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
-import SpacesGallery from '@/components/SpacesGallery'
+import SpacesGallery, { type SpaceImages } from '@/components/SpacesGallery'
 import LaunchGallery from '@/components/LaunchGallery'
 import { ABOUT_ES } from '@/data/content.es'
 import { DIRECTORIO } from '@/data/directorio'
 
-const SPACE_IMAGES = [
-  '/images/actividad-exterior-vina.jpg',
-  '/images/galeria-ceie-spanish-corner.jpg',
-  '/images/espacio-seminario-1.jpg',
-  '/images/campus-vina-aerea.jpg',
-  '/images/espacio-aula-principal.jpg',
+const SPACE_IMAGES: SpaceImages[] = [
+  { srcs: ['/images/espacio-seminario-1.jpg'], position: 'center 42%' },
+  { srcs: ['/images/galeria-ceie-spanish-corner.jpg'] },
+  { srcs: ['/images/sala-estudio-2.jpg'] },
+  { srcs: ['/images/gimnasio-uai.jpg'] },
+  { srcs: ['/images/campus-vina-aerea.jpg'], wide: true },
+  { srcs: ['/images/espacio-aula-principal.jpg', '/images/espacio-sala-conferencias.jpg'], wide: true },
 ]
-
-const ACTIVIDADES_IMG2 = '/images/espacio-sala-conferencias.jpg'
 
 const LAUNCH_IMAGES_ES = [
   { src: '/images/galeria-ceie-lanzamiento-auditorio.jpg', alt: 'Acto de inauguración del CEIE UAI — grupo completo en auditorio con letras UAI y banderas internacionales', colSpan: 2, height: 320, objectPosition: 'center' },
@@ -48,6 +47,9 @@ export default function SobreNosotrosPage() {
           <h1 className="font-display font-bold text-white text-4xl md:text-5xl">
             {d.hero.h1}
           </h1>
+          <p className="font-body text-base md:text-lg leading-relaxed text-white/80 mt-4 max-w-3xl">
+            {d.hero.subtitle}
+          </p>
         </div>
       </div>
 
@@ -108,54 +110,10 @@ export default function SobreNosotrosPage() {
               <p className="text-base leading-relaxed" style={{ color: '#2D2D2D' }}>{d.sections.mision.vision}</p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Contexto institucional */}
-      <section style={{ background: '#C7C2ba' }} className="py-16">
-        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
-          <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-8">
-            {d.sections.contexto.title}
-          </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-            <div>
-              <p className="text-base leading-relaxed mb-4" style={{ color: '#2D2D2D' }}>
-                {d.sections.contexto.p1}
-              </p>
-              <p className="text-base leading-relaxed" style={{ color: '#2D2D2D' }}>
-                {d.sections.contexto.p2}
-              </p>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              {d.sections.contexto.kpis.map((kpi) => (
-                <div
-                  key={kpi.label}
-                  className="text-center p-5"
-                  style={{ background: '#1d1e20', borderRadius: '4px' }}
-                >
-                  <p className="font-display font-bold text-3xl mb-1" style={{ color: '#6493b5' }}>
-                    {kpi.value}
-                  </p>
-                  <p className="text-sm text-white/70">{kpi.label}</p>
-                </div>
-              ))}
-            </div>
+          <div className="mt-8 p-6" style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#FFFFFF' }}>
+            <h3 className="font-body text-lg font-semibold mb-3 text-negro">Valores</h3>
+            <p className="text-base leading-relaxed" style={{ color: '#2D2D2D' }}>{d.sections.mision.valores}</p>
           </div>
-        </div>
-      </section>
-
-      {/* Acreditación SACIC */}
-      <section style={{ background: '#FFFFFF' }} className="py-16">
-        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 max-w-3xl">
-          <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-6">
-            {d.sections.sacic.title}
-          </h2>
-          <p className="text-base leading-relaxed mb-4" style={{ color: '#2D2D2D' }}>
-            {d.sections.sacic.p1}
-          </p>
-          <p className="text-base leading-relaxed" style={{ color: '#2D2D2D' }}>
-            {d.sections.sacic.p2}
-          </p>
         </div>
       </section>
 
@@ -163,7 +121,6 @@ export default function SobreNosotrosPage() {
         spaces={d.sections.espacios.spaces}
         title={d.sections.espacios.title}
         spaceImages={SPACE_IMAGES}
-        activitiesImg2={ACTIVIDADES_IMG2}
       />
 
       <LaunchGallery

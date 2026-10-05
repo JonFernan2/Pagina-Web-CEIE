@@ -210,31 +210,18 @@ export const PROGRAMS_PT = {
 export const ABOUT_PT = {
   meta: {
     title: 'Sobre Nós | CEIE UAI',
-    description: 'Conheça o CEIE: missão, processo de acreditação, instalações e contexto institucional da UAI.',
+    description: 'Conheça o CEIE: missão, visão, valores, equipe e instalações no campus Viña del Mar da UAI.',
   },
-  hero: { h1: 'Sobre o CEIE' },
+  hero: {
+    h1: 'Sobre o CEIE',
+    subtitle: 'O Centro de Ensino Integral do Espanhol UAI é uma unidade acadêmica da Universidad Adolfo Ibáñez, articulada entre a Faculdade de Artes Liberais e a Direção de Relações Internacionais. Concebe-se como um espaço de ensino do espanhol como língua estrangeira, de vinculação com a comunidade e de projeção internacional, fundado na excelência acadêmica e no selo distintivo das Artes Liberais.',
+  },
   sections: {
     mision: {
-      title: 'Missão e visão',
-      mision: 'Oferecer programas de ensino de espanhol como língua estrangeira de alta qualidade, sustentados na abordagem comunicativa do Instituto Cervantes e nos valores formativos das Artes Liberais da Universidad Adolfo Ibáñez.',
-      vision: 'Ser o centro de referência no ensino de espanhol no Pacífico Sul, reconhecido pelo seu rigor acadêmico, acreditação internacional e vinculação cultural com o Chile.',
-    },
-    contexto: {
-      title: 'Contexto institucional',
-      p1: 'O CEIE opera dentro da Direção de Relações Internacionais da UAI, em colaboração acadêmica com a Faculdade de Artes Liberais. Foi fundado em 2026 com a missão de atender estudantes internacionais, profissionais, missões diplomáticas e instituições parceiras.',
-      p2: 'A UAI possui Acreditação de Excelência CNA e reconhecimento Triple Crown, situando-a entre as universidades latino-americanas com acreditação simultânea de AACSB, AMBA e EQUIS. O centro opera a partir do campus de Viña del Mar, com presença em Santiago.',
-      kpis: [
-        { value: '2026', label: 'Ano de fundação' },
-        { value: '4', label: 'Programas de espanhol' },
-        { value: '20+', label: 'Países representados' },
-        { value: 'A1–C1', label: 'Níveis QECR' },
-      ],
-    },
-    sacic: {
-      title: 'Acreditação SACIC',
-      p1: 'O CEIE encontra-se em processo de obtenção da acreditação SACIC do Instituto Cervantes, o padrão internacional de qualidade para centros de ensino de espanhol como língua estrangeira. O SACIC avalia a qualidade docente, o desenho curricular, as instalações físicas e digitais, e a transparência institucional.',
-      p2: 'A fase 2 de avaliação em sala de aula por avaliadores do Instituto Cervantes está programada para outubro-novembro de 2026. A acreditação é um compromisso contínuo: uma vez obtida, requer renovação periódica.',
-      status: 'Estado atual: Em processo · Fase 2 de avaliação programada para outubro-novembro de 2026',
+      title: 'Missão, visão e valores',
+      mision: 'Proporcionar aos nossos estudantes os conhecimentos linguísticos e interculturais essenciais para uma formação pessoal, acadêmica e profissional de qualidade, combinando o ensino do espanhol com a experiência formativa das Artes Liberais. Criamos um ambiente acadêmico multilíngue que promove o desenvolvimento dos estudantes como agentes sociais, aprendentes autônomos e falantes interculturais.',
+      vision: 'Consolidar-nos como um centro competitivo no ensino do espanhol, comprometido com a excelência acadêmica e a qualidade no serviço. Aspiramos a destacar-nos pela nossa melhoria contínua e pelo nosso papel relevante dentro de uma comunidade universitária de referência em nível nacional e internacional, com um enfoque diferenciador nas Artes Liberais.',
+      valores: 'Os valores institucionais que orientam o Centro incluem o sentido de pertencimento, a ética profissional e o respeito, a tolerância à diversidade, uma atitude aberta à inovação educativa, e a liderança, a iniciativa e o profissionalismo em todas as suas atividades.',
     },
     espacios: {
       title: 'Nossas Instalações',
@@ -252,7 +239,7 @@ export const ABOUT_PT = {
         {
           nombre: 'Salas de estudo',
           descripcion: 'Espaços de trabalho grupal e individual no Edifício B do campus. Acesso mediante reserva prévia pelo WebC.',
-          alt: 'Sala de estudo grupal no campus UAI Viña del Mar, com mesas de trabalho e acesso a wi-fi.',
+          alt: 'Estudantes trabalhando diante de uma lousa em uma sala de estudo do campus UAI Viña del Mar.',
         },
         {
           nombre: 'Ginásio e atividades esportivas',
@@ -267,7 +254,7 @@ export const ABOUT_PT = {
         {
           nombre: 'Atividades culturais',
           descripcion: 'Excursões às vinícolas do Vale de Casablanca, roteiros pelo patrimônio de Valparaíso e conversatórios com acadêmicos da UAI. Parte integrada de todos os programas.',
-          alt: 'Estudantes internacionais do CEIE participando de atividade cultural em Valparaíso, Chile.',
+          alt: 'Estudantes internacionais do CEIE em atividades culturais e acadêmicas no campus UAI Viña del Mar.',
         },
       ],
     },
