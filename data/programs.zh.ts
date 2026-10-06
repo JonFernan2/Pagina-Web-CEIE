@@ -109,7 +109,8 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
       },
       {
         titulo: '取消政策',
-        descripcion: '提前45天以上取消：不收费。提前15–44天：收取50%费用。提前15天以内：不予退款。不可抗力情况个别评估。请发送书面通知至 caroline.cortes@uai.cl。',
+        descripcion: '取消须以书面形式发送至 caroline.cortes@uai.cl。具体期限和费用详见取消政策。',
+        enlace: { label: '查看取消政策', href: '/zh/terms-and-conditions' },
       },
     ],
     participantes: '5人',
@@ -155,7 +156,7 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
           '本强化课程着重培养西班牙语的基础语法结构。通过积极、注重实践的教学方法，学员将掌握在日常交际情境中理解和运用该语言主要结构所需的工具。',
           '课程涵盖核心语法内容，融合词汇、理解以及口头和书面表达，并通过实践活动让学员在真实交际情境中运用所学。强化形式有助于逐步巩固学习成果，为继续提升西班牙语水平打下坚实基础。',
         ],
-        ficha: [{ label: '学时', value: '22学时（2周）· 40学时（4周）' }, { label: '学分', value: '2（2周）· 4（4周）' }, { label: '时长', value: '2周或4周' }, { label: '最少学员人数', value: '5' }, { label: '最多学员人数', value: '15' }, { label: '校区', value: 'Viña del Mar' }, { label: '价格', value: '900美元（2周）· 1,800美元（4周）' }],
+        ficha: [{ label: '学时', value: '22学时（2周）· 40学时（4周）' }, { label: '学分', value: '2（2周）· 4（4周）' }],
         contenidos: [],
       },
       {
@@ -164,7 +165,7 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
           '本强化课程着重培养西班牙语基础交际能力，将语言学习与智利及拉丁美洲文化的认识相结合。学员将掌握在日常情境中以口头和书面形式进行简单交流的工具。',
           '通过实践活动和沉浸式体验，学员有机会在真实情境中使用西班牙语，同时探索智利的日常生活、社会与文化。课程包含在Viña del Mar和瓦尔帕莱索开展的文化活动，促进跨文化反思，帮助学员更深入地了解其学习经历所处的环境。',
         ],
-        ficha: [{ label: '学时', value: '22学时（2周）· 40学时（4周）' }, { label: '学分', value: '2（2周）· 4（4周）' }, { label: '时长', value: '2周或4周' }, { label: '最少学员人数', value: '5' }, { label: '最多学员人数', value: '15' }, { label: '校区', value: 'Viña del Mar' }, { label: '价格', value: '900美元（2周）· 1,800美元（4周）' }],
+        ficha: [{ label: '学时', value: '22学时（2周）· 40学时（4周）' }, { label: '学分', value: '2（2周）· 4（4周）' }],
         contenidos: [],
       },
     ],
@@ -188,7 +189,8 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
       },
       {
         titulo: '取消政策',
-        descripcion: '提前45天以上取消：不收费。提前15–44天：收取50%费用。提前15天以内：不予退款。不可抗力情况个别评估。请发送书面通知至 caroline.cortes@uai.cl。',
+        descripcion: '取消须以书面形式发送至 caroline.cortes@uai.cl。具体期限和费用详见取消政策。',
+        enlace: { label: '查看取消政策', href: '/zh/terms-and-conditions' },
       },
     ],
     participantes: '5人',
@@ -294,7 +296,8 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
       },
       {
         titulo: '课程取消',
-        descripcion: '提前45天以上取消：不收费。提前15–44天：收取50%费用。提前15天以内：不予退款。不可抗力情况个别评估。请发送书面通知至 caroline.cortes@uai.cl。',
+        descripcion: '取消须以书面形式发送至 caroline.cortes@uai.cl。具体期限和费用详见取消政策。',
+        enlace: { label: '查看取消政策', href: '/zh/terms-and-conditions' },
       },
     ],
     participantes: '根据机构协议而定',

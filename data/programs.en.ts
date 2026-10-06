@@ -109,7 +109,8 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
       },
       {
         titulo: 'Cancellation',
-        descripcion: '45+ days in advance: no charge. 15–44 days: 50% charge. Less than 15 days: no refund. Force majeure evaluated individually. Written cancellation to caroline.cortes@uai.cl.',
+        descripcion: 'Cancellations must be requested in writing to caroline.cortes@uai.cl. Deadlines and charges are set out in the cancellation policy.',
+        enlace: { label: 'See cancellation policy', href: '/en/terms-and-conditions' },
       },
     ],
     participantes: '5 people',
@@ -155,7 +156,7 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
           'An intensive course focused on developing the fundamental grammatical structures of Spanish. Through an active, applied methodology, students acquire the tools they need to understand and use the language\'s main structures in everyday communicative situations.',
           'The course covers essential grammar content, integrating vocabulary, comprehension, and oral and written production, with practical activities that apply the content in real communicative contexts. The intensive format supports the progressive consolidation of learning and provides a solid foundation for continuing to advance in Spanish.',
         ],
-        ficha: [{ label: 'Hours', value: '22 h (2 weeks) · 40 h (4 weeks)' }, { label: 'Credits', value: '2 (2 weeks) · 4 (4 weeks)' }, { label: 'Duration', value: '2 or 4 weeks' }, { label: 'Minimum students', value: '5' }, { label: 'Maximum students', value: '15' }, { label: 'Campus', value: 'Viña del Mar' }, { label: 'Price', value: 'USD 900 (2 weeks) · USD 1,800 (4 weeks)' }],
+        ficha: [{ label: 'Hours', value: '22 h (2 weeks) · 40 h (4 weeks)' }, { label: 'Credits', value: '2 (2 weeks) · 4 (4 weeks)' }],
         contenidos: [],
       },
       {
@@ -164,7 +165,7 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
           'An intensive course focused on developing basic communicative skills in Spanish, combining language learning with an introduction to Chilean and Latin American culture. Students develop tools to communicate simply in everyday situations, both orally and in writing.',
           'Through practical activities and immersion experiences, students have the opportunity to use Spanish in real contexts while exploring aspects of everyday life, society, and culture in Chile. The course includes cultural activities in Viña del Mar and Valparaíso, encouraging intercultural reflection and a closer understanding of the context in which their learning experience takes place.',
         ],
-        ficha: [{ label: 'Hours', value: '22 h (2 weeks) · 40 h (4 weeks)' }, { label: 'Credits', value: '2 (2 weeks) · 4 (4 weeks)' }, { label: 'Duration', value: '2 or 4 weeks' }, { label: 'Minimum students', value: '5' }, { label: 'Maximum students', value: '15' }, { label: 'Campus', value: 'Viña del Mar' }, { label: 'Price', value: 'USD 900 (2 weeks) · USD 1,800 (4 weeks)' }],
+        ficha: [{ label: 'Hours', value: '22 h (2 weeks) · 40 h (4 weeks)' }, { label: 'Credits', value: '2 (2 weeks) · 4 (4 weeks)' }],
         contenidos: [],
       },
     ],
@@ -188,7 +189,8 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
       },
       {
         titulo: 'Cancellation',
-        descripcion: '45+ days in advance: no charge. 15–44 days: 50% charge. Less than 15 days: no refund. Force majeure evaluated individually. Written cancellation to caroline.cortes@uai.cl.',
+        descripcion: 'Cancellations must be requested in writing to caroline.cortes@uai.cl. Deadlines and charges are set out in the cancellation policy.',
+        enlace: { label: 'See cancellation policy', href: '/en/terms-and-conditions' },
       },
     ],
     participantes: '5 people',
@@ -294,7 +296,8 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
       },
       {
         titulo: 'Program cancellation',
-        descripcion: '45+ days before start date: no charge. 15–44 days: 50% fee. Less than 15 days: no refund. Force majeure evaluated individually. Written cancellation to caroline.cortes@uai.cl.',
+        descripcion: 'Cancellations must be requested in writing to caroline.cortes@uai.cl. Deadlines and charges are set out in the cancellation policy.',
+        enlace: { label: 'See cancellation policy', href: '/en/terms-and-conditions' },
       },
     ],
     participantes: 'Variable according to institutional agreement',

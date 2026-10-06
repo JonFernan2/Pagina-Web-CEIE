@@ -218,9 +218,9 @@ export default function HomePTPage() {
               </div>
               <div className="p-5 flex flex-col gap-3 flex-1">
                 <p className="text-xs font-medium uppercase tracking-widest" style={{ color: '#1d1e20' }}>Agosto 2026</p>
-                <h3 className="font-display font-bold text-negro text-lg leading-tight">Semana da Migração — 4ª edição</h3>
+                <h3 className="font-display font-bold text-negro text-lg leading-tight">Semana da Migração — 4ª Edição</h3>
                 <p className="text-sm leading-relaxed flex-1" style={{ color: '#6B6B6B' }}>
-                  A quarta edição da Semana da Migração UAI ocorrerá entre 17 e 21 de agosto com atividades sobre memória, identidade, território e deslocamento em Santiago e Viña del Mar.
+                  A quarta edição da Semana da Migração UAI ocorreu entre 17 e 21 de agosto com atividades sobre memória, identidade, território e deslocamento em Santiago e Viña del Mar.
                 </p>
                 <span className="text-sm font-medium underline underline-offset-4" style={{ color: '#1d1e20', textDecorationColor: '#6493b5' }}>Leia mais →</span>
               </div>

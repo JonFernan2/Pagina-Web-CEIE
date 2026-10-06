@@ -220,7 +220,7 @@ export default function HomeENPage() {
                 <p className="text-xs font-medium uppercase tracking-widest" style={{ color: '#1d1e20' }}>August 2026</p>
                 <h3 className="font-display font-bold text-negro text-lg leading-tight">Migration Week — 4th Edition</h3>
                 <p className="text-sm leading-relaxed flex-1" style={{ color: '#6B6B6B' }}>
-                  The fourth edition of UAI Migration Week will take place from August 17–21 with activities focused on memory, identity, territory, and displacement in Santiago and Viña del Mar.
+                  The fourth edition of UAI Migration Week took place from August 17–21 with activities focused on memory, identity, territory, and displacement in Santiago and Viña del Mar.
                 </p>
                 <span className="text-sm font-medium underline underline-offset-4" style={{ color: '#1d1e20', textDecorationColor: '#6493b5' }}>Read more →</span>
               </div>
