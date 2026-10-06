@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import ImageLightbox from './ImageLightbox'
+import BusRoutes from './BusRoutes'
 
 interface Space {
   nombre: string
@@ -13,6 +14,7 @@ export interface SpaceImages {
   srcs: string[]
   wide?: boolean
   position?: string
+  busRoutes?: boolean
 }
 
 interface SpacesGalleryProps {
@@ -31,7 +33,7 @@ export default function SpacesGallery({ spaces, title, spaceImages, lang = 'es' 
         <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-8">{title}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {spaces.map((space, i) => {
-            const { srcs, wide, position = 'center' } = spaceImages[i]
+            const { srcs, wide, position = 'center', busRoutes } = spaceImages[i]
             return (
             <div
               key={space.nombre}
@@ -57,6 +59,7 @@ export default function SpacesGallery({ spaces, title, spaceImages, lang = 'es' 
               <div className="p-5 flex-1">
                 <h3 className="font-body text-lg font-semibold text-negro mb-2">{space.nombre}</h3>
                 <p className="text-sm leading-relaxed" style={{ color: '#2D2D2D' }}>{space.descripcion}</p>
+                {busRoutes && <BusRoutes lang={lang} />}
               </div>
             </div>
             )
