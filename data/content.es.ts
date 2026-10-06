@@ -158,6 +158,7 @@ export const HOME_ES = {
   accreditation: {
     title: 'Calidad certificada',
     p2: 'La Escuela de Negocios de la Universidad Adolfo Ibáñez cuenta con la Triple Corona (Triple Crown): las acreditaciones internacionales AACSB, EQUIS y AMBA, las tres más exigentes para escuelas de negocios, que muy pocas instituciones en el mundo logran reunir.',
+    p3: 'Además, la UAI es la única universidad privada no tradicional de Chile con acreditación ABET, el estándar internacional para carreras de ingeniería y tecnología, otorgada a Ingeniería Civil Informática, Ingeniería Civil e Ingeniería Civil Industrial. Este reconocimiento facilita la homologación del título en Estados Unidos y otros países.',
     badges: [
       'CNA Acreditación de Excelencia',
       'Triple Crown Recognition',

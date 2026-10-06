@@ -99,6 +99,10 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
         descripcion: 'Nível mínimo exigido para o curso selecionado (exceto A1). Teste de diagnóstico obrigatório antes do início do semestre, incluído na matrícula do curso.',
       },
       {
+        titulo: 'Abertura de cursos',
+        descripcion: 'A abertura de cada curso está sujeita a um mínimo de cinco estudantes matriculados por nível.',
+      },
+      {
         titulo: 'Presença',
         descripcion: 'Mínimo de 80% de frequência para receber o certificado de conclusão.',
       },
@@ -172,6 +176,10 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
       {
         titulo: 'Requisito de entrada',
         descripcion: 'Nível mínimo exigido para o curso selecionado (exceto A1). Teste de diagnóstico obrigatório antes do início do programa, incluído na matrícula do curso.',
+      },
+      {
+        titulo: 'Abertura de cursos',
+        descripcion: 'A abertura de cada curso está sujeita a um mínimo de cinco estudantes matriculados por nível.',
       },
       {
         titulo: 'Presença',
