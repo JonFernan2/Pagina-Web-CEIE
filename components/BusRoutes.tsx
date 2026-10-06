@@ -103,7 +103,7 @@ export default function BusRoutes({ lang = 'es' }: { lang?: Lang }) {
 
       {open && (
         <div
-          className="fixed inset-0 z-50 flex items-start md:items-center justify-center overflow-y-auto p-4"
+          className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto p-3 md:p-6"
           style={{ background: 'rgba(0,0,0,0.75)' }}
           onClick={() => setOpen(false)}
         >
@@ -111,7 +111,7 @@ export default function BusRoutes({ lang = 'es' }: { lang?: Lang }) {
             role="dialog"
             aria-modal="true"
             aria-labelledby={titleId}
-            className="relative w-full max-w-5xl my-4 font-body"
+            className="relative w-full max-w-6xl m-auto font-body"
             style={{ background: '#FFFFFF', borderRadius: '4px' }}
             onClick={(e) => e.stopPropagation()}
           >
@@ -129,12 +129,14 @@ export default function BusRoutes({ lang = 'es' }: { lang?: Lang }) {
               </button>
             </div>
 
-            <div className="p-4 md:p-6 flex flex-col gap-5">
-              <a href={MAP_IMG} target="_blank" rel="noopener noreferrer" className="block cursor-zoom-in" style={{ borderRadius: '4px', overflow: 'hidden' }}>
-                <img src={MAP_IMG} alt={t.mapAlt} className="w-full h-auto" />
+            <div className="p-4 md:p-6 grid gap-5 lg:grid-cols-[minmax(0,1fr)_320px] items-start">
+              <a href={MAP_IMG} target="_blank" rel="noopener noreferrer" className="block cursor-zoom-in">
+                <img src={MAP_IMG} alt={t.mapAlt} className="block w-full h-auto lg:max-h-[calc(100vh-10rem)] object-contain" style={{ borderRadius: '4px' }} />
               </a>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="flex flex-col gap-4">
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
                 {t.routes.map((r, i) => (
                   <div key={i} className="p-4" style={{ border: '1px solid #E5E3DE', borderRadius: '4px' }}>
                     <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#1d1e20' }}>
@@ -165,6 +167,7 @@ export default function BusRoutes({ lang = 'es' }: { lang?: Lang }) {
                 <Download size={16} aria-hidden="true" />
                 {t.download}
               </a>
+              </div>
             </div>
           </div>
         </div>
