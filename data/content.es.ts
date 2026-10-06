@@ -39,7 +39,6 @@ export const FOOTER_ES = {
     address: 'Campus Viña del Mar · Padre Hurtado 750, Viña del Mar, Chile',
     phone: '(56 32) 250 3500',
     emails: ['caroline.cortes@uai.cl', 'programascortos@uai.cl'],
-    social: ['@uai.internacional', '@artesliberalesuai'],
   },
   legal: {
     links: [
@@ -376,6 +375,5 @@ export const CONTACT_ES = {
     phone: '(56 32) 250 3500',
     emails: ['caroline.cortes@uai.cl', 'programascortos@uai.cl'],
     hours: 'Lunes a viernes · 9:00 – 18:00 hrs.',
-    social: ['Instagram: @uai.internacional'],
   },
 }

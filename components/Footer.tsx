@@ -135,9 +135,6 @@ export default function Footer({ lang }: FooterProps) {
                   {em}
                 </a>
               ))}
-              {f.col4.social.map((s) => (
-                <p key={s}>{s}</p>
-              ))}
             </div>
           </div>
         </div>

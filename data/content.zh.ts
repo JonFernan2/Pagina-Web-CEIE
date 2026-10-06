@@ -28,7 +28,6 @@ export const FOOTER_ZH = {
     address: 'Viña del Mar 校区 · Padre Hurtado 750, Viña del Mar, 智利',
     phone: '(56 32) 250 3500',
     emails: ['caroline.cortes@uai.cl', 'programascortos@uai.cl'],
-    social: ['@uai.internacional', '@artesliberalesuai'],
   },
   legal: {
     links: [
@@ -364,6 +363,5 @@ export const CONTACT_ZH = {
     phone: '(56 32) 250 3500',
     emails: ['caroline.cortes@uai.cl', 'programascortos@uai.cl'],
     hours: '周一至周五 · 9:00 – 18:00',
-    social: ['Instagram: @uai.internacional'],
   },
 }
