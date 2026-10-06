@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
 import ProgramCard from '@/components/ProgramCard'
 import { HOME_ZH } from '@/data/content.zh'
+import YouTubeVideo from '@/components/YouTubeVideo'
 
 export const metadata: Metadata = {
   title: HOME_ZH.meta.title,
@@ -193,13 +194,7 @@ export default function HomeZHPage() {
           </h2>
           <div style={{ maxWidth: '720px', margin: '0 auto' }}>
             <div style={{ position: 'relative', paddingBottom: '56.25%', borderRadius: '4px', border: '1px solid #E5E3DE', overflow: 'hidden' }}>
-              <iframe
-                src="https://www.youtube-nocookie.com/embed/hGd8OBLONvc?rel=0&modestbranding=1"
-                title={d.testimonials.title}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none', display: 'block' }}
-              />
+              <YouTubeVideo id="hGd8OBLONvc" title={d.testimonials.title} lang="zh" />
             </div>
             <p className="text-xs mt-2 font-body text-center" style={{ color: '#6B6B6B' }}>
               鸣谢：Mathias Adolf Harboe Damian
