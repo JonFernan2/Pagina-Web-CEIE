@@ -13,12 +13,12 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
     sedes: ['Viña del Mar'],
     publicoObjetivo: '国际本科生。',
     cursosTabla: [
-      { nombre: '西班牙语基础 A1/A2', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE', descripcion: '本课程注重在正式与非正式、个人与职业等多种语境中培养西班牙语口头与书面交际能力，通过语境化语言运用实现清晰有效的沟通目标。' },
-      { nombre: '西班牙语中级：交际 B1/B2', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE', descripcion: '本课程旨在通过正式与非正式语境下的持续互动，巩固西班牙语交际能力，培养口头与书面表达能力，为有效融入社会奠定基础。' },
-      { nombre: '西班牙语中级：语法 B1–B2', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE', descripcion: '本课程面向中级学员，旨在巩固和深化西班牙语语法掌握。通过语境化分析与练习，学员系统学习复杂语法结构，在多样化交际场景中实现更精准、规范的表达。' },
-      { nombre: '西班牙语高级：智利文化 C1', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE', descripcion: '本课程为高级学员设计，通过研究智利文化深化语言能力。借助文本、视听材料与交际活动，学员分析智利的社会、历史与文化面貌，强化批判性理解与西班牙语表达能力。' },
-      { nombre: '西班牙语高级：语法 C1', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE', descripcion: '本课程通过有意识地分析和运用学术、职业及文化语境中的复杂语法结构，深化西班牙语掌握，着力提升精确性、连贯性与话语得体性，使学员在高要求场合实现清晰、细腻的表达。' },
-      { nombre: '西班牙语语音学', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE', descripcion: '本课程介绍西班牙语语音与音位体系，重点涵盖发音、语调与节奏。通过语音感知与口头产出练习，学员在不同交际场景中形成更清晰易懂的发音。' },
+      { nombre: '西班牙语基础 A1/A2', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: '对外西班牙语（ELE）', descripcion: '本课程注重在正式与非正式、个人与职业等多种语境中培养西班牙语口头与书面交际能力，通过语境化语言运用实现清晰有效的沟通目标。' },
+      { nombre: '西班牙语中级：交际 B1/B2', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: '对外西班牙语（ELE）', descripcion: '本课程旨在通过正式与非正式语境下的持续互动，巩固西班牙语交际能力，培养口头与书面表达能力，为有效融入社会奠定基础。' },
+      { nombre: '西班牙语中级：语法 B1–B2', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: '对外西班牙语（ELE）', descripcion: '本课程面向中级学员，旨在巩固和深化西班牙语语法掌握。通过语境化分析与练习，学员系统学习复杂语法结构，在多样化交际场景中实现更精准、规范的表达。' },
+      { nombre: '西班牙语高级：智利文化 C1', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: '对外西班牙语（ELE）', descripcion: '本课程为高级学员设计，通过研究智利文化深化语言能力。借助文本、视听材料与交际活动，学员分析智利的社会、历史与文化面貌，强化批判性理解与西班牙语表达能力。' },
+      { nombre: '西班牙语高级：语法 C1', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: '对外西班牙语（ELE）', descripcion: '本课程通过有意识地分析和运用学术、职业及文化语境中的复杂语法结构，深化西班牙语掌握，着力提升精确性、连贯性与话语得体性，使学员在高要求场合实现清晰、细腻的表达。' },
+      { nombre: '西班牙语语音学', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: '对外西班牙语（ELE）', descripcion: '本课程介绍西班牙语语音与音位体系，重点涵盖发音、语调与节奏。通过语音感知与口头产出练习，学员在不同交际场景中形成更清晰易懂的发音。' },
       { nombre: '商务与全球市场专业西班牙语（B1/B2）', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: '专题课程', descripcion: '本课程面向需要在商务职业场景中使用西班牙语的学员，涵盖会议、演示、谈判等商业交际情景，并提供所需词汇与语言结构。课程通过参与商业讲座、活动和企业参访，推动情境化语言学习。' },
       { nombre: '医疗健康与医学交流西班牙语（B1/B2）', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: '专题课程', descripcion: '本课程面向需要在医疗场景中使用西班牙语的学员或专业人士。通过真实交际情境，培养患者沟通、医疗团队协作及专业文献理解的语言能力，注重清晰、人文关怀与专业性的表达。' },
       { nombre: '活着讲述：拉丁美洲文学', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: '专题课程', descripcion: '本课程探讨记忆、乡愁与身份认同在拉丁美洲文学中的作用。通过研读加西亚·马尔克斯等代表作家的文学作品，学员将发现这一地区的作家如何将个人回忆与经历转化为折射个体历史与集体文化进程的叙事。' },
@@ -32,6 +32,7 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
     horarios: [
       { turno: '课程', dias: '周一至周五', hora: '08:30 – 18:55' },
     ],
+    temarioGrupo: '对外西班牙语（ELE）',
     temario: [
       {
         nivel: 'A1 — 初学',
