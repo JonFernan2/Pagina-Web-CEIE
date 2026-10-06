@@ -6,9 +6,9 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
     nombre: 'Spanish Semester Programme',
     descripcionBreve: 'Courses in Spanish as a Foreign Language (levels A1–C1), thematic elective courses, and UAI Core Programme courses.',
     descripcionExtendida:
-      'The Spanish Language Semester Program is designed to progressively develop the linguistic, academic, and cultural competencies of international students whose native language is not Spanish, facilitating their integration into university life. Courses are aligned with the Common European Framework of Reference for Languages (CEFR) and follow the standards of the Instituto Cervantes Curriculum Plan (PCIC). Courses are offered from levels A1 to C1 and include academic credits.\n\nUnlike other Spanish programs in Chile, the UAI Semester Program integrates language instruction with the Liberal Arts model that distinguishes our university. Students do not only learn Spanish: they develop critical thinking, argumentative skills, and a deep understanding of Chilean and Latin American culture through an active, participatory methodology inspired by Columbia University\'s Core Curriculum. Students also have the opportunity to integrate into the UAI community, participating in student organizations, extracurricular workshops, cultural events, and sports activities alongside Chilean and international students from more than 20 countries.',
+      'The Spanish Language Semester Program is designed to progressively develop the linguistic, academic, and cultural competencies of international students, facilitating their integration into university life. Courses are aligned with the Common European Framework of Reference for Languages (CEFR) and follow the standards of the Instituto Cervantes Curriculum Plan (PCIC). Courses are offered from levels A1 to C1 and include academic credits.\n\nUnlike other Spanish programs in Chile, the UAI Semester Program integrates language instruction with the Liberal Arts model that distinguishes our university. Students do not only learn Spanish: they develop critical thinking, argumentative skills, and a deep understanding of Chilean and Latin American culture through an active, participatory methodology inspired by Columbia University\'s Core Curriculum. Students also have the opportunity to integrate into the UAI community, participating in student organizations, extracurricular workshops, cultural events, and sports activities alongside Chilean and international students from more than 20 countries.',
     objetivo:
-      'Progressively develop linguistic, academic, and cultural competencies in Spanish for international non-Spanish-speaking students, facilitating integration into the university experience.',
+      'Progressively develop linguistic, academic, and cultural competencies in Spanish for international students, facilitating integration into the university experience.',
     niveles: ['A1', 'A2', 'B1', 'B2', 'C1'],
     sedes: ['Viña del Mar'],
     publicoObjetivo: 'International undergraduate students.',
@@ -130,12 +130,12 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
     nombre: 'Intensive Spanish Programme',
     descripcionBreve: 'Intensive Spanish for 2 or 4 weeks.',
     descripcionExtendida:
-      'The Intensive Spanish Program is designed for international students who are non-native speakers of Spanish and want to build their language skills in a short period of time, without needing to spend a full semester in Chile. The program combines intensive language training with cultural immersion experiences, fostering practical and meaningful learning in a Spanish-speaking environment.\n\nCourses are aligned with the Common European Framework of Reference for Languages (CEFR) and follow the standards of the Instituto Cervantes Curriculum Plan (PCIC). The program allows students to advance their Spanish proficiency through a concentrated language and cultural learning experience.',
+      'The Intensive Spanish Program is designed for international students who want to build their language skills in a short period of time, without needing to spend a full semester in Chile. The program combines intensive language training with cultural immersion experiences, fostering practical and meaningful learning in a Spanish-speaking environment.\n\nCourses are aligned with the Common European Framework of Reference for Languages (CEFR) and follow the standards of the Instituto Cervantes Curriculum Plan (PCIC). The program allows students to advance their Spanish proficiency through a concentrated language and cultural learning experience.',
     objetivo:
       'Advance Spanish language proficiency through an intensive, immersive experience adapted to each participant\'s level and objectives.',
     niveles: ['A1', 'A2', 'B1', 'B2'],
     sedes: ['Viña del Mar'],
-    publicoObjetivo: 'International non-Spanish-speaking students seeking to develop their Spanish proficiency in a short period.',
+    publicoObjetivo: 'International students seeking to develop their Spanish proficiency in a short period.',
     cursosTabla: [
       { nombre: 'Grammar and Communicative Structures', horas: 22, precioUSD: 900, creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '2-Week Intensive', descripcion: 'An intensive course focused on developing the fundamental grammatical structures of Spanish. Through an active, applied methodology, students acquire the tools they need to understand and use the language\'s main structures in everyday communicative situations. The course covers essential grammar content, integrating vocabulary, comprehension, and oral and written production, with practical activities that apply the content in real communicative contexts. The intensive format supports the progressive consolidation of learning and provides a solid foundation for continuing to advance in Spanish.' },
       { nombre: 'Communication and Chilean Culture', horas: 22, precioUSD: 900, creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '2-Week Intensive', descripcion: 'An intensive course focused on developing basic communicative skills in Spanish, combining language learning with an introduction to Chilean and Latin American culture. Students develop tools to communicate simply in everyday situations, both orally and in writing. Through practical activities and immersion experiences, students have the opportunity to use Spanish in real contexts while exploring aspects of everyday life, society, and culture in Chile. The course includes cultural activities in Viña del Mar and Valparaíso, encouraging intercultural reflection and a closer understanding of the context in which their learning experience takes place.' },
@@ -207,7 +207,7 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
     modalidades: [
       'In-Person · Campus Viña del Mar',
     ],
-    perfilIdeal: 'International non-Spanish-speaking students who want to develop their Spanish proficiency in a short period.',
+    perfilIdeal: 'International students who want to develop their Spanish proficiency in a short period.',
   },
   {
     slug: 'specific-purposes',
