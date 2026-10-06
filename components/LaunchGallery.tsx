@@ -14,7 +14,7 @@ interface GalleryImage {
 
 interface LaunchGalleryProps {
   title: string
-  subtitle: string
+  subtitle?: string
   images: GalleryImage[]
   lang?: Lang
 }
@@ -63,8 +63,8 @@ export default function LaunchGallery({ title, subtitle, images, lang = 'es' }: 
   return (
     <section style={{ background: '#FFFFFF' }} className="py-16">
       <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
-        <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-3">{title}</h2>
-        <p className="font-body text-sm mb-8" style={{ color: '#6B6B6B' }}>{subtitle}</p>
+        <h2 className={`font-display font-bold text-negro text-3xl md:text-4xl ${subtitle ? 'mb-3' : 'mb-8'}`}>{title}</h2>
+        {subtitle && <p className="font-body text-sm mb-8" style={{ color: '#6B6B6B' }}>{subtitle}</p>}
 
         <div
           className="relative overflow-hidden h-72 sm:h-96 lg:h-[520px]"
