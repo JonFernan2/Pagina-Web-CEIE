@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import { ROUTES, type Lang } from '@/lib/routes'
+import { ACTIVE_LANGS } from '@/lib/site'
 
 export interface NavItem {
   label: string
@@ -229,7 +230,7 @@ export default function NavbarClient({ lang, currentPath, menu: nav }: NavbarPro
                   role="listbox"
                   aria-label={NAV_ARIA[lang].language}
                 >
-                  {(['es', 'en', 'pt', 'zh'] as const).map((l) => (
+                  {ACTIVE_LANGS.map((l) => (
                     <Link
                       key={l}
                       href={lang === l ? currentPath : getLangPath(currentPath, lang, l)}
@@ -317,7 +318,7 @@ export default function NavbarClient({ lang, currentPath, menu: nav }: NavbarPro
             {nav.cta.label}
           </Link>
           <div className="flex flex-col gap-1 pt-2 border-t border-white/10">
-            {(['es', 'en', 'pt', 'zh'] as const).map((l) => (
+            {ACTIVE_LANGS.map((l) => (
               <Link
                 key={l}
                 href={lang === l ? currentPath : getLangPath(currentPath, lang, l)}
