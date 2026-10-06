@@ -9,6 +9,7 @@ interface ProgramCardProps {
   duracion: string
   precioDesde?: string
   imagen?: string
+  imagenPos?: string
   href: string
   lang?: 'es' | 'en' | 'pt' | 'zh'
 }
@@ -20,7 +21,7 @@ const labels = {
   zh: { nivel: '级别', duracion: '时长', cta: '查看课程' },
 }
 
-export default function ProgramCard({ nombre, descripcion, nivel, duracion, precioDesde, imagen, href, lang = 'es' }: ProgramCardProps) {
+export default function ProgramCard({ nombre, descripcion, nivel, duracion, precioDesde, imagen, imagenPos, href, lang = 'es' }: ProgramCardProps) {
   const t = labels[lang]
 
   return (
@@ -35,7 +36,7 @@ export default function ProgramCard({ nombre, descripcion, nivel, duracion, prec
           alt=""
           loading="lazy"
           className="w-full aspect-[16/9] object-cover"
-          style={{ borderBottom: '3px solid #6493b5' }}
+          style={{ borderBottom: '3px solid #6493b5', objectPosition: imagenPos ?? 'center' }}
         />
       )}
       <div className="flex flex-col flex-1 px-6 py-6 gap-4">

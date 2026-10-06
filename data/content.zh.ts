@@ -116,6 +116,7 @@ export const HOME_ZH = {
         precioReferencial: 'USD 900 – 1,500',
         precioDesde: 'USD 900 起',
         imagen: '/images/card-programa-fines-especificos.jpg',
+        imagenPos: 'center top',
         href: '/zh/programs/specific-purposes',
       },
     ],
