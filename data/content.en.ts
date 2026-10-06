@@ -61,7 +61,7 @@ export const HOME_EN = {
 
     h1: 'Learn Spanish\non the South Pacific',
     subtitle: 'Spanish Language Teaching Centre · Universidad Adolfo Ibáñez · Viña del Mar, Chile',
-    cta1: { label: 'View programs', href: '/en/programs-and-courses' },
+    cta1: { label: 'View programs', href: '#programas' },
     cta2: { label: 'Contact us', href: '/en/contact' },
   },
   valueProps: {

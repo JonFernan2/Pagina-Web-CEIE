@@ -93,7 +93,7 @@ export default function HomePTPage() {
       </section>
 
       {/* ── PROGRAMS ── */}
-      <section style={{ background: '#FFFFFF' }} className="py-20">
+      <section id="programas" style={{ background: '#FFFFFF' }} className="py-20">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-3">
@@ -101,7 +101,7 @@ export default function HomePTPage() {
             </h2>
             <p className="text-base" style={{ color: '#6B6B6B' }}>{d.programs.subtitle}</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-2xl lg:max-w-none mx-auto">
             {d.programs.items.map((p) => (
               <ProgramCard key={p.href} {...p} lang="pt" />
             ))}

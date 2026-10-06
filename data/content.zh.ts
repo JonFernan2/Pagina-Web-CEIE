@@ -50,7 +50,7 @@ export const HOME_ZH = {
 
     h1: '在南太平洋\n学习西班牙语',
     subtitle: '西班牙语综合教学中心 · 阿道夫·伊瓦涅斯大学 · 比尼亚德尔马，智利',
-    cta1: { label: '查看课程', href: '/zh/programs' },
+    cta1: { label: '查看课程', href: '#programas' },
     cta2: { label: '联系我们', href: '/zh/contact' },
   },
   valueProps: {

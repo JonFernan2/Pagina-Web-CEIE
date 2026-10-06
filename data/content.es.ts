@@ -61,7 +61,7 @@ export const HOME_ES = {
 
     h1: 'Aprende español\nen el Pacífico Sur',
     subtitle: 'Centro de Enseñanza Integral del Español · Universidad Adolfo Ibáñez · Viña del Mar, Chile',
-    cta1: { label: 'Ver programas', href: '/programas-y-cursos' },
+    cta1: { label: 'Ver programas', href: '#programas' },
     cta2: { label: 'Contactar', href: '/contacto' },
   },
   valueProps: {
