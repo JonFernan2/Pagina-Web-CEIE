@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ChevronRight, Users, Clock, Award, CheckCircle, BookOpen } from 'lucide-react'
+import { ChevronRight, Clock, Award, CheckCircle, BookOpen } from 'lucide-react'
 import type { ProgramData } from '@/data/programs'
 import Linkify from './Linkify'
 
@@ -123,8 +123,7 @@ export default function ProgramTemplate({
                 ))}
               </div>
               {!simple && (
-              <div className="grid grid-cols-3 gap-2 sm:gap-4 mt-6 lg:hidden">
-                <StatBox icon={<Users size={20} />} label={labels.groupSize} value={data.participantes} />
+              <div className="grid grid-cols-2 gap-2 sm:gap-4 mt-6 lg:hidden">
                 <StatBox icon={<Clock size={20} />} label={labels.duration} value={data.duracion} />
                 <StatBox icon={<BookOpen size={20} />} label={labels.levels} value={data.niveles.join(', ')} />
               </div>
@@ -261,6 +260,11 @@ export default function ProgramTemplate({
                   <div key={i} className="pl-4" style={{ borderLeft: '3px solid #6493b5' }}>
                     <h3 className="text-sm font-semibold text-negro mb-1">{c.titulo}</h3>
                     <p className="text-sm leading-relaxed" style={{ color: '#2D2D2D' }}><Linkify text={c.descripcion} /></p>
+                    {c.enlace && (
+                      <Link href={c.enlace.href} className="inline-block mt-1 text-sm font-semibold underline underline-offset-2 hover:no-underline" style={{ color: '#1d1e20', textDecorationColor: '#6493b5' }}>
+                        {c.enlace.label} →
+                      </Link>
+                    )}
                   </div>
                 ))}
               </div>
@@ -338,7 +342,6 @@ export default function ProgramTemplate({
               <div className="flex flex-col gap-3 text-sm">
                 <AsideStat label={labels.levels} value={data.niveles.join(', ')} />
                 <AsideStat label={labels.duration} value={data.duracion} />
-                <AsideStat label={labels.groupSize} value={data.participantes} />
                 {data.precio.estandar && data.precio.inSitu ? (
                   <div style={{ paddingBottom: '0.25rem' }}>
                     <p className="text-xs uppercase tracking-widest mb-2" style={{ color: '#2D2D2D' }}>{labels.pricing}</p>

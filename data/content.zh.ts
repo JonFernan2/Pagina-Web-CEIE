@@ -114,7 +114,6 @@ export const HOME_ZH = {
         horario: '与学员或机构协商安排',
         grupoMax: '根据机构协议而定',
         precioReferencial: 'USD 900 – 1,500',
-        precioDesde: 'USD 900 起',
         imagen: '/images/card-programa-fines-especificos.jpg',
         href: '/zh/programs/specific-purposes',
       },
@@ -141,9 +140,7 @@ export const HOME_ZH = {
     col3: {
       title: '取消政策',
       items: [
-        '提前30天以上取消：退款80%',
-        '提前15–29天取消：退款50%',
-        '提前15天以内取消：不予退款',
+        '取消费用取决于提出取消申请的提前时间。',
       ],
       link: { label: '查看完整条款', href: '/zh/terms-and-conditions' },
       disclaimer: '取消申请仅在以书面形式发送至 caroline.cortes@uai.cl 并获确认收到后方为有效。',
@@ -193,7 +190,7 @@ export const HOME_ZH = {
     address: 'Viña del Mar 校区 · Padre Hurtado 750, Viña del Mar, 智利',
     phone: '(56 32) 250 3500',
     emails: ['caroline.cortes@uai.cl', 'programascortos@uai.cl'],
-    hours: '周一至周五，9:00–18:00',
+    hours: '周一至周五 · 9:00 – 18:00',
     mapPlaceholder: '地图：UAI Viña del Mar 校区 — Padre Hurtado 750',
   },
 }
@@ -254,7 +251,7 @@ export const ABOUT_ZH = {
         },
         {
           nombre: '文化活动',
-          descripcion: '瓦尔帕莱索文化遗址游览及UAI学者交流会，已包含在所有课程中。卡萨布兰卡谷葡萄园参观等自选游览可能需额外付费。',
+          descripcion: '瓦尔帕莱索文化遗址游览及UAI学者交流会，已包含在学期课程和强化课程中。卡萨布兰卡谷葡萄园参观等自选游览可能需额外付费。',
           alt: 'CEIE国际学员在UAI Viña del Mar校区参加文化与学术活动。',
         },
         {
@@ -317,9 +314,14 @@ export const ADMISSIONS_ZH = {
     intro: '各类型课程的开课时间如下：',
     rows: [
       {
-        program: '学期西班牙语课程 / 西班牙语强化课程',
+        program: '学期西班牙语课程',
         schedule: '按照智利学年日历',
         detail: '南半球 — 第一学期：3月 – 7月 · 第二学期：8月 – 12月',
+      },
+      {
+        program: '西班牙语强化课程',
+        schedule: '2周或4周课程',
+        detail: '每期开课日期另行确认',
       },
       {
         program: '专业目的西班牙语课程：团体',

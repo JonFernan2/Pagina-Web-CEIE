@@ -125,7 +125,6 @@ export const HOME_ES = {
         horario: 'Coordinado con el participante o la institución',
         grupoMax: 'Variable según convenio institucional',
         precioReferencial: 'USD 900 – 1.500',
-        precioDesde: 'Desde USD 900',
         imagen: '/images/card-programa-fines-especificos.jpg',
         href: '/programas-y-cursos/fines-especificos',
       },
@@ -152,10 +151,7 @@ export const HOME_ES = {
     col3: {
       title: 'Política de cancelación',
       items: [
-        'Con 45+ días de anticipación: sin cargo',
-        'Con 15–44 días: cargo del 50% del costo total',
-        'Con menos de 15 días: sin reembolso',
-        'Fuerza mayor: evaluada individualmente',
+        'Los cargos dependen de la anticipación con que se solicite la cancelación.',
       ],
       link: { label: 'Ver condiciones completas', href: '/condiciones-contratacion' },
       disclaimer: 'Cancelaciones válidas solo por escrito a caroline.cortes@uai.cl con recepción conforme.',
@@ -205,7 +201,7 @@ export const HOME_ES = {
     address: 'Campus Viña del Mar · Padre Hurtado 750, Viña del Mar, Chile',
     phone: '(56 32) 250 3500',
     emails: ['caroline.cortes@uai.cl', 'programascortos@uai.cl'],
-    hours: 'Lunes a viernes, 9:00 a 18:00 hrs.',
+    hours: 'Lunes a viernes · 9:00 – 18:00 hrs.',
     mapPlaceholder: 'Mapa: Campus UAI Viña del Mar — Padre Hurtado 750',
   },
 }
@@ -266,7 +262,7 @@ export const ABOUT_ES = {
         },
         {
           nombre: 'Actividades culturales',
-          descripcion: 'Recorridos por el patrimonio de Valparaíso y conversatorios con académicos UAI, incluidos en todos los programas. Las excursiones opcionales, como visitas a viñas del Valle de Casablanca, pueden tener un costo adicional.',
+          descripcion: 'Recorridos por el patrimonio de Valparaíso y conversatorios con académicos UAI, incluidos en los programas Semestral e Intensivo. Las excursiones opcionales, como visitas a viñas del Valle de Casablanca, pueden tener un costo adicional.',
           alt: 'Estudiantes internacionales del CEIE en actividades culturales y académicas en el campus UAI Viña del Mar.',
         },
         {
@@ -329,9 +325,14 @@ export const ADMISSIONS_ES = {
     intro: 'Los inicios de cada programa siguen la siguiente estructura:',
     rows: [
       {
-        program: 'Programa Semestral de Español / Programa Intensivo de Español',
+        program: 'Programa Semestral de Español',
         schedule: 'Según el calendario académico de Chile',
         detail: 'Hemisferio Sur — 1.er semestre: marzo – julio · 2.o semestre: agosto – diciembre',
+      },
+      {
+        program: 'Programa Intensivo de Español',
+        schedule: 'Cursos de 2 o 4 semanas',
+        detail: 'Fechas de inicio a confirmar en cada convocatoria',
       },
       {
         program: 'Español con Fines Específicos: grupal',

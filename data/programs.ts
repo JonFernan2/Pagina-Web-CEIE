@@ -14,6 +14,7 @@ export interface TemarioItem {
 export interface CondicionEntry {
   titulo: string
   descripcion: string
+  enlace?: { label: string; href: string }
 }
 
 export interface CertificadoInfo {
@@ -186,7 +187,8 @@ export const PROGRAMS_DATA: ProgramData[] = [
       },
       {
         titulo: 'Cancelación',
-        descripcion: 'Con 45+ días: sin cargo. Con 15–44 días: cargo del 50%. Menos de 15 días: sin reembolso. Fuerza mayor evaluada individualmente. Por escrito a caroline.cortes@uai.cl.',
+        descripcion: 'Las cancelaciones se solicitan por escrito a caroline.cortes@uai.cl. Los plazos y cargos se detallan en la política de cancelación.',
+        enlace: { label: 'Ver política de cancelación', href: '/condiciones-contratacion' },
       },
     ],
     participantes: '5 personas',
@@ -233,7 +235,7 @@ export const PROGRAMS_DATA: ProgramData[] = [
           'Curso intensivo orientado al desarrollo de las estructuras gramaticales fundamentales del español. A través de una metodología activa y aplicada, los estudiantes adquieren las herramientas necesarias para comprender y utilizar las principales estructuras del idioma en situaciones comunicativas cotidianas.',
           'El curso aborda contenidos gramaticales esenciales, integrando vocabulario, comprensión y producción oral y escrita, con actividades prácticas que permiten aplicar los contenidos en contextos reales de comunicación. El formato intensivo favorece la consolidación progresiva de los aprendizajes y proporciona una base sólida para continuar avanzando en el dominio del español.',
         ],
-        ficha: [{ label: 'Horas', value: '22 h (2 semanas) · 40 h (4 semanas)' }, { label: 'Créditos', value: '2 (2 semanas) · 4 (4 semanas)' }, { label: 'Duración', value: '2 o 4 semanas' }, { label: 'N° mínimo de estudiantes', value: '5' }, { label: 'N° máximo de estudiantes', value: '15' }, { label: 'Campus', value: 'Viña del Mar' }, { label: 'Precio', value: '900 USD (2 semanas) · 1.800 USD (4 semanas)' }],
+        ficha: [{ label: 'Horas', value: '22 h (2 semanas) · 40 h (4 semanas)' }, { label: 'Créditos', value: '2 (2 semanas) · 4 (4 semanas)' }],
         contenidos: [],
       },
       {
@@ -242,7 +244,7 @@ export const PROGRAMS_DATA: ProgramData[] = [
           'Curso intensivo orientado al desarrollo de las competencias comunicativas básicas en español, integrando el aprendizaje del idioma con una aproximación a la cultura chilena y latinoamericana. Los estudiantes desarrollan herramientas para comunicarse de manera simple en situaciones cotidianas, tanto de forma oral como escrita.',
           'A través de actividades prácticas y experiencias de inmersión, los estudiantes tienen la oportunidad de utilizar el español en contextos reales, mientras exploran aspectos de la vida cotidiana, la sociedad y la cultura chilena. El curso incorpora actividades culturales en Viña del Mar y Valparaíso, promoviendo la reflexión intercultural y una comprensión más cercana del contexto en el que se desarrolla su experiencia de aprendizaje.',
         ],
-        ficha: [{ label: 'Horas', value: '22 h (2 semanas) · 40 h (4 semanas)' }, { label: 'Créditos', value: '2 (2 semanas) · 4 (4 semanas)' }, { label: 'Duración', value: '2 o 4 semanas' }, { label: 'N° mínimo de estudiantes', value: '5' }, { label: 'N° máximo de estudiantes', value: '15' }, { label: 'Campus', value: 'Viña del Mar' }, { label: 'Precio', value: '900 USD (2 semanas) · 1.800 USD (4 semanas)' }],
+        ficha: [{ label: 'Horas', value: '22 h (2 semanas) · 40 h (4 semanas)' }, { label: 'Créditos', value: '2 (2 semanas) · 4 (4 semanas)' }],
         contenidos: [],
       },
     ],
@@ -266,7 +268,8 @@ export const PROGRAMS_DATA: ProgramData[] = [
       },
       {
         titulo: 'Cancelación',
-        descripcion: 'Con 45+ días: sin cargo. Con 15–44 días: cargo del 50%. Menos de 15 días: sin reembolso. Fuerza mayor evaluada individualmente. Por escrito a caroline.cortes@uai.cl.',
+        descripcion: 'Las cancelaciones se solicitan por escrito a caroline.cortes@uai.cl. Los plazos y cargos se detallan en la política de cancelación.',
+        enlace: { label: 'Ver política de cancelación', href: '/condiciones-contratacion' },
       },
     ],
     participantes: '5 personas',
@@ -372,7 +375,8 @@ export const PROGRAMS_DATA: ProgramData[] = [
       },
       {
         titulo: 'Cancelación de programa',
-        descripcion: 'Con 45+ días: sin cargo. Con 15–44 días: cargo del 50%. Menos de 15 días: sin reembolso. Fuerza mayor evaluada individualmente. Por escrito a caroline.cortes@uai.cl.',
+        descripcion: 'Las cancelaciones se solicitan por escrito a caroline.cortes@uai.cl. Los plazos y cargos se detallan en la política de cancelación.',
+        enlace: { label: 'Ver política de cancelación', href: '/condiciones-contratacion' },
       },
     ],
     participantes: 'Variable según convenio institucional',

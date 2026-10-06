@@ -125,7 +125,6 @@ export const HOME_EN = {
         horario: 'Coordinated with the participant or institution',
         grupoMax: 'Variable according to institutional agreement',
         precioReferencial: 'USD 900 – 1,500',
-        precioDesde: 'From USD 900',
         imagen: '/images/card-programa-fines-especificos.jpg',
         href: '/en/programs-and-courses/specific-purposes',
       },
@@ -152,10 +151,7 @@ export const HOME_EN = {
     col3: {
       title: 'Cancellation policy',
       items: [
-        '45+ days in advance: no charge',
-        '15–44 days in advance: 50% charge',
-        'Less than 15 days: no refund',
-        'Force majeure: evaluated individually',
+        'Charges depend on how far in advance the cancellation is requested.',
       ],
       link: { label: 'Full terms & conditions', href: '/en/terms-and-conditions' },
       disclaimer: 'Cancellations valid only in writing to caroline.cortes@uai.cl with confirmed receipt.',
@@ -205,7 +201,7 @@ export const HOME_EN = {
     address: 'Viña del Mar Campus · Padre Hurtado 750, Viña del Mar, Chile',
     phone: '(56 32) 250 3500',
     emails: ['caroline.cortes@uai.cl', 'programascortos@uai.cl'],
-    hours: 'Monday to Friday, 9:00 AM – 6:00 PM',
+    hours: 'Monday to Friday · 9:00 AM – 6:00 PM',
     mapPlaceholder: 'Map: UAI Viña del Mar Campus — Padre Hurtado 750',
   },
 }
@@ -266,7 +262,7 @@ export const ABOUT_EN = {
         },
         {
           nombre: 'Cultural activities',
-          descripcion: 'Heritage tours of Valparaíso and talks with UAI academics, included in all programs. Optional excursions, such as visits to Casablanca Valley wineries, may have an additional cost.',
+          descripcion: 'Heritage tours of Valparaíso and talks with UAI academics, included in the Semester and Intensive programmes. Optional excursions, such as visits to Casablanca Valley wineries, may have an additional cost.',
           alt: 'International CEIE students in cultural and academic activities at UAI Viña del Mar campus.',
         },
         {
@@ -329,9 +325,14 @@ export const ADMISSIONS_EN = {
     intro: 'Start dates follow this structure for each program type:',
     rows: [
       {
-        program: 'Spanish Semester Programme / Intensive Spanish Programme',
+        program: 'Spanish Semester Programme',
         schedule: 'Follows the Chilean academic calendar',
         detail: 'Southern Hemisphere — 1st semester: March – July · 2nd semester: August – December',
+      },
+      {
+        program: 'Intensive Spanish Programme',
+        schedule: '2- or 4-week courses',
+        detail: 'Start dates confirmed for each intake',
       },
       {
         program: 'Spanish for Specific Purposes Programme: group',

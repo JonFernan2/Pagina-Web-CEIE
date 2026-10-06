@@ -109,7 +109,8 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
       },
       {
         titulo: 'Cancelamento',
-        descripcion: 'Com 45+ dias de antecedência: sem encargos. 15–44 dias: encargo de 50%. Menos de 15 dias: sem reembolso. Força maior avaliada individualmente. Por escrito para caroline.cortes@uai.cl.',
+        descripcion: 'Os cancelamentos devem ser solicitados por escrito a caroline.cortes@uai.cl. Os prazos e encargos estão detalhados na política de cancelamento.',
+        enlace: { label: 'Ver política de cancelamento', href: '/pt/condicoes-contratacao' },
       },
     ],
     participantes: '5 pessoas',
@@ -155,7 +156,7 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
           'Curso intensivo voltado ao desenvolvimento das estruturas gramaticais fundamentais do espanhol. Por meio de uma metodologia ativa e aplicada, os estudantes adquirem as ferramentas necessárias para compreender e utilizar as principais estruturas do idioma em situações comunicativas do dia a dia.',
           'O curso aborda conteúdos gramaticais essenciais, integrando vocabulário, compreensão e produção oral e escrita, com atividades práticas que permitem aplicar os conteúdos em contextos reais de comunicação. O formato intensivo favorece a consolidação progressiva da aprendizagem e oferece uma base sólida para continuar avançando no domínio do espanhol.',
         ],
-        ficha: [{ label: 'Horas', value: '22 h (2 semanas) · 40 h (4 semanas)' }, { label: 'Créditos', value: '2 (2 semanas) · 4 (4 semanas)' }, { label: 'Duração', value: '2 ou 4 semanas' }, { label: 'Nº mínimo de estudantes', value: '5' }, { label: 'Nº máximo de estudantes', value: '15' }, { label: 'Campus', value: 'Viña del Mar' }, { label: 'Preço', value: '900 USD (2 semanas) · 1.800 USD (4 semanas)' }],
+        ficha: [{ label: 'Horas', value: '22 h (2 semanas) · 40 h (4 semanas)' }, { label: 'Créditos', value: '2 (2 semanas) · 4 (4 semanas)' }],
         contenidos: [],
       },
       {
@@ -164,7 +165,7 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
           'Curso intensivo voltado ao desenvolvimento das competências comunicativas básicas em espanhol, integrando a aprendizagem do idioma a uma aproximação à cultura chilena e latino-americana. Os estudantes desenvolvem ferramentas para se comunicar de forma simples em situações do dia a dia, tanto oralmente quanto por escrito.',
           'Por meio de atividades práticas e experiências de imersão, os estudantes têm a oportunidade de usar o espanhol em contextos reais, enquanto exploram aspectos da vida cotidiana, da sociedade e da cultura chilena. O curso inclui atividades culturais em Viña del Mar e Valparaíso, promovendo a reflexão intercultural e uma compreensão mais próxima do contexto em que se desenvolve a sua experiência de aprendizagem.',
         ],
-        ficha: [{ label: 'Horas', value: '22 h (2 semanas) · 40 h (4 semanas)' }, { label: 'Créditos', value: '2 (2 semanas) · 4 (4 semanas)' }, { label: 'Duração', value: '2 ou 4 semanas' }, { label: 'Nº mínimo de estudantes', value: '5' }, { label: 'Nº máximo de estudantes', value: '15' }, { label: 'Campus', value: 'Viña del Mar' }, { label: 'Preço', value: '900 USD (2 semanas) · 1.800 USD (4 semanas)' }],
+        ficha: [{ label: 'Horas', value: '22 h (2 semanas) · 40 h (4 semanas)' }, { label: 'Créditos', value: '2 (2 semanas) · 4 (4 semanas)' }],
         contenidos: [],
       },
     ],
@@ -188,7 +189,8 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
       },
       {
         titulo: 'Cancelamento',
-        descripcion: 'Com 45+ dias de antecedência: sem encargos. 15–44 dias: encargo de 50%. Menos de 15 dias: sem reembolso. Força maior avaliada individualmente. Por escrito para caroline.cortes@uai.cl.',
+        descripcion: 'Os cancelamentos devem ser solicitados por escrito a caroline.cortes@uai.cl. Os prazos e encargos estão detalhados na política de cancelamento.',
+        enlace: { label: 'Ver política de cancelamento', href: '/pt/condicoes-contratacao' },
       },
     ],
     participantes: '5 pessoas',
@@ -294,7 +296,8 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
       },
       {
         titulo: 'Cancelamento de programa',
-        descripcion: 'Com 45+ dias de antecedência: sem encargos. 15–44 dias: encargo de 50%. Menos de 15 dias: sem reembolso. Força maior avaliada individualmente. Por escrito para caroline.cortes@uai.cl.',
+        descripcion: 'Os cancelamentos devem ser solicitados por escrito a caroline.cortes@uai.cl. Os prazos e encargos estão detalhados na política de cancelamento.',
+        enlace: { label: 'Ver política de cancelamento', href: '/pt/condicoes-contratacao' },
       },
     ],
     participantes: 'Variável conforme acordo institucional',
