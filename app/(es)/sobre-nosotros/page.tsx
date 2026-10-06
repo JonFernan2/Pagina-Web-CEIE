@@ -9,7 +9,7 @@ import { DIRECTORIO } from '@/data/directorio'
 
 const SPACE_IMAGES: SpaceImages[] = [
   { srcs: ['/images/espacio-seminario-1.jpg', '/images/espacio-aula-2.jpg'], carousel: true, positions: ['center 42%', 'center 38%'] },
-  { srcs: ['/images/galeria-ceie-spanish-corner.jpg', '/images/biblioteca-uai-1.jpg', '/images/biblioteca-uai-2.jpg', '/images/biblioteca-uai-3.jpg', '/images/biblioteca-uai-4.jpg', '/images/biblioteca-uai-5.jpg'], carousel: true, positions: ['center', 'center', 'center', 'center', 'center', 'center 60%'] },
+  { srcs: ['/images/biblioteca-uai-5.jpg', '/images/galeria-ceie-spanish-corner.jpg', '/images/biblioteca-uai-1.jpg', '/images/biblioteca-uai-2.jpg', '/images/biblioteca-uai-3.jpg', '/images/biblioteca-uai-4.jpg'], carousel: true, positions: ['center 60%', 'center', 'center', 'center', 'center', 'center'] },
   { srcs: ['/images/sala-estudio-2.jpg', '/images/sala-estudio-3.jpg'], carousel: true, positions: ['center', 'center 60%'] },
   { srcs: ['/images/gimnasio-uai.jpg'] },
   { srcs: ['/images/campus-vina-aerea.jpg'], wide: true, busRoutes: true },
