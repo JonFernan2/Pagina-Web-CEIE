@@ -15,7 +15,7 @@ export default function PoliticaDeCookiesPTPage() {
     <>
       <Navbar lang="pt" currentPath="/pt/politica-de-cookies" />
       <main id="contenido">
-      <LegalPageTemplate lang="pt" title={LEGAL_PT.cookies.title} sections={LEGAL_PT.cookies.sections} lastUpdated="Agosto 2026" />
+      <LegalPageTemplate lang="pt" title={LEGAL_PT.cookies.title} sections={LEGAL_PT.cookies.sections} lastUpdated="Outubro 2026" />
       </main>
       <Footer lang="pt" />
       <CookieBanner lang="pt" />

@@ -19,7 +19,7 @@ export default function PrivacidadPage() {
         lang="es"
         title={LEGAL_ES.privacidad.title}
         sections={LEGAL_ES.privacidad.sections}
-        lastUpdated="Agosto 2026"
+        lastUpdated="Octubre 2026"
       />
       </main>
       <Footer lang="es" />

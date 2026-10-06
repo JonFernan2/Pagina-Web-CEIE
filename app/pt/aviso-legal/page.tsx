@@ -15,7 +15,7 @@ export default function AvisoLegalPTPage() {
     <>
       <Navbar lang="pt" currentPath="/pt/aviso-legal" />
       <main id="contenido">
-      <LegalPageTemplate lang="pt" title={LEGAL_PT.legalNotice.title} sections={LEGAL_PT.legalNotice.sections} lastUpdated="Agosto 2026" />
+      <LegalPageTemplate lang="pt" title={LEGAL_PT.legalNotice.title} sections={LEGAL_PT.legalNotice.sections} lastUpdated="Outubro 2026" />
       </main>
       <Footer lang="pt" />
       <CookieBanner lang="pt" />
