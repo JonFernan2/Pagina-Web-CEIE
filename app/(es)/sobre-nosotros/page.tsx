@@ -8,7 +8,7 @@ import { ABOUT_ES } from '@/data/content.es'
 import { DIRECTORIO } from '@/data/directorio'
 
 const SPACE_IMAGES: SpaceImages[] = [
-  { srcs: ['/images/espacio-seminario-1.jpg'], position: 'center 42%' },
+  { srcs: ['/images/espacio-seminario-1.jpg', '/images/espacio-aula-2.jpg'], carousel: true, positions: ['center 42%', 'center 38%'] },
   { srcs: ['/images/galeria-ceie-spanish-corner.jpg'] },
   { srcs: ['/images/sala-estudio-2.jpg'] },
   { srcs: ['/images/gimnasio-uai.jpg'] },

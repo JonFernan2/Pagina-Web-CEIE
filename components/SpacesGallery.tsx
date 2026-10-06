@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import ImageLightbox from './ImageLightbox'
 import BusRoutes from './BusRoutes'
+import SpaceCarousel from './SpaceCarousel'
 
 interface Space {
   nombre: string
@@ -15,6 +16,8 @@ export interface SpaceImages {
   wide?: boolean
   position?: string
   busRoutes?: boolean
+  carousel?: boolean
+  positions?: string[]
 }
 
 interface SpacesGalleryProps {
@@ -33,13 +36,16 @@ export default function SpacesGallery({ spaces, title, spaceImages, lang = 'es' 
         <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-8">{title}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {spaces.map((space, i) => {
-            const { srcs, wide, position = 'center', busRoutes } = spaceImages[i]
+            const { srcs, wide, position = 'center', busRoutes, carousel, positions } = spaceImages[i]
             return (
             <div
               key={space.nombre}
               className={`flex flex-col overflow-hidden ${wide ? 'md:col-span-2' : ''}`}
               style={{ border: '1px solid #E5E3DE', borderRadius: '4px' }}
             >
+              {carousel ? (
+                <SpaceCarousel srcs={srcs} positions={positions ?? srcs.map(() => position)} alt={space.alt} height={wide ? '280px' : '220px'} lang={lang} />
+              ) : (
               <div className="w-full overflow-hidden flex gap-1" style={{ height: wide ? '280px' : '220px' }}>
                 {srcs.map((src) => (
                   <button
@@ -56,6 +62,7 @@ export default function SpacesGallery({ spaces, title, spaceImages, lang = 'es' 
                   </button>
                 ))}
               </div>
+              )}
               <div className="p-5 flex-1">
                 <h3 className="font-body text-lg font-semibold text-negro mb-2">{space.nombre}</h3>
                 <p className="text-sm leading-relaxed" style={{ color: '#2D2D2D' }}>{space.descripcion}</p>
