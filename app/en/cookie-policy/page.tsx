@@ -15,7 +15,7 @@ export default function CookiePolicyENPage() {
     <>
       <Navbar lang="en" currentPath="/en/cookie-policy" />
       <main id="contenido">
-      <LegalPageTemplate lang="en" title={LEGAL_EN.cookiePolicy.title} sections={LEGAL_EN.cookiePolicy.sections} lastUpdated="August 2026" />
+      <LegalPageTemplate lang="en" title={LEGAL_EN.cookiePolicy.title} sections={LEGAL_EN.cookiePolicy.sections} lastUpdated="October 2026" />
       </main>
       <Footer lang="en" />
       <CookieBanner lang="en" />

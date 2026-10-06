@@ -19,7 +19,7 @@ export default function CookiesPage() {
         lang="es"
         title={LEGAL_ES.cookies.title}
         sections={LEGAL_ES.cookies.sections}
-        lastUpdated="Agosto 2026"
+        lastUpdated="Octubre 2026"
       />
       </main>
       <Footer lang="es" />

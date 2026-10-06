@@ -19,7 +19,7 @@ export default function AvisoLegalPage() {
         lang="es"
         title={LEGAL_ES.legalNotice.title}
         sections={LEGAL_ES.legalNotice.sections}
-        lastUpdated="Agosto 2026"
+        lastUpdated="Octubre 2026"
       />
       </main>
       <Footer lang="es" />
