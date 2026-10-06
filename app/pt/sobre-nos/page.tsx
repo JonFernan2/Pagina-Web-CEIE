@@ -53,7 +53,7 @@ export default function SobreNosPTPage() {
       </div>
 
       {/* Team Directory */}
-      <section style={{ background: '#C7C2ba' }} className="py-16">
+      <section id="equipo" style={{ background: '#C7C2ba' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-10">
             Nossa Equipe
@@ -94,7 +94,7 @@ export default function SobreNosPTPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section style={{ background: '#FFFFFF' }} className="py-16">
+      <section id="mision-vision-valores" style={{ background: '#FFFFFF' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-8">{d.sections.mision.title}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -115,6 +115,7 @@ export default function SobreNosPTPage() {
       </section>
 
       <SpacesGallery
+        id="espacios"
         spaces={d.sections.espacios.spaces}
         title={d.sections.espacios.title}
         spaceImages={SPACE_IMAGES}
@@ -122,6 +123,7 @@ export default function SobreNosPTPage() {
       />
 
       <LaunchGallery
+        id="galeria"
         title="Galeria de imagens"
         images={LAUNCH_IMAGES_PT}
         lang="pt"

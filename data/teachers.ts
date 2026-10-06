@@ -11,6 +11,11 @@ export interface TeacherData {
   fotoFit?: 'cover' | 'contain'
 }
 
+// Anchor id for a teacher's card on the teaching-team pages (used by the navbar dropdown).
+export function teacherAnchor(nombre: string): string {
+  return nombre.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+}
+
 export const TEACHERS: TeacherData[] = [
   {
     nombre: 'Ilse Capona',

@@ -46,7 +46,9 @@ export default function HomePTPage() {
             {d.hero.h1}
           </h1>
           <p className="font-body text-base md:text-lg mb-10" style={{ color: 'rgba(255,255,255,0.7)' }}>
-            {d.hero.subtitle}
+            {/* Location on its own line */}
+            {d.hero.subtitle.slice(0, d.hero.subtitle.lastIndexOf(' · '))}
+            <span className="block">{d.hero.subtitle.slice(d.hero.subtitle.lastIndexOf(' · ') + 3)}</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

@@ -28,7 +28,7 @@ const LABELS: Record<Lang, { prev: string; next: string; goTo: string; enlarge: 
 
 const AUTOPLAY_MS = 5000
 
-export default function LaunchGallery({ title, subtitle, images, lang = 'es' }: LaunchGalleryProps) {
+export default function LaunchGallery({ id, title, subtitle, images, lang = 'es' }: LaunchGalleryProps & { id?: string }) {
   const t = LABELS[lang]
   const [index, setIndex] = useState(0)
   const [lightboxOpen, setLightboxOpen] = useState(false)
@@ -61,7 +61,7 @@ export default function LaunchGallery({ title, subtitle, images, lang = 'es' }: 
   const arrow = 'absolute top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 md:w-11 md:h-11 rounded-full transition-opacity opacity-80 hover:opacity-100 focus:outline-none focus-visible:ring-2'
 
   return (
-    <section style={{ background: '#FFFFFF' }} className="py-16">
+    <section id={id} style={{ background: '#FFFFFF' }} className="py-16">
       <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
         <h2 className={`font-display font-bold text-negro text-3xl md:text-4xl ${subtitle ? 'mb-3' : 'mb-8'}`}>{title}</h2>
         {subtitle && <p className="font-body text-sm mb-8" style={{ color: '#6B6B6B' }}>{subtitle}</p>}
