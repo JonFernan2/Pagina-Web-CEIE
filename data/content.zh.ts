@@ -145,7 +145,7 @@ export const HOME_ZH = {
   },
   accreditation: {
     title: '认证质量保证',
-    p2: 'UAI持有国家认证委员会（CNA）卓越认证及Triple Crown国际认证，为所有课程的学术质量提供有力保障。',
+    p2: '阿道夫·伊瓦涅斯大学商学院荣获“三皇冠”（Triple Crown）认证，即AACSB、EQUIS和AMBA三大国际认证——这是商学院领域最严格的三项认证，全球仅有极少数院校同时获得。',
     badges: [
       'CNA 卓越认证',
       'Triple Crown 国际认证',

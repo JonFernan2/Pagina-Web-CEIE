@@ -181,19 +181,6 @@ export default function HomePage() {
               </p>
             </div>
             <div className="flex flex-col gap-4">
-              {/* CNA-Chile */}
-              <div>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/images/logo-cna-chile-negro.webp"
-                  alt="Comisión Nacional de Acreditación CNA-Chile: Universidad Adolfo Ibáñez acreditada 6 años. Áreas: Gestión institucional, Docencia de pregrado, Docencia de postgrado, Investigación y Vinculación con el medio. Hasta octubre 2027."
-                  width={1854}
-                  height={486}
-                  className="block w-full h-auto max-w-[520px]"
-                  loading="lazy"
-                />
-              </div>
-
               {/* Triple Crown: EQUIS · AACSB · AMBA */}
               <div className="flex items-center justify-center lg:justify-start pt-4">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -202,7 +189,7 @@ export default function HomePage() {
                   alt="Triple Crown: AACSB Accredited · EFMD EQUIS Accredited · AMBA Accredited"
                   width={1494}
                   height={729}
-                  className="block w-full h-auto max-w-[400px]"
+                  className="block w-full h-auto max-w-[460px]"
                   loading="lazy"
                 />
               </div>
