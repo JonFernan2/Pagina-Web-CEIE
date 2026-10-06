@@ -24,6 +24,10 @@ const LAUNCH_IMAGES_ZH = [
   { src: '/images/galeria-ceie-lanzamiento-kahoot-1.jpg', alt: 'CEIE UAI开幕Kahoot互动游戏，舞台背景展示各国国旗', objectPosition: 'center' },
   { src: '/images/espacio-aula-principal.jpg', alt: 'CEIE国际学员在UAI校园花园，背景为Viña del Mar城市风光', objectPosition: 'center' },
   { src: '/images/galeria-ceie-equipo-admin.jpg', alt: 'CEIE UAI行政团队在Viña del Mar校区', objectPosition: 'center' },
+  { src: '/images/galeria-ceie-conversatorio-1.jpg', alt: 'CEIE与UAI文科学院在Viña del Mar校区与学生举行的座谈会', objectPosition: 'center' },
+  { src: '/images/galeria-ceie-conversatorio-2.jpg', alt: 'CEIE与UAI文科学院联合举办的座谈会嘉宾席', objectPosition: 'center' },
+  { src: '/images/galeria-ceie-conversatorio-3.jpg', alt: '座谈会期间CEIE展架旁的嘉宾', objectPosition: 'center 28%' },
+  { src: '/images/galeria-ceie-conversatorio-4.jpg', alt: 'CEIE与UAI文科学院座谈会嘉宾发言', objectPosition: 'center' },
 ]
 
 export const metadata: Metadata = {

@@ -24,6 +24,10 @@ const LAUNCH_IMAGES_EN = [
   { src: '/images/galeria-ceie-lanzamiento-kahoot-1.jpg', alt: 'Kahoot integration activity during the CEIE UAI launch with international flags on stage', objectPosition: 'center' },
   { src: '/images/espacio-aula-principal.jpg', alt: 'International CEIE students in the UAI campus gardens with Viña del Mar skyline', objectPosition: 'center' },
   { src: '/images/galeria-ceie-equipo-admin.jpg', alt: 'CEIE UAI administrative team at the Viña del Mar campus', objectPosition: 'center' },
+  { src: '/images/galeria-ceie-conversatorio-1.jpg', alt: 'CEIE and UAI Faculty of Liberal Arts discussion panel with students at the Viña del Mar campus', objectPosition: 'center' },
+  { src: '/images/galeria-ceie-conversatorio-2.jpg', alt: 'Panel discussion organised by the CEIE and the UAI Faculty of Liberal Arts', objectPosition: 'center' },
+  { src: '/images/galeria-ceie-conversatorio-3.jpg', alt: 'Panel members beside the CEIE banner during the discussion', objectPosition: 'center 28%' },
+  { src: '/images/galeria-ceie-conversatorio-4.jpg', alt: 'Panel contribution during the CEIE and UAI Faculty of Liberal Arts discussion', objectPosition: 'center' },
 ]
 
 export const metadata: Metadata = {

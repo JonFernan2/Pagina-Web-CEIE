@@ -24,6 +24,10 @@ const LAUNCH_IMAGES_ES = [
   { src: '/images/galeria-ceie-lanzamiento-kahoot-1.jpg', alt: 'Actividad de integración Kahoot durante el lanzamiento del CEIE UAI con banderas de países', objectPosition: 'center' },
   { src: '/images/espacio-aula-principal.jpg', alt: 'Estudiantes internacionales del CEIE en los jardines del campus UAI con vista a Viña del Mar', objectPosition: 'center' },
   { src: '/images/galeria-ceie-equipo-admin.jpg', alt: 'Equipo administrativo del CEIE UAI en el campus Viña del Mar', objectPosition: 'center' },
+  { src: '/images/galeria-ceie-conversatorio-1.jpg', alt: 'Conversatorio del CEIE y la Facultad de Artes Liberales UAI con estudiantes en el campus Viña del Mar', objectPosition: 'center' },
+  { src: '/images/galeria-ceie-conversatorio-2.jpg', alt: 'Panel del conversatorio organizado por el CEIE y la Facultad de Artes Liberales UAI', objectPosition: 'center' },
+  { src: '/images/galeria-ceie-conversatorio-3.jpg', alt: 'Integrantes del panel junto al pendón del CEIE durante el conversatorio', objectPosition: 'center 28%' },
+  { src: '/images/galeria-ceie-conversatorio-4.jpg', alt: 'Intervención del panel durante el conversatorio del CEIE y la Facultad de Artes Liberales UAI', objectPosition: 'center' },
 ]
 
 export const metadata: Metadata = {
