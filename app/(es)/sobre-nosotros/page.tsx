@@ -127,7 +127,6 @@ export default function SobreNosotrosPage() {
 
       <LaunchGallery
         title="Galería de imágenes"
-        subtitle="Imágenes del acto oficial de inauguración del CEIE en la Universidad Adolfo Ibáñez, Viña del Mar."
         images={LAUNCH_IMAGES_ES}
         lang="es"
       />

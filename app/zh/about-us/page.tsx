@@ -119,7 +119,6 @@ export default function AboutZHPage() {
 
       <LaunchGallery
         title="图片集"
-        subtitle="CEIE在阿道夫·伊瓦涅斯大学Viña del Mar校区正式成立典礼的影像记录。"
         images={LAUNCH_IMAGES_ZH}
         lang="zh"
       />
