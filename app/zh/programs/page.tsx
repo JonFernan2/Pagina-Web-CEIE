@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
 import ProductAccordion from '@/components/ProductAccordion'
+import PlacementTestCta from '@/components/PlacementTestCta'
 import { PROGRAMS_DATA_ZH } from '@/data/programs.zh'
 import { PROGRAMS_ZH } from '@/data/content.zh'
 
@@ -36,6 +37,8 @@ export default function ProgramsZHPage() {
           <ProductAccordion programs={PROGRAMS_DATA_ZH} lang="zh" />
         </div>
       </section>
+
+      <PlacementTestCta lang="zh" />
 
       </main>
 

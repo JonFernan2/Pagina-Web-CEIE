@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
 import ProductAccordion from '@/components/ProductAccordion'
+import PlacementTestCta from '@/components/PlacementTestCta'
 import { PROGRAMS_DATA } from '@/data/programs'
 import { PROGRAMS_ES } from '@/data/content.es'
 
@@ -48,6 +49,8 @@ export default function ProgramasPage() {
           <ProductAccordion programs={PROGRAMS_DATA} />
         </div>
       </section>
+
+      <PlacementTestCta lang="es" />
 
       </main>
 
