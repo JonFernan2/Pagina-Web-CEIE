@@ -140,6 +140,21 @@ export default function Footer({ lang }: FooterProps) {
         </div>
       </div>
 
+      {/* CNA-Chile accreditation seal */}
+      <div style={{ borderTop: '1px solid #2D2D2D' }}>
+        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 py-6 flex justify-center md:justify-end">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/logo-cna-chile-blanco.webp"
+            alt="Comisión Nacional de Acreditación CNA-Chile: Universidad Adolfo Ibáñez acreditada 6 años. Áreas: Gestión institucional, Docencia de pregrado, Docencia de postgrado, Investigación y Vinculación con el medio. Hasta octubre 2027."
+            width={1896}
+            height={486}
+            className="block w-full h-auto max-w-[420px]"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
       {/* Bottom legal row */}
       <div style={{ borderTop: '1px solid #2D2D2D' }}>
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 py-4 flex flex-col md:flex-row items-center justify-between gap-3">
