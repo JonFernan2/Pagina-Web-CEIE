@@ -1,15 +1,20 @@
 import type { Metadata } from 'next'
+import { notFound } from 'next/navigation'
+import { SHOW_PLACEMENT_TEST } from '@/lib/site'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
 import PlacementTest from '@/components/PlacementTest'
 
 export const metadata: Metadata = {
+  robots: SHOW_PLACEMENT_TEST ? undefined : { index: false },
   title: 'Spanish placement test | CEIE UAI',
   description: 'Orientative test to estimate your Spanish level according to the CEFR (A1–C1) and find the right CEIE UAI programme for you.',
 }
 
 export default function PlacementTestPage() {
+  if (!SHOW_PLACEMENT_TEST) notFound()
+
   return (
     <>
       <Navbar lang="en" currentPath="/en/placement-test" />

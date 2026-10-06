@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import { ROUTES, type Lang } from '@/lib/routes'
+import { SHOW_PLACEMENT_TEST, PLACEMENT_TEST_PATHS } from '@/lib/site'
 
 interface NavbarProps {
   lang: 'es' | 'en' | 'pt' | 'zh'
@@ -94,7 +95,10 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
   const [langOpen, setLangOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const langRef = useRef<HTMLDivElement>(null)
-  const nav = navData[lang]
+  const nav = {
+    ...navData[lang],
+    links: navData[lang].links.filter((l) => SHOW_PLACEMENT_TEST || !PLACEMENT_TEST_PATHS.includes(l.href)),
+  }
 
   const isActive = (href: string) => currentPath === href
 

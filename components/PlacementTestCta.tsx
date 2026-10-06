@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { ClipboardCheck } from 'lucide-react'
+import { SHOW_PLACEMENT_TEST } from '@/lib/site'
 
 type Lang = 'es' | 'en' | 'pt' | 'zh'
 
@@ -11,6 +12,7 @@ const T: Record<Lang, { title: string; text: string; cta: string; href: string }
 }
 
 export default function PlacementTestCta({ lang = 'es' }: { lang?: Lang }) {
+  if (!SHOW_PLACEMENT_TEST) return null
   const t = T[lang]
   return (
     <section style={{ background: '#C7C2ba' }} className="py-12">
