@@ -55,20 +55,25 @@ export default function VideoCarousel({ videos, lang }: { videos: Video[]; lang:
 
       <p className="text-xs mt-2 font-body text-center" style={{ color: '#6B6B6B' }}>{v.caption}</p>
 
-      <div className="flex justify-center items-center gap-2 mt-5">
+      <div className="flex justify-center items-center mt-5">
         {videos.map((_, i) => (
           <button
             key={i}
             onClick={() => setCurrent(i)}
             aria-label={`Video ${i + 1}`}
-            className="transition-all duration-200"
-            style={{
-              width: i === current ? '28px' : '10px',
-              height: '10px',
-              borderRadius: '5px',
-              background: i === current ? '#6493b5' : '#C7C2ba',
-            }}
-          />
+            aria-current={i === current}
+            className="flex items-center justify-center min-w-[28px] h-7 px-1"
+          >
+            <span
+              className="block transition-all duration-200"
+              style={{
+                width: i === current ? '28px' : '10px',
+                height: '10px',
+                borderRadius: '5px',
+                background: i === current ? '#6493b5' : '#C7C2ba',
+              }}
+            />
+          </button>
         ))}
       </div>
 

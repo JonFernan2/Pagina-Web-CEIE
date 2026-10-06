@@ -144,7 +144,7 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
           </Link>
 
           {/* Desktop nav */}
-          <div className="hidden md:flex flex-1 items-center justify-center gap-1">
+          <div className="hidden xl:flex flex-1 items-center justify-center gap-1">
             {nav.links.map((link) => {
               const active = isActive(link.href)
               return (
@@ -166,7 +166,7 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
           </div>
 
           {/* Right: CTA + lang toggle */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden xl:flex items-center gap-4">
             <Link
               href={nav.cta.href}
               className="font-body text-sm font-medium px-6 py-2 transition-colors duration-200"
@@ -224,7 +224,7 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
 
           {/* Mobile hamburger */}
           <button
-            className="md:hidden text-white p-2"
+            className="xl:hidden text-white p-2"
             onClick={() => setMobileOpen((v) => !v)}
             aria-label={mobileOpen ? NAV_ARIA[lang].close : NAV_ARIA[lang].open}
             aria-expanded={mobileOpen}
@@ -237,7 +237,7 @@ export default function Navbar({ lang, currentPath }: NavbarProps) {
       {/* Mobile panel */}
       {mobileOpen && (
         <div
-          className="md:hidden w-full py-4 px-6 flex flex-col gap-4"
+          className="xl:hidden w-full py-4 px-6 flex flex-col gap-4"
           style={{ background: '#1d1e20', borderTop: '1px solid #2D2D2D' }}
         >
           {nav.links.map((link) => (
