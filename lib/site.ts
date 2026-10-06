@@ -40,3 +40,7 @@ export function siteMetadata(lang: Lang, title: string, description: string): Me
     },
   }
 }
+
+// "Convocatorias" (home section + footer link to postula.uai.cl). Hidden while there are no open calls; set to true to show again.
+export const SHOW_CALLS = false
+export const CALLS_URL = 'https://postula.uai.cl/'

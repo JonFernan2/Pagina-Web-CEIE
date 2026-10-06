@@ -8,6 +8,7 @@ import ProgramCard from '@/components/ProgramCard'
 import { HOME_PT } from '@/data/content.pt'
 import YouTubeVideo from '@/components/YouTubeVideo'
 import Linkify from '@/components/Linkify'
+import { SHOW_CALLS } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: HOME_PT.meta.title,
@@ -295,28 +296,30 @@ export default function HomePTPage() {
       </section>
 
       {/* ── CONVOCATÓRIAS ── */}
-      <section style={{ background: '#C7C2ba' }} className="py-16">
-        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 text-center">
-          <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#1d1e20' }}>
-            Inscrições abertas
-          </p>
-          <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-4">
-            Convocatórias
-          </h2>
-          <p className="text-base leading-relaxed mb-8 mx-auto" style={{ color: '#2D2D2D', maxWidth: '560px' }}>
-            Tem interesse em estudar espanhol na Universidad Adolfo Ibáñez? Confira nossas convocatórias vigentes e candidate-se pelo portal oficial da UAI.
-          </p>
-          <a
-            href="https://postula.uai.cl/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 font-body font-semibold text-sm uppercase tracking-widest transition-colors duration-200"
-            style={{ background: '#1d1e20', color: '#FFFFFF', borderRadius: '2px' }}
-          >
-            Ver convocatórias →
-          </a>
-        </div>
-      </section>
+      {SHOW_CALLS && (
+        <section style={{ background: '#C7C2ba' }} className="py-16">
+          <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 text-center">
+            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#1d1e20' }}>
+              Inscrições abertas
+            </p>
+            <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-4">
+              Convocatórias
+            </h2>
+            <p className="text-base leading-relaxed mb-8 mx-auto" style={{ color: '#2D2D2D', maxWidth: '560px' }}>
+              Tem interesse em estudar espanhol na Universidad Adolfo Ibáñez? Confira nossas convocatórias vigentes e candidate-se pelo portal oficial da UAI.
+            </p>
+            <a
+              href="https://postula.uai.cl/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 font-body font-semibold text-sm uppercase tracking-widest transition-colors duration-200"
+              style={{ background: '#1d1e20', color: '#FFFFFF', borderRadius: '2px' }}
+            >
+              Ver convocatórias →
+            </a>
+          </div>
+        </section>
+      )}
 
       </main>
 

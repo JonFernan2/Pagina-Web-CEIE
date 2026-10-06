@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { SHOW_CALLS, CALLS_URL } from '@/lib/site'
 import { FOOTER_ES } from '@/data/content.es'
 import { FOOTER_EN } from '@/data/content.en'
 import { FOOTER_PT } from '@/data/content.pt'
@@ -69,7 +70,7 @@ export default function Footer({ lang }: FooterProps) {
               {f.col2.title}
             </h3>
             <ul className="flex flex-col gap-2">
-              {f.col2.links.map((link) => (
+              {f.col2.links.filter((link) => SHOW_CALLS || link.href !== CALLS_URL).map((link) => (
                 <li key={link.href}>
                   {link.href.startsWith('http') ? (
                     <a
