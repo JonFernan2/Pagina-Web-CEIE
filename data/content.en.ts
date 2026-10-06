@@ -65,7 +65,7 @@ export const HOME_EN = {
     cta2: { label: 'Contact us', href: '/en/contact' },
   },
   valueProps: {
-    title: 'Why study Spanish at UAI',
+    title: 'Why study Spanish at UAI?',
     cards: [
       {
         icon: 'GraduationCap',
