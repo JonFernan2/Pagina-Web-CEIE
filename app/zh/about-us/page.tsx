@@ -13,7 +13,7 @@ const SPACE_IMAGES: SpaceImages[] = [
   { srcs: ['/images/sala-estudio-2.jpg', '/images/sala-estudio-3.jpg'], carousel: true, positions: ['center', 'center 60%'] },
   { srcs: ['/images/gimnasio-uai.jpg'] },
   { srcs: ['/images/campus-vina-aerea.jpg'], wide: true, busRoutes: true },
-  { srcs: ['/images/espacio-aula-principal.jpg', '/images/espacio-sala-conferencias.jpg'], wide: true },
+  { srcs: ['/images/espacio-aula-principal.jpg', '/images/espacio-sala-conferencias.jpg', '/images/actividades-culturales-uai.jpg'], wide: true, carousel: true, positions: ['center', 'center', 'center'] },
 ]
 
 const LAUNCH_IMAGES_ZH = [
