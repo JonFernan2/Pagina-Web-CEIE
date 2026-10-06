@@ -132,10 +132,8 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
     sedes: ['Viña del Mar'],
     publicoObjetivo: '寻求短期强化语言培训的国际非西班牙语学员。',
     cursosTabla: [
-      { nombre: '语法与交际结构', horas: 22, precioUSD: '900 USD（两门课合计）', creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '2周强化课程', descripcion: '本强化课程专注于培养西班牙语的基础语法结构。通过主动应用的教学法，学员掌握理解和运用语言主要结构所需的工具，用于日常交际情境。课程涵盖基础语法内容，整合词汇、理解与口头及书面产出练习。' },
-      { nombre: '交际与智利文化', horas: 22, precioUSD: '已含', creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '2周强化课程', descripcion: '本强化课程培养西班牙语基础交际能力，将语言学习与智利及拉丁美洲文化融合。通过实践活动与沉浸体验，学员在真实场景中运用西班牙语，探索智利日常生活与文化。包含Viña del Mar和Valparaíso的文化活动。' },
-      { nombre: '语法与交际结构', horas: 40, precioUSD: '1,800 USD（两门课合计）', creditos: 4, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '4周强化课程', descripcion: '强化课程，专注于培养和巩固西班牙语语法与语言资源。四周制教学安排有助于循序渐进地掌握和巩固相应级别的语法结构。' },
-      { nombre: '交际与智利文化', horas: 40, precioUSD: '已含', creditos: 4, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '4周强化课程', descripcion: '强化课程，融合文化学习的西班牙语交际能力培养。四周制安排有助于学员循序渐进地深化交际能力，并进一步整合语言学习与文化体验。' },
+      { nombre: '语法与交际结构', horas: 22, precioUSD: 900, creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, descripcion: '本强化课程着重培养西班牙语的基础语法结构。通过积极、注重实践的教学方法，学员将掌握在日常交际情境中理解和运用该语言主要结构所需的工具。 课程涵盖核心语法内容，融合词汇、理解以及口头和书面表达，并通过实践活动让学员在真实交际情境中运用所学。强化形式有助于逐步巩固学习成果，为继续提升西班牙语水平打下坚实基础。' },
+      { nombre: '交际与智利文化', horas: 22, precioUSD: 900, creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, descripcion: '本强化课程着重培养西班牙语基础交际能力，将语言学习与智利及拉丁美洲文化的认识相结合。学员将掌握在日常情境中以口头和书面形式进行简单交流的工具。 通过实践活动和沉浸式体验，学员有机会在真实情境中使用西班牙语，同时探索智利的日常生活、社会与文化。课程包含在Viña del Mar和瓦尔帕莱索开展的文化活动，促进跨文化反思，帮助学员更深入地了解其学习经历所处的环境。' },
     ],
     horarios: [
       { turno: '课程', dias: '周一至周四', hora: '按课程安排' },
@@ -189,10 +187,10 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
     },
     precio: {
       resumen: 'USD 900 起',
-      estandarLabel: '2周强化',
-      estandar: 'USD 900（两门课合计）',
-      inSituLabel: '4周强化',
-      inSitu: 'USD 1,800（两门课合计）',
+      estandarLabel: '1门课程 · 2周',
+      estandar: 'USD 900',
+      inSituLabel: '2门课程 · 4周',
+      inSitu: 'USD 1,800',
     },
     modalidades: [
       '面授 · Viña del Mar 校区',
