@@ -50,7 +50,7 @@ export const HOME_ZH = {
 
     h1: '在南太平洋\n学习西班牙语',
     subtitle: '西班牙语综合教学中心 · 阿道夫·伊瓦涅斯大学 · 比尼亚德尔马，智利',
-    cta1: { label: '查看课程', href: '/zh/programs' },
+    cta1: { label: '查看课程', href: '#programas' },
     cta2: { label: '联系我们', href: '/zh/contact' },
   },
   valueProps: {
@@ -90,6 +90,8 @@ export const HOME_ZH = {
         horario: '周一至周五，08:30 – 18:55',
         grupoMax: '最少5人',
         precioReferencial: '起价 USD 950/课程',
+        precioDesde: '每门课程 USD 950 起',
+        imagen: '/images/card-programa-semestral.jpg',
         href: '/zh/programs/semester',
       },
       {
@@ -100,6 +102,8 @@ export const HOME_ZH = {
         horario: '周一至周四上课，08:30 – 18:55 · 周五文化活动',
         grupoMax: '最少5人',
         precioReferencial: 'USD 900（2周）· USD 1,800（4周）',
+        precioDesde: '每门课程 USD 900 起',
+        imagen: '/images/card-programa-intensivo.jpg',
         href: '/zh/programs/intensive',
       },
       {
@@ -110,6 +114,8 @@ export const HOME_ZH = {
         horario: '与学员或机构协商安排',
         grupoMax: '根据机构协议而定',
         precioReferencial: 'USD 900 – 1,500',
+        precioDesde: 'USD 900 起',
+        imagen: '/images/card-programa-fines-especificos.jpg',
         href: '/zh/programs/specific-purposes',
       },
     ],

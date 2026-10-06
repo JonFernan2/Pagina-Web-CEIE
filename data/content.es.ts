@@ -61,7 +61,7 @@ export const HOME_ES = {
 
     h1: 'Aprende español\nen el Pacífico Sur',
     subtitle: 'Centro de Enseñanza Integral del Español · Universidad Adolfo Ibáñez · Viña del Mar, Chile',
-    cta1: { label: 'Ver programas', href: '/programas-y-cursos' },
+    cta1: { label: 'Ver programas', href: '#programas' },
     cta2: { label: 'Contactar', href: '/contacto' },
   },
   valueProps: {
@@ -101,6 +101,8 @@ export const HOME_ES = {
         horario: 'Lunes a viernes, 08:30 – 18:55',
         grupoMax: 'Mín. 5 personas',
         precioReferencial: 'Desde USD 950/curso',
+        precioDesde: 'Desde USD 950 por curso',
+        imagen: '/images/card-programa-semestral.jpg',
         href: '/programas-y-cursos/semestral',
       },
       {
@@ -111,6 +113,8 @@ export const HOME_ES = {
         horario: 'Clases de lunes a jueves, 08:30 – 18:55 · Actividades culturales los viernes',
         grupoMax: 'Mín. 5 personas',
         precioReferencial: 'USD 900 (2 semanas) · USD 1.800 (4 semanas)',
+        precioDesde: 'Desde USD 900 por curso',
+        imagen: '/images/card-programa-intensivo.jpg',
         href: '/programas-y-cursos/intensivo',
       },
       {
@@ -121,6 +125,8 @@ export const HOME_ES = {
         horario: 'Coordinado con el participante o la institución',
         grupoMax: 'Variable según convenio institucional',
         precioReferencial: 'USD 900 – 1.500',
+        precioDesde: 'Desde USD 900',
+        imagen: '/images/card-programa-fines-especificos.jpg',
         href: '/programas-y-cursos/fines-especificos',
       },
     ],

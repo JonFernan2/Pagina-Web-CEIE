@@ -50,7 +50,7 @@ export const HOME_PT = {
 
     h1: 'Aprenda espanhol\nno Pacífico Sul',
     subtitle: 'Centro de Ensino Integral do Espanhol · Universidad Adolfo Ibáñez · Viña del Mar, Chile',
-    cta1: { label: 'Ver programas', href: '/pt/programas-e-cursos' },
+    cta1: { label: 'Ver programas', href: '#programas' },
     cta2: { label: 'Contato', href: '/pt/contato' },
   },
   valueProps: {
@@ -90,6 +90,8 @@ export const HOME_PT = {
         horario: 'Segunda a sexta-feira, 08:30 – 18:55',
         grupoMax: 'Mín. 5 pessoas',
         precioReferencial: 'A partir de USD 950/curso',
+        precioDesde: 'A partir de USD 950 por curso',
+        imagen: '/images/card-programa-semestral.jpg',
         href: '/pt/programas-e-cursos/semestral',
       },
       {
@@ -100,6 +102,8 @@ export const HOME_PT = {
         horario: 'Aulas de segunda a quinta-feira, 08:30 – 18:55 · Atividades culturais às sextas-feiras',
         grupoMax: 'Mín. 5 pessoas',
         precioReferencial: 'USD 900 (2 semanas) · USD 1.800 (4 semanas)',
+        precioDesde: 'A partir de USD 900 por curso',
+        imagen: '/images/card-programa-intensivo.jpg',
         href: '/pt/programas-e-cursos/intensivo',
       },
       {
@@ -110,6 +114,8 @@ export const HOME_PT = {
         horario: 'Coordenado com o participante ou a instituição',
         grupoMax: 'Variável conforme acordo institucional',
         precioReferencial: 'USD 900 – 1.500',
+        precioDesde: 'A partir de USD 900',
+        imagen: '/images/card-programa-fines-especificos.jpg',
         href: '/pt/programas-e-cursos/fins-especificos',
       },
     ],

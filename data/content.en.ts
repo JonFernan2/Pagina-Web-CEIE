@@ -61,7 +61,7 @@ export const HOME_EN = {
 
     h1: 'Learn Spanish\non the South Pacific',
     subtitle: 'Spanish Language Teaching Centre · Universidad Adolfo Ibáñez · Viña del Mar, Chile',
-    cta1: { label: 'View programs', href: '/en/programs-and-courses' },
+    cta1: { label: 'View programs', href: '#programas' },
     cta2: { label: 'Contact us', href: '/en/contact' },
   },
   valueProps: {
@@ -101,6 +101,8 @@ export const HOME_EN = {
         horario: 'Monday to Friday, 08:30 – 18:55',
         grupoMax: 'Min. 5 people',
         precioReferencial: 'From USD 950/course',
+        precioDesde: 'From USD 950 per course',
+        imagen: '/images/card-programa-semestral.jpg',
         href: '/en/programs-and-courses/semester',
       },
       {
@@ -111,6 +113,8 @@ export const HOME_EN = {
         horario: 'Classes Monday to Thursday, 08:30 – 18:55 · Cultural activities on Fridays',
         grupoMax: 'Min. 5 people',
         precioReferencial: 'USD 900 (2 weeks) · USD 1,800 (4 weeks)',
+        precioDesde: 'From USD 900 per course',
+        imagen: '/images/card-programa-intensivo.jpg',
         href: '/en/programs-and-courses/intensive',
       },
       {
@@ -121,6 +125,8 @@ export const HOME_EN = {
         horario: 'Coordinated with the participant or institution',
         grupoMax: 'Variable according to institutional agreement',
         precioReferencial: 'USD 900 – 1,500',
+        precioDesde: 'From USD 900',
+        imagen: '/images/card-programa-fines-especificos.jpg',
         href: '/en/programs-and-courses/specific-purposes',
       },
     ],
