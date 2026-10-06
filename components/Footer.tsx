@@ -173,10 +173,11 @@ export default function Footer({ lang }: FooterProps) {
           <p className="text-xs text-white/60 text-center md:text-right">
             {f.legal.copyright}
           </p>
-          <p className="text-xs text-white/60 text-center md:text-right mt-1">
-            {CREDIT[lang]} Jonathan Fernando Muñoz Alvarez
-          </p>
         </div>
+        {/* Discreet credit: smallest size and lowest opacity that still meet WCAG AA contrast (~5:1) */}
+        <p className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8 pb-3 text-[10px] tracking-wide text-center text-white/50">
+          {CREDIT[lang]} Jonathan Fernando Muñoz Álvarez
+        </p>
       </div>
     </footer>
   )
