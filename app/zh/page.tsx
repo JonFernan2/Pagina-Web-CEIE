@@ -155,31 +155,32 @@ export default function HomeZHPage() {
             </div>
             <div className="flex flex-col gap-4">
               {/* CNA-Chile */}
-              <div style={{ background: '#FFFFFF', borderRadius: '4px', padding: '20px 24px' }}>
-                <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-5">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="/images/logo-cna-chile.png"
-                    alt="Comisión Nacional de Acreditación CNA-Chile"
-                    style={{ height: '72px', width: 'auto', filter: 'invert(1)' }}
-                  />
-                  <div className="min-w-0 sm:border-l sm:pl-5" style={{ borderColor: '#D1CFC9' }}>
-                    <p className="font-body font-semibold text-negro text-sm leading-snug">阿道夫·伊瓦涅斯大学</p>
-                    <p className="font-body font-semibold text-negro text-sm">认证6年</p>
-                    <p className="font-body text-xs leading-relaxed mt-1" style={{ color: '#4a4a4a' }}>
-                      领域：机构管理、本科教学、研究生教学、科研与社会联系。有效期至2027年10月。
-                    </p>
-                  </div>
+              <div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/logo-cna-chile-negro.webp"
+                  alt="Comisión Nacional de Acreditación CNA-Chile"
+                  width={1854}
+                  height={486}
+                  className="block w-full h-auto max-w-[520px]"
+                  loading="lazy"
+                />
+                <div className="mt-3 pt-3 font-body" style={{ borderTop: '1px solid rgba(29,30,32,0.25)' }}>
+                  <p className="font-semibold text-negro text-sm">阿道夫·伊瓦涅斯大学 · 认证6年</p>
+                  <p className="text-xs leading-relaxed mt-1" style={{ color: '#2D2D2D' }}>领域：机构管理、本科教学、研究生教学、科研与社会联系。有效期至2027年10月。</p>
                 </div>
               </div>
 
               {/* Triple Crown: EQUIS · AACSB · AMBA */}
-              <div className="flex items-center justify-center" style={{ background: '#FFFFFF', borderRadius: '4px', padding: '20px 24px' }}>
+              <div className="flex items-center justify-center lg:justify-start pt-4">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/triple-crown-logos-v2.webp"
-                  alt="三重皇冠认证：AACSB认证 · EFMD EQUIS认证 · AMBA认证"
-                  style={{ maxHeight: '150px', width: '100%', objectFit: 'contain' }}
+                  src="/images/triple-crown-logos-transparente.webp"
+                  alt="Triple Crown: AACSB Accredited · EFMD EQUIS Accredited · AMBA Accredited"
+                  width={1494}
+                  height={729}
+                  className="block w-full h-auto max-w-[400px]"
+                  loading="lazy"
                 />
               </div>
             </div>
