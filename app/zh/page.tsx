@@ -9,6 +9,7 @@ import { HOME_ZH } from '@/data/content.zh'
 import YouTubeVideo from '@/components/YouTubeVideo'
 import Linkify from '@/components/Linkify'
 import { SHOW_CALLS } from '@/lib/site'
+import AccreditationSection from '@/components/AccreditationSection'
 
 export const metadata: Metadata = {
   title: HOME_ZH.meta.title,
@@ -145,50 +146,7 @@ export default function HomeZHPage() {
       </section>
 
       {/* ── ACCREDITATION ── */}
-      <section style={{ background: '#C7C2ba' }} className="py-16">
-        <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-6">
-                {d.accreditation.title}
-              </h2>
-              <p className="text-base leading-relaxed" style={{ color: '#2D2D2D' }}>
-                {d.accreditation.p2}
-              </p>
-              <p className="text-base leading-relaxed mt-4" style={{ color: '#2D2D2D' }}>
-                {d.accreditation.p3}
-              </p>
-            </div>
-            <div className="flex flex-col gap-4">
-              {/* Triple Crown: EQUIS · AACSB · AMBA */}
-              <div className="flex items-center justify-center lg:justify-start pt-4">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/images/triple-crown-logos-transparente.webp"
-                  alt="Triple Crown: AACSB Accredited · EFMD EQUIS Accredited · AMBA Accredited"
-                  width={1494}
-                  height={729}
-                  className="block w-full h-auto max-w-[460px]"
-                  loading="lazy"
-                />
-              </div>
-
-              {/* ABET — Engineering Accreditation Commission */}
-              <div className="flex items-center justify-center lg:justify-start">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/images/logo-abet-transparente.webp"
-                  alt="ABET — Engineering Accreditation Commission"
-                  width={730}
-                  height={247}
-                  className="block w-full h-auto max-w-[300px]"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <AccreditationSection data={d.accreditation} />
 
       {/* ── TESTIMONIALS ── */}
       <section style={{ background: '#FFFFFF' }} className="py-20">
