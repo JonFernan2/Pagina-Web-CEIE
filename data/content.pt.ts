@@ -244,14 +244,14 @@ export const ABOUT_PT = {
           alt: 'Instalações esportivas do campus UAI Viña del Mar, incluindo ginásio e espaços de treinamento.',
         },
         {
-          nombre: 'Entorno — Viña del Mar',
-          descripcion: 'O campus da Universidad Adolfo Ibáñez está situado em um ambiente privilegiado, cercado pela natureza e com vista para o oceano Pacífico. Localizado a 15 minutos de Valparaíso e a aproximadamente 1,5 hora de Santiago, oferece aos estudantes um ambiente universitário tranquilo e conectado a alguns dos principais atrativos culturais e turísticos da região.',
-          alt: 'Vista do campus UAI Viña del Mar com acesso ao Pacífico, cidade de Viña del Mar ao fundo.',
-        },
-        {
           nombre: 'Atividades culturais',
           descripcion: 'Roteiros pelo patrimônio de Valparaíso e conversas com acadêmicos da UAI, incluídos em todos os programas. As excursões opcionais, como visitas às vinícolas do Vale de Casablanca, podem ter custo adicional.',
           alt: 'Estudantes internacionais do CEIE em atividades culturais e acadêmicas no campus UAI Viña del Mar.',
+        },
+        {
+          nombre: 'Entorno — Viña del Mar',
+          descripcion: 'O campus da Universidad Adolfo Ibáñez está situado em um ambiente privilegiado, cercado pela natureza e com vista para o oceano Pacífico. Localizado a 15 minutos de Valparaíso e a aproximadamente 1,5 hora de Santiago, oferece aos estudantes um ambiente universitário tranquilo e conectado a alguns dos principais atrativos culturais e turísticos da região.',
+          alt: 'Vista do campus UAI Viña del Mar com acesso ao Pacífico, cidade de Viña del Mar ao fundo.',
         },
       ],
     },
