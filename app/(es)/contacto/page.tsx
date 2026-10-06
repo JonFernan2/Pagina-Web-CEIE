@@ -63,9 +63,6 @@ export default function ContactoPage() {
                   <a key={em} href={`mailto:${em}`} className="underline underline-offset-2 hover:no-underline" style={{ color: '#1d1e20', textDecorationColor: '#6493b5' }}>{em}</a>
                 ))}
                 <p>{d.info.hours}</p>
-                {d.info.social.map((s) => (
-                  <p key={s} style={{ color: '#2D2D2D' }}>{s}</p>
-                ))}
               </div>
 
               <div className="w-full aspect-video overflow-hidden" style={{ borderRadius: '4px', border: '2px solid #6493b5' }}>
