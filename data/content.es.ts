@@ -127,7 +127,6 @@ export const HOME_ES = {
         precioReferencial: 'USD 900 – 1.500',
         precioDesde: 'Desde USD 900',
         imagen: '/images/card-programa-fines-especificos.jpg',
-        imagenPos: 'center 30%',
         href: '/programas-y-cursos/fines-especificos',
       },
     ],
