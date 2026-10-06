@@ -296,6 +296,7 @@ export default function ProgramTemplate({
           </div>
 
           {/* Aside — Quick summary */}
+          {!simple && (
           <aside className="lg:w-72 shrink-0">
             <div
               className="sticky top-20 flex flex-col gap-4 p-5"
@@ -307,7 +308,6 @@ export default function ProgramTemplate({
               >
                 {asideTitle}
               </h3>
-              {!simple && (
               <div className="flex flex-col gap-3 text-sm">
                 <AsideStat label={labels.levels} value={data.niveles.join(', ')} />
                 <AsideStat label={labels.duration} value={data.duracion} />
@@ -318,7 +318,6 @@ export default function ProgramTemplate({
                   highlight
                 />
               </div>
-              )}
               <Link
                 href={applyHref}
                 className="mt-2 flex items-center justify-center gap-2 py-3 text-sm font-semibold uppercase tracking-widest transition-colors duration-200"
@@ -328,6 +327,7 @@ export default function ProgramTemplate({
               </Link>
             </div>
           </aside>
+          )}
         </div>
       </div>
     </div>
