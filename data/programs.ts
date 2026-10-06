@@ -7,6 +7,8 @@ export interface HorarioEntry {
 export interface TemarioItem {
   nivel: string
   contenidos: string[]
+  descripcion?: string[]
+  ficha?: { label: string; value: string }[]
 }
 
 export interface CondicionEntry {
@@ -202,10 +204,8 @@ export const PROGRAMS_DATA: ProgramData[] = [
     sedes: ['Viña del Mar'],
     publicoObjetivo: 'Estudiantes internacionales no hispanohablantes que buscan desarrollar sus competencias en español en un período breve.',
     cursosTabla: [
-      { nombre: 'Gramática y Estructuras Comunicativas', horas: 22, precioUSD: '900 USD (ambos cursos)', creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: 'Intensivo 2 semanas', descripcion: 'Curso intensivo orientado al desarrollo de las estructuras gramaticales fundamentales del español. A través de una metodología activa y aplicada, los estudiantes adquieren las herramientas necesarias para comprender y utilizar las principales estructuras del idioma en situaciones comunicativas cotidianas. El curso aborda contenidos gramaticales esenciales, integrando vocabulario, comprensión y producción oral y escrita, con actividades prácticas que permiten aplicar los contenidos en contextos reales de comunicación.' },
-      { nombre: 'Comunicación y Cultura Chilena', horas: 22, precioUSD: 'Incluido', creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: 'Intensivo 2 semanas', descripcion: 'Curso intensivo orientado al desarrollo de las competencias comunicativas básicas en español, integrando el aprendizaje del idioma con una aproximación a la cultura chilena y latinoamericana. A través de actividades prácticas y experiencias de inmersión, los estudiantes utilizan el español en contextos reales mientras exploran aspectos de la vida cotidiana y la cultura chilena. Incorpora actividades culturales en Viña del Mar y Valparaíso.' },
-      { nombre: 'Gramática y Estructuras Comunicativas', horas: 40, precioUSD: '1.800 USD (ambos cursos)', creditos: 4, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: 'Intensivo 4 semanas', descripcion: 'Curso intensivo orientado al desarrollo y fortalecimiento de los recursos gramaticales y lingüísticos del español. El formato de cuatro semanas permite abordar y consolidar progresivamente los recursos gramaticales y lingüísticos correspondientes al nivel, proporcionando una base sólida para continuar avanzando en el dominio del español.' },
-      { nombre: 'Comunicación y Cultura Chilena', horas: 40, precioUSD: 'Incluido', creditos: 4, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: 'Intensivo 4 semanas', descripcion: 'Curso intensivo orientado al desarrollo y fortalecimiento de las competencias comunicativas en español, con integración de la cultura chilena. El formato de cuatro semanas permite profundizar progresivamente en las competencias comunicativas y fortalece la conexión entre el aprendizaje del idioma y la experiencia cultural.' },
+      { nombre: 'Gramática y Estructuras Comunicativas', horas: 22, precioUSD: 900, creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, descripcion: 'Curso intensivo orientado al desarrollo de las estructuras gramaticales fundamentales del español. A través de una metodología activa y aplicada, los estudiantes adquieren las herramientas necesarias para comprender y utilizar las principales estructuras del idioma en situaciones comunicativas cotidianas. El curso aborda contenidos gramaticales esenciales, integrando vocabulario, comprensión y producción oral y escrita, con actividades prácticas que permiten aplicar los contenidos en contextos reales de comunicación. El formato intensivo favorece la consolidación progresiva de los aprendizajes y proporciona una base sólida para continuar avanzando en el dominio del español.' },
+      { nombre: 'Comunicación y Cultura Chilena', horas: 22, precioUSD: 900, creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, descripcion: 'Curso intensivo orientado al desarrollo de las competencias comunicativas básicas en español, integrando el aprendizaje del idioma con una aproximación a la cultura chilena y latinoamericana. Los estudiantes desarrollan herramientas para comunicarse de manera simple en situaciones cotidianas, tanto de forma oral como escrita. A través de actividades prácticas y experiencias de inmersión, los estudiantes tienen la oportunidad de utilizar el español en contextos reales, mientras exploran aspectos de la vida cotidiana, la sociedad y la cultura chilena. El curso incorpora actividades culturales en Viña del Mar y Valparaíso, promoviendo la reflexión intercultural y una comprensión más cercana del contexto en el que se desarrolla su experiencia de aprendizaje.' },
     ],
     horarios: [
       { turno: 'Clases', dias: 'Lunes a jueves', hora: 'Según programa' },
@@ -213,44 +213,22 @@ export const PROGRAMS_DATA: ProgramData[] = [
     ],
     temario: [
       {
-        nivel: 'A1 — Inicial',
-        contenidos: [
-          'Presentaciones personales y saludos',
-          'Vocabulario de la vida cotidiana',
-          'Presente de indicativo: verbos regulares',
-          'Números, fechas y horarios',
-          'Pronunciación básica del español chileno',
+        nivel: 'Gramática y Estructuras Comunicativas',
+        descripcion: [
+          'Curso intensivo orientado al desarrollo de las estructuras gramaticales fundamentales del español. A través de una metodología activa y aplicada, los estudiantes adquieren las herramientas necesarias para comprender y utilizar las principales estructuras del idioma en situaciones comunicativas cotidianas.',
+          'El curso aborda contenidos gramaticales esenciales, integrando vocabulario, comprensión y producción oral y escrita, con actividades prácticas que permiten aplicar los contenidos en contextos reales de comunicación. El formato intensivo favorece la consolidación progresiva de los aprendizajes y proporciona una base sólida para continuar avanzando en el dominio del español.',
         ],
+        ficha: [{ label: 'Horas', value: '22 horas' }, { label: 'Créditos', value: '2' }, { label: 'Duración', value: '2 semanas' }, { label: 'N° mínimo de estudiantes', value: '5' }, { label: 'N° máximo de estudiantes', value: '15' }, { label: 'Campus', value: 'Viña del Mar' }, { label: 'Precio', value: '900 USD' }],
+        contenidos: [],
       },
       {
-        nivel: 'A2 — Elemental',
-        contenidos: [
-          'Narración de experiencias pasadas (pretérito)',
-          'Descripción de personas, lugares y objetos',
-          'Expresión de gustos y preferencias',
-          'Transacciones cotidianas: compras, restaurantes, transporte',
-          'Introducción a expresiones idiomáticas chilenas',
+        nivel: 'Comunicación y Cultura Chilena',
+        descripcion: [
+          'Curso intensivo orientado al desarrollo de las competencias comunicativas básicas en español, integrando el aprendizaje del idioma con una aproximación a la cultura chilena y latinoamericana. Los estudiantes desarrollan herramientas para comunicarse de manera simple en situaciones cotidianas, tanto de forma oral como escrita.',
+          'A través de actividades prácticas y experiencias de inmersión, los estudiantes tienen la oportunidad de utilizar el español en contextos reales, mientras exploran aspectos de la vida cotidiana, la sociedad y la cultura chilena. El curso incorpora actividades culturales en Viña del Mar y Valparaíso, promoviendo la reflexión intercultural y una comprensión más cercana del contexto en el que se desarrolla su experiencia de aprendizaje.',
         ],
-      },
-      {
-        nivel: 'B1 — Intermedio',
-        contenidos: [
-          'Argumentación oral y escrita',
-          'Narración en múltiples tiempos verbales',
-          'Comprensión de textos periodísticos',
-          'Debate y discusión sobre temas actuales',
-          'Registro formal e informal',
-        ],
-      },
-      {
-        nivel: 'B2 — Intermedio alto',
-        contenidos: [
-          'Análisis de textos académicos y literarios',
-          'Redacción de informes y ensayos',
-          'Comprensión de discursos auténticos',
-          'Subjuntivo: uso y matices',
-          'Español en contextos profesionales',
-        ],
+        ficha: [{ label: 'Horas', value: '22 horas' }, { label: 'Créditos', value: '2' }, { label: 'Duración', value: '2 semanas' }, { label: 'N° mínimo de estudiantes', value: '5' }, { label: 'N° máximo de estudiantes', value: '15' }, { label: 'Campus', value: 'Viña del Mar' }, { label: 'Precio', value: '900 USD' }],
+        contenidos: [],
       },
     ],
     actividades: [
@@ -281,10 +259,10 @@ export const PROGRAMS_DATA: ProgramData[] = [
     },
     precio: {
       resumen: 'Desde USD 900',
-      estandarLabel: 'Intensivo 2 semanas',
-      estandar: 'USD 900 (ambos cursos)',
-      inSituLabel: 'Intensivo 4 semanas',
-      inSitu: 'USD 1.800 (ambos cursos)',
+      estandarLabel: '1 curso · 2 semanas',
+      estandar: 'USD 900',
+      inSituLabel: '2 cursos · 4 semanas',
+      inSitu: 'USD 1.800',
     },
     modalidades: [
       'Presencial · Campus Viña del Mar',

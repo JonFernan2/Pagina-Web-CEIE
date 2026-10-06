@@ -29,7 +29,7 @@ export default function IntensiveZHPage() {
         labels={{
           overview: '课程简介',
           schedule: '上课时间',
-          syllabus: '各级别教学内容',
+          syllabus: '课程内容',
           activities: '包含活动',
           conditions: '课程条件',
           certificate: '证书',

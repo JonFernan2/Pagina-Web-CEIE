@@ -132,10 +132,8 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
     sedes: ['Viña del Mar'],
     publicoObjetivo: 'International non-Spanish-speaking students seeking to develop their Spanish proficiency in a short period.',
     cursosTabla: [
-      { nombre: 'Grammar and Communicative Structures', horas: 22, precioUSD: '900 USD (both courses)', creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '2-Week Intensive', descripcion: 'An intensive course focused on the development of fundamental grammatical structures of Spanish. Through an active, hands-on methodology, students acquire the tools needed to understand and use the main structures of the language in everyday communicative situations. The course covers essential grammar, integrating vocabulary, comprehension, and oral and written production through practical activities in real communication contexts.' },
-      { nombre: 'Communication and Chilean Culture', horas: 22, precioUSD: 'Included', creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '2-Week Intensive', descripcion: 'An intensive course focused on developing basic communicative skills in Spanish, integrating language learning with an introduction to Chilean and Latin American culture. Through practical activities and immersion experiences, students use Spanish in real contexts while exploring aspects of daily life and Chilean culture. Includes cultural activities in Viña del Mar and Valparaíso.' },
-      { nombre: 'Grammar and Communicative Structures', horas: 40, precioUSD: '1,800 USD (both courses)', creditos: 4, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '4-Week Intensive', descripcion: 'An intensive course focused on developing and strengthening the grammatical and linguistic resources of Spanish. The four-week format allows students to progressively address and consolidate the grammatical and linguistic resources for their level, providing a solid foundation to continue advancing in Spanish proficiency.' },
-      { nombre: 'Communication and Chilean Culture', horas: 40, precioUSD: 'Included', creditos: 4, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '4-Week Intensive', descripcion: 'An intensive course focused on developing communication skills in Spanish with cultural integration. The four-week format allows students to progressively deepen communication skills and strengthen the connection between language learning and cultural experience.' },
+      { nombre: 'Grammar and Communicative Structures', horas: 22, precioUSD: 900, creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, descripcion: 'An intensive course focused on developing the fundamental grammatical structures of Spanish. Through an active, applied methodology, students acquire the tools they need to understand and use the language\'s main structures in everyday communicative situations. The course covers essential grammar content, integrating vocabulary, comprehension, and oral and written production, with practical activities that apply the content in real communicative contexts. The intensive format supports the progressive consolidation of learning and provides a solid foundation for continuing to advance in Spanish.' },
+      { nombre: 'Communication and Chilean Culture', horas: 22, precioUSD: 900, creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, descripcion: 'An intensive course focused on developing basic communicative skills in Spanish, combining language learning with an introduction to Chilean and Latin American culture. Students develop tools to communicate simply in everyday situations, both orally and in writing. Through practical activities and immersion experiences, students have the opportunity to use Spanish in real contexts while exploring aspects of everyday life, society, and culture in Chile. The course includes cultural activities in Viña del Mar and Valparaíso, encouraging intercultural reflection and a closer understanding of the context in which their learning experience takes place.' },
     ],
     horarios: [
       { turno: 'Classes', dias: 'Monday to Thursday', hora: 'As per program' },
@@ -143,53 +141,22 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
     ],
     temario: [
       {
-        nivel: 'A1 — Beginner',
-        contenidos: [
-          'Personal introductions and greetings',
-          'Everyday vocabulary',
-          'Present tense: regular verbs',
-          'Numbers, dates and times',
-          'Basic pronunciation of Chilean Spanish',
+        nivel: 'Grammar and Communicative Structures',
+        descripcion: [
+          'An intensive course focused on developing the fundamental grammatical structures of Spanish. Through an active, applied methodology, students acquire the tools they need to understand and use the language\'s main structures in everyday communicative situations.',
+          'The course covers essential grammar content, integrating vocabulary, comprehension, and oral and written production, with practical activities that apply the content in real communicative contexts. The intensive format supports the progressive consolidation of learning and provides a solid foundation for continuing to advance in Spanish.',
         ],
+        ficha: [{ label: 'Hours', value: '22 hours' }, { label: 'Credits', value: '2' }, { label: 'Duration', value: '2 weeks' }, { label: 'Minimum students', value: '5' }, { label: 'Maximum students', value: '15' }, { label: 'Campus', value: 'Viña del Mar' }, { label: 'Price', value: 'USD 900' }],
+        contenidos: [],
       },
       {
-        nivel: 'A2 — Elementary',
-        contenidos: [
-          'Narrating past experiences (preterite)',
-          'Describing people, places and objects',
-          'Expressing likes and preferences',
-          'Everyday transactions: shopping, restaurants, transport',
-          'Introduction to Chilean idiomatic expressions',
+        nivel: 'Communication and Chilean Culture',
+        descripcion: [
+          'An intensive course focused on developing basic communicative skills in Spanish, combining language learning with an introduction to Chilean and Latin American culture. Students develop tools to communicate simply in everyday situations, both orally and in writing.',
+          'Through practical activities and immersion experiences, students have the opportunity to use Spanish in real contexts while exploring aspects of everyday life, society, and culture in Chile. The course includes cultural activities in Viña del Mar and Valparaíso, encouraging intercultural reflection and a closer understanding of the context in which their learning experience takes place.',
         ],
-      },
-      {
-        nivel: 'B1 — Intermediate',
-        contenidos: [
-          'Oral and written argumentation',
-          'Narration across multiple verb tenses',
-          'Reading comprehension of news articles',
-          'Debate and discussion on current issues',
-          'Formal and informal registers',
-        ],
-      },
-      {
-        nivel: 'B2 — Upper Intermediate',
-        contenidos: [
-          'Analysis of academic and literary texts',
-          'Writing reports and essays',
-          'Comprehension of authentic speech',
-          'The subjunctive: usage and nuances',
-          'Spanish in professional contexts',
-        ],
-      },
-      {
-        nivel: 'C1 — Advanced',
-        contenidos: [
-          'Expressing nuance and complex registers',
-          'Analysis of Chilean and Latin American literature',
-          'Advanced academic writing',
-          'Pragmatics and discourse coherence',
-        ],
+        ficha: [{ label: 'Hours', value: '22 hours' }, { label: 'Credits', value: '2' }, { label: 'Duration', value: '2 weeks' }, { label: 'Minimum students', value: '5' }, { label: 'Maximum students', value: '15' }, { label: 'Campus', value: 'Viña del Mar' }, { label: 'Price', value: 'USD 900' }],
+        contenidos: [],
       },
     ],
     actividades: [
@@ -220,10 +187,10 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
     },
     precio: {
       resumen: 'From USD 900',
-      estandarLabel: '2-week Intensive',
-      estandar: 'USD 900 (both courses)',
-      inSituLabel: '4-week Intensive',
-      inSitu: 'USD 1,800 (both courses)',
+      estandarLabel: '1 course · 2 weeks',
+      estandar: 'USD 900',
+      inSituLabel: '2 courses · 4 weeks',
+      inSitu: 'USD 1,800',
     },
     modalidades: [
       'In-Person · Campus Viña del Mar',
