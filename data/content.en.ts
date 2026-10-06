@@ -262,7 +262,7 @@ export const ABOUT_EN = {
         },
         {
           nombre: 'Cultural activities',
-          descripcion: 'Excursions to Casablanca Valley wineries, heritage tours of Valparaíso, and seminars with UAI academics. An integrated component of all programs.',
+          descripcion: 'Heritage tours of Valparaíso and talks with UAI academics, included in all programs. Optional excursions, such as visits to Casablanca Valley wineries, may have an additional cost.',
           alt: 'International CEIE students in cultural and academic activities at UAI Viña del Mar campus.',
         },
       ],

@@ -250,7 +250,7 @@ export const ABOUT_ZH = {
         },
         {
           nombre: '文化活动',
-          descripcion: '卡萨布兰卡谷葡萄园参观、瓦尔帕莱索文化遗址游览及UAI学者研讨会。已纳入所有课程。',
+          descripcion: '瓦尔帕莱索文化遗址游览及UAI学者交流会，已包含在所有课程中。卡萨布兰卡谷葡萄园参观等自选游览可能需额外付费。',
           alt: 'CEIE国际学员在UAI Viña del Mar校区参加文化与学术活动。',
         },
       ],

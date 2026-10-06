@@ -251,7 +251,7 @@ export const ABOUT_PT = {
         },
         {
           nombre: 'Atividades culturais',
-          descripcion: 'Excursões às vinícolas do Vale de Casablanca, roteiros pelo patrimônio de Valparaíso e conversatórios com acadêmicos da UAI. Parte integrada de todos os programas.',
+          descripcion: 'Roteiros pelo patrimônio de Valparaíso e conversas com acadêmicos da UAI, incluídos em todos os programas. As excursões opcionais, como visitas às vinícolas do Vale de Casablanca, podem ter custo adicional.',
           alt: 'Estudantes internacionais do CEIE em atividades culturais e acadêmicas no campus UAI Viña del Mar.',
         },
       ],
