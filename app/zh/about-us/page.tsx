@@ -11,7 +11,7 @@ const SPACE_IMAGES: SpaceImages[] = [
   { srcs: ['/images/espacio-seminario-1.jpg', '/images/espacio-aula-2.jpg'], carousel: true, positions: ['center 42%', 'center 38%'] },
   { srcs: ['/images/biblioteca-uai-5.jpg', '/images/galeria-ceie-spanish-corner.jpg', '/images/biblioteca-uai-1.jpg', '/images/biblioteca-uai-2.jpg', '/images/biblioteca-uai-3.jpg', '/images/biblioteca-uai-4.jpg'], carousel: true, positions: ['center 60%', 'center', 'center', 'center', 'center', 'center'] },
   { srcs: ['/images/sala-estudio-2.jpg', '/images/sala-estudio-3.jpg'], carousel: true, positions: ['center', 'center 60%'] },
-  { srcs: ['/images/gimnasio-uai.jpg'] },
+  { srcs: ['/images/gimnasio-uai.jpg', '/images/gimnasio-uai-2.jpg', '/images/gimnasio-uai-3.jpg'], carousel: true, positions: ['center', 'center', 'center'] },
   { srcs: ['/images/espacio-aula-principal.jpg', '/images/espacio-sala-conferencias.jpg', '/images/actividades-culturales-uai.jpg'], wide: true, carousel: true, positions: ['center', 'center', 'center'] },
   { srcs: ['/images/campus-vina-aerea.jpg'], wide: true, busRoutes: true },
 ]
