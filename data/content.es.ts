@@ -65,7 +65,7 @@ export const HOME_ES = {
     cta2: { label: 'Contactar', href: '/contacto' },
   },
   valueProps: {
-    title: 'Por qué estudiar español en la UAI',
+    title: '¿Por qué estudiar español en la UAI?',
     cards: [
       {
         icon: 'GraduationCap',

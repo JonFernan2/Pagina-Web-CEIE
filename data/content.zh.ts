@@ -54,7 +54,7 @@ export const HOME_ZH = {
     cta2: { label: '联系我们', href: '/zh/contact' },
   },
   valueProps: {
-    title: '为何选择在UAI学习西班牙语',
+    title: '为何选择在UAI学习西班牙语？',
     cards: [
       {
         icon: 'GraduationCap',
