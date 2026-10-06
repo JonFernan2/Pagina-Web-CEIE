@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { ChevronRight, Users, Clock, Award, CheckCircle, BookOpen } from 'lucide-react'
 import type { ProgramData } from '@/data/programs'
+import Linkify from './Linkify'
 
 const UI = {
   es: { shift: 'Turno', days: 'Días', time: 'Hora', standard: 'Estándar (campus UAI)', inSitu: 'In situ', longTerm: 'Largo plazo', price: 'Precio', onRequest: 'Consultar', priceNote: 'Valores referenciales en USD, sujetos a cambios. Consulte las condiciones vigentes.' },
@@ -45,6 +46,7 @@ export default function ProgramTemplate({
   labels,
 }: ProgramTemplateProps) {
   const ui = UI[lang]
+  const simple = !!data.vistaSimple
   const priceDisplay =
     data.precio.resumen ??
     (data.precio.estandar
@@ -102,17 +104,37 @@ export default function ProgramTemplate({
             {/* 1. Descripción */}
             <section>
               <SectionTitle>{labels.overview}</SectionTitle>
-              <p className="text-base leading-relaxed" style={{ color: '#2D2D2D' }}>
-                {data.descripcionExtendida}
-              </p>
+              <div className="flex flex-col gap-4">
+                {data.descripcionExtendida.split('\n\n').map((para, i) => (
+                  <p key={i} className="text-base leading-relaxed" style={{ color: '#2D2D2D' }}>{para}</p>
+                ))}
+              </div>
+              {!simple && (
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
                 <StatBox icon={<Users size={20} />} label={labels.groupSize} value={data.participantes} />
                 <StatBox icon={<Clock size={20} />} label={labels.duration} value={data.duracion} />
                 <StatBox icon={<BookOpen size={20} />} label={labels.levels} value={data.niveles.join(', ')} />
               </div>
+              )}
             </section>
 
+            {data.incluye && (
+              <section>
+                <SectionTitle>{data.incluye.titulo}</SectionTitle>
+                <p className="text-base leading-relaxed mb-4" style={{ color: '#2D2D2D' }}>{data.incluye.intro}</p>
+                <ul className="flex flex-col gap-2">
+                  {data.incluye.items.map((it) => (
+                    <li key={it} className="flex items-start gap-2 text-sm leading-relaxed" style={{ color: '#2D2D2D' }}>
+                      <CheckCircle size={16} className="mt-0.5 shrink-0" style={{ color: '#6493b5' }} />
+                      {it}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
             {/* 2. Horarios */}
+            {!simple && (
             <section>
               <SectionTitle>{labels.schedule}</SectionTitle>
               <div className="overflow-x-auto">
@@ -136,10 +158,14 @@ export default function ProgramTemplate({
                 </table>
               </div>
             </section>
+            )}
 
             {/* 3. Temario */}
             <section>
               <SectionTitle>{labels.syllabus}</SectionTitle>
+              {data.areasNota && (
+                <p className="text-sm leading-relaxed mb-4" style={{ color: '#2D2D2D' }}>{data.areasNota}</p>
+              )}
               <div className="flex flex-col gap-4">
                 {data.temario.map((t, i) => (
                   <details
@@ -186,6 +212,7 @@ export default function ProgramTemplate({
               </div>
             </section>
 
+            {!simple && (<>
             {/* 4. Actividades */}
             <section>
               <SectionTitle>{labels.activities}</SectionTitle>
@@ -206,7 +233,7 @@ export default function ProgramTemplate({
                 {data.condiciones.map((c, i) => (
                   <div key={i} className="p-4" style={{ border: '1px solid #E5E3DE', borderRadius: '4px' }}>
                     <h3 className="font-semibold text-negro mb-1">{c.titulo}</h3>
-                    <p className="text-sm leading-relaxed" style={{ color: '#6B6B6B' }}>{c.descripcion}</p>
+                    <p className="text-sm leading-relaxed" style={{ color: '#6B6B6B' }}><Linkify text={c.descripcion} /></p>
                   </div>
                 ))}
               </div>
@@ -254,6 +281,8 @@ export default function ProgramTemplate({
               </p>
             </section>
 
+            </>)}
+
             {/* CTA final */}
             <div className="pt-4">
               <Link
@@ -278,6 +307,7 @@ export default function ProgramTemplate({
               >
                 {asideTitle}
               </h3>
+              {!simple && (
               <div className="flex flex-col gap-3 text-sm">
                 <AsideStat label={labels.levels} value={data.niveles.join(', ')} />
                 <AsideStat label={labels.duration} value={data.duracion} />
@@ -288,6 +318,7 @@ export default function ProgramTemplate({
                   highlight
                 />
               </div>
+              )}
               <Link
                 href={applyHref}
                 className="mt-2 flex items-center justify-center gap-2 py-3 text-sm font-semibold uppercase tracking-widest transition-colors duration-200"

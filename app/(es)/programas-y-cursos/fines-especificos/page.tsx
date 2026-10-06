@@ -27,9 +27,9 @@ export default function FinesEspecificosPage() {
         asideTitle="Resumen rápido"
         asideApply="Solicitar propuesta"
         labels={{
-          overview: 'Descripción general',
+          overview: '¿Qué es el programa de Español con fines específicos?',
           schedule: 'Horarios',
-          syllabus: 'Áreas de especialización',
+          syllabus: 'Áreas de especialización (ejemplos)',
           activities: 'Actividades incluidas',
           conditions: 'Condiciones',
           certificate: 'Certificado',

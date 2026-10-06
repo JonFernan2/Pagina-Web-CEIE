@@ -132,8 +132,10 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
     sedes: ['Viña del Mar'],
     publicoObjetivo: 'International non-Spanish-speaking students seeking to develop their Spanish proficiency in a short period.',
     cursosTabla: [
-      { nombre: 'Grammar and Communicative Structures', horas: 22, precioUSD: 900, creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, descripcion: 'An intensive course focused on developing the fundamental grammatical structures of Spanish. Through an active, applied methodology, students acquire the tools they need to understand and use the language\'s main structures in everyday communicative situations. The course covers essential grammar content, integrating vocabulary, comprehension, and oral and written production, with practical activities that apply the content in real communicative contexts. The intensive format supports the progressive consolidation of learning and provides a solid foundation for continuing to advance in Spanish.' },
-      { nombre: 'Communication and Chilean Culture', horas: 22, precioUSD: 900, creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, descripcion: 'An intensive course focused on developing basic communicative skills in Spanish, combining language learning with an introduction to Chilean and Latin American culture. Students develop tools to communicate simply in everyday situations, both orally and in writing. Through practical activities and immersion experiences, students have the opportunity to use Spanish in real contexts while exploring aspects of everyday life, society, and culture in Chile. The course includes cultural activities in Viña del Mar and Valparaíso, encouraging intercultural reflection and a closer understanding of the context in which their learning experience takes place.' },
+      { nombre: 'Grammar and Communicative Structures', horas: 22, precioUSD: 900, creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '2-Week Intensive', descripcion: 'An intensive course focused on developing the fundamental grammatical structures of Spanish. Through an active, applied methodology, students acquire the tools they need to understand and use the language\'s main structures in everyday communicative situations. The course covers essential grammar content, integrating vocabulary, comprehension, and oral and written production, with practical activities that apply the content in real communicative contexts. The intensive format supports the progressive consolidation of learning and provides a solid foundation for continuing to advance in Spanish.' },
+      { nombre: 'Communication and Chilean Culture', horas: 22, precioUSD: 900, creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '2-Week Intensive', descripcion: 'An intensive course focused on developing basic communicative skills in Spanish, combining language learning with an introduction to Chilean and Latin American culture. Students develop tools to communicate simply in everyday situations, both orally and in writing. Through practical activities and immersion experiences, students have the opportunity to use Spanish in real contexts while exploring aspects of everyday life, society, and culture in Chile. The course includes cultural activities in Viña del Mar and Valparaíso, encouraging intercultural reflection and a closer understanding of the context in which their learning experience takes place.' },
+      { nombre: 'Grammar and Communicative Structures', horas: 40, precioUSD: 1800, creditos: 4, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '4-Week Intensive', descripcion: 'An intensive course focused on developing the fundamental grammatical structures of Spanish. Through an active, applied methodology, students acquire the tools they need to understand and use the language\'s main structures in everyday communicative situations. The course covers essential grammar content, integrating vocabulary, comprehension, and oral and written production, with practical activities that apply the content in real communicative contexts. The intensive format supports the progressive consolidation of learning and provides a solid foundation for continuing to advance in Spanish.' },
+      { nombre: 'Communication and Chilean Culture', horas: 40, precioUSD: 1800, creditos: 4, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '4-Week Intensive', descripcion: 'An intensive course focused on developing basic communicative skills in Spanish, combining language learning with an introduction to Chilean and Latin American culture. Students develop tools to communicate simply in everyday situations, both orally and in writing. Through practical activities and immersion experiences, students have the opportunity to use Spanish in real contexts while exploring aspects of everyday life, society, and culture in Chile. The course includes cultural activities in Viña del Mar and Valparaíso, encouraging intercultural reflection and a closer understanding of the context in which their learning experience takes place.' },
     ],
     horarios: [
       { turno: 'Classes', dias: 'Monday to Thursday', hora: 'As per program' },
@@ -146,7 +148,7 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
           'An intensive course focused on developing the fundamental grammatical structures of Spanish. Through an active, applied methodology, students acquire the tools they need to understand and use the language\'s main structures in everyday communicative situations.',
           'The course covers essential grammar content, integrating vocabulary, comprehension, and oral and written production, with practical activities that apply the content in real communicative contexts. The intensive format supports the progressive consolidation of learning and provides a solid foundation for continuing to advance in Spanish.',
         ],
-        ficha: [{ label: 'Hours', value: '22 hours' }, { label: 'Credits', value: '2' }, { label: 'Duration', value: '2 weeks' }, { label: 'Minimum students', value: '5' }, { label: 'Maximum students', value: '15' }, { label: 'Campus', value: 'Viña del Mar' }, { label: 'Price', value: 'USD 900' }],
+        ficha: [{ label: 'Hours', value: '22 h (2 weeks) · 40 h (4 weeks)' }, { label: 'Credits', value: '2 (2 weeks) · 4 (4 weeks)' }, { label: 'Duration', value: '2 or 4 weeks' }, { label: 'Minimum students', value: '5' }, { label: 'Maximum students', value: '15' }, { label: 'Campus', value: 'Viña del Mar' }, { label: 'Price', value: 'USD 900 (2 weeks) · USD 1,800 (4 weeks)' }],
         contenidos: [],
       },
       {
@@ -155,7 +157,7 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
           'An intensive course focused on developing basic communicative skills in Spanish, combining language learning with an introduction to Chilean and Latin American culture. Students develop tools to communicate simply in everyday situations, both orally and in writing.',
           'Through practical activities and immersion experiences, students have the opportunity to use Spanish in real contexts while exploring aspects of everyday life, society, and culture in Chile. The course includes cultural activities in Viña del Mar and Valparaíso, encouraging intercultural reflection and a closer understanding of the context in which their learning experience takes place.',
         ],
-        ficha: [{ label: 'Hours', value: '22 hours' }, { label: 'Credits', value: '2' }, { label: 'Duration', value: '2 weeks' }, { label: 'Minimum students', value: '5' }, { label: 'Maximum students', value: '15' }, { label: 'Campus', value: 'Viña del Mar' }, { label: 'Price', value: 'USD 900' }],
+        ficha: [{ label: 'Hours', value: '22 h (2 weeks) · 40 h (4 weeks)' }, { label: 'Credits', value: '2 (2 weeks) · 4 (4 weeks)' }, { label: 'Duration', value: '2 or 4 weeks' }, { label: 'Minimum students', value: '5' }, { label: 'Maximum students', value: '15' }, { label: 'Campus', value: 'Viña del Mar' }, { label: 'Price', value: 'USD 900 (2 weeks) · USD 1,800 (4 weeks)' }],
         contenidos: [],
       },
     ],
@@ -187,9 +189,9 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
     },
     precio: {
       resumen: 'From USD 900',
-      estandarLabel: '1 course · 2 weeks',
+      estandarLabel: '2-week Intensive (per course)',
       estandar: 'USD 900',
-      inSituLabel: '2 courses · 4 weeks',
+      inSituLabel: '4-week Intensive (per course)',
       inSitu: 'USD 1,800',
     },
     modalidades: [
@@ -199,10 +201,26 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
   },
   {
     slug: 'specific-purposes',
+    vistaSimple: true,
+    incluye: {
+      titulo: 'What do our programmes include?',
+      intro: 'CEIE programmes are designed according to the characteristics, objectives and format of each experience. Depending on the type of programme (individual, group or institutional) and its specific requirements, they may include:',
+      items: [
+        'Curriculum design adapted to the participants\' level, profile and learning objectives.',
+        'Teachers specialised in teaching Spanish and, where relevant, in the programme\'s subject area.',
+        'Teaching materials selected or developed according to the course content and objectives.',
+        'Support and coordination throughout the programme.',
+        'Cultural activities and immersion experiences, depending on the programme\'s format and characteristics.',
+        'Academic, professional or cultural visits, when relevant to the programme\'s objectives.',
+        'Logistical support services, such as accommodation and transport, for on-site programmes that require them.',
+        'Certificate of participation or completion, depending on the programme\'s characteristics.',
+      ],
+    },
+    areasNota: 'The following areas are examples of specialisations that can be selected by prior agreement between both parties.',
     nombre: 'Spanish for Specific Purposes Programme',
     descripcionBreve: 'Short-term program custom-designed to the specific needs, interests, and objectives of each individual, group, or institution.',
     descripcionExtendida:
-      'Spanish for Specific Purposes is a short-term program custom-designed around the specific needs, interests, and goals of each individual, group, or institution. Its purpose is to strengthen communication skills in Spanish in academic, professional, or discipline-specific settings, through content and activities tailored to the profile and language level of the participants.\n\nThe program combines the development of specialized vocabulary, communicative functions, and linguistic resources relevant to the field of interest with practical activities focused on using Spanish in situations and contexts specific to each field. Methodology and content are defined according to the objectives of the program and may include Spanish classes, workshops, applied activities, and cultural or professional experiences.',
+      'Spanish for Specific Purposes is a short programme custom-designed to the specific needs, interests and objectives of each individual, group or institution. Its purpose is to strengthen communicative skills in Spanish in academic, professional or disciplinary fields, through content and activities adapted to the participants\' profile and language level.\n\nThe programme combines the development of specialised vocabulary, communicative functions and linguistic resources relevant to the area of interest with practical activities focused on using Spanish in situations and contexts typical of each field. The methodology and content are defined according to the programme\'s objectives and may include Spanish classes, workshops, applied activities and cultural or professional experiences.',
     objetivo:
       'Strengthen communicative competencies in Spanish in academic, professional, or disciplinary contexts, through programs designed to the specific needs of each person, group, or institution.',
     niveles: ['According to institutional requirements'],
