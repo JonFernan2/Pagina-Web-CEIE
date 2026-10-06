@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import YouTubeVideo from './YouTubeVideo'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 interface Video {
@@ -29,14 +30,7 @@ export default function VideoCarousel({ videos, lang }: { videos: Video[]; lang:
       <div className="relative">
         <div className="overflow-hidden" style={{ borderRadius: '4px', border: '1px solid #E5E3DE' }}>
           <div style={{ position: 'relative', paddingBottom: '56.25%' }}>
-            <iframe
-              key={v.id}
-              src={`https://www.youtube-nocookie.com/embed/${v.id}?rel=0&modestbranding=1`}
-              title={v.title}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none', display: 'block' }}
-            />
+            <YouTubeVideo key={v.id} id={v.id} title={v.title} lang={lang} />
           </div>
         </div>
 
