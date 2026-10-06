@@ -28,6 +28,7 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
       { nombre: 'Core: Escrita Argumentativa', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'Core UAI', descripcion: 'Sob a premissa de "aprender a escrever escrevendo", este curso é concebido para transformar o pensamento em textos ensaísticos eficazes, centrando-se na pesquisa bibliográfica e no domínio de recursos persuasivos para alcançar autonomia expressiva.' },
       { nombre: 'Core: Ética', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'Core UAI', descripcion: 'Este curso aprofunda a dimensão moral da existência humana, focando na responsabilidade individual. Por meio de reflexões sobre a justiça das ações e a busca de uma vida boa, os estudantes aprendem a analisar, avaliar e justificar suas decisões cotidianas e profissionais.' },
     ],
+    horarioClases: 'Segunda a sexta-feira, 08:30 – 18:55',
     horarios: [
       { turno: 'Aulas', dias: 'Segunda a sexta-feira', hora: '08:30 – 18:55' },
     ],
@@ -137,8 +138,9 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
       { nombre: 'Gramática e Estruturas Comunicativas', horas: 40, precioUSD: 1800, creditos: 4, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: 'Intensivo 4 semanas', descripcion: 'Curso intensivo voltado ao desenvolvimento das estruturas gramaticais fundamentais do espanhol. Por meio de uma metodologia ativa e aplicada, os estudantes adquirem as ferramentas necessárias para compreender e utilizar as principais estruturas do idioma em situações comunicativas do dia a dia. O curso aborda conteúdos gramaticais essenciais, integrando vocabulário, compreensão e produção oral e escrita, com atividades práticas que permitem aplicar os conteúdos em contextos reais de comunicação. O formato intensivo favorece a consolidação progressiva da aprendizagem e oferece uma base sólida para continuar avançando no domínio do espanhol.' },
       { nombre: 'Comunicação e Cultura Chilena', horas: 40, precioUSD: 1800, creditos: 4, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: 'Intensivo 4 semanas', descripcion: 'Curso intensivo voltado ao desenvolvimento das competências comunicativas básicas em espanhol, integrando a aprendizagem do idioma a uma aproximação à cultura chilena e latino-americana. Os estudantes desenvolvem ferramentas para se comunicar de forma simples em situações do dia a dia, tanto oralmente quanto por escrito. Por meio de atividades práticas e experiências de imersão, os estudantes têm a oportunidade de usar o espanhol em contextos reais, enquanto exploram aspectos da vida cotidiana, da sociedade e da cultura chilena. O curso inclui atividades culturais em Viña del Mar e Valparaíso, promovendo a reflexão intercultural e uma compreensão mais próxima do contexto em que se desenvolve a sua experiência de aprendizagem.' },
     ],
+    horarioClases: 'Segunda a quinta-feira, 08:30 – 18:55 · Atividades culturais às sextas-feiras',
     horarios: [
-      { turno: 'Aulas', dias: 'Segunda a quinta-feira', hora: 'Conforme programa' },
+      { turno: 'Aulas', dias: 'Segunda a quinta-feira', hora: '08:30 – 18:55' },
       { turno: 'Atividades culturais', dias: 'Sexta-feira', hora: 'Conforme programa' },
     ],
     temario: [

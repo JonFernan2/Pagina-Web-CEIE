@@ -4,10 +4,10 @@ import type { ProgramData } from '@/data/programs'
 import Linkify from './Linkify'
 
 const UI = {
-  es: { shift: 'Turno', days: 'Días', time: 'Hora', standard: 'Estándar (campus UAI)', inSitu: 'In situ', longTerm: 'Largo plazo', price: 'Precio', onRequest: 'Consultar', priceNote: 'Valores referenciales en USD, sujetos a cambios. Consulte las condiciones vigentes.' },
-  en: { shift: 'Shift', days: 'Days', time: 'Time', standard: 'Standard (UAI campus)', inSitu: 'In situ', longTerm: 'Long term', price: 'Price', onRequest: 'On request', priceNote: 'Reference prices in USD, subject to change. Please check current conditions.' },
-  pt: { shift: 'Turno', days: 'Dias', time: 'Horário', standard: 'Padrão (campus UAI)', inSitu: 'In loco', longTerm: 'Longo prazo', price: 'Preço', onRequest: 'Sob consulta', priceNote: 'Valores de referência em USD, sujeitos a alterações. Consulte as condições vigentes.' },
-  zh: { shift: '时段', days: '日期', time: '时间', standard: '标准（UAI校区）', inSitu: '现场授课', longTerm: '长期', price: '价格', onRequest: '请咨询', priceNote: '以上为美元参考价格，可能调整，请咨询最新条件。' },
+  es: { classSchedule: 'Horario de clases: ', shift: 'Turno', days: 'Días', time: 'Hora', standard: 'Estándar (campus UAI)', inSitu: 'In situ', longTerm: 'Largo plazo', price: 'Precio', onRequest: 'Consultar', priceNote: 'Valores referenciales en USD, sujetos a cambios. Consulte las condiciones vigentes.' },
+  en: { classSchedule: 'Class schedule: ', shift: 'Shift', days: 'Days', time: 'Time', standard: 'Standard (UAI campus)', inSitu: 'In situ', longTerm: 'Long term', price: 'Price', onRequest: 'On request', priceNote: 'Reference prices in USD, subject to change. Please check current conditions.' },
+  pt: { classSchedule: 'Horário das aulas: ', shift: 'Turno', days: 'Dias', time: 'Horário', standard: 'Padrão (campus UAI)', inSitu: 'In loco', longTerm: 'Longo prazo', price: 'Preço', onRequest: 'Sob consulta', priceNote: 'Valores de referência em USD, sujeitos a alterações. Consulte as condições vigentes.' },
+  zh: { classSchedule: '上课时间：', shift: '时段', days: '日期', time: '时间', standard: '标准（UAI校区）', inSitu: '现场授课', longTerm: '长期', price: '价格', onRequest: '请咨询', priceNote: '以上为美元参考价格，可能调整，请咨询最新条件。' },
 }
 
 interface ProgramTemplateProps {
@@ -91,6 +91,19 @@ export default function ProgramTemplate({
               </span>
             ))}
           </div>
+
+          {/* Class schedule highlight */}
+          {data.horarioClases && (
+            <p
+              className="inline-flex items-start gap-2.5 mt-5 px-4 py-2.5 text-sm text-white"
+              style={{ border: '1px solid rgba(100,147,181,0.6)', background: 'rgba(100,147,181,0.12)', borderRadius: '2px' }}
+            >
+              <Clock size={18} className="shrink-0 mt-px" style={{ color: '#6493b5' }} aria-hidden="true" />
+              <span>
+                <strong className="font-semibold">{ui.classSchedule}</strong>{data.horarioClases}
+              </span>
+            </p>
+          )}
         </div>
       </div>
 

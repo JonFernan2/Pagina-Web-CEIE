@@ -28,6 +28,7 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
       { nombre: 'Core: Argumentative Writing', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'UAI Core', descripcion: 'Under the premise of "learning to write by writing", this course is designed to transform thinking into effective essay texts. Work focuses on bibliographic research and the mastery of persuasive techniques, requiring students to continuously edit and refine their writing to achieve expressive autonomy in any professional environment.' },
       { nombre: 'Core: Ethics', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'UAI Core', descripcion: 'This course deepens the moral dimension of human existence, focusing on individual responsibility in the face of reality. Through reflection on the justice of actions and the search for a good life, students learn to analyse, evaluate, and justify their daily and professional decisions, promoting intellectual autonomy and integrity as pillars of professional practice.' },
     ],
+    horarioClases: 'Monday to Friday, 08:30 – 18:55',
     horarios: [
       { turno: 'Classes', dias: 'Monday to Friday', hora: '08:30 – 18:55' },
     ],
@@ -137,8 +138,9 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
       { nombre: 'Grammar and Communicative Structures', horas: 40, precioUSD: 1800, creditos: 4, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '4-Week Intensive', descripcion: 'An intensive course focused on developing the fundamental grammatical structures of Spanish. Through an active, applied methodology, students acquire the tools they need to understand and use the language\'s main structures in everyday communicative situations. The course covers essential grammar content, integrating vocabulary, comprehension, and oral and written production, with practical activities that apply the content in real communicative contexts. The intensive format supports the progressive consolidation of learning and provides a solid foundation for continuing to advance in Spanish.' },
       { nombre: 'Communication and Chilean Culture', horas: 40, precioUSD: 1800, creditos: 4, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '4-Week Intensive', descripcion: 'An intensive course focused on developing basic communicative skills in Spanish, combining language learning with an introduction to Chilean and Latin American culture. Students develop tools to communicate simply in everyday situations, both orally and in writing. Through practical activities and immersion experiences, students have the opportunity to use Spanish in real contexts while exploring aspects of everyday life, society, and culture in Chile. The course includes cultural activities in Viña del Mar and Valparaíso, encouraging intercultural reflection and a closer understanding of the context in which their learning experience takes place.' },
     ],
+    horarioClases: 'Monday to Thursday, 08:30 – 18:55 · Cultural activities on Fridays',
     horarios: [
-      { turno: 'Classes', dias: 'Monday to Thursday', hora: 'As per program' },
+      { turno: 'Classes', dias: 'Monday to Thursday', hora: '08:30 – 18:55' },
       { turno: 'Cultural activities', dias: 'Friday', hora: 'As per program' },
     ],
     temario: [

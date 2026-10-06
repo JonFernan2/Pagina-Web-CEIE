@@ -97,7 +97,7 @@ export const HOME_PT = {
         descripcion: 'Espanhol intensivo de 2 ou 4 semanas.',
         nivel: 'A1 a B2',
         duracion: '2 a 4 semanas',
-        horario: 'Aulas de segunda a quinta-feira · Atividades culturais às sextas-feiras',
+        horario: 'Aulas de segunda a quinta-feira, 08:30 – 18:55 · Atividades culturais às sextas-feiras',
         grupoMax: 'Mín. 5 pessoas',
         precioReferencial: 'USD 900 (2 semanas) · USD 1.800 (4 semanas)',
         href: '/pt/programas-e-cursos/intensivo',
