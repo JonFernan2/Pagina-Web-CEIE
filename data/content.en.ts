@@ -255,14 +255,14 @@ export const ABOUT_EN = {
           alt: 'Sports facilities at UAI Viña del Mar campus, including gym and training spaces.',
         },
         {
-          nombre: 'Viña del Mar — Campus setting',
-          descripcion: 'The Universidad Adolfo Ibáñez campus enjoys a privileged setting, surrounded by nature and overlooking the Pacific Ocean. Located just 15 minutes from Valparaíso and approximately 1.5 hours from Santiago, it offers students a peaceful university environment with easy access to some of the region\'s main cultural and tourist attractions.',
-          alt: 'UAI Viña del Mar campus facing the Pacific Ocean, with the city of Viña del Mar in the background.',
-        },
-        {
           nombre: 'Cultural activities',
           descripcion: 'Heritage tours of Valparaíso and talks with UAI academics, included in all programs. Optional excursions, such as visits to Casablanca Valley wineries, may have an additional cost.',
           alt: 'International CEIE students in cultural and academic activities at UAI Viña del Mar campus.',
+        },
+        {
+          nombre: 'Viña del Mar — Campus setting',
+          descripcion: 'The Universidad Adolfo Ibáñez campus enjoys a privileged setting, surrounded by nature and overlooking the Pacific Ocean. Located just 15 minutes from Valparaíso and approximately 1.5 hours from Santiago, it offers students a peaceful university environment with easy access to some of the region\'s main cultural and tourist attractions.',
+          alt: 'UAI Viña del Mar campus facing the Pacific Ocean, with the city of Viña del Mar in the background.',
         },
       ],
     },
