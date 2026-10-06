@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { ChevronRight, Users, Clock, Award, CheckCircle, BookOpen } from 'lucide-react'
 import type { ProgramData } from '@/data/programs'
 import Linkify from './Linkify'
+import StudyPlanTabs from './StudyPlanTabs'
 
 const UI = {
   es: { studyPlan: 'Plan de estudios', levelSyllabus: 'Temario por nivel', hoursShort: 'h', credits: 'créditos', courses: 'Cursos', classSchedule: 'Horario de clases: ', shift: 'Turno', days: 'Días', time: 'Hora', standard: 'Estándar (campus UAI)', inSitu: 'In situ', longTerm: 'Largo plazo', price: 'Precio', onRequest: 'Consultar', priceNote: 'Valores referenciales en USD, sujetos a cambios. Consulte las condiciones vigentes.' },
@@ -123,7 +124,7 @@ export default function ProgramTemplate({
                 ))}
               </div>
               {!simple && (
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
+              <div className="grid grid-cols-3 gap-2 sm:gap-4 mt-6 lg:hidden">
                 <StatBox icon={<Users size={20} />} label={labels.groupSize} value={data.participantes} />
                 <StatBox icon={<Clock size={20} />} label={labels.duration} value={data.duracion} />
                 <StatBox icon={<BookOpen size={20} />} label={labels.levels} value={data.niveles.join(', ')} />
@@ -146,8 +147,8 @@ export default function ProgramTemplate({
               </section>
             )}
 
-            {/* 2. Horarios */}
-            {!simple && (
+            {/* 2. Horarios (omitted when the hero already shows the class schedule) */}
+            {!simple && !data.horarioClases && (
             <section>
               <SectionTitle>{labels.schedule}</SectionTitle>
               <div className="overflow-x-auto">
@@ -177,37 +178,47 @@ export default function ProgramTemplate({
             {data.temarioGrupo && data.cursosTabla ? (
             <section>
               <SectionTitle>{ui.studyPlan}</SectionTitle>
-              <div className="flex flex-col gap-10">
-                {Array.from(new Set(data.cursosTabla.map((c) => c.subcategoria).filter(Boolean))).map((grupo) => (
-                  <div key={grupo}>
-                    <h3 className="font-display font-bold text-negro text-xl mb-4 pb-2" style={{ borderBottom: '2px solid #6493b5' }}>{grupo}</h3>
-                    {grupo === data.temarioGrupo && (
-                      <div className="mb-3">
-                        <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#1d1e20' }}>{ui.levelSyllabus}</p>
-                        <TemarioList temario={data.temario} />
-                        <p className="text-xs font-semibold uppercase tracking-widest mt-6 mb-3" style={{ color: '#1d1e20' }}>{ui.courses}</p>
-                      </div>
-                    )}
-                    <div className="flex flex-col gap-3">
-                      {data.cursosTabla!.filter((c) => c.subcategoria === grupo).map((c) => (
-                        <details key={c.nombre} className="group" style={{ border: '1px solid #E5E3DE', borderRadius: '4px', overflow: 'hidden' }}>
-                          <summary className="flex items-center justify-between gap-4 px-4 py-3 cursor-pointer text-sm" style={{ background: '#FFFFFF', color: '#1d1e20' }}>
-                            <span className="font-semibold">{c.nombre}</span>
-                            <span className="flex items-center gap-3 shrink-0 text-xs" style={{ color: '#2D2D2D' }}>
-                              {typeof c.horas === 'number' && <span>{c.horas} {ui.hoursShort}</span>}
-                              {c.creditos !== undefined && <span>{c.creditos} {ui.credits}</span>}
-                              <ChevronRight size={16} className="transition-transform group-open:rotate-90" />
-                            </span>
-                          </summary>
-                          {c.descripcion && (
-                            <p className="px-4 pb-4 pt-1 text-sm leading-relaxed" style={{ color: '#2D2D2D' }}>{c.descripcion}</p>
+              <StudyPlanTabs
+                tabs={Array.from(new Set(data.cursosTabla.map((c) => c.subcategoria).filter((g): g is string => !!g))).map((grupo) => {
+                  const cursos = data.cursosTabla!.filter((c) => c.subcategoria === grupo)
+                  return {
+                    label: grupo,
+                    count: cursos.length,
+                    content: (
+                      <div className="flex flex-col gap-8">
+                        {grupo === data.temarioGrupo && (
+                          <div>
+                            <h3 className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#1d1e20' }}>{ui.levelSyllabus}</h3>
+                            <TemarioList temario={data.temario} />
+                          </div>
+                        )}
+                        <div>
+                          {grupo === data.temarioGrupo && (
+                            <h3 className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#1d1e20' }}>{ui.courses}</h3>
                           )}
-                        </details>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
+                          <div className="flex flex-col" style={{ borderTop: '1px solid #E5E3DE' }}>
+                            {cursos.map((c) => (
+                              <details key={c.nombre} className="group" style={{ borderBottom: '1px solid #E5E3DE' }}>
+                                <summary className="flex items-center justify-between gap-4 px-1 py-3 cursor-pointer text-sm" style={{ color: '#1d1e20' }}>
+                                  <span className="font-semibold">{c.nombre}</span>
+                                  <span className="flex items-center gap-3 shrink-0 text-xs" style={{ color: '#2D2D2D' }}>
+                                    {typeof c.horas === 'number' && <span>{c.horas} {ui.hoursShort}</span>}
+                                    {c.creditos !== undefined && <span>{c.creditos} {ui.credits}</span>}
+                                    <ChevronRight size={16} className="transition-transform group-open:rotate-90" />
+                                  </span>
+                                </summary>
+                                {c.descripcion && (
+                                  <p className="px-1 pb-4 text-sm leading-relaxed" style={{ color: '#2D2D2D' }}>{c.descripcion}</p>
+                                )}
+                              </details>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    ),
+                  }
+                })}
+              />
             </section>
             ) : (
             <section>
@@ -236,11 +247,11 @@ export default function ProgramTemplate({
             {/* 5. Condiciones */}
             <section>
               <SectionTitle>{labels.conditions}</SectionTitle>
-              <div className="flex flex-col gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
                 {data.condiciones.map((c, i) => (
-                  <div key={i} className="p-4" style={{ border: '1px solid #E5E3DE', borderRadius: '4px' }}>
-                    <h3 className="font-semibold text-negro mb-1">{c.titulo}</h3>
-                    <p className="text-sm leading-relaxed" style={{ color: '#6B6B6B' }}><Linkify text={c.descripcion} /></p>
+                  <div key={i} className="pl-4" style={{ borderLeft: '3px solid #6493b5' }}>
+                    <h3 className="text-sm font-semibold text-negro mb-1">{c.titulo}</h3>
+                    <p className="text-sm leading-relaxed" style={{ color: '#2D2D2D' }}><Linkify text={c.descripcion} /></p>
                   </div>
                 ))}
               </div>
@@ -251,7 +262,7 @@ export default function ProgramTemplate({
               <SectionTitle>{labels.certificate}</SectionTitle>
               <div
                 className="flex flex-col gap-3 p-5"
-                style={{ border: '2px solid #6493b5', borderRadius: '4px', background: '#C7C2ba' }}
+                style={{ border: '1px solid #E5E3DE', borderLeft: '3px solid #6493b5', borderRadius: '4px', background: '#FFFFFF' }}
               >
                 <div className="flex items-center gap-3">
                   <Award size={24} style={{ color: '#6493b5' }} />
@@ -269,7 +280,7 @@ export default function ProgramTemplate({
             {/* 7. Precios */}
             <section>
               <SectionTitle>{labels.pricing}</SectionTitle>
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col" style={{ borderTop: '1px solid #E5E3DE' }}>
                 {data.precio.estandar && (
                   <PriceRow label={data.precio.estandarLabel ?? ui.standard} value={data.precio.estandar} />
                 )}
@@ -307,7 +318,7 @@ export default function ProgramTemplate({
           <aside className="lg:w-72 shrink-0">
             <div
               className="sticky top-20 flex flex-col gap-4 p-5"
-              style={{ border: '2px solid #6493b5', borderRadius: '4px', background: '#C7C2ba' }}
+              style={{ border: '1px solid #E5E3DE', borderTop: '3px solid #6493b5', borderRadius: '4px', background: '#FFFFFF', boxShadow: '0 4px 16px rgba(29,30,32,0.06)' }}
             >
               <h3
                 className="font-body text-sm font-semibold uppercase tracking-widest"
@@ -319,11 +330,19 @@ export default function ProgramTemplate({
                 <AsideStat label={labels.levels} value={data.niveles.join(', ')} />
                 <AsideStat label={labels.duration} value={data.duracion} />
                 <AsideStat label={labels.groupSize} value={data.participantes} />
-                <AsideStat
-                  label={labels.pricing}
-                  value={priceDisplay}
-                  highlight
-                />
+                {data.precio.estandar && data.precio.inSitu ? (
+                  <div style={{ paddingBottom: '0.25rem' }}>
+                    <p className="text-xs uppercase tracking-widest mb-2" style={{ color: '#2D2D2D' }}>{labels.pricing}</p>
+                    {[[data.precio.estandarLabel ?? ui.standard, data.precio.estandar], [data.precio.inSituLabel ?? ui.inSitu, data.precio.inSitu]].map(([l, v]) => (
+                      <div key={l} className="mb-2 last:mb-0">
+                        <p className="text-xs" style={{ color: '#2D2D2D' }}>{l}</p>
+                        <p className="text-lg font-bold leading-tight" style={{ color: '#1d1e20' }}>{v}</p>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <AsideStat label={labels.pricing} value={priceDisplay} highlight />
+                )}
               </div>
               <Link
                 href={applyHref}
@@ -355,12 +374,12 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
 function StatBox({ icon, label, value }: { icon: React.ReactNode; label: string; value: string }) {
   return (
     <div
-      className="flex flex-col gap-2 p-4"
-      style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#C7C2ba' }}
+      className="flex flex-col gap-1 sm:gap-2 p-3 sm:p-4"
+      style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#FFFFFF' }}
     >
-      <div style={{ color: '#6493b5' }}>{icon}</div>
-      <p className="text-xs uppercase tracking-widest" style={{ color: '#2D2D2D' }}>{label}</p>
-      <p className="font-semibold text-negro">{value}</p>
+      <div className="hidden sm:block" style={{ color: '#6493b5' }}>{icon}</div>
+      <p className="text-[10px] sm:text-xs uppercase tracking-wider sm:tracking-widest leading-tight" style={{ color: '#2D2D2D' }}>{label}</p>
+      <p className="text-sm sm:text-base font-semibold text-negro">{value}</p>
     </div>
   )
 }
@@ -387,8 +406,8 @@ function Td({ children }: { children: React.ReactNode }) {
 function PriceRow({ label, value, highlight }: { label: string; value: string; highlight?: boolean }) {
   return (
     <div
-      className="flex items-center justify-between px-4 py-3"
-      style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#C7C2ba' }}
+      className="flex items-center justify-between gap-4 px-1 py-3"
+      style={{ borderBottom: '1px solid #E5E3DE' }}
     >
       <span className="text-sm" style={{ color: '#2D2D2D' }}>{label}</span>
       <span
@@ -417,7 +436,7 @@ function AsideStat({ label, value, highlight }: { label: string; value: string; 
 
 function TemarioList({ temario }: { temario: ProgramData['temario'] }) {
   return (
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-2">
                 {temario.map((t, i) => (
                   <details
                     key={i}
@@ -426,7 +445,7 @@ function TemarioList({ temario }: { temario: ProgramData['temario'] }) {
                   >
                     <summary
                       className="flex items-center justify-between px-4 py-3 cursor-pointer font-semibold text-sm"
-                      style={{ background: '#C7C2ba', color: '#1d1e20' }}
+                      style={{ background: '#F4F2EE', color: '#1d1e20' }}
                     >
                       {t.nivel}
                       <ChevronRight size={16} className="transition-transform group-open:rotate-90" />
