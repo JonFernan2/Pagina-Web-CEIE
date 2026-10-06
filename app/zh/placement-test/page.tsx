@@ -1,15 +1,20 @@
 import type { Metadata } from 'next'
+import { notFound } from 'next/navigation'
+import { SHOW_PLACEMENT_TEST } from '@/lib/site'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
 import PlacementTest from '@/components/PlacementTest'
 
 export const metadata: Metadata = {
+  robots: SHOW_PLACEMENT_TEST ? undefined : { index: false },
   title: '西班牙语水平测试 | CEIE UAI',
   description: '参考性测试，依据CEFR（A1–C1）估算你的西班牙语水平，帮你找到合适的CEIE UAI课程。',
 }
 
 export default function PlacementTestPage() {
+  if (!SHOW_PLACEMENT_TEST) notFound()
+
   return (
     <>
       <Navbar lang="zh" currentPath="/zh/placement-test" />

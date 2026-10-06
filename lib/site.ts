@@ -44,3 +44,8 @@ export function siteMetadata(lang: Lang, title: string, description: string): Me
 // "Convocatorias" (home section + footer link to postula.uai.cl). Hidden while there are no open calls; set to true to show again.
 export const SHOW_CALLS = false
 export const CALLS_URL = 'https://postula.uai.cl/'
+
+// Placement test (/test-de-nivel and its translations): pages, menu link, Programs CTA and sitemap entry.
+// Hidden for now; set to true to show it again.
+export const SHOW_PLACEMENT_TEST = false
+export const PLACEMENT_TEST_PATHS = ['/test-de-nivel', '/en/placement-test', '/pt/teste-de-nivel', '/zh/placement-test']

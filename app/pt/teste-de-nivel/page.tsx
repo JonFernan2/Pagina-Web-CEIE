@@ -1,15 +1,20 @@
 import type { Metadata } from 'next'
+import { notFound } from 'next/navigation'
+import { SHOW_PLACEMENT_TEST } from '@/lib/site'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
 import PlacementTest from '@/components/PlacementTest'
 
 export const metadata: Metadata = {
+  robots: SHOW_PLACEMENT_TEST ? undefined : { index: false },
   title: 'Teste de nível de espanhol | CEIE UAI',
   description: 'Teste orientativo para estimar seu nível de espanhol segundo o QECR (A1–C1) e descobrir qual programa do CEIE UAI é ideal para você.',
 }
 
 export default function PlacementTestPage() {
+  if (!SHOW_PLACEMENT_TEST) notFound()
+
   return (
     <>
       <Navbar lang="pt" currentPath="/pt/teste-de-nivel" />
