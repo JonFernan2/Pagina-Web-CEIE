@@ -145,8 +145,11 @@ export const HOME_ZH = {
   },
   accreditation: {
     title: '认证质量保证',
-    p2: '阿道夫·伊瓦涅斯大学商学院荣获“三皇冠”（Triple Crown）认证，即AACSB、EQUIS和AMBA三大国际认证——这是商学院领域最严格的三项认证，全球仅有极少数院校同时获得。',
-    p3: '此外，UAI是智利唯一获得ABET认证的非传统私立大学。ABET是工程与技术类专业的国际标准，UAI的计算机工程、土木工程和工业工程专业均获此认证，有助于毕业生在美国及其他国家获得学位认可。',
+    intro: '阿道夫·伊瓦涅斯大学获得多项国际认证，其教育质量符合全球公认的标准。',
+    groups: [
+      { faculty: '商学院', name: '三皇冠认证', text: '全球少数同时获得该领域三项最严格国际认证——AACSB、EQUIS和AMBA——的商学院之一。', logos: ['aacsb', 'equis', 'amba'] },
+      { faculty: '工程与科学学院', name: 'ABET认证', text: '计算机工程、土木工程和工业工程专业获得ABET认证——工程与技术类专业的国际标准。UAI是智利唯一获此认可的非传统私立大学，该认证也有助于毕业生在美国及其他国家获得学位认可。', logos: ['abet'] },
+    ],
     badges: [
       'CNA 卓越认证',
       'Triple Crown 国际认证',

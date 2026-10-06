@@ -157,8 +157,11 @@ export const HOME_EN = {
   },
   accreditation: {
     title: 'Certified quality',
-    p2: 'Universidad Adolfo Ibáñez\'s Business School holds the Triple Crown: the AACSB, EQUIS and AMBA international accreditations, the three most demanding for business schools, achieved by very few institutions worldwide.',
-    p3: 'UAI is also the only non-traditional private university in Chile with ABET accreditation, the international standard for engineering and technology degrees, awarded to its Computer Engineering, Civil Engineering and Industrial Engineering programmes. This recognition makes it easier for graduates to have their degree recognised in the United States and other countries.',
+    intro: 'Universidad Adolfo Ibáñez holds international accreditations that endorse the quality of its education against standards recognised worldwide.',
+    groups: [
+      { faculty: 'Business School', name: 'Triple Crown', text: 'One of the few business schools in the world holding the three most demanding international accreditations in the field: AACSB, EQUIS and AMBA.', logos: ['aacsb', 'equis', 'amba'] },
+      { faculty: 'Faculty of Engineering and Sciences', name: 'ABET', text: 'Computer Engineering, Civil Engineering and Industrial Engineering are accredited by ABET, the international standard for engineering and technology degrees. UAI is the only non-traditional private university in Chile with this recognition, which also makes it easier for graduates to have their degree recognised in the United States and other countries.', logos: ['abet'] },
+    ],
     badges: [
       'CNA Excellence Accreditation',
       'Triple Crown Recognition',
