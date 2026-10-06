@@ -155,6 +155,9 @@ export default function HomeZHPage() {
               <p className="text-base leading-relaxed" style={{ color: '#2D2D2D' }}>
                 {d.accreditation.p2}
               </p>
+              <p className="text-base leading-relaxed mt-4" style={{ color: '#2D2D2D' }}>
+                {d.accreditation.p3}
+              </p>
             </div>
             <div className="flex flex-col gap-4">
               {/* Triple Crown: EQUIS · AACSB · AMBA */}
@@ -166,6 +169,19 @@ export default function HomeZHPage() {
                   width={1494}
                   height={729}
                   className="block w-full h-auto max-w-[460px]"
+                  loading="lazy"
+                />
+              </div>
+
+              {/* ABET — Engineering Accreditation Commission */}
+              <div className="flex items-center justify-center lg:justify-start">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/logo-abet-transparente.webp"
+                  alt="ABET — Engineering Accreditation Commission"
+                  width={730}
+                  height={247}
+                  className="block w-full h-auto max-w-[300px]"
                   loading="lazy"
                 />
               </div>

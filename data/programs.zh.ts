@@ -99,6 +99,10 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
         descripcion: '须达到所选课程规定的最低水平（A1除外）。课程开始前须完成诊断测试，费用已包含在学费中。',
       },
       {
+        titulo: '开课条件',
+        descripcion: '每门课程须每个级别至少有五名学员注册方可开课。',
+      },
+      {
         titulo: '出勤率',
         descripcion: '须达到80%以上出勤率方可获得结业证书。',
       },
@@ -172,6 +176,10 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
       {
         titulo: '入学要求',
         descripcion: '须达到所选课程规定的最低水平（A1除外）。课程开始前须完成诊断测试，费用已包含在学费中。',
+      },
+      {
+        titulo: '开课条件',
+        descripcion: '每门课程须每个级别至少有五名学员注册方可开课。',
       },
       {
         titulo: '出勤率',

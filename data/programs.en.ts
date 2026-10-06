@@ -99,6 +99,10 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
         descripcion: 'Minimum level required for the selected course (except for A1). Mandatory placement test before the start of the semester, included in course tuition.',
       },
       {
+        titulo: 'Course opening',
+        descripcion: 'Each course opens subject to a minimum of five students enrolled per level.',
+      },
+      {
         titulo: 'Attendance',
         descripcion: 'Minimum 80% attendance required to receive the completion certificate.',
       },
@@ -172,6 +176,10 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
       {
         titulo: 'Entry requirement',
         descripcion: 'Minimum level required for the selected course (except for A1). Mandatory placement test before the start of the program, included in course tuition.',
+      },
+      {
+        titulo: 'Course opening',
+        descripcion: 'Each course opens subject to a minimum of five students enrolled per level.',
       },
       {
         titulo: 'Attendance',

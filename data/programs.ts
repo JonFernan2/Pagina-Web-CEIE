@@ -174,6 +174,10 @@ export const PROGRAMS_DATA: ProgramData[] = [
         descripcion: 'Nivel mínimo según el curso seleccionado (con excepción del A1). Test de diagnóstico obligatorio antes del inicio del semestre e incluido en la matrícula del curso.',
       },
       {
+        titulo: 'Apertura de cursos',
+        descripcion: 'La apertura de cada curso está sujeta a un mínimo de cinco estudiantes matriculados por nivel.',
+      },
+      {
         titulo: 'Permanencia',
         descripcion: 'Asistencia mínima del 80% para acceder al certificado de finalización.',
       },
@@ -248,6 +252,10 @@ export const PROGRAMS_DATA: ProgramData[] = [
       {
         titulo: 'Requisito de ingreso',
         descripcion: 'Nivel mínimo según el curso seleccionado (con excepción del A1). Test de diagnóstico obligatorio antes del inicio del programa e incluido en la matrícula del curso.',
+      },
+      {
+        titulo: 'Apertura de cursos',
+        descripcion: 'La apertura de cada curso está sujeta a un mínimo de cinco estudiantes matriculados por nivel.',
       },
       {
         titulo: 'Permanencia',
