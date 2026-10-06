@@ -118,7 +118,7 @@ export default function AboutENPage() {
       />
 
       <LaunchGallery
-        title="Launch Gallery"
+        title="Image Gallery"
         subtitle="Images from the official inauguration of CEIE at Universidad Adolfo Ibáñez, Viña del Mar."
         images={LAUNCH_IMAGES_EN}
         lang="en"
