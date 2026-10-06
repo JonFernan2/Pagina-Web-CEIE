@@ -28,6 +28,9 @@ const LAUNCH_IMAGES_EN = [
   { src: '/images/galeria-ceie-conversatorio-2.jpg', alt: 'Panel discussion organised by the CEIE and the UAI Faculty of Liberal Arts', objectPosition: 'center' },
   { src: '/images/galeria-ceie-conversatorio-3.jpg', alt: 'Panel members beside the CEIE banner during the discussion', objectPosition: 'center 28%' },
   { src: '/images/galeria-ceie-conversatorio-4.jpg', alt: 'Panel contribution during the CEIE and UAI Faculty of Liberal Arts discussion', objectPosition: 'center' },
+  { src: '/images/galeria-ceie-equipo-campus.jpg', alt: 'CEIE UAI team at the Viña del Mar campus', objectPosition: 'center 55%' },
+  { src: '/images/galeria-ceie-estudiantes-grupo.jpg', alt: 'Group of CEIE international students at the UAI Viña del Mar campus', objectPosition: 'center 35%' },
+  { src: '/images/galeria-ceie-actividades-clase.jpg', alt: 'CEIE students in class: oral presentations and activities with their teacher', objectPosition: 'center' },
 ]
 
 export const metadata: Metadata = {

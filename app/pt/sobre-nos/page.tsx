@@ -28,6 +28,9 @@ const LAUNCH_IMAGES_PT = [
   { src: '/images/galeria-ceie-conversatorio-2.jpg', alt: 'Painel da roda de conversa organizada pelo CEIE e pela Faculdade de Artes Liberais UAI', objectPosition: 'center' },
   { src: '/images/galeria-ceie-conversatorio-3.jpg', alt: 'Integrantes do painel ao lado do banner do CEIE durante a roda de conversa', objectPosition: 'center 28%' },
   { src: '/images/galeria-ceie-conversatorio-4.jpg', alt: 'Intervenção do painel durante a roda de conversa do CEIE e da Faculdade de Artes Liberais UAI', objectPosition: 'center' },
+  { src: '/images/galeria-ceie-equipo-campus.jpg', alt: 'Equipe do CEIE UAI no campus Viña del Mar', objectPosition: 'center 55%' },
+  { src: '/images/galeria-ceie-estudiantes-grupo.jpg', alt: 'Grupo de estudantes internacionais do CEIE no campus UAI Viña del Mar', objectPosition: 'center 35%' },
+  { src: '/images/galeria-ceie-actividades-clase.jpg', alt: 'Estudantes do CEIE em aula: apresentações orais e atividades com a professora', objectPosition: 'center' },
 ]
 
 export const metadata: Metadata = {

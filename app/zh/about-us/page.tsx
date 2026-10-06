@@ -28,6 +28,9 @@ const LAUNCH_IMAGES_ZH = [
   { src: '/images/galeria-ceie-conversatorio-2.jpg', alt: 'CEIE与UAI文科学院联合举办的座谈会嘉宾席', objectPosition: 'center' },
   { src: '/images/galeria-ceie-conversatorio-3.jpg', alt: '座谈会期间CEIE展架旁的嘉宾', objectPosition: 'center 28%' },
   { src: '/images/galeria-ceie-conversatorio-4.jpg', alt: 'CEIE与UAI文科学院座谈会嘉宾发言', objectPosition: 'center' },
+  { src: '/images/galeria-ceie-equipo-campus.jpg', alt: 'CEIE UAI团队在Viña del Mar校区', objectPosition: 'center 55%' },
+  { src: '/images/galeria-ceie-estudiantes-grupo.jpg', alt: 'CEIE国际学员在UAI Viña del Mar校区合影', objectPosition: 'center 35%' },
+  { src: '/images/galeria-ceie-actividades-clase.jpg', alt: 'CEIE学员课堂活动：口头展示及与老师的合影', objectPosition: 'center' },
 ]
 
 export const metadata: Metadata = {

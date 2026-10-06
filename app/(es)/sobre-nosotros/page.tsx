@@ -28,6 +28,9 @@ const LAUNCH_IMAGES_ES = [
   { src: '/images/galeria-ceie-conversatorio-2.jpg', alt: 'Panel del conversatorio organizado por el CEIE y la Facultad de Artes Liberales UAI', objectPosition: 'center' },
   { src: '/images/galeria-ceie-conversatorio-3.jpg', alt: 'Integrantes del panel junto al pendón del CEIE durante el conversatorio', objectPosition: 'center 28%' },
   { src: '/images/galeria-ceie-conversatorio-4.jpg', alt: 'Intervención del panel durante el conversatorio del CEIE y la Facultad de Artes Liberales UAI', objectPosition: 'center' },
+  { src: '/images/galeria-ceie-equipo-campus.jpg', alt: 'Equipo del CEIE UAI en el campus Viña del Mar', objectPosition: 'center 55%' },
+  { src: '/images/galeria-ceie-estudiantes-grupo.jpg', alt: 'Grupo de estudiantes internacionales del CEIE en el campus UAI Viña del Mar', objectPosition: 'center 35%' },
+  { src: '/images/galeria-ceie-actividades-clase.jpg', alt: 'Estudiantes del CEIE en clase: presentaciones orales y actividades junto a su profesora', objectPosition: 'center' },
 ]
 
 export const metadata: Metadata = {
