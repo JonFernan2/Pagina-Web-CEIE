@@ -29,7 +29,7 @@ export default function IntensiveENPage() {
         labels={{
           overview: 'Overview',
           schedule: 'Schedule',
-          syllabus: 'Syllabus by level',
+          syllabus: 'Syllabus',
           activities: 'Included activities',
           conditions: 'Conditions',
           certificate: 'Certificate',

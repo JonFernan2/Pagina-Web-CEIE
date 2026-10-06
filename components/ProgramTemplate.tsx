@@ -154,6 +154,24 @@ export default function ProgramTemplate({
                       {t.nivel}
                       <ChevronRight size={16} className="transition-transform group-open:rotate-90" />
                     </summary>
+                    {t.descripcion && (
+                      <div className="px-6 pt-4 flex flex-col gap-3">
+                        {t.descripcion.map((d, j) => (
+                          <p key={j} className="text-sm leading-relaxed" style={{ color: '#2D2D2D' }}>{d}</p>
+                        ))}
+                      </div>
+                    )}
+                    {t.ficha && (
+                      <dl className="mx-6 mt-4 mb-4 grid grid-cols-2 sm:grid-cols-4 gap-px overflow-hidden" style={{ background: '#E5E3DE', border: '1px solid #E5E3DE', borderRadius: '4px' }}>
+                        {t.ficha.map((f) => (
+                          <div key={f.label} className="px-3 py-2 last:odd:col-span-2 sm:last:odd:col-span-1 sm:[&:nth-child(4n+3):last-child]:col-span-2" style={{ background: '#FFFFFF' }}>
+                            <dt className="text-xs uppercase tracking-widest" style={{ color: '#6B6B6B' }}>{f.label}</dt>
+                            <dd className="text-sm font-semibold" style={{ color: '#1d1e20' }}>{f.value}</dd>
+                          </div>
+                        ))}
+                      </dl>
+                    )}
+                    {t.contenidos.length > 0 && (
                     <ul className="px-6 py-4 flex flex-col gap-2">
                       {t.contenidos.map((c, j) => (
                         <li key={j} className="flex items-start gap-2 text-sm" style={{ color: '#2D2D2D' }}>
@@ -162,6 +180,7 @@ export default function ProgramTemplate({
                         </li>
                       ))}
                     </ul>
+                    )}
                   </details>
                 ))}
               </div>

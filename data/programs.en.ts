@@ -143,53 +143,22 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
     ],
     temario: [
       {
-        nivel: 'A1 — Beginner',
-        contenidos: [
-          'Personal introductions and greetings',
-          'Everyday vocabulary',
-          'Present tense: regular verbs',
-          'Numbers, dates and times',
-          'Basic pronunciation of Chilean Spanish',
+        nivel: 'Grammar and Communicative Structures',
+        descripcion: [
+          'An intensive course focused on developing the fundamental grammatical structures of Spanish. Through an active, applied methodology, students acquire the tools they need to understand and use the language\'s main structures in everyday communicative situations.',
+          'The course covers essential grammar content, integrating vocabulary, comprehension, and oral and written production, with practical activities that apply the content in real communicative contexts. The intensive format supports the progressive consolidation of learning and provides a solid foundation for continuing to advance in Spanish.',
         ],
+        ficha: [{ label: 'Hours', value: '22 hours' }, { label: 'Credits', value: '2' }, { label: 'Duration', value: '2 weeks' }, { label: 'Minimum students', value: '5' }, { label: 'Maximum students', value: '15' }, { label: 'Campus', value: 'Viña del Mar' }, { label: 'Price', value: 'USD 900' }],
+        contenidos: [],
       },
       {
-        nivel: 'A2 — Elementary',
-        contenidos: [
-          'Narrating past experiences (preterite)',
-          'Describing people, places and objects',
-          'Expressing likes and preferences',
-          'Everyday transactions: shopping, restaurants, transport',
-          'Introduction to Chilean idiomatic expressions',
+        nivel: 'Communication and Chilean Culture',
+        descripcion: [
+          'An intensive course focused on developing basic communicative skills in Spanish, combining language learning with an introduction to Chilean and Latin American culture. Students develop tools to communicate simply in everyday situations, both orally and in writing.',
+          'Through practical activities and immersion experiences, students have the opportunity to use Spanish in real contexts while exploring aspects of everyday life, society, and culture in Chile. The course includes cultural activities in Viña del Mar and Valparaíso, encouraging intercultural reflection and a closer understanding of the context in which their learning experience takes place.',
         ],
-      },
-      {
-        nivel: 'B1 — Intermediate',
-        contenidos: [
-          'Oral and written argumentation',
-          'Narration across multiple verb tenses',
-          'Reading comprehension of news articles',
-          'Debate and discussion on current issues',
-          'Formal and informal registers',
-        ],
-      },
-      {
-        nivel: 'B2 — Upper Intermediate',
-        contenidos: [
-          'Analysis of academic and literary texts',
-          'Writing reports and essays',
-          'Comprehension of authentic speech',
-          'The subjunctive: usage and nuances',
-          'Spanish in professional contexts',
-        ],
-      },
-      {
-        nivel: 'C1 — Advanced',
-        contenidos: [
-          'Expressing nuance and complex registers',
-          'Analysis of Chilean and Latin American literature',
-          'Advanced academic writing',
-          'Pragmatics and discourse coherence',
-        ],
+        ficha: [{ label: 'Hours', value: '22 hours' }, { label: 'Credits', value: '2' }, { label: 'Duration', value: '2 weeks' }, { label: 'Minimum students', value: '5' }, { label: 'Maximum students', value: '15' }, { label: 'Campus', value: 'Viña del Mar' }, { label: 'Price', value: 'USD 900' }],
+        contenidos: [],
       },
     ],
     actividades: [

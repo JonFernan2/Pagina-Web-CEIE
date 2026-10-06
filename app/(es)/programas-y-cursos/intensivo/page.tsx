@@ -29,7 +29,7 @@ export default function IntensivoPage() {
         labels={{
           overview: 'Descripción general',
           schedule: 'Horarios',
-          syllabus: 'Temario por nivel',
+          syllabus: 'Temario',
           activities: 'Actividades incluidas',
           conditions: 'Condiciones',
           certificate: 'Certificado',

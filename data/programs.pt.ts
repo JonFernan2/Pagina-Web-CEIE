@@ -143,44 +143,22 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
     ],
     temario: [
       {
-        nivel: 'A1 — Iniciante',
-        contenidos: [
-          'Apresentações pessoais e cumprimentos',
-          'Vocabulário da vida cotidiana',
-          'Presente do indicativo: verbos regulares',
-          'Números, datas e horários',
-          'Pronúncia básica do espanhol chileno',
+        nivel: 'Gramática e Estruturas Comunicativas',
+        descripcion: [
+          'Curso intensivo voltado ao desenvolvimento das estruturas gramaticais fundamentais do espanhol. Por meio de uma metodologia ativa e aplicada, os estudantes adquirem as ferramentas necessárias para compreender e utilizar as principais estruturas do idioma em situações comunicativas do dia a dia.',
+          'O curso aborda conteúdos gramaticais essenciais, integrando vocabulário, compreensão e produção oral e escrita, com atividades práticas que permitem aplicar os conteúdos em contextos reais de comunicação. O formato intensivo favorece a consolidação progressiva da aprendizagem e oferece uma base sólida para continuar avançando no domínio do espanhol.',
         ],
+        ficha: [{ label: 'Horas', value: '22 horas' }, { label: 'Créditos', value: '2' }, { label: 'Duração', value: '2 semanas' }, { label: 'Nº mínimo de estudantes', value: '5' }, { label: 'Nº máximo de estudantes', value: '15' }, { label: 'Campus', value: 'Viña del Mar' }, { label: 'Preço', value: '900 USD' }],
+        contenidos: [],
       },
       {
-        nivel: 'A2 — Elementar',
-        contenidos: [
-          'Narração de experiências passadas (pretérito)',
-          'Descrição de pessoas, lugares e objetos',
-          'Expressão de gostos e preferências',
-          'Transações cotidianas: compras, restaurantes, transporte',
-          'Introdução a expressões idiomáticas chilenas',
+        nivel: 'Comunicação e Cultura Chilena',
+        descripcion: [
+          'Curso intensivo voltado ao desenvolvimento das competências comunicativas básicas em espanhol, integrando a aprendizagem do idioma a uma aproximação à cultura chilena e latino-americana. Os estudantes desenvolvem ferramentas para se comunicar de forma simples em situações do dia a dia, tanto oralmente quanto por escrito.',
+          'Por meio de atividades práticas e experiências de imersão, os estudantes têm a oportunidade de usar o espanhol em contextos reais, enquanto exploram aspectos da vida cotidiana, da sociedade e da cultura chilena. O curso inclui atividades culturais em Viña del Mar e Valparaíso, promovendo a reflexão intercultural e uma compreensão mais próxima do contexto em que se desenvolve a sua experiência de aprendizagem.',
         ],
-      },
-      {
-        nivel: 'B1 — Intermediário',
-        contenidos: [
-          'Argumentação oral e escrita',
-          'Narração em vários tempos verbais',
-          'Compreensão de textos jornalísticos',
-          'Debate e discussão sobre temas atuais',
-          'Registros formais e informais',
-        ],
-      },
-      {
-        nivel: 'B2 — Intermediário Superior',
-        contenidos: [
-          'Análise de textos acadêmicos e literários',
-          'Redação de relatórios e ensaios',
-          'Compreensão de discursos autênticos',
-          'Subjuntivo: uso e nuances',
-          'Espanhol em contextos profissionais',
-        ],
+        ficha: [{ label: 'Horas', value: '22 horas' }, { label: 'Créditos', value: '2' }, { label: 'Duração', value: '2 semanas' }, { label: 'Nº mínimo de estudantes', value: '5' }, { label: 'Nº máximo de estudantes', value: '15' }, { label: 'Campus', value: 'Viña del Mar' }, { label: 'Preço', value: '900 USD' }],
+        contenidos: [],
       },
     ],
     actividades: [
