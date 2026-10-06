@@ -146,7 +146,7 @@ export const HOME_PT = {
   },
   accreditation: {
     title: 'Qualidade certificada',
-    p2: 'A UAI possui Acreditação de Excelência da Comissão Nacional de Acreditação (CNA) e reconhecimento Triple Crown, respaldando a qualidade acadêmica de todos os seus programas.',
+    p2: 'A Escola de Negócios da Universidad Adolfo Ibáñez possui a Tríplice Coroa (Triple Crown): as acreditações internacionais AACSB, EQUIS e AMBA, as três mais exigentes para escolas de negócios, alcançadas por pouquíssimas instituições no mundo.',
     badges: [
       'CNA Acreditação de Excelência',
       'Triple Crown Recognition',

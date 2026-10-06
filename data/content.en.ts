@@ -157,7 +157,7 @@ export const HOME_EN = {
   },
   accreditation: {
     title: 'Certified quality',
-    p2: 'UAI holds CNA Excellence Accreditation from Chile\'s National Accreditation Commission and Triple Crown recognition, backing the academic quality of all its programs.',
+    p2: 'Universidad Adolfo Ibáñez\'s Business School holds the Triple Crown: the AACSB, EQUIS and AMBA international accreditations, the three most demanding for business schools, achieved by very few institutions worldwide.',
     badges: [
       'CNA Excellence Accreditation',
       'Triple Crown Recognition',
