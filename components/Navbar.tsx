@@ -1,14 +1,9 @@
 import NavbarClient, { type NavMenu } from './NavbarClient'
-import { TEACHERS, teacherAnchor } from '@/data/teachers'
 import { SHOW_PLACEMENT_TEST, PLACEMENT_TEST_PATHS } from '@/lib/site'
 
 type Lang = 'es' | 'en' | 'pt' | 'zh'
 
-// Built on the server so the dropdowns (e.g. teacher names) don't ship the full data files to the browser.
-function teacherLinks(base: string) {
-  return TEACHERS.map((t) => ({ label: t.nombre, href: `${base}#${teacherAnchor(t.nombre)}` }))
-}
-
+// Built on the server so the dropdown data stays out of the client bundle.
 function aboutLinks(base: string, labels: [string, string, string, string]) {
   const ids = ['equipo', 'mision-vision-valores', 'espacios', 'galeria']
   return labels.map((label, i) => ({ label, href: `${base}#${ids[i]}` }))
@@ -18,7 +13,7 @@ const MENUS: Record<Lang, NavMenu> = {
   es: {
     links: [
       { label: 'Sobre Nosotros', href: '/sobre-nosotros', children: aboutLinks('/sobre-nosotros', ['Nuestro Equipo', 'Misión, visión y valores', 'Nuestros Espacios', 'Galería de imágenes']) },
-      { label: 'Equipo Docente', href: '/equipo-docente', children: teacherLinks('/equipo-docente') },
+      { label: 'Equipo Docente', href: '/equipo-docente' },
       {
         label: 'Programas y Cursos', href: '/programas-y-cursos', children: [
           { label: 'Programa Semestral de Español', href: '/programas-y-cursos/semestral' },
@@ -34,7 +29,7 @@ const MENUS: Record<Lang, NavMenu> = {
   en: {
     links: [
       { label: 'About Us', href: '/en/about-us', children: aboutLinks('/en/about-us', ['Our Team', 'Mission, vision and values', 'Our Facilities', 'Image Gallery']) },
-      { label: 'Teaching Team', href: '/en/teaching-team', children: teacherLinks('/en/teaching-team') },
+      { label: 'Teaching Team', href: '/en/teaching-team' },
       {
         label: 'Programs & Courses', href: '/en/programs-and-courses', children: [
           { label: 'Spanish Semester Programme', href: '/en/programs-and-courses/semester' },
@@ -50,7 +45,7 @@ const MENUS: Record<Lang, NavMenu> = {
   pt: {
     links: [
       { label: 'Sobre Nós', href: '/pt/sobre-nos', children: aboutLinks('/pt/sobre-nos', ['Nossa Equipe', 'Missão, visão e valores', 'Nossas Instalações', 'Galeria de imagens']) },
-      { label: 'Equipe Docente', href: '/pt/equipe-docente', children: teacherLinks('/pt/equipe-docente') },
+      { label: 'Equipe Docente', href: '/pt/equipe-docente' },
       {
         label: 'Programas e Cursos', href: '/pt/programas-e-cursos', children: [
           { label: 'Programa Semestral de Espanhol', href: '/pt/programas-e-cursos/semestral' },
@@ -66,7 +61,7 @@ const MENUS: Record<Lang, NavMenu> = {
   zh: {
     links: [
       { label: '关于我们', href: '/zh/about-us', children: aboutLinks('/zh/about-us', ['我们的团队', '使命、愿景与价值观', '教学设施', '图片集']) },
-      { label: '教学团队', href: '/zh/teaching-team', children: teacherLinks('/zh/teaching-team') },
+      { label: '教学团队', href: '/zh/teaching-team' },
       {
         label: '课程项目', href: '/zh/programs', children: [
           { label: '学期西班牙语课程', href: '/zh/programs/semester' },
