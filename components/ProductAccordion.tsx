@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
-import { ChevronDown, MapPin, Users, Clock, ChevronRight } from 'lucide-react'
+import { ChevronDown, MapPin, Clock, ChevronRight } from 'lucide-react'
 import type { ProgramData } from '@/data/programs'
 
 interface ProductAccordionProps {
@@ -249,22 +249,6 @@ export default function ProductAccordion({ programs, lang }: ProductAccordionPro
                     </div>
                   )}
 
-                  {program.publicoObjetivo && (
-                    <div className="flex items-start gap-2">
-                      <Users size={14} className="mt-0.5 shrink-0" style={{ color: '#6493b5' }} />
-                      <div>
-                        <p
-                          className="text-xs uppercase tracking-widest mb-1"
-                          style={{ color: '#6B6B6B' }}
-                        >
-                          {lbl.publico}
-                        </p>
-                        <p className="text-sm" style={{ color: '#1d1e20' }}>
-                          {program.publicoObjetivo}
-                        </p>
-                      </div>
-                    </div>
-                  )}
                 </div>
 
                 {/* CTAs */}
