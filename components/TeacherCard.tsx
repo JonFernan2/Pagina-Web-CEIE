@@ -3,6 +3,7 @@
 import { useId, useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 import PlaceholderImage from './PlaceholderImage'
+import { teacherAnchor } from '@/data/teachers'
 
 type Lang = 'es' | 'en' | 'pt' | 'zh'
 
@@ -79,6 +80,7 @@ export default function TeacherCard({
 
   return (
     <div
+      id={teacherAnchor(nombre)}
       className="flex flex-col font-body overflow-hidden"
       style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#FFFFFF' }}
     >

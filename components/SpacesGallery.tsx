@@ -28,11 +28,11 @@ interface SpacesGalleryProps {
   lang?: 'es' | 'en' | 'pt' | 'zh'
 }
 
-export default function SpacesGallery({ spaces, title, spaceImages, lang = 'es' }: SpacesGalleryProps) {
+export default function SpacesGallery({ id, spaces, title, spaceImages, lang = 'es' }: SpacesGalleryProps & { id?: string }) {
   const [lightbox, setLightbox] = useState<{ src: string; alt: string } | null>(null)
 
   return (
-    <section style={{ background: '#C7C2ba' }} className="py-16">
+    <section id={id} style={{ background: '#C7C2ba' }} className="py-16">
       <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
         <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-8">{title}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

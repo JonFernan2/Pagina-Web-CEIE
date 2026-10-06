@@ -59,7 +59,7 @@ export default function SobreNosotrosPage() {
       </div>
 
       {/* Directorio */}
-      <section style={{ background: '#C7C2ba' }} className="py-16">
+      <section id="equipo" style={{ background: '#C7C2ba' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-10">
             Nuestro Equipo
@@ -100,7 +100,7 @@ export default function SobreNosotrosPage() {
       </section>
 
       {/* Misión y Visión */}
-      <section style={{ background: '#FFFFFF' }} className="py-16">
+      <section id="mision-vision-valores" style={{ background: '#FFFFFF' }} className="py-16">
         <div className="max-w-ceie mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="font-display font-bold text-negro text-3xl md:text-4xl mb-8">
             {d.sections.mision.title}
@@ -123,6 +123,7 @@ export default function SobreNosotrosPage() {
       </section>
 
       <SpacesGallery
+        id="espacios"
         spaces={d.sections.espacios.spaces}
         title={d.sections.espacios.title}
         spaceImages={SPACE_IMAGES}
@@ -130,6 +131,7 @@ export default function SobreNosotrosPage() {
       />
 
       <LaunchGallery
+        id="galeria"
         title="Galería de imágenes"
         images={LAUNCH_IMAGES_ES}
         lang="es"
