@@ -49,3 +49,7 @@ export const CALLS_URL = 'https://postula.uai.cl/'
 // Hidden for now; set to true to show it again.
 export const SHOW_PLACEMENT_TEST = false
 export const PLACEMENT_TEST_PATHS = ['/test-de-nivel', '/en/placement-test', '/pt/teste-de-nivel', '/zh/placement-test']
+
+// Languages shown to visitors. Portuguese and Chinese are hidden for now but still kept up to date in the code;
+// add 'pt' / 'zh' back here to show them again (selector, pages and sitemap follow this list).
+export const ACTIVE_LANGS: Lang[] = ['es', 'en']

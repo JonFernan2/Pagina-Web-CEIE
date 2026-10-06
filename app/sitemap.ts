@@ -1,8 +1,8 @@
 import type { MetadataRoute } from 'next'
 import { ROUTES, type Lang } from '@/lib/routes'
-import { SITE_URL, HREFLANG, SHOW_PLACEMENT_TEST, PLACEMENT_TEST_PATHS } from '@/lib/site'
+import { SITE_URL, HREFLANG, SHOW_PLACEMENT_TEST, PLACEMENT_TEST_PATHS, ACTIVE_LANGS } from '@/lib/site'
 
-const LANGS: Lang[] = ['es', 'en', 'pt', 'zh']
+const LANGS: Lang[] = ACTIVE_LANGS
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return ROUTES.filter((r) => SHOW_PLACEMENT_TEST || !PLACEMENT_TEST_PATHS.includes(r.es)).flatMap((route) => {
