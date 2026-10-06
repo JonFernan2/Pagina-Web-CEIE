@@ -11,7 +11,7 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
       '循序渐进地培养国际非西班牙语学员的语言、学术及文化能力，促进其融入大学学习生活。',
     niveles: ['A1', 'A2', 'B1', 'B2', 'C1'],
     sedes: ['Viña del Mar'],
-    publicoObjetivo: '无西班牙语基础的国际本科生。',
+    publicoObjetivo: '国际本科生。',
     cursosTabla: [
       { nombre: '西班牙语基础 A1/A2', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE', descripcion: '本课程注重在正式与非正式、个人与职业等多种语境中培养西班牙语口头与书面交际能力，通过语境化语言运用实现清晰有效的沟通目标。' },
       { nombre: '西班牙语中级：交际 B1/B2', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE', descripcion: '本课程旨在通过正式与非正式语境下的持续互动，巩固西班牙语交际能力，培养口头与书面表达能力，为有效融入社会奠定基础。' },
