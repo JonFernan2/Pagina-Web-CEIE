@@ -8,6 +8,7 @@ export const ROUTES: Array<Record<Lang, string>> = [
   { es: '/programas-y-cursos/fines-especificos',    en: '/en/programs-and-courses/specific-purposes', pt: '/pt/programas-e-cursos/fins-especificos', zh: '/zh/programs/specific-purposes' },
   { es: '/equipo-docente',                          en: '/en/teaching-team',                          pt: '/pt/equipe-docente',                  zh: '/zh/teaching-team' },
   { es: '/sobre-nosotros',                          en: '/en/about-us',                               pt: '/pt/sobre-nos',                       zh: '/zh/about-us' },
+  { es: '/test-de-nivel',                           en: '/en/placement-test',                         pt: '/pt/teste-de-nivel',                  zh: '/zh/placement-test' },
   { es: '/admision',                                en: '/en/admissions',                             pt: '/pt/admissao',                        zh: '/zh/apply' },
   { es: '/voces-del-centro',                        en: '/en/voices-of-the-centre',                   pt: '/pt/vozes-do-centro',                 zh: '/zh/testimonials' },
   { es: '/noticias',                                en: '/en/news',                                   pt: '/pt/noticias',                        zh: '/zh/news' },
