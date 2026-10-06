@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { ChevronRight, Users, Clock, Award, CheckCircle, BookOpen } from 'lucide-react'
 import type { ProgramData } from '@/data/programs'
 import Linkify from './Linkify'
-import StudyPlanTabs from './StudyPlanTabs'
 
 const UI = {
   es: { studyPlan: 'Plan de estudios', levelSyllabus: 'Temario por nivel', hoursShort: 'h', credits: 'créditos', courses: 'Cursos', classSchedule: 'Horario de clases: ', shift: 'Turno', days: 'Días', time: 'Hora', standard: 'Estándar (campus UAI)', inSitu: 'In situ', longTerm: 'Largo plazo', price: 'Precio', onRequest: 'Consultar', priceNote: 'Valores referenciales en USD, sujetos a cambios. Consulte las condiciones vigentes.' },
@@ -178,13 +177,22 @@ export default function ProgramTemplate({
             {data.temarioGrupo && data.cursosTabla ? (
             <section>
               <SectionTitle>{ui.studyPlan}</SectionTitle>
-              <StudyPlanTabs
-                tabs={Array.from(new Set(data.cursosTabla.map((c) => c.subcategoria).filter((g): g is string => !!g))).map((grupo) => {
+              <div className="flex flex-col gap-3">
+                {Array.from(new Set(data.cursosTabla.map((c) => c.subcategoria).filter((g): g is string => !!g))).map((grupo) => {
                   const cursos = data.cursosTabla!.filter((c) => c.subcategoria === grupo)
-                  return {
-                    label: grupo,
-                    count: cursos.length,
-                    content: (
+                  return (
+                    <details key={grupo} className="group/plan" style={{ border: '1px solid #E5E3DE', borderRadius: '4px' }}>
+                      <summary
+                        className="flex items-center justify-between gap-4 px-5 py-4 cursor-pointer"
+                        style={{ background: '#F4F2EE', color: '#1d1e20' }}
+                      >
+                        <span className="font-display font-bold text-lg">{grupo}</span>
+                        <span className="flex items-center gap-3 shrink-0 text-xs" style={{ color: '#2D2D2D' }}>
+                          <span>{cursos.length} {ui.courses.toLowerCase()}</span>
+                          <ChevronRight size={18} className="transition-transform group-open/plan:rotate-90" />
+                        </span>
+                      </summary>
+                      <div className="px-5 py-5">
                       <div className="flex flex-col gap-8">
                         {grupo === data.temarioGrupo && (
                           <div>
@@ -215,10 +223,11 @@ export default function ProgramTemplate({
                           </div>
                         </div>
                       </div>
-                    ),
-                  }
+                      </div>
+                    </details>
+                  )
                 })}
-              />
+              </div>
             </section>
             ) : (
             <section>
