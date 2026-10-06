@@ -4,10 +4,10 @@ import type { ProgramData } from '@/data/programs'
 import Linkify from './Linkify'
 
 const UI = {
-  es: { classSchedule: 'Horario de clases: ', shift: 'Turno', days: 'Días', time: 'Hora', standard: 'Estándar (campus UAI)', inSitu: 'In situ', longTerm: 'Largo plazo', price: 'Precio', onRequest: 'Consultar', priceNote: 'Valores referenciales en USD, sujetos a cambios. Consulte las condiciones vigentes.' },
-  en: { classSchedule: 'Class schedule: ', shift: 'Shift', days: 'Days', time: 'Time', standard: 'Standard (UAI campus)', inSitu: 'In situ', longTerm: 'Long term', price: 'Price', onRequest: 'On request', priceNote: 'Reference prices in USD, subject to change. Please check current conditions.' },
-  pt: { classSchedule: 'Horário das aulas: ', shift: 'Turno', days: 'Dias', time: 'Horário', standard: 'Padrão (campus UAI)', inSitu: 'In loco', longTerm: 'Longo prazo', price: 'Preço', onRequest: 'Sob consulta', priceNote: 'Valores de referência em USD, sujeitos a alterações. Consulte as condições vigentes.' },
-  zh: { classSchedule: '上课时间：', shift: '时段', days: '日期', time: '时间', standard: '标准（UAI校区）', inSitu: '现场授课', longTerm: '长期', price: '价格', onRequest: '请咨询', priceNote: '以上为美元参考价格，可能调整，请咨询最新条件。' },
+  es: { studyPlan: 'Plan de estudios', levelSyllabus: 'Temario por nivel', hoursShort: 'h', credits: 'créditos', courses: 'Cursos', classSchedule: 'Horario de clases: ', shift: 'Turno', days: 'Días', time: 'Hora', standard: 'Estándar (campus UAI)', inSitu: 'In situ', longTerm: 'Largo plazo', price: 'Precio', onRequest: 'Consultar', priceNote: 'Valores referenciales en USD, sujetos a cambios. Consulte las condiciones vigentes.' },
+  en: { studyPlan: 'Study plan', levelSyllabus: 'Syllabus by level', hoursShort: 'h', credits: 'credits', courses: 'Courses', classSchedule: 'Class schedule: ', shift: 'Shift', days: 'Days', time: 'Time', standard: 'Standard (UAI campus)', inSitu: 'In situ', longTerm: 'Long term', price: 'Price', onRequest: 'On request', priceNote: 'Reference prices in USD, subject to change. Please check current conditions.' },
+  pt: { studyPlan: 'Plano de estudos', levelSyllabus: 'Conteúdo por nível', hoursShort: 'h', credits: 'créditos', courses: 'Cursos', classSchedule: 'Horário das aulas: ', shift: 'Turno', days: 'Dias', time: 'Horário', standard: 'Padrão (campus UAI)', inSitu: 'In loco', longTerm: 'Longo prazo', price: 'Preço', onRequest: 'Sob consulta', priceNote: 'Valores de referência em USD, sujeitos a alterações. Consulte as condições vigentes.' },
+  zh: { studyPlan: '课程设置', levelSyllabus: '各级别课程内容', hoursShort: '学时', credits: '学分', courses: '课程', classSchedule: '上课时间：', shift: '时段', days: '日期', time: '时间', standard: '标准（UAI校区）', inSitu: '现场授课', longTerm: '长期', price: '价格', onRequest: '请咨询', priceNote: '以上为美元参考价格，可能调整，请咨询最新条件。' },
 }
 
 interface ProgramTemplateProps {
@@ -173,57 +173,51 @@ export default function ProgramTemplate({
             </section>
             )}
 
-            {/* 3. Temario */}
+            {/* 3. Plan de estudios agrupado (p. ej. Semestral: ELE · Temáticas · Core) */}
+            {data.temarioGrupo && data.cursosTabla ? (
+            <section>
+              <SectionTitle>{ui.studyPlan}</SectionTitle>
+              <div className="flex flex-col gap-10">
+                {Array.from(new Set(data.cursosTabla.map((c) => c.subcategoria).filter(Boolean))).map((grupo) => (
+                  <div key={grupo}>
+                    <h3 className="font-display font-bold text-negro text-xl mb-4 pb-2" style={{ borderBottom: '2px solid #6493b5' }}>{grupo}</h3>
+                    {grupo === data.temarioGrupo && (
+                      <div className="mb-3">
+                        <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#1d1e20' }}>{ui.levelSyllabus}</p>
+                        <TemarioList temario={data.temario} />
+                        <p className="text-xs font-semibold uppercase tracking-widest mt-6 mb-3" style={{ color: '#1d1e20' }}>{ui.courses}</p>
+                      </div>
+                    )}
+                    <div className="flex flex-col gap-3">
+                      {data.cursosTabla!.filter((c) => c.subcategoria === grupo).map((c) => (
+                        <details key={c.nombre} className="group" style={{ border: '1px solid #E5E3DE', borderRadius: '4px', overflow: 'hidden' }}>
+                          <summary className="flex items-center justify-between gap-4 px-4 py-3 cursor-pointer text-sm" style={{ background: '#FFFFFF', color: '#1d1e20' }}>
+                            <span className="font-semibold">{c.nombre}</span>
+                            <span className="flex items-center gap-3 shrink-0 text-xs" style={{ color: '#2D2D2D' }}>
+                              {typeof c.horas === 'number' && <span>{c.horas} {ui.hoursShort}</span>}
+                              {c.creditos !== undefined && <span>{c.creditos} {ui.credits}</span>}
+                              <ChevronRight size={16} className="transition-transform group-open:rotate-90" />
+                            </span>
+                          </summary>
+                          {c.descripcion && (
+                            <p className="px-4 pb-4 pt-1 text-sm leading-relaxed" style={{ color: '#2D2D2D' }}>{c.descripcion}</p>
+                          )}
+                        </details>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+            ) : (
             <section>
               <SectionTitle>{labels.syllabus}</SectionTitle>
               {data.areasNota && (
                 <p className="text-sm leading-relaxed mb-4" style={{ color: '#2D2D2D' }}>{data.areasNota}</p>
               )}
-              <div className="flex flex-col gap-4">
-                {data.temario.map((t, i) => (
-                  <details
-                    key={i}
-                    className="group"
-                    style={{ border: '1px solid #E5E3DE', borderRadius: '4px', overflow: 'hidden' }}
-                  >
-                    <summary
-                      className="flex items-center justify-between px-4 py-3 cursor-pointer font-semibold text-sm"
-                      style={{ background: '#C7C2ba', color: '#1d1e20' }}
-                    >
-                      {t.nivel}
-                      <ChevronRight size={16} className="transition-transform group-open:rotate-90" />
-                    </summary>
-                    {t.descripcion && (
-                      <div className="px-6 pt-4 flex flex-col gap-3">
-                        {t.descripcion.map((d, j) => (
-                          <p key={j} className="text-sm leading-relaxed" style={{ color: '#2D2D2D' }}>{d}</p>
-                        ))}
-                      </div>
-                    )}
-                    {t.ficha && (
-                      <dl className="mx-6 mt-4 mb-4 grid grid-cols-2 sm:grid-cols-4 gap-px overflow-hidden" style={{ background: '#E5E3DE', border: '1px solid #E5E3DE', borderRadius: '4px' }}>
-                        {t.ficha.map((f) => (
-                          <div key={f.label} className="px-3 py-2 last:odd:col-span-2 sm:last:odd:col-span-1 sm:[&:nth-child(4n+3):last-child]:col-span-2" style={{ background: '#FFFFFF' }}>
-                            <dt className="text-xs uppercase tracking-widest" style={{ color: '#6B6B6B' }}>{f.label}</dt>
-                            <dd className="text-sm font-semibold" style={{ color: '#1d1e20' }}>{f.value}</dd>
-                          </div>
-                        ))}
-                      </dl>
-                    )}
-                    {t.contenidos.length > 0 && (
-                    <ul className="px-6 py-4 flex flex-col gap-2">
-                      {t.contenidos.map((c, j) => (
-                        <li key={j} className="flex items-start gap-2 text-sm" style={{ color: '#2D2D2D' }}>
-                          <CheckCircle size={14} className="mt-0.5 shrink-0" style={{ color: '#6493b5' }} />
-                          {c}
-                        </li>
-                      ))}
-                    </ul>
-                    )}
-                  </details>
-                ))}
-              </div>
+              <TemarioList temario={data.temario} />
             </section>
+            )}
 
             {!simple && (<>
             {/* 4. Actividades */}
@@ -418,5 +412,54 @@ function AsideStat({ label, value, highlight }: { label: string; value: string; 
         {value}
       </p>
     </div>
+  )
+}
+
+function TemarioList({ temario }: { temario: ProgramData['temario'] }) {
+  return (
+              <div className="flex flex-col gap-4">
+                {temario.map((t, i) => (
+                  <details
+                    key={i}
+                    className="group"
+                    style={{ border: '1px solid #E5E3DE', borderRadius: '4px', overflow: 'hidden' }}
+                  >
+                    <summary
+                      className="flex items-center justify-between px-4 py-3 cursor-pointer font-semibold text-sm"
+                      style={{ background: '#C7C2ba', color: '#1d1e20' }}
+                    >
+                      {t.nivel}
+                      <ChevronRight size={16} className="transition-transform group-open:rotate-90" />
+                    </summary>
+                    {t.descripcion && (
+                      <div className="px-6 pt-4 flex flex-col gap-3">
+                        {t.descripcion.map((d, j) => (
+                          <p key={j} className="text-sm leading-relaxed" style={{ color: '#2D2D2D' }}>{d}</p>
+                        ))}
+                      </div>
+                    )}
+                    {t.ficha && (
+                      <dl className="mx-6 mt-4 mb-4 grid grid-cols-2 sm:grid-cols-4 gap-px overflow-hidden" style={{ background: '#E5E3DE', border: '1px solid #E5E3DE', borderRadius: '4px' }}>
+                        {t.ficha.map((f) => (
+                          <div key={f.label} className="px-3 py-2 last:odd:col-span-2 sm:last:odd:col-span-1 sm:[&:nth-child(4n+3):last-child]:col-span-2" style={{ background: '#FFFFFF' }}>
+                            <dt className="text-xs uppercase tracking-widest" style={{ color: '#6B6B6B' }}>{f.label}</dt>
+                            <dd className="text-sm font-semibold" style={{ color: '#1d1e20' }}>{f.value}</dd>
+                          </div>
+                        ))}
+                      </dl>
+                    )}
+                    {t.contenidos.length > 0 && (
+                    <ul className="px-6 py-4 flex flex-col gap-2">
+                      {t.contenidos.map((c, j) => (
+                        <li key={j} className="flex items-start gap-2 text-sm" style={{ color: '#2D2D2D' }}>
+                          <CheckCircle size={14} className="mt-0.5 shrink-0" style={{ color: '#6493b5' }} />
+                          {c}
+                        </li>
+                      ))}
+                    </ul>
+                    )}
+                  </details>
+                ))}
+              </div>
   )
 }
