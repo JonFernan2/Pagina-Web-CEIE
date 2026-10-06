@@ -11,7 +11,7 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
       'Desenvolver progressivamente as competências linguísticas, acadêmicas e culturais em espanhol de estudantes internacionais não falantes de espanhol, facilitando sua integração na experiência universitária.',
     niveles: ['A1', 'A2', 'B1', 'B2', 'C1'],
     sedes: ['Viña del Mar'],
-    publicoObjetivo: 'Estudantes de graduação internacional sem background em espanhol.',
+    publicoObjetivo: 'Estudantes de graduação internacional.',
     cursosTabla: [
       { nombre: 'Espanhol Básico A1/A2', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE', descripcion: 'Este curso promove o desenvolvimento das competências comunicativas em espanhol tanto na expressão oral como escrita, proporcionando ferramentas para comunicar-se em contextos formais e informais, em âmbitos pessoais e profissionais. O uso da língua em contexto permitirá alcançar uma comunicação clara e eficaz.' },
       { nombre: 'Espanhol Intermediário: Comunicação B1/B2', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE', descripcion: 'Este curso tem como objetivo consolidar os aspectos comunicativos do uso do espanhol através da interação constante em contextos formais e informais. Fomenta a capacidade de expressar-se oralmente e por escrito, habilidades fundamentais para a inserção efetiva na sociedade.' },

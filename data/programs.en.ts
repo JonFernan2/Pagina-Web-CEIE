@@ -11,7 +11,7 @@ export const PROGRAMS_DATA_EN: ProgramData[] = [
       'Progressively develop linguistic, academic, and cultural competencies in Spanish for international non-Spanish-speaking students, facilitating integration into the university experience.',
     niveles: ['A1', 'A2', 'B1', 'B2', 'C1'],
     sedes: ['Viña del Mar'],
-    publicoObjetivo: 'International undergraduate students with no Spanish background.',
+    publicoObjetivo: 'International undergraduate students.',
     cursosTabla: [
       { nombre: 'Basic Spanish A1/A2', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE', descripcion: 'This course promotes the development of communicative competencies in Spanish in both oral and written expression, providing tools to communicate in formal and informal contexts, in personal and professional settings. Language use in context enables clear and effective communication.' },
       { nombre: 'Intermediate Spanish: Communication B1/B2', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE', descripcion: 'This course aims to consolidate the communicative aspects of Spanish through constant interaction in formal and informal contexts. It fosters the ability to express oneself orally and in writing, key skills for effective participation in society.' },

@@ -86,7 +86,7 @@ export const PROGRAMS_DATA: ProgramData[] = [
       'Desarrollar progresivamente las competencias lingüísticas, académicas y culturales en español de estudiantes internacionales no hispanohablantes, facilitando su integración a la experiencia universitaria.',
     niveles: ['A1', 'A2', 'B1', 'B2', 'C1'],
     sedes: ['Viña del Mar'],
-    publicoObjetivo: 'Alumnos de pregrado internacional no hispanohablante.',
+    publicoObjetivo: 'Alumnos de pregrado internacional.',
     cursosTabla: [
       { nombre: 'Español Básico A1/A2', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE', descripcion: 'A través de este curso, se fomenta el desarrollo de las competencias comunicativas en español tanto en la expresión oral como escrita considerando el uso de herramientas necesarias para comunicarse en contextos formales e informales, en ámbitos personales como profesionales. El uso del lenguaje en contexto permitirá el logro de una comunicación clara y efectiva.' },
       { nombre: 'Español Intermedio: Comunicación B1/B2', horas: 45, precioUSD: 950, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'ELE', descripcion: 'Consolidar los aspectos comunicativos del uso de español es el objetivo de este curso que, a través de la interacción constante en contextos formales como informales, fomenta la capacidad de expresarse en el uso de este idioma en términos orales como escritos, claves para insertarse de manera efectiva en la sociedad.' },
