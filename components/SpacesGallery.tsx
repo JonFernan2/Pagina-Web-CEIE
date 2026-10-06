@@ -45,7 +45,7 @@ export default function SpacesGallery({ spaces, title, spaceImages, lang = 'es' 
               style={{ border: '1px solid #E5E3DE', borderRadius: '4px' }}
             >
               {carousel ? (
-                <SpaceCarousel srcs={srcs} positions={positions ?? srcs.map(() => position)} alt={space.alt} height={wide ? '280px' : '220px'} lang={lang} />
+                <SpaceCarousel srcs={srcs} positions={positions ?? srcs.map(() => position)} alt={space.alt} height={wide ? 'clamp(220px, 45vw, 520px)' : '220px'} lang={lang} />
               ) : (
               <div className="w-full overflow-hidden flex gap-1" style={{ height: wide ? '280px' : '220px' }}>
                 {srcs.map((src) => (
