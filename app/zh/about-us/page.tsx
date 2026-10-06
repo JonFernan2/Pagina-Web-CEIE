@@ -12,7 +12,7 @@ const SPACE_IMAGES: SpaceImages[] = [
   { srcs: ['/images/galeria-ceie-spanish-corner.jpg'] },
   { srcs: ['/images/sala-estudio-2.jpg'] },
   { srcs: ['/images/gimnasio-uai.jpg'] },
-  { srcs: ['/images/campus-vina-aerea.jpg'], wide: true },
+  { srcs: ['/images/campus-vina-aerea.jpg'], wide: true, busRoutes: true },
   { srcs: ['/images/espacio-aula-principal.jpg', '/images/espacio-sala-conferencias.jpg'], wide: true },
 ]
 
