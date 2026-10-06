@@ -27,9 +27,9 @@ export default function FinsEspecificosPTPage() {
         asideTitle="Resumo rápido"
         asideApply="Solicitar proposta"
         labels={{
-          overview: 'Visão geral',
+          overview: 'O que é o programa de Espanhol com Fins Específicos?',
           schedule: 'Horários',
-          syllabus: 'Conteúdo por módulo',
+          syllabus: 'Áreas de especialização (exemplos)',
           activities: 'Atividades incluídas',
           conditions: 'Condições',
           certificate: 'Certificado',

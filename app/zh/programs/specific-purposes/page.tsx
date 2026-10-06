@@ -27,9 +27,9 @@ export default function SpecificPurposesZHPage() {
         asideTitle="课程概览"
         asideApply="开始申请"
         labels={{
-          overview: '课程简介',
+          overview: '什么是专业目的西班牙语课程？',
           schedule: '上课时间',
-          syllabus: '各级别教学内容',
+          syllabus: '专业领域（示例）',
           activities: '包含活动',
           conditions: '课程条件',
           certificate: '证书',

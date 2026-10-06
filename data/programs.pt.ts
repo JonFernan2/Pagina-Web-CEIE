@@ -132,8 +132,10 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
     sedes: ['Viña del Mar'],
     publicoObjetivo: 'Estudantes internacionais não falantes de espanhol que buscam formação intensiva de curta duração.',
     cursosTabla: [
-      { nombre: 'Gramática e Estruturas Comunicativas', horas: 22, precioUSD: 900, creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, descripcion: 'Curso intensivo voltado ao desenvolvimento das estruturas gramaticais fundamentais do espanhol. Por meio de uma metodologia ativa e aplicada, os estudantes adquirem as ferramentas necessárias para compreender e utilizar as principais estruturas do idioma em situações comunicativas do dia a dia. O curso aborda conteúdos gramaticais essenciais, integrando vocabulário, compreensão e produção oral e escrita, com atividades práticas que permitem aplicar os conteúdos em contextos reais de comunicação. O formato intensivo favorece a consolidação progressiva da aprendizagem e oferece uma base sólida para continuar avançando no domínio do espanhol.' },
-      { nombre: 'Comunicação e Cultura Chilena', horas: 22, precioUSD: 900, creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, descripcion: 'Curso intensivo voltado ao desenvolvimento das competências comunicativas básicas em espanhol, integrando a aprendizagem do idioma a uma aproximação à cultura chilena e latino-americana. Os estudantes desenvolvem ferramentas para se comunicar de forma simples em situações do dia a dia, tanto oralmente quanto por escrito. Por meio de atividades práticas e experiências de imersão, os estudantes têm a oportunidade de usar o espanhol em contextos reais, enquanto exploram aspectos da vida cotidiana, da sociedade e da cultura chilena. O curso inclui atividades culturais em Viña del Mar e Valparaíso, promovendo a reflexão intercultural e uma compreensão mais próxima do contexto em que se desenvolve a sua experiência de aprendizagem.' },
+      { nombre: 'Gramática e Estruturas Comunicativas', horas: 22, precioUSD: 900, creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: 'Intensivo 2 semanas', descripcion: 'Curso intensivo voltado ao desenvolvimento das estruturas gramaticais fundamentais do espanhol. Por meio de uma metodologia ativa e aplicada, os estudantes adquirem as ferramentas necessárias para compreender e utilizar as principais estruturas do idioma em situações comunicativas do dia a dia. O curso aborda conteúdos gramaticais essenciais, integrando vocabulário, compreensão e produção oral e escrita, com atividades práticas que permitem aplicar os conteúdos em contextos reais de comunicação. O formato intensivo favorece a consolidação progressiva da aprendizagem e oferece uma base sólida para continuar avançando no domínio do espanhol.' },
+      { nombre: 'Comunicação e Cultura Chilena', horas: 22, precioUSD: 900, creditos: 2, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: 'Intensivo 2 semanas', descripcion: 'Curso intensivo voltado ao desenvolvimento das competências comunicativas básicas em espanhol, integrando a aprendizagem do idioma a uma aproximação à cultura chilena e latino-americana. Os estudantes desenvolvem ferramentas para se comunicar de forma simples em situações do dia a dia, tanto oralmente quanto por escrito. Por meio de atividades práticas e experiências de imersão, os estudantes têm a oportunidade de usar o espanhol em contextos reais, enquanto exploram aspectos da vida cotidiana, da sociedade e da cultura chilena. O curso inclui atividades culturais em Viña del Mar e Valparaíso, promovendo a reflexão intercultural e uma compreensão mais próxima do contexto em que se desenvolve a sua experiência de aprendizagem.' },
+      { nombre: 'Gramática e Estruturas Comunicativas', horas: 40, precioUSD: 1800, creditos: 4, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: 'Intensivo 4 semanas', descripcion: 'Curso intensivo voltado ao desenvolvimento das estruturas gramaticais fundamentais do espanhol. Por meio de uma metodologia ativa e aplicada, os estudantes adquirem as ferramentas necessárias para compreender e utilizar as principais estruturas do idioma em situações comunicativas do dia a dia. O curso aborda conteúdos gramaticais essenciais, integrando vocabulário, compreensão e produção oral e escrita, com atividades práticas que permitem aplicar os conteúdos em contextos reais de comunicação. O formato intensivo favorece a consolidação progressiva da aprendizagem e oferece uma base sólida para continuar avançando no domínio do espanhol.' },
+      { nombre: 'Comunicação e Cultura Chilena', horas: 40, precioUSD: 1800, creditos: 4, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: 'Intensivo 4 semanas', descripcion: 'Curso intensivo voltado ao desenvolvimento das competências comunicativas básicas em espanhol, integrando a aprendizagem do idioma a uma aproximação à cultura chilena e latino-americana. Os estudantes desenvolvem ferramentas para se comunicar de forma simples em situações do dia a dia, tanto oralmente quanto por escrito. Por meio de atividades práticas e experiências de imersão, os estudantes têm a oportunidade de usar o espanhol em contextos reais, enquanto exploram aspectos da vida cotidiana, da sociedade e da cultura chilena. O curso inclui atividades culturais em Viña del Mar e Valparaíso, promovendo a reflexão intercultural e uma compreensão mais próxima do contexto em que se desenvolve a sua experiência de aprendizagem.' },
     ],
     horarios: [
       { turno: 'Aulas', dias: 'Segunda a quinta-feira', hora: 'Conforme programa' },
@@ -146,7 +148,7 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
           'Curso intensivo voltado ao desenvolvimento das estruturas gramaticais fundamentais do espanhol. Por meio de uma metodologia ativa e aplicada, os estudantes adquirem as ferramentas necessárias para compreender e utilizar as principais estruturas do idioma em situações comunicativas do dia a dia.',
           'O curso aborda conteúdos gramaticais essenciais, integrando vocabulário, compreensão e produção oral e escrita, com atividades práticas que permitem aplicar os conteúdos em contextos reais de comunicação. O formato intensivo favorece a consolidação progressiva da aprendizagem e oferece uma base sólida para continuar avançando no domínio do espanhol.',
         ],
-        ficha: [{ label: 'Horas', value: '22 horas' }, { label: 'Créditos', value: '2' }, { label: 'Duração', value: '2 semanas' }, { label: 'Nº mínimo de estudantes', value: '5' }, { label: 'Nº máximo de estudantes', value: '15' }, { label: 'Campus', value: 'Viña del Mar' }, { label: 'Preço', value: '900 USD' }],
+        ficha: [{ label: 'Horas', value: '22 h (2 semanas) · 40 h (4 semanas)' }, { label: 'Créditos', value: '2 (2 semanas) · 4 (4 semanas)' }, { label: 'Duração', value: '2 ou 4 semanas' }, { label: 'Nº mínimo de estudantes', value: '5' }, { label: 'Nº máximo de estudantes', value: '15' }, { label: 'Campus', value: 'Viña del Mar' }, { label: 'Preço', value: '900 USD (2 semanas) · 1.800 USD (4 semanas)' }],
         contenidos: [],
       },
       {
@@ -155,7 +157,7 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
           'Curso intensivo voltado ao desenvolvimento das competências comunicativas básicas em espanhol, integrando a aprendizagem do idioma a uma aproximação à cultura chilena e latino-americana. Os estudantes desenvolvem ferramentas para se comunicar de forma simples em situações do dia a dia, tanto oralmente quanto por escrito.',
           'Por meio de atividades práticas e experiências de imersão, os estudantes têm a oportunidade de usar o espanhol em contextos reais, enquanto exploram aspectos da vida cotidiana, da sociedade e da cultura chilena. O curso inclui atividades culturais em Viña del Mar e Valparaíso, promovendo a reflexão intercultural e uma compreensão mais próxima do contexto em que se desenvolve a sua experiência de aprendizagem.',
         ],
-        ficha: [{ label: 'Horas', value: '22 horas' }, { label: 'Créditos', value: '2' }, { label: 'Duração', value: '2 semanas' }, { label: 'Nº mínimo de estudantes', value: '5' }, { label: 'Nº máximo de estudantes', value: '15' }, { label: 'Campus', value: 'Viña del Mar' }, { label: 'Preço', value: '900 USD' }],
+        ficha: [{ label: 'Horas', value: '22 h (2 semanas) · 40 h (4 semanas)' }, { label: 'Créditos', value: '2 (2 semanas) · 4 (4 semanas)' }, { label: 'Duração', value: '2 ou 4 semanas' }, { label: 'Nº mínimo de estudantes', value: '5' }, { label: 'Nº máximo de estudantes', value: '15' }, { label: 'Campus', value: 'Viña del Mar' }, { label: 'Preço', value: '900 USD (2 semanas) · 1.800 USD (4 semanas)' }],
         contenidos: [],
       },
     ],
@@ -187,9 +189,9 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
     },
     precio: {
       resumen: 'A partir de USD 900',
-      estandarLabel: '1 curso · 2 semanas',
+      estandarLabel: 'Intensivo 2 semanas (por curso)',
       estandar: 'USD 900',
-      inSituLabel: '2 cursos · 4 semanas',
+      inSituLabel: 'Intensivo 4 semanas (por curso)',
       inSitu: 'USD 1.800',
     },
     modalidades: [
@@ -199,10 +201,26 @@ export const PROGRAMS_DATA_PT: ProgramData[] = [
   },
   {
     slug: 'fins-especificos',
+    vistaSimple: true,
+    incluye: {
+      titulo: 'O que incluem nossos programas?',
+      intro: 'Os programas do CEIE são elaborados de acordo com as características, os objetivos e a modalidade de cada experiência. Dependendo do tipo de programa (individual, grupal ou institucional) e de seus requisitos específicos, podem incluir:',
+      items: [
+        'Desenho curricular adaptado ao nível, ao perfil e aos objetivos de aprendizagem dos participantes.',
+        'Docentes especializados no ensino de espanhol e, quando for o caso, na área temática do programa.',
+        'Materiais didáticos selecionados ou desenvolvidos de acordo com os conteúdos e objetivos do curso.',
+        'Acompanhamento e coordenação durante o desenvolvimento do programa.',
+        'Atividades culturais e experiências de imersão, conforme a modalidade e as características do programa.',
+        'Visitas acadêmicas, profissionais ou culturais, quando pertinentes aos objetivos do programa.',
+        'Serviços de apoio logístico, como hospedagem e transporte, para programas presenciais que assim o exijam.',
+        'Certificado de participação ou aprovação, conforme as características do programa.',
+      ],
+    },
+    areasNota: 'As áreas a seguir são exemplos de especializações que podem ser selecionadas mediante acordo prévio entre ambas as partes.',
     nombre: 'Espanhol com Fins Específicos',
     descripcionBreve: 'Programa de curta duração elaborado à medida conforme as necessidades, interesses e objetivos de cada pessoa, grupo ou instituição.',
     descripcionExtendida:
-      'O Espanhol com Fins Específicos é um programa de curta duração elaborado à medida de acordo com as necessidades, interesses e objetivos específicos de cada pessoa, grupo ou instituição. Seu propósito é fortalecer as competências comunicativas em espanhol em âmbitos acadêmicos, profissionais ou disciplinares, por meio de conteúdos e atividades adaptados ao perfil e nível linguístico dos participantes.\n\nO programa combina o desenvolvimento de vocabulário especializado, funções comunicativas e recursos linguísticos relevantes para a área de interesse com atividades práticas orientadas ao uso do espanhol em situações e contextos próprios de cada âmbito. A metodologia e os conteúdos são definidos em função dos objetivos do programa, podendo incorporar aulas de espanhol, oficinas, atividades aplicadas e experiências culturais ou profissionais.',
+      'O Espanhol com Fins Específicos é um programa de curta duração elaborado sob medida de acordo com as necessidades, interesses e objetivos específicos de cada pessoa, grupo ou instituição. Seu propósito é fortalecer as competências comunicativas em espanhol em âmbitos acadêmicos, profissionais ou disciplinares, por meio de conteúdos e atividades adaptados ao perfil e ao nível linguístico dos participantes.\n\nO programa combina o desenvolvimento de vocabulário especializado, funções comunicativas e recursos linguísticos relevantes para a área de interesse com atividades práticas voltadas ao uso do espanhol em situações e contextos próprios de cada âmbito. A metodologia e os conteúdos são definidos em função dos objetivos do programa, podendo incorporar aulas de espanhol, oficinas, atividades aplicadas e experiências culturais ou profissionais.',
     objetivo:
       'Fortalecer as competências comunicativas em espanhol em âmbitos acadêmicos, profissionais ou disciplinares, por meio de programas elaborados à medida conforme as necessidades de cada pessoa, grupo ou instituição.',
     niveles: ['Conforme requisitos institucionais'],

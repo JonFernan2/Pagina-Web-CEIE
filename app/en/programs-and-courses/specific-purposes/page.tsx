@@ -27,9 +27,9 @@ export default function SpecificPurposesENPage() {
         asideTitle="Quick summary"
         asideApply="Request a proposal"
         labels={{
-          overview: 'Overview',
+          overview: 'What is the Spanish for Specific Purposes programme?',
           schedule: 'Schedule',
-          syllabus: 'Areas of specialization',
+          syllabus: 'Areas of specialisation (examples)',
           activities: 'Included activities',
           conditions: 'Conditions',
           certificate: 'Certificate',

@@ -7,6 +7,7 @@ import CookieBanner from '@/components/CookieBanner'
 import ProgramCard from '@/components/ProgramCard'
 import { HOME_ES } from '@/data/content.es'
 import YouTubeVideo from '@/components/YouTubeVideo'
+import Linkify from '@/components/Linkify'
 
 export const metadata: Metadata = {
   title: HOME_ES.meta.title,
@@ -157,7 +158,7 @@ export default function HomePage() {
                 {d.payment.col3.link.label} →
               </Link>
               <p className="mt-4 text-xs px-3 py-2" style={{ background: '#2D2D2D', color: '#9CA3AF', borderRadius: '2px' }}>
-                {d.payment.col3.disclaimer}
+                <Linkify text={d.payment.col3.disclaimer} />
               </p>
             </div>
           </div>

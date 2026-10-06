@@ -1,3 +1,5 @@
+import Linkify from './Linkify'
+
 
 interface LegalSection {
   heading: string
@@ -53,7 +55,7 @@ export default function LegalPageTemplate({
                 {section.heading}
               </h2>
               <p className="text-base leading-relaxed" style={{ color: '#2D2D2D' }}>
-                {section.body}
+                <Linkify text={section.body} />
               </p>
               {section.table && (
                 <div className="overflow-x-auto mt-4">
