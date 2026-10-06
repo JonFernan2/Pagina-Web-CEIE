@@ -7,6 +7,8 @@ interface ProgramCardProps {
   descripcion: string
   nivel: string
   duracion: string
+  precioDesde?: string
+  imagen?: string
   href: string
   lang?: 'es' | 'en' | 'pt' | 'zh'
 }
@@ -18,14 +20,24 @@ const labels = {
   zh: { nivel: '级别', duracion: '时长', cta: '查看课程' },
 }
 
-export default function ProgramCard({ nombre, descripcion, nivel, duracion, href, lang = 'es' }: ProgramCardProps) {
+export default function ProgramCard({ nombre, descripcion, nivel, duracion, precioDesde, imagen, href, lang = 'es' }: ProgramCardProps) {
   const t = labels[lang]
 
   return (
     <div
-      className="flex flex-col font-body h-full"
-      style={{ border: '1px solid #E5E3DE', borderTop: '3px solid #6493b5', borderRadius: '4px', background: '#FFFFFF' }}
+      className="flex flex-col font-body h-full overflow-hidden"
+      style={{ border: '1px solid #E5E3DE', borderRadius: '4px', background: '#FFFFFF' }}
     >
+      {imagen && (
+        /* eslint-disable-next-line @next/next/no-img-element */
+        <img
+          src={imagen}
+          alt=""
+          loading="lazy"
+          className="w-full aspect-[16/9] object-cover"
+          style={{ borderBottom: '3px solid #6493b5' }}
+        />
+      )}
       <div className="flex flex-col flex-1 px-6 py-6 gap-4">
         <div>
           <h3 className="font-body text-xl font-semibold text-negro mb-1">{nombre}</h3>
@@ -36,10 +48,15 @@ export default function ProgramCard({ nombre, descripcion, nivel, duracion, href
 
         <p className="text-sm leading-relaxed flex-1" style={{ color: '#2D2D2D' }}>{descripcion}</p>
 
-        <p className="flex items-center gap-2 text-sm" style={{ color: '#2D2D2D' }}>
-          <Clock size={14} className="shrink-0" style={{ color: '#6493b5' }} aria-hidden="true" />
-          <span><span className="font-medium text-negro">{t.duracion}:</span> {duracion}</span>
-        </p>
+        <div className="flex flex-col gap-1 pt-4" style={{ borderTop: '1px solid #E5E3DE' }}>
+          <p className="flex items-center gap-2 text-sm" style={{ color: '#2D2D2D' }}>
+            <Clock size={14} className="shrink-0" style={{ color: '#6493b5' }} aria-hidden="true" />
+            <span><span className="font-medium text-negro">{t.duracion}:</span> {duracion}</span>
+          </p>
+          {precioDesde && (
+            <p className="text-lg font-bold" style={{ color: '#1d1e20' }}>{precioDesde}</p>
+          )}
+        </div>
 
         <Link
           href={href}
