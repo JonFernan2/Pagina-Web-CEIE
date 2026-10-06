@@ -97,7 +97,7 @@ export const HOME_ZH = {
         descripcion: '2周或4周西班牙语强化课程。',
         nivel: 'A1至B2',
         duracion: '2至4周',
-        horario: '周一至周四上课 · 周五文化活动',
+        horario: '周一至周四上课，08:30 – 18:55 · 周五文化活动',
         grupoMax: '最少5人',
         precioReferencial: 'USD 900（2周）· USD 1,800（4周）',
         href: '/zh/programs/intensive',

@@ -28,6 +28,7 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
       { nombre: '核心课程：论证写作', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'UAI核心课程', descripcion: '秉承"在写作中学会写作"的教学理念，本课程旨在将思想转化为有效的论说文本。通过文献研究与说服技巧训练，要求学员持续修改打磨，最终在任何职业环境中实现自主表达。' },
       { nombre: '核心课程：伦理学', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'UAI核心课程', descripcion: '本课程深入探讨人类存在的道德维度，聚焦个体的现实责任。通过对行为正义与美好生活的追问，学员学会分析、评价并论证日常与职业决策，以知识自主性和诚信作为职业实践的核心。' },
     ],
+    horarioClases: '周一至周五，08:30 – 18:55',
     horarios: [
       { turno: '课程', dias: '周一至周五', hora: '08:30 – 18:55' },
     ],
@@ -137,8 +138,9 @@ export const PROGRAMS_DATA_ZH: ProgramData[] = [
       { nombre: '语法与交际结构', horas: 40, precioUSD: 1800, creditos: 4, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '4周强化课程', descripcion: '本强化课程着重培养西班牙语的基础语法结构。通过积极、注重实践的教学方法，学员将掌握在日常交际情境中理解和运用该语言主要结构所需的工具。 课程涵盖核心语法内容，融合词汇、理解以及口头和书面表达，并通过实践活动让学员在真实交际情境中运用所学。强化形式有助于逐步巩固学习成果，为继续提升西班牙语水平打下坚实基础。' },
       { nombre: '交际与智利文化', horas: 40, precioUSD: 1800, creditos: 4, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: '4周强化课程', descripcion: '本强化课程着重培养西班牙语基础交际能力，将语言学习与智利及拉丁美洲文化的认识相结合。学员将掌握在日常情境中以口头和书面形式进行简单交流的工具。 通过实践活动和沉浸式体验，学员有机会在真实情境中使用西班牙语，同时探索智利的日常生活、社会与文化。课程包含在Viña del Mar和瓦尔帕莱索开展的文化活动，促进跨文化反思，帮助学员更深入地了解其学习经历所处的环境。' },
     ],
+    horarioClases: '周一至周四，08:30 – 18:55 · 周五文化活动',
     horarios: [
-      { turno: '课程', dias: '周一至周四', hora: '按课程安排' },
+      { turno: '课程', dias: '周一至周四', hora: '08:30 – 18:55' },
       { turno: '文化活动', dias: '周五', hora: '按课程安排' },
     ],
     temario: [

@@ -48,6 +48,7 @@ export interface ProductoCurso {
 
 export interface ProgramData {
   vistaSimple?: boolean
+  horarioClases?: string
   incluye?: { titulo: string; intro: string; items: string[] }
   areasNota?: string
   slug: string
@@ -102,6 +103,7 @@ export const PROGRAMS_DATA: ProgramData[] = [
       { nombre: 'Core: Escritura Argumentativa', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'Core UAI', descripcion: 'Bajo la premisa de "aprender a escribir escribiendo", este curso está diseñado para transformar el pensamiento en textos ensayísticos eficaces. El trabajo se centra en la investigación bibliográfica y el dominio de recursos persuasivos, exigiendo al estudiante un proceso constante de edición y refinamiento para lograr autonomía expresiva en cualquier entorno profesional.' },
       { nombre: 'Core: Ética', horas: 45, precioUSD: 1188, creditos: 4, minEstudiantes: 5, maxEstudiantes: 24, subcategoria: 'Core UAI', descripcion: 'Este curso profundiza en la dimensión moral de la existencia humana, enfocándose en la responsabilidad individual frente a la realidad. A través de cuestionamientos sobre la justicia de las acciones y la búsqueda de una vida buena, los estudiantes aprenden a analizar, evaluar y justificar sus decisiones cotidianas y profesionales, promoviendo la autonomía intelectual y la integridad como ejes del ejercicio profesional.' },
     ],
+    horarioClases: 'Lunes a viernes, 08:30 – 18:55',
     horarios: [
       { turno: 'Clases', dias: 'Lunes a viernes', hora: '08:30 – 18:55' },
     ],
@@ -212,8 +214,9 @@ export const PROGRAMS_DATA: ProgramData[] = [
       { nombre: 'Gramática y Estructuras Comunicativas', horas: 40, precioUSD: 1800, creditos: 4, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: 'Intensivo 4 semanas', descripcion: 'Curso intensivo orientado al desarrollo de las estructuras gramaticales fundamentales del español. A través de una metodología activa y aplicada, los estudiantes adquieren las herramientas necesarias para comprender y utilizar las principales estructuras del idioma en situaciones comunicativas cotidianas. El curso aborda contenidos gramaticales esenciales, integrando vocabulario, comprensión y producción oral y escrita, con actividades prácticas que permiten aplicar los contenidos en contextos reales de comunicación. El formato intensivo favorece la consolidación progresiva de los aprendizajes y proporciona una base sólida para continuar avanzando en el dominio del español.' },
       { nombre: 'Comunicación y Cultura Chilena', horas: 40, precioUSD: 1800, creditos: 4, minEstudiantes: 5, maxEstudiantes: 15, subcategoria: 'Intensivo 4 semanas', descripcion: 'Curso intensivo orientado al desarrollo de las competencias comunicativas básicas en español, integrando el aprendizaje del idioma con una aproximación a la cultura chilena y latinoamericana. Los estudiantes desarrollan herramientas para comunicarse de manera simple en situaciones cotidianas, tanto de forma oral como escrita. A través de actividades prácticas y experiencias de inmersión, los estudiantes tienen la oportunidad de utilizar el español en contextos reales, mientras exploran aspectos de la vida cotidiana, la sociedad y la cultura chilena. El curso incorpora actividades culturales en Viña del Mar y Valparaíso, promoviendo la reflexión intercultural y una comprensión más cercana del contexto en el que se desarrolla su experiencia de aprendizaje.' },
     ],
+    horarioClases: 'Lunes a jueves, 08:30 – 18:55 · Actividades culturales los viernes',
     horarios: [
-      { turno: 'Clases', dias: 'Lunes a jueves', hora: 'Según programa' },
+      { turno: 'Clases', dias: 'Lunes a jueves', hora: '08:30 – 18:55' },
       { turno: 'Actividades culturales', dias: 'Viernes', hora: 'Según programa' },
     ],
     temario: [

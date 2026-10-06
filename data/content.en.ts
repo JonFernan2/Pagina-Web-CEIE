@@ -108,7 +108,7 @@ export const HOME_EN = {
         descripcion: 'Intensive Spanish for 2 or 4 weeks.',
         nivel: 'A1 to B2',
         duracion: '2 to 4 weeks',
-        horario: 'Classes Monday to Thursday · Cultural activities on Fridays',
+        horario: 'Classes Monday to Thursday, 08:30 – 18:55 · Cultural activities on Fridays',
         grupoMax: 'Min. 5 people',
         precioReferencial: 'USD 900 (2 weeks) · USD 1,800 (4 weeks)',
         href: '/en/programs-and-courses/intensive',

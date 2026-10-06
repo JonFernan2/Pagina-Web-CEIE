@@ -108,7 +108,7 @@ export const HOME_ES = {
         descripcion: 'Español intensivo de 2 ó 4 semanas.',
         nivel: 'A1 a B2',
         duracion: '2 a 4 semanas',
-        horario: 'Clases de lunes a jueves · Actividades culturales los viernes',
+        horario: 'Clases de lunes a jueves, 08:30 – 18:55 · Actividades culturales los viernes',
         grupoMax: 'Mín. 5 personas',
         precioReferencial: 'USD 900 (2 semanas) · USD 1.800 (4 semanas)',
         href: '/programas-y-cursos/intensivo',
